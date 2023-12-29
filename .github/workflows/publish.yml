@@ -61,7 +61,7 @@ jobs:
                      "21.1.2": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.2_x64.zip",
                      "20.2.4": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.2.4_x64.zip",
                      "20.2.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.2.0_x64.zip",
-                     "20.1.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.1.0_x64.zip",
+                     "20.1.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.1.0_x64.zip"
                   }
                }
           ]
