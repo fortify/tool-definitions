@@ -29,7 +29,23 @@ jobs:
                   "tool_name": "fcli",
                   "tool_repo": "fortify/fcli",
                   "regex": "v.*/(fcli-linux.tgz|fcli-mac.tgz|fcli-windows.zip)"
-              }
+              },
+              {
+                  "tool_name": "bugtracker-utility",
+                  "tool_repo": "fortify-ps/FortifyBugTrackerUtility",
+                  "regex": ".*/FortifyBugTrackerUtility-.*.zip"
+              },
+              {
+                  "tool_name": "vuln-exporter",
+                  "tool_repo": "fortify/FortifyVulnerabilityExporter",
+                  "regex": "v.*/FortifyVulnerabilityExporter.jar"
+              },
+              {
+                  "tool_name": "debricked-cli",
+                  "tool_repo": "debricked/cli",
+                  "regex": "v.*/cli_.*\.tar\.gz"
+              },
+              
           ]
       run: echo "matrix=$(jq -r -c . <<< "$CONFIG")" >> $GITHUB_OUTPUT
     - name: Check
