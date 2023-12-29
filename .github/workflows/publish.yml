@@ -43,7 +43,7 @@ jobs:
               {
                   "tool_name": "debricked-cli",
                   "tool_repo": "debricked/cli",
-                  "regex": "v.*/cli_.*\.tar\.gz"
+                  "regex": "v.*/cli_.*.tar.gz"
               } 
           ]
       run: echo "matrix=$(jq -r -c . <<< "$CONFIG")" >> $GITHUB_OUTPUT
