@@ -97,7 +97,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         tool_name: ${{ fromJSON(toJSON(matrix)).tool_name }}
         tool_repo: ${{ fromJSON(toJSON(matrix)).tool_repo }}
-        tool_urls: ${{ fromJSON(toJSON(matrix)).tool_urls }}
+        tool_urls: ${{ toJSON(fromJSON(toJSON(matrix)).tool_urls) }}
         regex: ${{ fromJSON(toJSON(matrix)).regex }}
         sign_key: ${{ secrets.SIGN_KEY }}
         sign_passphrase: ${{ secrets.SIGN_PASSPHRASE }}
