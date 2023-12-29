@@ -21,14 +21,14 @@ jobs:
         CONFIG: >-
           [
              {
-                  tool_name: 'fod-uploader',
-                  tool_repo: 'fod-dev/fod-uploader-java',
-                  regex: '.*/FoDUpload.jar'
+                  "tool_name": "fod-uploader",
+                  "tool_repo": "fod-dev/fod-uploader-java",
+                  "regex": ".*/FoDUpload.jar"
               },
               {
-                  tool_name: 'fcli',
-                  tool_repo: 'fortify/fcli',
-                  regex: 'v.*/(fcli-linux.tgz|fcli-mac.tgz|fcli-windows.zip)'
+                  "tool_name": "fcli",
+                  "tool_repo": "fortify/fcli",
+                  "regex": "v.*/(fcli-linux.tgz|fcli-mac.tgz|fcli-windows.zip)"
               }
           ]
       run: echo "matrix=$(jq -r -c . <<< "$CONFIG")" >> $GITHUB_OUTPUT
