@@ -23,7 +23,7 @@ jobs:
              {
                   "tool_name": "fod-uploader",
                   "tool_repo": "fod-dev/fod-uploader-java",
-                  "regex": ".*/FoDUpload.jar"
+                  "regex": ".*/FodUpload.jar"
               },
               {
                   "tool_name": "fcli",
