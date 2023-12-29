@@ -5,6 +5,9 @@ inputs:
   GITHUB_TOKEN:
     description: 'GitHub token used to perform GitHub operations'
     required: true
+  tool_name:
+    description: 'The tool name for which to generate tool definitions.'
+    required: true
   tool_repo:
     description: 'The GitHub repository for which to generate tool definitions. Required unless tool_urls is specified.'
     required: false
