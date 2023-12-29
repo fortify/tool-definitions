@@ -43,6 +43,7 @@ jobs:
       matrix:
         include: ${{ fromJson(needs.setup.outputs.matrix)}}
     steps:
+    - uses: actions/checkout@v4
     - name: Check
       env:
         MATRIX: ${{ toJSON(matrix) }}
