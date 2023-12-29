@@ -1,0 +1,56 @@
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      
+permissions:
+  contents: write
+  pull-requests: write
+      
+name: Publish tool definitions
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.setup.outputs.matrix }}
+    steps:
+    - name: Setup
+      id: setup
+      env:
+        CONFIG: >-
+          [
+             {
+                  tool_name: 'fod-uploader',
+                  tool_repo: 'fod-dev/fod-uploader-java',
+                  regex: '.*/FoDUpload.jar'
+              },
+              {
+                  tool_name: 'fcli',
+                  tool_repo: 'fortify/fcli',
+                  regex: 'v.*/(fcli-linux.tgz|fcli-mac.tgz|fcli-windows.zip)'
+              }
+          ]
+      run: echo "matrix=$(jq -r -c . <<< "$CONFIG")" >> $GITHUB_OUTPUT
+    - name: Check
+      run: jq . <<< '${{ steps.setup.outputs.matrix }}'
+      
+  generate-tool-definitions:
+    needs: setup
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.setup.outputs.matrix)}}
+    steps:
+    - name: Check
+      env:
+        MATRIX: ${{ toJSON(matrix) }}
+        TOOL_NAME: ${{ fromJSON(toJSON(matrix)).tool_name }}
+        TOOL_REPO: ${{ fromJSON(toJSON(matrix)).tool_repo }}
+        REGEX: ${{ fromJSON(toJSON(matrix)).regex }} 
+      run: |
+        echo "MATRIX: $(jq -r -c '.' <<< "$MATRIX")"
+        echo "TOOL_NAME: [$TOOL_NAME]"
+        echo "TOOL_REPO: [$TOOL_REPO]"
+        echo "REGEX: [$REGEX]"
