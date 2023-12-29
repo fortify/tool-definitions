@@ -52,7 +52,7 @@ function isAssetIncluded(tagName: string, assetName: string, downloadUrl: string
 	const includedByRegex = regex ? tagAndAssetName.match(`${regex}`)!=null : true;
 	const cached = isCached(downloadUrl);
 	const status = !cached ? (includedByRegex?'included':'not included') : 'cached';
-	core.debug(`${tagAndAssetName} ${status} (regex: ${regex})`);
+	core.info(`${tagAndAssetName} ${status} (regex: ${regex})`);
 	return status=='included';	
 }
 

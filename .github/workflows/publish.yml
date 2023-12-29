@@ -39,6 +39,7 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     strategy:
+      max-parallel: 1
       fail-fast: false
       matrix:
         include: ${{ fromJson(needs.setup.outputs.matrix)}}
@@ -64,6 +65,12 @@ jobs:
         regex: ${{ fromJSON(toJSON(matrix)).regex }}
         sign_key: ${{ secrets.SIGN_KEY }}
         sign_passphrase: ${{ secrets.SIGN_PASSPHRASE }}
+    - name: Commit updates
+      run: | 
+        git add . && git commit -m "chore: Update ${{ fromJSON(toJSON(matrix)).tool_name }} cache & resources" \
+          && git push || \
+          echo "No update needed or update failed"
+              
         
         
         
