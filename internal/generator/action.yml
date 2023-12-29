@@ -11,8 +11,8 @@ inputs:
   tool_repo:
     description: 'The GitHub repository for which to generate tool definitions. Required unless tool_urls is specified.'
     required: false
-  tools:
-    description: 'JSON string specifying tool versions & URLs for which to generate tool definitions, in the format {"version": "url", ...}. Required unless tool_repo is specified.'
+  tool_urls:
+    description: 'JSON string specifying tool versions & URLs for which to generate tool definitions, in the format {"<version>": "<url>", ...}. Required unless tool_repo is specified.'
     required: false
   regex:
     description: 'Optional regular expression to define what releases/assets to include, matching <release tag name>/<asset name>'

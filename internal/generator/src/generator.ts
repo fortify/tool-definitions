@@ -90,7 +90,7 @@ async function buildCacheForTools(toolVersionsAndUrls: any) : Promise<void> {
 async function main(): Promise<void> {
 	try {
 		const toolRepo = core.getInput("tool_repo");
-		const toolUrls = core.getInput("tools");
+		const toolUrls = core.getInput("tool_urls");
 		if ( toolRepo ) {
 			await buildCacheForToolRepoAssets(toolRepo);
 		} else if ( toolUrls ) {

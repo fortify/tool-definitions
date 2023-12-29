@@ -31758,7 +31758,7 @@ function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const toolRepo = core.getInput("tool_repo");
-            const toolUrls = core.getInput("tools");
+            const toolUrls = core.getInput("tool_urls");
             if (toolRepo) {
                 yield buildCacheForToolRepoAssets(toolRepo);
             }
