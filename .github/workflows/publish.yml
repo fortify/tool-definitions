@@ -28,7 +28,7 @@ jobs:
               {
                   "tool_name": "fcli",
                   "tool_repo": "fortify/fcli",
-                  "regex": ".*/(fcli-linux.tgz|fcli-mac.tgz|fcli-windows.zip)"
+                  "regex": ".*/(fcli-linux.tgz|fcli-mac.tgz|fcli-windows.zip|fcli.jar)"
               },
               {
                   "tool_name": "bugtracker-utility",
