@@ -1,0 +1,7 @@
+{
+  "rsa_sha256": "bG1aeLj6pyUNRr0Soq9YD/PwmbQ4VN5vkxPXH4X+ZgK36UYg/e9qn5xalBix7SKHXRlANhvMrffSBWSoh4yd9STSeb1BmjHIDLH604Ct2Rbda71AX+Fblv+Una1MbAvZYoHQENdeb82ouZmGehwZ29NNqYTdXk1SMCtnv4ol2BxLWye4uXLvCcYN1S/rnvSu+xh+ZV7y7qmnSdyBbXHNwfKLK05y6IJsZaFSIpZxcUZOx/bBik0JXBJtJVfkRrMSW7/Ssf9Qoy4o374awRV+R95gRMyHsAWyfdLU5ujaRM+Y78dl3IUozvVRvj7b2ewRpaEaMp9LnoGkAOMBU0u0uQ==",
+  "sha256": "138d16ab642ec30d16c3abcd6066b06788765766c98fd0e538c085674610fc85",
+  "version": "1.7.5",
+  "downloadUrl": "https://github.com/debricked/cli/releases/download/v1.7.5/cli_linux_i386.tar.gz",
+  "stable": true
+}
