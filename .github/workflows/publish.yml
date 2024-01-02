@@ -92,7 +92,7 @@ jobs:
         echo "TOOL_REPO: [$TOOL_REPO]"
         echo "REGEX: [$REGEX]"
     - name: Generate tool definitions
-      uses: ./internal/generator
+      uses: ./internal/cache-builder
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         tool_name: ${{ fromJSON(toJSON(matrix)).tool_name }}
