@@ -1,0 +1,7 @@
+{
+  "rsa_sha256": "HGheXtrHWXUbFPYr5VUICyY0Sdk2sveS2l0terBjYaEq/3zsajkj4nZFbSeLMz88wzWRszRbsBTMMFsCloXzOs3KgANir4+x8wueldSuhkZPk4C+HkdLBp/Zo9fUoemq2KgU8CBer1yGoleGQ8grX04hqnG9RblKRlW3/l39uhOGsbKzKpoF17T/e18lk9icf/HjmIwWjeEq93ido/1LXxsM+enKJzrFJ7HUbH3aRpe/Q1XbmlKzOolCTnR7Hl8PlQJcRPSRXkWpbfTG4vP/7MDj08YKlpCcbdj/UojuRN2B9byUfvBLkKHKGfisY1XTs8hywVa+/2b2r/T5iwsOgA==",
+  "sha256": "012e00fab914495ad235e8658207702869e02fffbd4d2adfcc3c2baf50fe8de9",
+  "version": "23.1.0",
+  "downloadUrl": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_23.1.0_x64.zip",
+  "stable": true
+}
