@@ -23,27 +23,32 @@ jobs:
              {
                   "tool_name": "fod-uploader",
                   "tool_repo": "fod-dev/fod-uploader-java",
-                  "asset_regex": ".*/FodUpload.jar"
+                  "asset_regex": ".*/FodUpload.jar",
+                  "add_semver": true
               },
               {
                   "tool_name": "fcli",
                   "tool_repo": "fortify/fcli",
-                  "asset_regex": ".*/(fcli-linux.tgz|fcli-mac.tgz|fcli-windows.zip|fcli.jar)"
+                  "asset_regex": ".*/(fcli-linux.tgz|fcli-mac.tgz|fcli-windows.zip|fcli.jar)",
+                  "add_semver": true
               },
               {
                   "tool_name": "bugtracker-utility",
                   "tool_repo": "fortify-ps/FortifyBugTrackerUtility",
-                  "asset_regex": ".*/FortifyBugTrackerUtility-.*.zip"
+                  "asset_regex": ".*/FortifyBugTrackerUtility-.*.zip",
+                  "include_semver": false
               },
               {
                   "tool_name": "vuln-exporter",
                   "tool_repo": "fortify/FortifyVulnerabilityExporter",
-                  "asset_regex": ".*/FortifyVulnerabilityExporter.zip"
+                  "asset_regex": ".*/FortifyVulnerabilityExporter.zip",
+                  "add_semver": true
               },
               {
                   "tool_name": "debricked-cli",
                   "tool_repo": "debricked/cli",
-                  "asset_regex": ".*/cli_.*.tar.gz"
+                  "asset_regex": ".*/cli_.*.tar.gz",
+                  "add_semver": true
               },
               {
                   "tool_name": "sc-client",
@@ -62,7 +67,8 @@ jobs:
                      "20.2.4": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.2.4_x64.zip",
                      "20.2.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.2.0_x64.zip",
                      "20.1.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.1.0_x64.zip"
-                  }
+                  },
+                  "add_semver": false
                }
           ]
       run: echo "matrix=$(jq -r -c . <<< "$CONFIG")" >> $GITHUB_OUTPUT
@@ -101,6 +107,7 @@ jobs:
         asset_regex: ${{ fromJSON(toJSON(matrix)).asset_regex }}
         sign_key: ${{ secrets.SIGN_KEY }}
         sign_passphrase: ${{ secrets.SIGN_PASSPHRASE }}
+        add_semver: ${{ fromJSON(toJSON(matrix)).add_semver }}
     - name: Configure git
       run: |
         git config user.name github-actions
