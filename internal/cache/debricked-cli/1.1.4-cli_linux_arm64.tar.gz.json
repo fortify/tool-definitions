@@ -1,7 +1,0 @@
-{
-  "rsa_sha256": "UwrdBhL5lPg06Y9KAvmRswIl+BERyMW2hUU04QmTgGeuBKFWyJiXhX82Dhvx9reGoBwsl2XHByQBYse2Nelru5xyckivH4e38Ky8HDM7WZogU2EVYq3O8txSQoLsSkQ8kzHqvcuhlAWHJwdNtgmMdNrHgu9QNVMziWTH2em2pMOMOOyJ4JbIXEqXwdsIA1mQlPFeX4HFx70C7yVIhc0rtnySc7/GVxrOdNjzWsOAO0FPgVJ3OwHIfzmH0tI3YAok8YuajrPLBogqdv+7s2m1dlipU9MDz/GVHbRJWQ1WOvbBNVJ5iC5TLF4Btbcm1cjsZ0RuS1YWXdv2NyjizZOfYA==",
-  "sha256": "9e92d933309770f519c1677b4ddd2f24d1316cc4b780e6d5c0472af768b98e96",
-  "version": "1.1.4",
-  "downloadUrl": "https://github.com/debricked/cli/releases/download/v1.1.4/cli_linux_arm64.tar.gz",
-  "stable": true
-}

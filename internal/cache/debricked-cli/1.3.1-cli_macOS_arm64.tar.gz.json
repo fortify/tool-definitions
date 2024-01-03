@@ -1,7 +1,0 @@
-{
-  "rsa_sha256": "OLIQrpOe0kC8W7/vtW2ttE0GPIMHiaQAjFo+F8grmwm4AOuVjivmp8lFdPAh41VrKLBPEE+5BiBd2H5Um+pE6yWF01vbkpXz3mLORL/o4go+GW11I+eGZ6wm1g6Iz5DYN2ZNHfJQvU9EXw1y8Y9LNjbvT/1OTC/r+2A4AL8Sy4Ki411wZrRpV9mZGeWRlOQN2dHVn/YSr8A76mbW3GcFXvr4P/RtaOtQfkj68posSoT6kmaLhhSTQXmnZ3NgswABIlGh0ml/hfz32/Y4rzC7i4vGSDW6EPi7d2NNVsq9ZF2uzngv7uMmpt86rm2Q2pam9ghxaFiR+Lj47v2cBFnSjw==",
-  "sha256": "7f4d6606aed2bc5b4592b4c79d929ae847c8cb5e75fe190233574465be0325b1",
-  "version": "1.3.1",
-  "downloadUrl": "https://github.com/debricked/cli/releases/download/v1.3.1/cli_macOS_arm64.tar.gz",
-  "stable": true
-}

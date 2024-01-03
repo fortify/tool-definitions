@@ -1,7 +1,0 @@
-{
-  "rsa_sha256": "oORVxQAQOUEtVVKF6RUdZzYC4dpvI293ZQ1kEnFcVn8A7skhcBMZkW47cLDaykswUmhqKT8zabcpDsLKTC3lDopFvqml/07kkPHHDddtIjlGoTQwRdE9900DiFQuhDaDuETXCUZDsp3Mbs29SSJV3AeyvL5ek5X55Sr8tQEvQ5M/AKo8RwdUQpmLQ60VTq55JhWf5+qDx3EsGvx5pTD163JYUdu4NGKQz9bFSAjxpsY0N8nEBLIv27Gt8FoC1LDJDeZHt6U30ihUGnggwkNSZZabGTxaQR47RXKcXgC313zO3yKSiC6684q3youaxQanj/dsrbc92HepGOrSsEKhIg==",
-  "sha256": "33f9b1b3c31abc1eda9d03fda9673490b86a3e814de6e1f3ec36fc13728ab490",
-  "version": "1.4.0",
-  "downloadUrl": "https://github.com/debricked/cli/releases/download/v1.4.0/cli_windows_arm64.tar.gz",
-  "stable": true
-}

@@ -1,7 +1,0 @@
-{
-  "rsa_sha256": "mKUYdRtzyDqdxcYnKQQcC0CyUyaDZCTRUKZDZeki0tXB+fyUQtXRcRwFsA9RZXeMZb/nLhllIWLMlXjKQGD10qB04jqJvxjZWARz6m43vXxRJAe6vrGWwB9dQVkJ2MkA7LxM1Mai5FbhypB3LWQdf5u0bNl1RHkcscMP67xJfgcIVT9TbPiiQaGwLQBrOjtlO7xFkz7bXo9TQwyqlPrIkl/YVgzwpbac/8hqh6NahLwCeOdotsSyCZtrJNgIWxpXPPbssFbGZ5SkaVT2jcStxOOSLzIk/8ZethekgIWOgK9BDX5LtXd0+jUJ6kPIVXHJaVDTM4aTwyeGDTTrN1juFA==",
-  "sha256": "c90bfd0289fb429f2813363ace6780482725a08402b5551418b2f2db3578ff15",
-  "version": "dev_develop",
-  "downloadUrl": "https://github.com/fortify/fcli/releases/download/dev_develop/fcli-mac.tgz",
-  "stable": false
-}

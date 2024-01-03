@@ -23,27 +23,27 @@ jobs:
              {
                   "tool_name": "fod-uploader",
                   "tool_repo": "fod-dev/fod-uploader-java",
-                  "regex": ".*/FodUpload.jar"
+                  "asset_regex": ".*/FodUpload.jar"
               },
               {
                   "tool_name": "fcli",
                   "tool_repo": "fortify/fcli",
-                  "regex": ".*/(fcli-linux.tgz|fcli-mac.tgz|fcli-windows.zip|fcli.jar)"
+                  "asset_regex": ".*/(fcli-linux.tgz|fcli-mac.tgz|fcli-windows.zip|fcli.jar)"
               },
               {
                   "tool_name": "bugtracker-utility",
                   "tool_repo": "fortify-ps/FortifyBugTrackerUtility",
-                  "regex": ".*/FortifyBugTrackerUtility-.*.zip"
+                  "asset_regex": ".*/FortifyBugTrackerUtility-.*.zip"
               },
               {
                   "tool_name": "vuln-exporter",
                   "tool_repo": "fortify/FortifyVulnerabilityExporter",
-                  "regex": ".*/FortifyVulnerabilityExporter.jar"
+                  "asset_regex": ".*/FortifyVulnerabilityExporter.jar"
               },
               {
                   "tool_name": "debricked-cli",
                   "tool_repo": "debricked/cli",
-                  "regex": ".*/cli_.*.tar.gz"
+                  "asset_regex": ".*/cli_.*.tar.gz"
               },
               {
                   "tool_name": "sc-client",
@@ -92,13 +92,13 @@ jobs:
         echo "TOOL_REPO: [$TOOL_REPO]"
         echo "REGEX: [$REGEX]"
     - name: Generate tool definitions
-      uses: ./internal/cache-builder
+      uses: ./internal/generator
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         tool_name: ${{ fromJSON(toJSON(matrix)).tool_name }}
         tool_repo: ${{ fromJSON(toJSON(matrix)).tool_repo }}
         tool_urls: ${{ toJSON(fromJSON(toJSON(matrix)).tool_urls) }}
-        regex: ${{ fromJSON(toJSON(matrix)).regex }}
+        asset_regex: ${{ fromJSON(toJSON(matrix)).asset_regex }}
         sign_key: ${{ secrets.SIGN_KEY }}
         sign_passphrase: ${{ secrets.SIGN_PASSPHRASE }}
     - name: Configure git

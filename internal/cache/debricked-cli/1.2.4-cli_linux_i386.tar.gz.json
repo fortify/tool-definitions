@@ -1,7 +1,0 @@
-{
-  "rsa_sha256": "aqd/gYskUl8ct44/r+zZa6BLxc2B17rF5pOHTHAYzgm/VRZhr5/3WqrPbZPR3JjCXXunjOovTqSwnVNGQFxNle8jqD3RpM3Agka98TVkzjrHkiM+7KwtKUmwuHJtcgWXjq18NKkA10CgP8Wca1n1Ox+k14C1kiaPl5TndWzBexjJZqh1cRGBXlrS7UhRDCyXYL5/ImnDqbPWjDB3XztliBfWM7dYxd4TNB6sxkbcjXvR4jjCR6u7OTjUKu1ekOr6IqreGN25BV8v4aKeMRIEEy086dxLQCk53xTgBcbPnye8Dtr+oKf2lyaFusGqlXWRG7gcEMpBx9Ir6ZnXtje2bQ==",
-  "sha256": "95d326499e538718e1fb2e902f9e283b15e05946a18c259ece50cd03ad369820",
-  "version": "1.2.4",
-  "downloadUrl": "https://github.com/debricked/cli/releases/download/v1.2.4/cli_linux_i386.tar.gz",
-  "stable": true
-}

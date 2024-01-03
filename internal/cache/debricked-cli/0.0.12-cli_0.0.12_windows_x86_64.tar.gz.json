@@ -1,7 +1,0 @@
-{
-  "rsa_sha256": "mjTDHPCApmhwQk7gGYpbHW3XjzxB/UgmqnLMxQZQKBklkookwJ748mB0bP4klJTNPkj6EfaxUfWbvNVJhpI06a7rGfNEhsj8B97MJQGlNhMdSRTWSHUP42V8qKRw2VZRmtnHibbbzh1ceX35ljNpxoYD9svMEeENHmiw0uxZDzMfudvJk+e0wRKQc4dSigSQMHvdDLz96Q8KpYvRul6bRMFHXwrdbX50fpU+mFdcabnldMCCOMr7lk9hEkdOAEipToH4V9moMXKPMg8CERZTVkqNP2RRbEG7kF6pM87moAsyWWaPcoYF2X/wkOxIcNR2ACTX9OnYKWA3ErnD1pT5mw==",
-  "sha256": "a3c1dbfe2ba6c76947cb549f02a9da1dbb7b10c87d274354b7168bf98d7e0b70",
-  "version": "0.0.12",
-  "downloadUrl": "https://github.com/debricked/cli/releases/download/v0.0.12/cli_0.0.12_windows_x86_64.tar.gz",
-  "stable": true
-}
