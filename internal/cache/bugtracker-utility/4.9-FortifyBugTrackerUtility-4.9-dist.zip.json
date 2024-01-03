@@ -1,0 +1,7 @@
+{
+  "rsa_sha256": "T3fH3GHEy4+vWKxrBMRA2rTaCXu9eZyfRR9PG6tBr0lpVJusD6mE7BowZK7WXrbfaAt1A0sLTzxW0GKHl3nW7YnOTYdIc5oGMCjecBloiZQQwU42wIWdX+rDYlzg4QsHizYcG15M+j0ny9bHFvHJfD/ztwAeqM+zBI0q7frSrLsbQZUxOcv+F0xmRCNElnhj5sVfsO45DftFqmmcXQ9CJIlVP0RVFZc5RqMM8bM/dQ+bgpRX6g3XYI/2PidZYcXIfPU7fDAvPs/KJuBpbSKh88vF3kAKdrDlDEztlWyTRtfrQrFxMQoiRm5CM2Jnv+fbpNE/iURNqNAmmblkYq3MeQ==",
+  "sha256": "01b039972acdc894ba18e80801e6dad363849b19c2e01cb4f502bd068879ade8",
+  "version": "4.9",
+  "downloadUrl": "https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.9/FortifyBugTrackerUtility-4.9-dist.zip",
+  "stable": true
+}
