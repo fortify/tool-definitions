@@ -1,0 +1,7 @@
+{
+  "rsa_sha256": "SDzIXqqiZOd6hVuX+bMn+/O5X9AB6rnP7UOz/fjJlAhQr+90FWxKRFMhDE3eTGDe0LhOkeh894nklOVaKIVVxTbyOgt/n5ZFRm9/efoIj/gLVc18sTIqajMotIEoE6zoMOkYwDMc/UX9/3M/HPppbTOwwwkjaFsJek85VoMfJzxANe/of80155vM5S1VLot988iMs39xFyTdQXi6Ec0qPv03XfihOlB9bjj6p8CXe3qCL2W+KP9I4yYVyleshyktFULPAOmB5yFfjz2CHa3Vy3vY5YUYhOLiaWLUNDQFQe+yD5/AbDpGR460voVJyihNAgJcCS9MSk04TWfGeTsE1Q==",
+  "sha256": "5a642a9ed2aed5b2f2fd122a2f748b7439529c41d8794ce4290117ea49336a22",
+  "version": "3.0.0",
+  "downloadUrl": "https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.0/FodUpload.jar",
+  "stable": true
+}
