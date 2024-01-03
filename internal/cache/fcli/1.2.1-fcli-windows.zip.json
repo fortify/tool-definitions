@@ -1,0 +1,7 @@
+{
+  "rsa_sha256": "MudYJgL2x6g59VmPZsJDd/vUY4Lyf4Q5WT8YAlybhDiZI60jGf8prU0XHwwWSjTtWiM4oHRqVvQDa6TLtnUuna8Fvqel5IO+/DKvRsGcsWvOFngmk7r7kKN2e12Pkr8WlQnAJ9IGgDH/QihIYPeS5NIGftjy8/2DoCNu9aJJ8h1nRETGZk0MpBlc+TLgRXO16A8e5+2K3q4PCqIzRwuT9ERvwKq3y/SZjYKU+PwUWotHPy4Iljgf/AIThngqiv8xZYhewqvAXBQCkroI1ViQyL9Qnf520x2yVH0bvmqgkwEYeMN/lNAvCoHIsv/dwp2wH58AeTwpgDJFaP9BsWlhyQ==",
+  "sha256": "aa907601dd19d43c1d1fea199be3877d87c81f5aedde10122b8ea369a2c64d25",
+  "version": "1.2.1",
+  "downloadUrl": "https://github.com/fortify/fcli/releases/download/v1.2.1/fcli-windows.zip",
+  "stable": true
+}

@@ -1,0 +1,7 @@
+{
+  "rsa_sha256": "mdckaUNSljkpfIHz+TYxhBzt9p7tvhOSnSetKrrcEw0IaaMjPt7i5jYLhjYvsjrJZ8pGtGAE46HfZ+wqPsrgxWpI7CUlUd7Htt1yU942QpLDGlTfjzUk1J1hl1u/qT5z8DdGB47PJ0wxLZLkMvvFx4w8p3LbOjv5PDia807MYSD+zqxvEauVPM4A4QwOFxeFtNEIlmQrgMhRVQXf6Un7/jmklOkz28+8z3y72iq0O5qPdn5RwLjZQajw4vA3yY1T18FChP/qEDE4ig7iRvSmAgPnMJhoHL/DXV1ZgMoZKQcqg+rca15s6M8z0at+jecCZ7tBI4yr8ifpKfJMWPqfTg==",
+  "sha256": "bf8570ca2fb59ddd27373779a51d9b494a93110420dfc6e7dadf3423bf244682",
+  "version": "1.2.5",
+  "downloadUrl": "https://github.com/fortify/fcli/releases/download/v1.2.5/fcli-linux.tgz",
+  "stable": true
+}

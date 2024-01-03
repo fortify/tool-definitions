@@ -1,0 +1,7 @@
+{
+  "rsa_sha256": "jY6BW2KmhqaFoPr/NZFx/jX5oVRsjxpx0aoItpV+oOmZFGAo1ZtfanEssWgb/aARh9r9J/pHT9tq0qRANC4TA7GhxwuXrJX3k57HLytACCizNJrx8PJRwYqDjTNg08NM/Ur2Kkt3RCTW7YnsEoijUL6h3oqzhC/9VtEXtd7wRaiCN6KXrmdaLA+d2JCMzwDaEOFI0agwFaI+m6mxgz+2Q6Jj6Iq8IUYfHT/CE1NdXhhvmswIWr1wEvZ97fh4/khp4m6idq+JCQK/XPotP11WydlguaLrwtUMq+XALaFFSvO3TrF7jGd8YuKuPEcjRqSq/l7yzhm53B5aKhJfo8SbKA==",
+  "sha256": "63d0a2d7df18edb91b5a4f87a6b124d621180e35d1e10ed965e82cd827887b9e",
+  "version": "dev_develop",
+  "downloadUrl": "https://github.com/fortify/fcli/releases/download/dev_develop/fcli-windows.zip",
+  "stable": false
+}
