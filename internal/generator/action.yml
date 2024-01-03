@@ -16,7 +16,6 @@ inputs:
     required: false
   asset_regex:
     description: 'Optional regular expression to define what releases/assets to include, matching <version without v-prefix>/<asset name>'
-    default: 'skip'
     required: false
   sign_key:
     description: 'Base64-encoded RSA signing key, usually provided through GitHub secret'
@@ -24,6 +23,10 @@ inputs:
   sign_passphrase:
     description: 'Passphrase for the RSA signing key provided throgh sign_key, usually provided through GitHub secret'
     required: true
+  add_semver:
+    description: 'Boolean indicating whether semantic versions should be added to the output'
+    default: 'false'
+    required: false
 runs:
   using: node20
   main: 'dist/index.js'

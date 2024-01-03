@@ -7,6 +7,7 @@ import { default as Stream } from 'node:stream'
 import type { ReadableStream } from 'node:stream/web'
 import * as constants from './constants';
 import { components } from "@octokit/openapi-types"
+import * as semver from 'semver'
 
 export class Artifact {
     constructor(version : string, downloadUrl : string, stable: boolean) {
@@ -19,30 +20,6 @@ export class Artifact {
     stable : boolean;
     rsa_sha256 = "";
     sha256 = "";
-    
-    /*
-    compareByVersion(other: Artifact) {
-        // 1. Split the strings into their parts.
-        const a1 = this.version.split('.');
-        const b1 = other.version.split('.');
-        // 2. Contingency in case there's a 4th or 5th version
-        const len = Math.min(a1.length, b1.length);
-        // 3. Look through each version number and compare.
-        for (let i = 0; i < len; i++) {
-            const a2 = +a1[ i ] || 0;
-            const b2 = +b1[ i ] || 0;
-            
-            if (a2 !== b2) {
-                return a2 > b2 ? -1 : 1;        
-            }
-        }
-        
-        // 4. We hit this if the all checked versions so far are equal
-        //
-        return b1.length - a1.length;
-        
-    }
-    */
 }
 
 export async function getArtifactsByVersion() : Promise<Map<string,Array<Artifact>>> {
@@ -52,10 +29,10 @@ export async function getArtifactsByVersion() : Promise<Map<string,Array<Artifac
         arr.push(artifact);
         return map.set(artifact.version, arr);
     };
-    return artifacts.reduce(addToMap, new Map<string,Array<Artifact>>());
+    return addSemanticVersions(artifacts.reduce(addToMap, new Map<string,Array<Artifact>>()));
 }
 
-export async function getArtifacts() : Promise<Array<Artifact>> {
+async function getArtifacts() : Promise<Array<Artifact>> {
     let result : Array<Artifact>;
     if ( constants.toolRepo ) {
         result = await getGitHubArtifacts(constants.toolRepo);
@@ -140,4 +117,28 @@ async function updateArtifact(artifact: Artifact) : Promise<Artifact> {
     artifact.rsa_sha256 = sign.sign({key: constants.signKey, passphrase: constants.signPassphrase}, "base64");
     artifact.sha256 = hash.digest('hex');
     return artifact;
+}
+
+function addSemanticVersions(artifactsByVersion: Map<string,Array<Artifact>>) : Map<string,Array<Artifact>> {
+    const result = artifactsByVersion;
+    if ( constants.includeSemVer ) {
+        const allVersions = Array.from(artifactsByVersion.keys());
+        allVersions.forEach(v=>addSemanticVersionsForVersion(result, v, allVersions));
+    }
+    //return new Map([...result.entries()].sort((e1,e2)=>semver.compareLoose(new semver.SemVer(e1[0]),new semver.SemVer(e2[0]))));
+    return result;
+}
+
+function addSemanticVersionsForVersion(artifactsByVersion: Map<string,Array<Artifact>>, version: string, allVersions: Array<string>) : void {
+    if ( semver.valid(version) ) {
+        const major = semver.major(version).toString();
+        const minor = semver.minor(version).toString(); 
+        const majorMinor = `${major}.${minor}`       
+        if ( !artifactsByVersion.has(major) ) {
+            artifactsByVersion.set(`${major}`, artifactsByVersion.get(semver.maxSatisfying(allVersions, major, false) ?? '') ?? []);
+        }
+        if ( !artifactsByVersion.has(majorMinor) ) {
+            artifactsByVersion.set(`${majorMinor}`, artifactsByVersion.get(semver.maxSatisfying(allVersions, majorMinor, false) ?? '') ?? []);
+        }
+    }
 }
