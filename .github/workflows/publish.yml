@@ -38,7 +38,7 @@ jobs:
               {
                   "tool_name": "vuln-exporter",
                   "tool_repo": "fortify/FortifyVulnerabilityExporter",
-                  "asset_regex": ".*/FortifyVulnerabilityExporter.jar"
+                  "asset_regex": ".*/FortifyVulnerabilityExporter.zip"
               },
               {
                   "tool_name": "debricked-cli",
