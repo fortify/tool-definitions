@@ -36,7 +36,7 @@ jobs:
                   "tool_name": "bugtracker-utility",
                   "tool_repo": "fortify-ps/FortifyBugTrackerUtility",
                   "asset_regex": ".*/FortifyBugTrackerUtility-.*.zip",
-                  "include_semver": false
+                  "add_semver": false
               },
               {
                   "tool_name": "vuln-exporter",
