@@ -35086,8 +35086,8 @@ function addSemanticVersions(artifactsByVersion) {
         const allVersions = Array.from(artifactsByVersion.keys());
         allVersions.forEach(v => addSemanticVersionsForVersion(result, v, allVersions));
     }
-    //return new Map([...result.entries()].sort((e1,e2)=>semver.compareLoose(new semver.SemVer(e1[0]),new semver.SemVer(e2[0]))));
     return result;
+    //return new Map([...result.entries()].sort((e1,e2)=>compareSemVer(e1[0],e2[0])));
 }
 function addSemanticVersionsForVersion(artifactsByVersion, version, allVersions) {
     var _a, _b, _c, _d;
@@ -35103,6 +35103,28 @@ function addSemanticVersionsForVersion(artifactsByVersion, version, allVersions)
         }
     }
 }
+/*
+function compareSemVer(v1: string, v2: string) : number {
+    let result: number;
+    if ( semver.valid(v1) && semver.valid(v2) ) {
+        result = semver.rcompare(v1,v2);
+        core.debug(`rcompare('${v1}','${v2}'): ${result}`);
+    } else if ( semver.valid(v1) && semver.validRange(v2) ) {
+        result = semver.maxSatisfying([v1], v2) ? 1 : -1;
+        core.debug(`maxSatisfing1('${v1}','${v2}'): ${result}`);
+    } else if ( semver.valid(v2) && semver.validRange(v1)) {
+        result = semver.maxSatisfying([v2], v1) ? 1 : -1;
+        core.debug(`maxSatisfing2('${v1}','${v2}'): ${result}`);
+    } else if ( semver.validRange(v1) && semver.validRange(v2)) {
+        result = `${v1}.`.startsWith(`${v2}.`) ? 1 : -1;
+        core.debug(`maxSatisfing2('${v1}','${v2}'): ${result}`);
+    } else {
+        result = v1.localeCompare(v2);
+        core.debug(`localCompare('${v1}','${v2}'): ${result}`);
+    }
+    return result;
+}
+*/ 
 
 
 /***/ }),
