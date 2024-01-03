@@ -7,7 +7,7 @@ import * as artifact from './artifact';
 async function main(): Promise<void> {
 	try {
 		const artifactsByVersion = await artifact.getArtifactsByVersion();
-		artifactsByVersion.forEach((value,key)=>core.debug(`${key}: ${value.reduce((s,v)=>s+=v.downloadUrl+',','')}`));
+		artifactsByVersion.forEach((value,key)=>core.info(`${key}: ${value.reduce((s,v)=>s+=v.downloadUrl+',','')}`));
 	} catch (err) {
 		core.setFailed("Action failed with error: " + err);
 	}

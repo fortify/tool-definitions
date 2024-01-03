@@ -35198,7 +35198,7 @@ function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const artifactsByVersion = yield artifact.getArtifactsByVersion();
-            artifactsByVersion.forEach((value, key) => core.debug(`${key}: ${value.reduce((s, v) => s += v.downloadUrl + ',', '')}`));
+            artifactsByVersion.forEach((value, key) => core.info(`${key}: ${value.reduce((s, v) => s += v.downloadUrl + ',', '')}`));
         }
         catch (err) {
             core.setFailed("Action failed with error: " + err);
