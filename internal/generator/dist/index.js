@@ -34921,7 +34921,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.workspaceDir = exports.artifactTypes = exports.semver = exports.toolUrls = exports.toolRepo = exports.assetRegex = exports.tagRegex = exports.githubToken = exports.toolName = exports.signPassphrase = exports.signKey = void 0;
+exports.workspaceDir = exports.tagMappings = exports.artifactTypes = exports.semver = exports.toolUrls = exports.toolRepo = exports.assetRegex = exports.tagRegex = exports.githubToken = exports.toolName = exports.signPassphrase = exports.signKey = void 0;
 const core = __importStar(__nccwpck_require__(2186));
 // TODO: Fix input handling from matrix in publish.yml. If certain properties are not defined
 //       in the setup job, these are passed as the string 'null' in the generate-tool-definitions
@@ -34945,6 +34945,7 @@ exports.toolRepo = nullIfEmpty(core.getInput("toolRepo", { required: false }));
 exports.toolUrls = nullIfEmpty(core.getInput("toolUrls", { required: false }));
 exports.semver = defaultIfEmpty(core.getInput("semver", { required: false }), "none");
 exports.artifactTypes = JSON.parse(defaultIfEmpty(core.getInput("artifactTypes", { required: false }), '{".*": "default"}'));
+exports.tagMappings = JSON.parse(defaultIfEmpty(core.getInput("tagMappings", { required: false }), '{"(.*)": "$1"}'));
 exports.workspaceDir = process.env.GITHUB_WORKSPACE;
 
 
@@ -35234,7 +35235,7 @@ function getGitHubVersionDescriptors(toolRepo) {
 function getGitHubVersionDescriptor(release) {
     return __awaiter(this, void 0, void 0, function* () {
         const result = new descriptors_1.VersionDescriptors();
-        const version = release.tag_name.replace(/^v(\d+.*)$/, '$1'); // Remove 'v' prefix if it is followed by at least one number;
+        const version = mapTag(release.tag_name).replace(/^v(\d+.*)$/, '$1'); // Remove 'v' prefix if it is followed by at least one number;
         let releaseExcludeReason = getReleaseExcludeReason(release);
         if (!releaseExcludeReason) {
             const versionDescriptor = new descriptors_1.VersionDescriptor(version, !release.prerelease);
@@ -35251,6 +35252,15 @@ function getGitHubVersionDescriptor(release) {
         }
         return result;
     });
+}
+function mapTag(tag) {
+    for (const partialRegex in constants.tagMappings) {
+        const regex = `^${partialRegex}$`;
+        if (tag.match(`{regex}`)) {
+            return tag.replace(regex, constants.tagMappings[partialRegex]);
+        }
+    }
+    return tag;
 }
 function getReleaseExcludeReason(release) {
     if (release.draft) {

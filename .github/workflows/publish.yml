@@ -42,7 +42,8 @@ jobs:
                   "toolName": "bugtracker-utility",
                   "toolRepo": "fortify-ps/FortifyBugTrackerUtility",
                   "assetRegex": "FortifyBugTrackerUtility-.*\\.zip",
-                  "semver": "none"
+                  "semver": "major",
+                  "tagMappings": { "(\d+.\d+)", "$1.0" }
               },
               {
                   "toolName": "vuln-exporter",
@@ -128,6 +129,7 @@ jobs:
         signPassphrase: ${{ secrets.SIGN_PASSPHRASE }}
         semver: ${{ fromJSON(toJSON(matrix)).semver }}
         artifactTypes: ${{ toJSON(fromJSON(toJSON(matrix)).artifactTypes) }}
+        tagMappings: ${{ toJSON(fromJSON(toJSON(matrix)).tagMappings) }}
     - name: Commit & Push changes
       uses: actions-js/push@master
       with:

@@ -40,7 +40,7 @@ async function getGitHubVersionDescriptors(toolRepo: string) : Promise<VersionDe
 
 async function getGitHubVersionDescriptor(release: components["schemas"]["release"]) : Promise<VersionDescriptors> {
     const result : VersionDescriptors = new VersionDescriptors();
-    const version = release.tag_name.replace(/^v(\d+.*)$/, '$1'); // Remove 'v' prefix if it is followed by at least one number;
+    const version = mapTag(release.tag_name).replace(/^v(\d+.*)$/, '$1'); // Remove 'v' prefix if it is followed by at least one number;
     let releaseExcludeReason = getReleaseExcludeReason(release);
     if ( !releaseExcludeReason ) {
         const versionDescriptor = new VersionDescriptor(version, !release.prerelease);
@@ -55,6 +55,14 @@ async function getGitHubVersionDescriptor(release: components["schemas"]["releas
         core.info(`Ignoring release tag ${release.tag_name} (${releaseExcludeReason})`);
     }
     return result;
+}
+
+function mapTag(tag: string) : string {
+    for ( const partialRegex in constants.tagMappings ) {
+        const regex = `^${partialRegex}$`;
+        if ( tag.match(`{regex}`) ) { return tag.replace(regex, constants.tagMappings[partialRegex]); }
+    }
+    return tag;
 }
 
 function getReleaseExcludeReason(release: components["schemas"]["release"]) : string|undefined {

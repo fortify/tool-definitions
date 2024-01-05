@@ -17,6 +17,9 @@ inputs:
   tagRegex:
     description: 'Optional regular expressions to define what release tags to include'
     required: false
+  tagMappings:
+    description: 'Optional JSON string specifying release tag regex to replacement tag, in the format {"<tag-regex>": "<replacement>", ...}. The replacement can use $<ref> to reference indexed or named capturing groups.'
+    required: false
   assetRegex:
     description: 'Optional regular expression to define what releases assets to include'
     required: false
