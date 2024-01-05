@@ -130,10 +130,6 @@ jobs:
         semver: ${{ fromJSON(toJSON(matrix)).semver }}
         artifactTypes: ${{ toJSON(fromJSON(toJSON(matrix)).artifactTypes) }}
         tagMappings: ${{ toJSON(fromJSON(toJSON(matrix)).tagMappings) }}
-    - name: Commit & Push changes
-      uses: actions-js/push@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
     - uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "chore: Update cache & tool definitions"
