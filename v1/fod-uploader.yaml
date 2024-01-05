@@ -1,0 +1,203 @@
+defaultVersion: 5.4.0
+versions:
+  - version: 5.4.0
+    aliases:
+      - "5"
+      - "5.4"
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v5.4.0/FodUpload.jar
+        rsa_sha256: f4Y/MlYic8nFL2PELYgDF5q8uOOfY6RuidLmnqmvOwkEx8KK95L1a74d63SqI+bxY+RXpP7/eFHryDwqtaIJ4NsAIa8tlVbH16T1YUzT5O/kIgiuIDJTrZuiYRZ8zi296hgqllTrDYLft34/roJG7wfG4IYphrOxgyeUNH6w4jK3LCek/z/9CnP/GiUv4i41LhKDsuvFrUoKP9fR9/z6KdQjer6f72d+Py1JWmyxoNffL20h2s+/0YTHx8p8tmxkZh1ZYNuRaylcT9AS38y8bc5HvtnXlJcTYR8LAQsGre0VNTWQVJSXvNsMoFC4jSP3uNhfHAKPEY+YWC951hGq2Q==
+  - version: 5.3.1
+    aliases:
+      - "5.3"
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v5.3.1/FodUpload.jar
+        rsa_sha256: Mld1ujs73zfxJB18qxxDz+EzJxQqz2V5oyLkfBr3cIbpKy0cvD3Cax9ZPZVwXpL9Oq/11e6m7E68mhOFk4w9vQqoe/ckd70H6fFaGuexXQEiGLhzLazTiEEU+QlF+DXF0mpD0VzPKIE+ZKUkLXGUNXXhphYff0mq6o8IDtekhi7KShhfDspY5P3WMu8eK0zKT6NRCWhozw+BVukOSDZG5TdQ3POlPJYUF/HLuD3leT/DBO28QSleU1aHRenctoluWberXDreralWVs3rZqY63whTgoByLfg//DnGHPiCzTeDhRvFMi2u2LBgxWbySSB4GzpzQFc81pBrC+6q5vgjMg==
+  - version: 5.3.0
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v5.3.0/FodUpload.jar
+        rsa_sha256: q7ymGeiCiki9jACmxjxP/rc+FR/pv6ZCtOls1kGgwWEZrk3f8t5kGZDlF/2PwwxMB2OhME2qlOYk1LNJ0SMpZGsoXGbLFehilSXX6K2t3VcQG/lOrcJWwMiqCzbaLlsiu7V+mfvh9GIf6IqDxnUO4h0zYPrmgD/iYvpbnls1ImvEouCdW0/JC3hj9DmLY08ERIic7oyxWUDEolWz463FhjDxwrGxovBtE3WqbCuhDRDIRid4vOQTIkGoCiev9BORyTAkJb1KE+/+1T592W9tv13ZGn5ZwsMyixObaar+0ij6HPN71mhynxCqZz615iywfP+Lrji6pTp++pDFXi7BCA==
+  - version: 5.2.1
+    aliases:
+      - "5.2"
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v5.2.1/FodUpload.jar
+        rsa_sha256: ERJzpm5D/mkwxLoxvl68Uw/tB73LByTs1u8+kiLKcCsvwK6sLBpKHvAIYUPwoqt3AGweyPMd/f/vmPjadwR0dU/pRn9Qtf5RbVJ0ZyRe2uOz9KqDNjZSuWIzP2IgejhFDJUGv8XknbcKC+ClgfOaWWII0w9lY2R81oH/jqWlep5BD+yZvG7Cx/Hfn6PnuHkY7B1aR2XeOrZI2P02AlUwlYGAdNw+7fSnvXzetQ9d8IgtDUEQL3iCoLQX6Ckr5kBgKBhZ1cE/rUV56VR5yNDtzC3m0mrpV6Acw9v1xxpKDYgsXA/xh7eLGv7j+qJPRyZ5BWc7OjBp05aA3qbvrox2Vg==
+  - version: 5.2.0
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v5.2.0/FodUpload.jar
+        rsa_sha256: UnI+iMODdAyXzyFu061D9vzkUX4lel+Zkq0s/KQoBZ07YOcWsd41ClRAHofT/VsQYNhktZZGD9xJA4PBcYAohyvI0mrZ7HeqgnJiaoWwQ6EuM/OGy60PSYjkYa2AkwzXC2YcVCloIgl7crWhp9uHWvqLAeTp6T3YfTBR8YBo6fPE2dXGY5RUIEz7UZG0hJto2J986jb8OBGok2fRg+rJuIi+Qd9apbcmqNVOc9ssAsQ6DPV/qdw3ZPUhcvRk4LNDmXaEbqkMl1MDPb2GFmDEg9zL/JZyWjIvGtbzLfH6h43DEq/cDrpsi6flMEgE+nxl5rjvNn9gGBz7LEtSI0LwpA==
+  - version: 5.0.1
+    aliases:
+      - "5.0"
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v5.0.1/FodUpload.jar
+        rsa_sha256: EEg/Mz6tY7dMVzBeQBrKhmG93exu5x7e1wFibYLT+jJoB42pGPZXyxBXjHQnbpoUVOuTee2XLd/2NLurnJbhAcOpNPnnWkisFZ/eQ3RtlRZg54XU1nYaoTGcBigUxTtkUE1i9QmXn8hLDbJvRF6Fwt9NPcgsY7E3ztEEVgVE1EjctPqgsL0BpgawWQ9T0lVodndT4ZIGdiPqk7Tc3mjnTvmRd7xEKQTijxVID27IAn0Az+d31q7IMT7i+Q1hvE82hoGlhGSPf3y2XQBfl56K/mjuF50/CCZLv7K9O7UbYGZ6a+UnlyaR6Dl8KQTx8S8H5H1+Fu7RDxGH0afM4drtWA==
+  - version: 5.0.0
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v5.0.0/FodUpload.jar
+        rsa_sha256: pDljT/QKCNk9d3vw+22jcUrNGtWi+FjYVikoDg4JUuhmIx83hftHpbgBw+Mh5LyGUETHjrubtsSWzS/4hAZZOv3oHMrczODSD2AWS9to5t3N6C9H2cpp/81XbHNfI0r9tIdkXY17KpUzn7MoBotKDmkFKcXDjQ6mZVBzRtv2wZz7JiCNwIv/1TqcM1faT4UYM/6lfdrOklRTUHttmX0VNQWAOL4i38oTjfd1Kivj2IMzvCH8LsaRwqAbYphdImnxc3DmBI4tjkLY2M0NEw9XmFTDFlI5zUyQdBKT878DTwAjAfQancqKoPN9gpKTkbUyZ17IuGeVMFUeTx2Fsjjafw==
+  - version: 4.0.4
+    aliases:
+      - "4"
+      - "4.0"
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v4.0.4/FodUpload.jar
+        rsa_sha256: LG91mHqWEmAhtgwZOxyo9M5+w/V49AM5hHrDi5Bbgd7z9qBZTbLKP1LGktr+xytLePd4SzkXkKFU3VqQoIBdxjqyvo2tPXexfcrtW8C0ty1Yl/mkz8PNZj8xaoKWWwf1ks2t6fmZ/58NHBVnE4i5EhbiOo3b/ApaSiM+8doEAveJBlfAruVvAfjKsmc8EDCbqm+u2Q+iWFjcWPt1EDmm0FhZNpM73KT1hzVAE0IxCsglX1ZTMaNij+VJivaBGks4x5BPmFhnh74QaKirHNQOC8lddy5Doqyka5zs95kMeHzj9fJUGB9qvAEvSMxkRfJ0RXZPdU+5giF5AaKVGJ4GyQ==
+  - version: 4.0.3
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v4.0.3/FodUpload.jar
+        rsa_sha256: PmC6rgYOWUH3qcIocNP6XLonez741SyvEVEzgOX+WNxKKHwZ/uzbgdx4sgd/4fvlt2/pLsEg7GbUiYiZdA+L6f6fbcgbV45QNuw4uC8UWmqfgFv3v6I0SqN2Tthj/k3up2PkqJ9AtmCcvYrtWzJW1sJz9iqyUB4JYkorCBmCa6wQ/Ri2FXeAMSSiaZK0dMPk20jZ+KTwasyhkJnIPlfEJYfupO/fDDwNTjed7FMuDCS0fZG11RFe+qpqqhL/LMu/gYb86agabT67iqtB/H21CI/8C1k+SdOlylO2Zrd/P7wzFbwCPSGboHVJqjEdHqtuObIwQ4rZDXU6to5ZSiLPWA==
+  - version: 4.0.2
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v4.0.2/FodUpload.jar
+        rsa_sha256: jwyKOAogcgE3ETuz72jGQHSCLKwbrNvMj45hdkGUlafeGgNFQ/0vw29RhxfpmKhvhVnVP0RHDXca7EwkI/C8BIsJzA9tFgj56/4a9RsOoPdcMCp8aA0wMqj4pvKpfIE+TMuUjSn1s2Cc/igOwzB8Owgl6Ek1p0mJIzmI34SIXcOssDOonNNRXTwYUdt5xBlWRyozZwZMf4VhG4np5CbWcC9M55HiPgyHSWSEsW1kMw4B3ZdR4Wl2ALyfMfx1QToNEmjYwMfAC0zvCS9uHtJ+Rw4lVoTVrWhb7Hv3LOqxk0FVKGDgU85sbdPqySNWPR3wNKZalUUFMYRWHx2gBjKlHg==
+  - version: 3.1.0
+    aliases:
+      - "3"
+      - "3.1"
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.1.0/FodUpload.jar
+        rsa_sha256: U5Tktww6ahYH7jtJCCH/VTn3+ssQcg3c04kLwsbsddZNOcpmiQP4IIFx8Ivh3oewWRkjyMJlt1/sRKcQbD+BQ6R2h8dNJulTgCRrdOKHdryvFg08M/iEgPLglY94IGk34s6UXwyufQqiM0/GjuoInXkqkg8wEIlqysi9xK6tDewesnnQCGkRUNzORV83ljhMzMlYURiMj9oG6yQIfRpVMxfYsWiGWmGujRPWK5Uf/o46/oglqaOh1fKeM7pWO+x44fQqrvcS8qKTBCvNoufgzEXZDhrZJmXTYfPZ6HmVjiYmbGt8+h3N2hofRGYcPEkgI8Wbr9lG9XMWUAxxXNCF5g==
+  - version: 3.0.8
+    aliases:
+      - "3.0"
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.8/FodUpload.jar
+        rsa_sha256: dCq2VoTfO2ZlBcMnvLCiBasGZhKlqbHVE+lcLjPfNb8B+aiek5gGEDyGeV68KJJMfs5xK89u5vx6Rme7dH+qE2kK+kaXLmRIdyK/yV7dVNkQ9xwTtuOfJb/P3NgyF7GBHC40WbYAWrBTJmC3CBzSBlqwjIHKKIZPIAG5iGcgbJTzhYveUT57sOY94IS/LNCx6wT572bD3vmJHllL5bxflFkWUvp0ScgQxobiJZT+Pt7KtIGD4A2KGB6A5Z5yXknoWRjSnXmDbF9xkdSxRM9soBC5TlepFCtuRFekENZ309uFnnoZwhnsk0HgfkeEfGu7d2AiBzNeQQdA0RIhdHYi4A==
+  - version: 3.0.7
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.7/FodUpload.jar
+        rsa_sha256: J3PqjIAklCrXwHRddynOrSQfN3VIyLDlY8UO2yfkcPb7ulKDTsJG+pLjNZDiTDim2wsaYQnyTY9sJrgFOUkc1TTh76ionyhXgpIqMwMwRFTl1YEy7wHY+HowNjGkcpipNRZCkzqJfLTnLV4sIeEkRzoFEdWqzjGvVb+/zDBEg1kpaqhszruBk3rQRFK6o3NBxkDdomsZ+XJR6i0MQZduzLWWz8QVdtR7NBXIVffyrHo0m6PHnYoU0XaIpZ8feA1EEZXKTG+Z3gCpKkVlsEUlMV2EhKUdraDUm1I/2lD5QdzbBd0DSvWh2v0YAa+Oy8062AozRWEQJDy+tNG3Lpe7Pg==
+  - version: 3.0.6
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.6/FodUpload.jar
+        rsa_sha256: reISxI65wosUp4OpMGX2JCJcUlFsMo+tzQAZoCGXcerkytnpSBNeGIFFsYcM4FBHECrpMUtfh1C1W2P52+kR/EU1aQRSdc/Da6rPrLBnyrsUOA8Dz8+7kZoBr54NsTYb61rBjjLTdyVuwUe4xBNdWx2VDLjD63mm1u8eYKQsiyFhcbEBG6EAGV61AT2JenIwY2Hky/E3mpM2e5k5ZdJcOZAFulhiEGHzmyoxca1KeUbJXcEI2HljMONMvAmuwu6snOg5d7WHr7nlAU7cfMX/VB8EiAt7XTgNUaAy0hyBIlM6ny2Wda9jtQbgaQDFcVThaBZyZfkiw08DVWa4M2LHpg==
+  - version: 3.0.5
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.5/FodUpload.jar
+        rsa_sha256: imt/n+vegL7yurqfu2d8a9y5HwmSlsoZhq547HLay3bSEq07bmwCGwVYsANWSspFIpYDwgvncIsjTGSWGywoZsTeXlOw9NdCw+pGjrCRtKnnxWzhLDmaizVJsn9LxASoaA3hklTkTTh2393oyxmuujSCPSvsImYZNDmHHFfLpwRTz2cTyfF1tjWh8TKU/1WaQSwLMY9qt3m590bhAU7WpnUov6pWEL6beK8e1JVDtX/a3f4qG4tDLgXply4OdQilEEbPwOBqpJK7+iz0faNfVpM7aYV21Mch3PD1cR6rWO8lkK5GRsmXSbzFRxXN45LcA+YfzQYfG/ct/6dD+4EQCg==
+  - version: 3.0.4
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.4/FodUpload.jar
+        rsa_sha256: cc1Mf4k/+vn5OykH6kt2Rpm1q5TgtbCCNWjxBo078JPKoySm/KIwgv5BLZ20K/gV0JfPZQdAp+t2sfaI1zeOvn/XCqKeeMAxnYDHeIaHLm+E4yP5t8+If7jQ/N/FyYoFWqIPJhMXChdjYCUqn0z9z17B6W7KiiyaxITUqd4ZmBWdk1w8gGvUTOYiGq54JdloNAVmM+YoQMFG2DVXovtbVMnB17JYQvS+/uy7MKYfe+haFT3ruVFGtd7/65CX1yQTMm3O4Htw7n1TM6Mi0h2hdWNDLKpuoOJ8apD1NK/DmMe5EM1c+mTZGgwaaLEvbUYJmOQejoOvyG0GJn64mHfN4g==
+  - version: 3.0.3
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.3/FodUpload.jar
+        rsa_sha256: pfuO1KaSpm3QkO/PqvNnuArYbyL9HrSArwZHczNBM/dT3v8p71IZAEy74IQ+sZ4bCtOtrJpWo7YN5Qmb/ZOITbHPwvwGf/c2LvIwd/LjDd84G5iHcEXEl0UCBHkdXtmGxVNYoWFHYV/MqCg6lCrfXntIoThEzoG/yx3ogjuE+VFyIYtwhsr8gjhliSvFztl1sMv+K1/0+ZDuzWJVuDXjVpoopWzelg+jUfHHXivZpQC7qWmRS7ftgQ15LVU8BxklYp9xKX+HSCZc30UDgXLZvz/ILUpv/Bc0zn0ldwOoM2adU9t0zcq3oFKrbkHIji+Did6RfcTdqW9zVFqrjfCtHg==
+  - version: 3.0.2
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.2/FodUpload.jar
+        rsa_sha256: BQIRn0kcz4R/QBkjvoQS2PlEB8HNnIGwqUBhdxQzuzukUmoL+bH36N8tVcognmX1lCDPoA83t0ptD6lNx+B/JSGnPlyk9T+Df3MmFqtjB5yrdCUNjz+0IXJSshGhCs/wt/fG1lRgFp7ifLw5nuGbzrg4/1WgpyiNTsHl6eJn4HAjGWClzlW473FpEISFBYUh7jOPyf1Qoxfdt8BD98KDYVwwBHICU6Izl/vQKHYLF0lwwzuC91L18o2afoxho4T+ZGlsSQfN/pN0YLID++Ctxz8dP16vH3dhH7ac9dMAvwlxnh32LM3blNRu/ScVw8p4puJmqb5SrhGF107ut5WiCg==
+  - version: 3.0.1
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.1/FodUpload.jar
+        rsa_sha256: LBYL6DHQSdLY2B+LdGCl6BnGVuLOEyxSD9Afcp0Og8M/MrPBMt/yAveNVVcJ5G8m9Nz3EMZ0XPdvg1/ZDN+gDlFEMOPWSoM2eNT5CN/mlRuAUOG131xW56eZEs8b1w845d8ikjKKMRfFK9ppp83bnXq4MENIucqHB2NdpWgtUC1Dr3ORO9hZ4Q9tVioFNIfn5MsUH7Rge0zM7Zso+eUacu+k5CmtoWlMOrnKfKztoCU7D1K70i9vLXtz42E32hhI1ihuaQeNwQ0jiMdvHi8qMeiO7bgZiSguM9AQAVNKrK0qYdz23nm3yX6YSa899ElG8wOz+v9SJcTHseQBqz3cSA==
+  - version: 3.0.0
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.0/FodUpload.jar
+        rsa_sha256: SDzIXqqiZOd6hVuX+bMn+/O5X9AB6rnP7UOz/fjJlAhQr+90FWxKRFMhDE3eTGDe0LhOkeh894nklOVaKIVVxTbyOgt/n5ZFRm9/efoIj/gLVc18sTIqajMotIEoE6zoMOkYwDMc/UX9/3M/HPppbTOwwwkjaFsJek85VoMfJzxANe/of80155vM5S1VLot988iMs39xFyTdQXi6Ec0qPv03XfihOlB9bjj6p8CXe3qCL2W+KP9I4yYVyleshyktFULPAOmB5yFfjz2CHa3Vy3vY5YUYhOLiaWLUNDQFQe+yD5/AbDpGR460voVJyihNAgJcCS9MSk04TWfGeTsE1Q==
+  - version: 2.0.4
+    aliases:
+      - "2"
+      - "2.0"
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v2.0.4/FodUpload.jar
+        rsa_sha256: Eesf6t1W/wgb3MU2+ob1LD1LjU/zBLndWeTdj7fv2P72M4IQT2hXafjriiYY6KE679GpfpU9Cg1n932FMkMsTXsT9/E6MjOZs9b2GPop8p83kXewvF+BPBcw7Mxi9Ws7TGH/zjV/uycljceLMbXSAEPd2X9BzZ1QmlPtLWGk41oQW2Gm7E+qIWC3zHvMuli13M4/miV5OlptrZnvatI80MbjGk4Uv0iG7N8y6CBEEEJjKl56/e2lhqmBFCbDQzpi3LySVFe3LXtt/oXS3X/N999NkI7VyiMYrfpY3HGcwWGE9h+IZzbY/AShGT9U9v25ArpHfyxbjZzmzRysverZpw==
+  - version: 2.0.3
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v2.0.3/FodUpload.jar
+        rsa_sha256: M0qxCI9nOuzxFAL74JhQMuUSzLEjHw9o50AEVkGXx5ijA3ynVTe8E/mzvnhD7GbqjUZZQaE9MEbLA65baVLUIFuu/FuVDnZerQ/Z8cfn6S8OjivnxXOFT0y9S93yEoVY8Yi+m+0JP0lPp3Jr8aK2soxDJqdN4IoV5TGhKR36OU2LTJHf04hyQvuOqxgVoAYkzAS1qNkrC3XWK5CzXVjpPWn/bMGf1Btv351ZoSQo3dyo6ou+i5TpAKeOrPiZsRCqhkeFWYtwkOqKqiQuax3ucPCmKjoYmqLprmgV8sBfQpM/gIDC3dBj72qM0WYKUX764zWO3ZOani4Oh6XQaOaCSw==
+  - version: 2.0.2
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v2.0.2/FodUpload.jar
+        rsa_sha256: h+57xdlWdGb2FyJwpfNxTt0RGiObGv3KsaUZtqsjOfs6SiC/xV36TTqbq8R9NfsGhkEgi+Hw2hJ2oZGaM3PdhxH2SSdnYPgv+Dh0mV8eR4m/0byPLpEkan6LIyWFI2HJJMUzwMWszBShP1EXki00lbcYbsFiUlDdCqCu23duHDKLuqaiz1llUv0djj+NmdW+9DjcTtZ00zbn4Oksjf59F3zpc4ZNMFv1vn4EaoxidGReFOv8SYiu5So3dn3vGp0k0tA5Feg5qkDyMs3aabu6r5KRfessHwVaNWrHU9RwASjQOYxxKJZ8s89WJ8QNH7W+xjW1lBxnCpY2HNgEZ92uOA==
+  - version: 2.0.1
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v2.0.1/FodUpload.jar
+        rsa_sha256: BW8ctalPyMcpkdSFDE1xSPWGIfAon6KTpmuq3yUSPAeNrFgnQnTMBt7PwOcYZc/76N+GJSIhY+TasIwFWJzF4wUkWUmBezyZveDvEw0wOeCzi98uLnHNEG6A0N3U12gJRKzX2ZZhJyLDn72CtiOTVYDCQ9fNqrpX01FmLBWxzbPkVv7DMguZCxnaHGx/6UGwKREPktj9VmQX5RKELw7fjuukUqsColv9baNE2+e4hYMLcuwlgw+hYo9/Sma25Gkup3dutsvz0U0O4tH8w/EQ0istidLcDd4lE7wnMEPORHETYt6kEPV45RdXN4JML+yNCqdiR0ouHPoGjhlxWG36PA==
+  - version: 2.0.0
+    aliases: []
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v2.0.0/FodUpload.jar
+        rsa_sha256: BW8ctalPyMcpkdSFDE1xSPWGIfAon6KTpmuq3yUSPAeNrFgnQnTMBt7PwOcYZc/76N+GJSIhY+TasIwFWJzF4wUkWUmBezyZveDvEw0wOeCzi98uLnHNEG6A0N3U12gJRKzX2ZZhJyLDn72CtiOTVYDCQ9fNqrpX01FmLBWxzbPkVv7DMguZCxnaHGx/6UGwKREPktj9VmQX5RKELw7fjuukUqsColv9baNE2+e4hYMLcuwlgw+hYo9/Sma25Gkup3dutsvz0U0O4tH8w/EQ0istidLcDd4lE7wnMEPORHETYt6kEPV45RdXN4JML+yNCqdiR0ouHPoGjhlxWG36PA==
+  - version: 4.0.1
+    aliases: []
+    stable: false
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v4.0.1/FodUpload.jar
+        rsa_sha256: U+mBf3HmYDEiL462fv2vLD0o7Ri9Cxw3v/vvIbfpT50BQQPyqRZ9bQ+VQzKGYc9BnigUH8XN+70WeCPbpJLlQrFUB458tzQhbnHbGN7WMDjVXrVdSVTdFevonefZs6lE/muaelyA+cjPEhyt3bgT6U6oPiVV9nvA6VKCXm1lA9tRQtO/q61H8bt8M/bhVrlA2RmbTsCuScY/HqRsrHYjhaXo8T6GpOVHyF6BKPqX/L7vpJhC8S3LUr5thFQL52NHqeuvPocs8WvVQXBKYRdHU5PofN6u9XINA1Rh+d3uH+Dk8uhn2fJZO7b5LaJaJ3u50Drk1vn1wEnMZ2qYCXEU8w==
+  - version: 4.0.0
+    aliases: []
+    stable: false
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v4.0.0/FodUpload.jar
+        rsa_sha256: Ds+vzPZ28G9UFy4tvP1W3Ti2sdhaGkpfEIwMLIKRA2Ie2rsARBG4NXauG949ZC7Snf7YYSVQk3swyekh+FHGIx2m1Ug1ZQxhun3VLBbhsY3k93FTRGidXrrMQIToHXdrPmSX6zTdKPqft6NG8T1wu4I/My7hjVEFLmChDkFg7DWGunP5BSWmmEpoQFEEUx45LoDdsGXqjAJIaQa9NSiLqhKUE20be10h8p2QglK8NQA1WRQN8nw0j0iS8OFS6xTNN7WErtvxQfgQBJeI1tXQt8GVuRsrHtklzzXVl+ZRuGmCDLy2RPj4taISg5WetY1445GCs+vEezIKNnbpnWctGQ==
