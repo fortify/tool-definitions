@@ -1,147 +1,170 @@
-defaultVersion: "4.9"
+defaultVersion: 4.12.0
 versions:
-  - version: "4.9"
-    aliases: []
-    stable: true
-    artifacts:
-      default:
-        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.9/FortifyBugTrackerUtility-4.9-dist.zip
-        rsa_sha256: T3fH3GHEy4+vWKxrBMRA2rTaCXu9eZyfRR9PG6tBr0lpVJusD6mE7BowZK7WXrbfaAt1A0sLTzxW0GKHl3nW7YnOTYdIc5oGMCjecBloiZQQwU42wIWdX+rDYlzg4QsHizYcG15M+j0ny9bHFvHJfD/ztwAeqM+zBI0q7frSrLsbQZUxOcv+F0xmRCNElnhj5sVfsO45DftFqmmcXQ9CJIlVP0RVFZc5RqMM8bM/dQ+bgpRX6g3XYI/2PidZYcXIfPU7fDAvPs/KJuBpbSKh88vF3kAKdrDlDEztlWyTRtfrQrFxMQoiRm5CM2Jnv+fbpNE/iURNqNAmmblkYq3MeQ==
-  - version: "4.8"
-    aliases: []
-    stable: true
-    artifacts:
-      default:
-        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.8/FortifyBugTrackerUtility-4.8-dist.zip
-        rsa_sha256: rL62iDKXXCST9hpf+Pz+PIsM/4xSe/7Xee2tGawZJGImiNiRmgQvSoFNAbGTfTvUJVBTc4+EndMgnI/1dkm/J5pRbtNZk71N24hpLY051o/30+VDVvzclPYmLDb43E+evpkuvtfl8uEbgyQ30kLUkDv03vhaDKD9u/CllsCx917ykC1FOBdXdAsDZSmts5tOtAbaZcYatkr3t4NxWjMtSSVwvPEHaRsTxDt+4z7aMYzwva5gdIHvGRCiUGHsKdWpMmP8pg6MLbl/iNT5n8KnRgMpYTLansmmh6l6LgW12qItuRTMixBPS64IL3CfXw+EC6d0gd6LgIC9fm2W+f4nkQ==
-  - version: "4.7"
-    aliases: []
-    stable: true
-    artifacts:
-      default:
-        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.7/FortifyBugTrackerUtility-4.7-dist.zip
-        rsa_sha256: MXCW8rOF+aZM/kIer5RmvOFHWpGoDXv5uUr4arXqXF8O28bRISLkYepbC1mErRzmuBNFdczw1GkwW1dTeKpYTE+49K4Q2/+cuSim8Ab0kZ0ldAiuXqf1SN9pVOrvV79+OCofU88ZsvFJ9c8DsqO7erSfTOLyrBb7UlH6q0YeSAV+NzOde+VbCOroWoT2slYoeuFw+fYhS85HPDB0aze5zxLvA7G3uTsPuu7qtdUaY8T0NqavnhCrIIKse2qbXe4YPe6nL26YXvbAMT29AtL+um8P6R2UEtbcesuZHGUcfrisWuhRoAY49GGKn4ArczEv/BXblESleFMlvRcRfGmfJw==
-  - version: "4.6"
-    aliases: []
-    stable: true
-    artifacts:
-      default:
-        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.6/FortifyBugTrackerUtility-4.6-dist.zip
-        rsa_sha256: NB00AWtshphskpmBbolfTB1hfSkhqq9ybQuUKpBv9XHE2obl+Z0cJ3/3fCVsp0/1FrHmqyYOkC+hXbWl4O0GKFLZOmcx3AN4uM1ip0zWXDtLJ/A4gqEdz4ZG0n1Hh5J5E3UrGpEACoIpWNpp6AApmAIkVKt62gK2xqPz8o23T+IUkCe70xYVgg8JnmCZQamtXoUu0OEzImUgE+NaLt//TNXdl9ew128ZmZbWZ78XO7kQXxxkcp9DOOA62e1Qo9nUJWheZX5Mjo4TG5leeisMkc6sxb+SA4E4yQBlc/adkVIx9yZtDmIo7qQCboSN/W9PO/R0mzYZaSkb5rIhXvixcg==
-  - version: "4.5"
-    aliases: []
-    stable: true
-    artifacts:
-      default:
-        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.5/FortifyBugTrackerUtility-4.5-dist.zip
-        rsa_sha256: G2bE+CeiO4FUMPBYa6PHaXJLanFlIK9ZWrYyZjSxxe9FL6tt3OCOsq1d65bD5a2ry0lI13bkrtN7C89c54N1bwnZP1XDPqyJ/iMfQ3iW9ypHLMIi8ujbz9+TgR1Kp1f2g5G0oC5LrJbyKsZ9teE19I01yY2duaaMciO8znYv5n1V7OkyH9x7BjQYtxkeof6T6xouYe/FRhnerdKdesopSwVNmT3BpKNX/VDHvya5mPRtbmeCGmauHQUz/dnZJ8QOHmrizOCcdcJfrZley9x049iKseVHDvpuXrb8VVkIIqJbJ09NBVrFAhNYC2f4e8Ky55cFFBYZyIzZoFh0bZzj4g==
-  - version: "4.4"
-    aliases: []
-    stable: true
-    artifacts:
-      default:
-        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.4/FortifyBugTrackerUtility-4.4-dist.zip
-        rsa_sha256: hCYb5H9TUfTW3DmnmpU0Ql23p6ZhEyvW+jvOPl/lVdKopwEXiN3q65rE2DqU4Z/3eilDyie3NhCi0RD1eLecKr/Rs6LyUTyInIQtMPtjLCm9ClTSp2jnyFItLqA/x8KTJuw3Slf6W/oB1bSH3ZIeC7zujR4Dsynziju/w+RHEMQeZlui+1P9pveyr/rujqB0UYdGN8eRvEXJDOXs9BF0UMZxNlhubLBz+nxRYfNjYrKSWevj16dJ1TA3Sfn9xyurQVXs0avKNITqBRfNM2kV5NqV74chdmNY6kHgd0kpffhol5+6y+RAOjrbaTeDUauVjxhicu3y/oid63gq9X7Xzg==
-  - version: "4.3"
-    aliases: []
-    stable: true
-    artifacts:
-      default:
-        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.3/FortifyBugTrackerUtility-4.3-dist.zip
-        rsa_sha256: BXPhLhfoQgYwZ4ZUOjOK7X8cPVeMOz7rULDuGXrmUtZD64w24ETwZPTj/uD7w4ANnVaP5CPFXuqjIkYg2r/qKG7sZoieeKpxad+LdIAg+5mqC21058KP0jkpX2i5ZfmSwJVRpQgJvuzXNKFCKqirhEhRDJgdVpuFHlJHrTmJQ3GcrRaEBcVGZaG6fw6UjTMreenU5A+EoPfwuOYf82vj3opXABn1E/sQ+rJbCLEemPowiluYx0YhMM/xAYUdDeiaJvJ5RJpRRx122a4f5a1AVf4x7Nj0aXY6OEKVjE9DvheIBEfWznUuHzKDepPvs+S60N2FPlTOSdDtT2wGL5H74Q==
-  - version: "4.2"
-    aliases: []
-    stable: true
-    artifacts:
-      default:
-        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.2/FortifyBugTrackerUtility-4.2-dist.zip
-        rsa_sha256: nOxUQMkJVEwuamW8SSHL/WjtGKxG55QELmMfDwMSWZANN6k/dqs2A2Tc75OoGnC82CS7F/QhiJUjWtJFQ8JiKM9mvhhQI3YBgORrxqio7KN9Vg1uaf/AdJuHjwLhH9WAvrOKlvo/F2gGMPQQWW0lj/NM2WgByfO/I2SkPSRDyL8NwBNK0SJ90+Vu0d9qHb93c6ugK31l/ckswOlt79ny9RhXX9Wv9OiQCwUcBDyP2pAhWlV1CnmRovzifSynEsibhyRISnht0unNWbDh7RaE537YY7derKykTbFAVppUKZa7Ze1/1Oe4FfIoh5iHDFI6gt8eR1BgMwNEZ30H9tlwNQ==
-  - version: "4.12"
-    aliases: []
+  - version: 4.12.0
+    aliases:
+      - "4"
+      - "4.12"
     stable: true
     artifacts:
       default:
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.12/FortifyBugTrackerUtility-4.12-dist.zip
         rsa_sha256: BKVDmY+UuBcsntWJ+coN0Wsj35M7Dy63KJQIlwoB17pr2v+8bPHWcCkJa4yMjg7AfZKYCB04/u7JD0+XmYuGJ9scLSvJRj/l+bFtk5B60m5LnpO2dkKZybbk9HN+/Cb7MaI9+3oJBh0anr0hQ7n0h8eaxTbkXueK/jWv6+rGkALk6UdHAH8wKmwP4jSA0fINLZVSv9XG7jQhpnTygFdWLrhCLisNtZlZ06KJ7XrMw0PmmKxM2QUrEQ7f8nyszJiFZUFhmRo1hEz+sHi0HmxETtu3bs72lJQ5lb4KJ1fqPDOx8gWrEzbOr8dtu8646HQz2iWYb/PC3nrW0Lbb3+Ds0Q==
-  - version: "4.11"
-    aliases: []
+  - version: 4.11.0
+    aliases:
+      - "4.11"
     stable: true
     artifacts:
       default:
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.11/FortifyBugTrackerUtility-4.11-dist.zip
         rsa_sha256: JIBL8YuIxA36nQG3swwuD/206e1zN0vx9ulCazro8g+Zdu1vZHt0IMkuEG1HuXg/hnmsURxCGmiDLwsr15Jfj5MZK179ykMJW+VYSxlHVU+JeogWrgxB+D45W+cgsk2bu9jyMVkoXfNPlWe+crkdIzBaaSDIxN+Kno0R/T+DNVTQqKDbbdoVuYo5P/KoKmrNU5d+UejYd7ZEeT/OWdNTfxlqXRzv8LruW5x8HuAt1i5G0rxqPDvOJzygM3McwwBeQfPG0GoxINSnfMK3XNy9U4AYCtzkvIe6xdokuMI8d87xOmT/hCLxcZsRG+z2UcgWDK4sbaooLhVv/c0CoWZRFg==
-  - version: "4.10"
-    aliases: []
+  - version: 4.10.0
+    aliases:
+      - "4.10"
     stable: true
     artifacts:
       default:
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.10/FortifyBugTrackerUtility-4.10-dist.zip
         rsa_sha256: rRxZB5OW25IoqtvEEPjiMVTSLlliGXJKGIju/IkHWk6Fw8iVYvn9+yxoQOaq6T/xfiG/jcBhdydECxVhG2B704oPKhYHL4lQO3Y0MGp9mLqwpANDeTUFmncJTRDoCADa4ypcDWcRQX2Q2FJCMsEePVE4PaKwvVw3qRUEX5sEa6ojskRkmoEU3oG3xUdFXrNoaEugBPhHlmCdjDoCxKBi0UnxZ04E/F6ngJcLA3a4wKhGQvtbW8B8uXpZ6Ul9EmhNhSEdrs5cZvbqeVK3gVocLCLZe0fMDrG5yE1meIFP/j5/SWyK7zXfMZi4A7iH4pMWmBUn8sp5kh97ZV0vx395Kw==
-  - version: "4.1"
-    aliases: []
+  - version: 4.9.0
+    aliases:
+      - "4.9"
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.9/FortifyBugTrackerUtility-4.9-dist.zip
+        rsa_sha256: T3fH3GHEy4+vWKxrBMRA2rTaCXu9eZyfRR9PG6tBr0lpVJusD6mE7BowZK7WXrbfaAt1A0sLTzxW0GKHl3nW7YnOTYdIc5oGMCjecBloiZQQwU42wIWdX+rDYlzg4QsHizYcG15M+j0ny9bHFvHJfD/ztwAeqM+zBI0q7frSrLsbQZUxOcv+F0xmRCNElnhj5sVfsO45DftFqmmcXQ9CJIlVP0RVFZc5RqMM8bM/dQ+bgpRX6g3XYI/2PidZYcXIfPU7fDAvPs/KJuBpbSKh88vF3kAKdrDlDEztlWyTRtfrQrFxMQoiRm5CM2Jnv+fbpNE/iURNqNAmmblkYq3MeQ==
+  - version: 4.8.0
+    aliases:
+      - "4.8"
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.8/FortifyBugTrackerUtility-4.8-dist.zip
+        rsa_sha256: rL62iDKXXCST9hpf+Pz+PIsM/4xSe/7Xee2tGawZJGImiNiRmgQvSoFNAbGTfTvUJVBTc4+EndMgnI/1dkm/J5pRbtNZk71N24hpLY051o/30+VDVvzclPYmLDb43E+evpkuvtfl8uEbgyQ30kLUkDv03vhaDKD9u/CllsCx917ykC1FOBdXdAsDZSmts5tOtAbaZcYatkr3t4NxWjMtSSVwvPEHaRsTxDt+4z7aMYzwva5gdIHvGRCiUGHsKdWpMmP8pg6MLbl/iNT5n8KnRgMpYTLansmmh6l6LgW12qItuRTMixBPS64IL3CfXw+EC6d0gd6LgIC9fm2W+f4nkQ==
+  - version: 4.7.0
+    aliases:
+      - "4.7"
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.7/FortifyBugTrackerUtility-4.7-dist.zip
+        rsa_sha256: MXCW8rOF+aZM/kIer5RmvOFHWpGoDXv5uUr4arXqXF8O28bRISLkYepbC1mErRzmuBNFdczw1GkwW1dTeKpYTE+49K4Q2/+cuSim8Ab0kZ0ldAiuXqf1SN9pVOrvV79+OCofU88ZsvFJ9c8DsqO7erSfTOLyrBb7UlH6q0YeSAV+NzOde+VbCOroWoT2slYoeuFw+fYhS85HPDB0aze5zxLvA7G3uTsPuu7qtdUaY8T0NqavnhCrIIKse2qbXe4YPe6nL26YXvbAMT29AtL+um8P6R2UEtbcesuZHGUcfrisWuhRoAY49GGKn4ArczEv/BXblESleFMlvRcRfGmfJw==
+  - version: 4.6.0
+    aliases:
+      - "4.6"
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.6/FortifyBugTrackerUtility-4.6-dist.zip
+        rsa_sha256: NB00AWtshphskpmBbolfTB1hfSkhqq9ybQuUKpBv9XHE2obl+Z0cJ3/3fCVsp0/1FrHmqyYOkC+hXbWl4O0GKFLZOmcx3AN4uM1ip0zWXDtLJ/A4gqEdz4ZG0n1Hh5J5E3UrGpEACoIpWNpp6AApmAIkVKt62gK2xqPz8o23T+IUkCe70xYVgg8JnmCZQamtXoUu0OEzImUgE+NaLt//TNXdl9ew128ZmZbWZ78XO7kQXxxkcp9DOOA62e1Qo9nUJWheZX5Mjo4TG5leeisMkc6sxb+SA4E4yQBlc/adkVIx9yZtDmIo7qQCboSN/W9PO/R0mzYZaSkb5rIhXvixcg==
+  - version: 4.5.0
+    aliases:
+      - "4.5"
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.5/FortifyBugTrackerUtility-4.5-dist.zip
+        rsa_sha256: G2bE+CeiO4FUMPBYa6PHaXJLanFlIK9ZWrYyZjSxxe9FL6tt3OCOsq1d65bD5a2ry0lI13bkrtN7C89c54N1bwnZP1XDPqyJ/iMfQ3iW9ypHLMIi8ujbz9+TgR1Kp1f2g5G0oC5LrJbyKsZ9teE19I01yY2duaaMciO8znYv5n1V7OkyH9x7BjQYtxkeof6T6xouYe/FRhnerdKdesopSwVNmT3BpKNX/VDHvya5mPRtbmeCGmauHQUz/dnZJ8QOHmrizOCcdcJfrZley9x049iKseVHDvpuXrb8VVkIIqJbJ09NBVrFAhNYC2f4e8Ky55cFFBYZyIzZoFh0bZzj4g==
+  - version: 4.4.0
+    aliases:
+      - "4.4"
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.4/FortifyBugTrackerUtility-4.4-dist.zip
+        rsa_sha256: hCYb5H9TUfTW3DmnmpU0Ql23p6ZhEyvW+jvOPl/lVdKopwEXiN3q65rE2DqU4Z/3eilDyie3NhCi0RD1eLecKr/Rs6LyUTyInIQtMPtjLCm9ClTSp2jnyFItLqA/x8KTJuw3Slf6W/oB1bSH3ZIeC7zujR4Dsynziju/w+RHEMQeZlui+1P9pveyr/rujqB0UYdGN8eRvEXJDOXs9BF0UMZxNlhubLBz+nxRYfNjYrKSWevj16dJ1TA3Sfn9xyurQVXs0avKNITqBRfNM2kV5NqV74chdmNY6kHgd0kpffhol5+6y+RAOjrbaTeDUauVjxhicu3y/oid63gq9X7Xzg==
+  - version: 4.3.0
+    aliases:
+      - "4.3"
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.3/FortifyBugTrackerUtility-4.3-dist.zip
+        rsa_sha256: BXPhLhfoQgYwZ4ZUOjOK7X8cPVeMOz7rULDuGXrmUtZD64w24ETwZPTj/uD7w4ANnVaP5CPFXuqjIkYg2r/qKG7sZoieeKpxad+LdIAg+5mqC21058KP0jkpX2i5ZfmSwJVRpQgJvuzXNKFCKqirhEhRDJgdVpuFHlJHrTmJQ3GcrRaEBcVGZaG6fw6UjTMreenU5A+EoPfwuOYf82vj3opXABn1E/sQ+rJbCLEemPowiluYx0YhMM/xAYUdDeiaJvJ5RJpRRx122a4f5a1AVf4x7Nj0aXY6OEKVjE9DvheIBEfWznUuHzKDepPvs+S60N2FPlTOSdDtT2wGL5H74Q==
+  - version: 4.2.0
+    aliases:
+      - "4.2"
+    stable: true
+    artifacts:
+      default:
+        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.2/FortifyBugTrackerUtility-4.2-dist.zip
+        rsa_sha256: nOxUQMkJVEwuamW8SSHL/WjtGKxG55QELmMfDwMSWZANN6k/dqs2A2Tc75OoGnC82CS7F/QhiJUjWtJFQ8JiKM9mvhhQI3YBgORrxqio7KN9Vg1uaf/AdJuHjwLhH9WAvrOKlvo/F2gGMPQQWW0lj/NM2WgByfO/I2SkPSRDyL8NwBNK0SJ90+Vu0d9qHb93c6ugK31l/ckswOlt79ny9RhXX9Wv9OiQCwUcBDyP2pAhWlV1CnmRovzifSynEsibhyRISnht0unNWbDh7RaE537YY7derKykTbFAVppUKZa7Ze1/1Oe4FfIoh5iHDFI6gt8eR1BgMwNEZ30H9tlwNQ==
+  - version: 4.1.0
+    aliases:
+      - "4.1"
     stable: true
     artifacts:
       default:
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.1/FortifyBugTrackerUtility-4.1-dist.zip
         rsa_sha256: F9za/IhU7/Mdap8vPkBMJTRdJR6tlAXogBTdpjZfO6H/3JClAfhB5whHKV7uzRU0jThYoHw//GRO8l5HuvlEaQ0EUE0K5SyOUik7zkyuS1p686IGdkp2ncombNmKRXrlyUcS0D0QDa4PT5jbN6OMCBWbZAoSpZxDU4ooCdMNuGDHCBtB2eHch3FZSp/JCH+gPWxpyXZ31KjgH/iCx0WWrtHOwXPkRup59xnPSw/Cenpvd4f7oS8twmcHem1pY040eY/KUl9a3SK/djMWuMdw3OZRzzE2AEcx1cjWrinmegQ6/0EzTtCUOI3P8E7B/vw1rJ3F8OvDL+ae5VK2Mrc43Q==
-  - version: "4.0"
-    aliases: []
+  - version: 4.0.0
+    aliases:
+      - "4.0"
     stable: true
     artifacts:
       default:
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.0/FortifyBugTrackerUtility-4.0-dist.zip
         rsa_sha256: F7E60yWG0Zb2JY6b1bLWRfJS+9S6aypajUSodk/IT6x52tm9IvqneJANzFRiVhzd25NDQYzOXX9ozSCVbByw4zQkiCYZZxpTDBYvY0n7lDQeHV9aMDa5T3IX/+LbAEb8ax6hUaFsAgRqkHbvUSRoEthN6f7LU2CoNRW+Ph0KXYO129Eo3+vz+h2cfiSO2jtxDgbyZGQgKfk3splOv488FNQg02qFXB2icIP+SzhzT7G6bAkEG6OZewvUtxPcfy15v5cMC0SijZqTaQXA/tblqbAVRi4R9y72q9r2pXgsHaWXb8FHe44HH7iJWBUUxm7w0wNidDfTbPwcmSPr+1Lrew==
-  - version: "3.9"
-    aliases: []
+  - version: 3.9.0
+    aliases:
+      - "3"
+      - "3.9"
     stable: true
     artifacts:
       default:
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/3.9/FortifyBugTrackerUtility-3.9-dist.zip
         rsa_sha256: MI2MGVITVeVyUXRqmF/FKQLkUEF8EBcb8t5MlpB9Oduefb/XnxBkwfd86otITq7wZ5UoteDBzVeOjRfbtpOZkWNKgGsXJ9f/+ektcE7F95xlSyXdZRME9T4t1ZKVKY3F8ZWuQ5ABK39xJIL5l0modCHH6XZ/TEWoXxYqMgxoM6nuEXHjrzqnVkqbomBlcVpgRaiac/rIBQvpajGOmPFLZgkqD1wI5/5eyaFd1JiIdE65C+iIIAsLUzw5nZj9k3JIOjRlOBD73DMt62DeFU2tNhYauBgjlZiH8md1yWoMWWDOh892jrIqIjRvSEesNmf3CfI8+aGBaIwpvcwLTWGyww==
-  - version: "3.8"
-    aliases: []
+  - version: 3.8.0
+    aliases:
+      - "3.8"
     stable: true
     artifacts:
       default:
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/3.8/FortifyBugTrackerUtility-3.8-dist.zip
         rsa_sha256: HLDYghT0wYw2CtAruYXTBCkQr0XGNrXGFUB4tLrwucOtx0Y9eBmvCuIXiXjJseWGie5RBmNJ46fGOwPbvT5f99PmCSXRh92kEubumqwsAMscroNnKJzpRovKGNTA8KNY+c4hZDDZrpK9Ah9awbkAeyv333iYDABmryveLVoSlHPEH/Txlvh5L/vyJo0o366d+ace9t/KFVZcAMu/+5jCVYQOK+eucwpbPxrpNgK+/yjadVF5OOBqWcrEUvSg5L+tiKE4cn13Ouw1RLKBzhuTAjBCOzE4V3jKix7FNZqLiWixmlqpsOkCOZCo/+sPo7U17SkM91j/IqLZkkQmSysaFw==
-  - version: "3.7"
-    aliases: []
+  - version: 3.7.0
+    aliases:
+      - "3.7"
     stable: true
     artifacts:
       default:
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/3.7/FortifyBugTrackerUtility-3.7-dist.zip
         rsa_sha256: k0Wz7Nf0sLB5Y9Cozh00HRajN5mb7yCQsSrBwe9vjq+t+IxJ+3W7OtQA+w9DeiQTwfwz7+VknkNTPOmoOPu8HPG9Fqts6xaiXe+mq42cMpgksCjVkCNv989LWlTixqa8Fts9VNi3j/CoJAO/llj3/UUM2pRNkWZod9fiwiXBP8/bjTOHegA29jBB2npTiNScPMwd6vPYuRcAv+xskZrvfoJPHM+DO+VDhUuVq8VICk1pqAinCTKfEtlYNUbYIFyEHcEej6wagR1Xeu9YuHB1sqx9RId9RoQu6ozjvJK96SFbkldJjfKUuX5OhhI/hKza8LvpL/Q42Ww7bJYnhrQvvg==
-  - version: "3.6"
-    aliases: []
+  - version: 3.6.0
+    aliases:
+      - "3.6"
     stable: true
     artifacts:
       default:
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/3.6/FortifyBugTrackerUtility-3.6-dist.zip
         rsa_sha256: e/TgEdNUy21wvQ+eYQRRT1mYUuxkGmQbN5OkCpQfFSlzXD6gpcAUf84Ptl+AHVAY8T0FTaMphvo4dOzPR9OMOVb5S6iBTG9op+b1OciJTkNtutXSgFRlXM2BX/nCMjcrmeoAY2KMdoed6VfVSt82XurBMnzrilrYnRTAGojCcpT/nPbRxNVD3HBciuvkWPcI80kLqgq+og02vdpFpWEIcG8+++fgYXS4sOC6gd5ecfJ9KysDgR0D/QEXybUJ81bbGd4LDw9tU9RErJxyt5AK3GuEVYa40Ve77BhqNYGS6LK5PJZIbHj3+E1g80l7A42PHNlW+3WYu0cm3+mbE8fFWQ==
-  - version: "3.5"
-    aliases: []
+  - version: 3.5.0
+    aliases:
+      - "3.5"
     stable: true
     artifacts:
       default:
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/3.5/FortifyBugTrackerUtility-3.5-dist.zip
         rsa_sha256: ZIWTl86Bjm35c/KLC5rbr9pTVyfVnoiGyvYojz7JPOcI4AT4RI2hUvD0jxJ0twoAMHXhEz0iAi8neVeiEEMu0o18gLsEHB04t5NRyS2Q9mr7iq0ETM9u21daJNZdk7POXNDUus24L/eeaTBGXnR36B8frpii4tp+7+WFa3SEVia6QyW1SGfFQtgVU6DD1rEbQ47YmwuYCwAig/5ToNQeR8s25kMDlyOhlcl2CfUA3Fjl9ZFdx0aDEstmLZApIlzbBjoKuFOiYhZspXeD3LG9A45kMEinrwatIQ7a3uuge1FWSfkx80xYsR09HQ+pgMxYFg/Ul5HDC6Ki5JREWPYI5g==
-  - version: "3.4"
-    aliases: []
+  - version: 3.4.0
+    aliases:
+      - "3.4"
     stable: true
     artifacts:
       default:
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/3.4/FortifyBugTrackerUtility-3.4-dist.zip
         rsa_sha256: kyij7beEtOJ6UOpizgSQWRP2/YasJM/0ptHHguGsu/w8oWJKPHuXinnHOPMay4DmSDdfZKBExQiDPNhqn8llT8gjNDVfi7jmVG8Y10h3qJXwtw3JFA1LXWQioKrR/DSeCN+0es+1dswKAAiQHiAgXaT5LBCnWsZLj6v+7AQn5p+b80R1ey+Xj1qITlGrveLtMGCo/zYvy/6mHtBnqQtNSxEQlWnYPfozjQz6Q/emWvHseQdEiPHtvbzsH07KpQtSm5Vz+UZPPFhnpJV74vMOhPWpeB0KU9p34Ni5UngP8WpgzgARit1D5BS/BvTT5IyOQ9cQK7rj/gr0oSfGpMbNLw==
-  - version: "3.1"
-    aliases: []
+  - version: 3.1.0
+    aliases:
+      - "3.1"
     stable: true
     artifacts:
       default:
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/3.1/FortifyBugTrackerUtility-3.1-dist.zip
         rsa_sha256: mOZ/z/4j5R3ZGzLOddYH8uJ763Gw/zjKm5MQ/D7YuHnNedME91+Gj14RZ3c+tG1uNDeMvHrRnjmxDMnrMhg5DDuHM0BfHSlvwt5Hki7U5naK0pr4IkDkpb3I3jRhSHbbUi/svfoW2aBEcPVXEInW5rnFJ2CBamL7Mmk95QpaSx09J3V5NRRAfYpyrkVARZoScg/F3iKeXok9SNgwtMa+EQ+lHK5BcX07qj+FTwZOQUHYoIMKMF70NF3ijY92WB8u39uBlh/LOxEVYnh1Y8xq0wzy3jiyJvICfIKZTaPGuaz0iAglWE3GQcGBAcBfyLM6rwv86YgHv8mh7OJhHKjFUQ==
-  - version: "3.0"
-    aliases: []
+  - version: 3.0.0
+    aliases:
+      - "3.0"
     stable: true
     artifacts:
       default:

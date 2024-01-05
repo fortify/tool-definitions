@@ -35236,6 +35236,7 @@ function getGitHubVersionDescriptor(release) {
     return __awaiter(this, void 0, void 0, function* () {
         const result = new descriptors_1.VersionDescriptors();
         const version = mapTag(release.tag_name).replace(/^v(\d+.*)$/, '$1'); // Remove 'v' prefix if it is followed by at least one number;
+        core.debug(version);
         let releaseExcludeReason = getReleaseExcludeReason(release);
         if (!releaseExcludeReason) {
             const versionDescriptor = new descriptors_1.VersionDescriptor(version, !release.prerelease);
@@ -35254,10 +35255,10 @@ function getGitHubVersionDescriptor(release) {
     });
 }
 function mapTag(tag) {
-    for (const partialRegex in constants.tagMappings) {
-        const regex = `^${partialRegex}$`;
-        if (tag.match(`{regex}`)) {
-            return tag.replace(regex, constants.tagMappings[partialRegex]);
+    for (const key in constants.tagMappings) {
+        const regex = `^${key}$`;
+        if (tag.match(regex)) {
+            return tag.replace(new RegExp(regex), constants.tagMappings[key]);
         }
     }
     return tag;
