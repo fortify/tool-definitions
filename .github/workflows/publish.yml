@@ -23,13 +23,13 @@ jobs:
              {
                   "toolName": "fod-uploader",
                   "toolRepo": "fod-dev/fod-uploader-java",
-                  "assetRegex": "FodUpload\.jar",
+                  "assetRegex": "FodUpload\\.jar",
                   "semver": "major"
               },
               {
                   "toolName": "fcli",
                   "toolRepo": "fortify/fcli",
-                  "assetRegex": "(fcli-linux\.tgz|fcli-mac\.tgz|fcli-windows\.zip|fcli.jar)",
+                  "assetRegex": "(fcli-linux\\.tgz|fcli-mac\\.tgz|fcli-windows\\.zip|fcli\\.jar)",
                   "semver": "major",
                   "artifactTypes": { 
                       ".*fcli.jar":    "default",
@@ -41,21 +41,21 @@ jobs:
               {
                   "toolName": "bugtracker-utility",
                   "toolRepo": "fortify-ps/FortifyBugTrackerUtility",
-                  "assetRegex": "FortifyBugTrackerUtility-.*\.zip",
+                  "assetRegex": "FortifyBugTrackerUtility-.*\\.zip",
                   "semver": "none"
               },
               {
                   "toolName": "vuln-exporter",
                   "toolRepo": "fortify/FortifyVulnerabilityExporter",
-                  "assetRegex": "FortifyVulnerabilityExporter\.zip",
+                  "assetRegex": "FortifyVulnerabilityExporter\\.zip",
                   "semver": "major"
               },
               {
                   "toolName": "debricked-cli",
                   "toolRepo": "debricked/cli",
-                  "assetRegex": "cli_.*\.tar\.gz",
+                  "assetRegex": "cli_.*\\.tar\\.gz",
                   "semver": "major",
-                  "artifactTypes"": {
+                  "artifactTypes": {
                       ".*linux_arm64.*":           "linux/arm64", 
                       ".*linux_i386.*":            "linux/x86", 
                       ".*linux_x86_64.*":          "linux/x64", 
@@ -76,7 +76,7 @@ jobs:
                      "22.1.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_22.1.0_x64.zip",
                      "21.2.3": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.2.3_x64.zip",
                      "21.2.2": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.2.2_x64.zip",
-                     "22.2.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.2.0_x64.zip",
+                     "21.2.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.2.0_x64.zip",
                      "21.1.4": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.4_x64.zip",
                      "21.1.3": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.3_x64.zip",
                      "21.1.2": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.2_x64.zip",
