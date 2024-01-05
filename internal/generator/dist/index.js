@@ -34923,6 +34923,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.workspaceDir = exports.artifactTypes = exports.semver = exports.toolUrls = exports.toolRepo = exports.assetRegex = exports.tagRegex = exports.githubToken = exports.toolName = exports.signPassphrase = exports.signKey = void 0;
 const core = __importStar(__nccwpck_require__(2186));
+function defaultIfEmpty(s, def) {
+    return nullIfEmpty(s) == null ? def : s;
+}
 function nullIfEmpty(s) {
     return s.trim() == '' || s.trim() == 'null' ? null : s;
 }
@@ -34934,8 +34937,8 @@ exports.tagRegex = nullIfEmpty(core.getInput("tagRegex", { required: false }).tr
 exports.assetRegex = nullIfEmpty(core.getInput("assetRegex", { required: false }).trim());
 exports.toolRepo = nullIfEmpty(core.getInput("toolRepo", { required: false }));
 exports.toolUrls = nullIfEmpty(core.getInput("toolUrls", { required: false }));
-exports.semver = core.getInput("semver", { required: false });
-exports.artifactTypes = JSON.parse(core.getInput("artifactTypes", { required: false }));
+exports.semver = defaultIfEmpty(core.getInput("semver", { required: false }), "none");
+exports.artifactTypes = JSON.parse(defaultIfEmpty(core.getInput("artifactTypes", { required: false }), '{".*": "default"}'));
 exports.workspaceDir = process.env.GITHUB_WORKSPACE;
 
 
