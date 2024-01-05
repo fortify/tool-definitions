@@ -34923,14 +34923,17 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.workspaceDir = exports.artifactTypes = exports.semver = exports.toolUrls = exports.toolRepo = exports.assetRegex = exports.tagRegex = exports.githubToken = exports.toolName = exports.signPassphrase = exports.signKey = void 0;
 const core = __importStar(__nccwpck_require__(2186));
+function nullIfEmpty(s) {
+    return s.trim() == '' ? null : s;
+}
 exports.signKey = Buffer.from(core.getInput("signKey", { required: true }), 'base64').toString('ascii');
 exports.signPassphrase = core.getInput("signPassphrase", { required: true });
 exports.toolName = core.getInput("toolName", { required: true });
 exports.githubToken = core.getInput("GITHUB_TOKEN", { required: true });
-exports.tagRegex = core.getInput("tagRegex", { required: false }).trim();
-exports.assetRegex = core.getInput("assetRegex", { required: false }).trim();
-exports.toolRepo = core.getInput("toolRepo", { required: false });
-exports.toolUrls = core.getInput("toolUrls", { required: false });
+exports.tagRegex = nullIfEmpty(core.getInput("tagRegex", { required: false }).trim());
+exports.assetRegex = nullIfEmpty(core.getInput("assetRegex", { required: false }).trim());
+exports.toolRepo = nullIfEmpty(core.getInput("toolRepo", { required: false }));
+exports.toolUrls = nullIfEmpty(core.getInput("toolUrls", { required: false }));
 exports.semver = core.getInput("semver", { required: false });
 exports.artifactTypes = JSON.parse(core.getInput("artifactTypes", { required: false }));
 exports.workspaceDir = process.env.GITHUB_WORKSPACE;
