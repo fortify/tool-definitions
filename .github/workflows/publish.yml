@@ -34,7 +34,7 @@ jobs:
                   "artifactTypes": { 
                       ".*fcli.jar":    "default",
                       ".*linux.tgz":   "linux/x64",
-                      ".*mac.tgz":     "osx/x64",
+                      ".*mac.tgz":     "darwin/x64",
                       ".*windows.zip": "windows/x64" 
                     }
               },
@@ -59,8 +59,8 @@ jobs:
                       ".*linux_arm64.*":           "linux/arm64", 
                       ".*linux_i386.*":            "linux/x86", 
                       ".*linux_x86_64.*":          "linux/x64", 
-                      ".*(macos|darwin)_arm64.*":  "osx/arm64", 
-                      ".*(macos|darwin)_x86_64.*": "osx/x64", 
+                      ".*(macos|darwin)_arm64.*":  "darwin/arm64", 
+                      ".*(macos|darwin)_x86_64.*": "darwin/x64", 
                       ".*windows_arm64.*":         "windows/arm64", 
                       ".*windows_i386.*":          "windows/x86", 
                       ".*windows_x86_64.*":        "windows/x64"

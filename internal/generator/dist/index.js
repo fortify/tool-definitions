@@ -34923,6 +34923,12 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.workspaceDir = exports.artifactTypes = exports.semver = exports.toolUrls = exports.toolRepo = exports.assetRegex = exports.tagRegex = exports.githubToken = exports.toolName = exports.signPassphrase = exports.signKey = void 0;
 const core = __importStar(__nccwpck_require__(2186));
+// TODO: Fix input handling from matrix in publish.yml. If certain properties are not defined
+//       in the setup job, these are passed as the string 'null' in the generate-tool-definitions
+//       job. This causes default values as defined in action.yml not being applied, and receiving
+//       'null' strings instead of the expected empty strings/null values/default action.yml values
+//       on the getInput() calls below. For now, we work around this by explicitly converting 'null'
+//       strings to null values, and applying defaults where appropriate. 
 function defaultIfEmpty(s, def) {
     return nullIfEmpty(s) == null ? def : s;
 }
