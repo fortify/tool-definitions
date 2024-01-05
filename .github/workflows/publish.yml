@@ -21,38 +21,54 @@ jobs:
         CONFIG: >-
           [
              {
-                  "tool_name": "fod-uploader",
-                  "tool_repo": "fod-dev/fod-uploader-java",
-                  "asset_regex": ".*/FodUpload.jar",
-                  "add_semver": true
+                  "toolName": "fod-uploader",
+                  "toolRepo": "fod-dev/fod-uploader-java",
+                  "assetRegex": "FodUpload\.jar",
+                  "semver": "major"
               },
               {
-                  "tool_name": "fcli",
-                  "tool_repo": "fortify/fcli",
-                  "asset_regex": ".*/(fcli-linux.tgz|fcli-mac.tgz|fcli-windows.zip|fcli.jar)",
-                  "add_semver": true
+                  "toolName": "fcli",
+                  "toolRepo": "fortify/fcli",
+                  "assetRegex": "(fcli-linux\.tgz|fcli-mac\.tgz|fcli-windows\.zip|fcli.jar)",
+                  "semver": "major",
+                  "artifactTypes": { 
+                      ".*fcli.jar":    "default",
+                      ".*linux.tgz":   "linux/x64",
+                      ".*mac.tgz":     "osx/x64",
+                      ".*windows.zip": "windows/x64" 
+                    }
               },
               {
-                  "tool_name": "bugtracker-utility",
-                  "tool_repo": "fortify-ps/FortifyBugTrackerUtility",
-                  "asset_regex": ".*/FortifyBugTrackerUtility-.*.zip",
-                  "add_semver": false
+                  "toolName": "bugtracker-utility",
+                  "toolRepo": "fortify-ps/FortifyBugTrackerUtility",
+                  "assetRegex": "FortifyBugTrackerUtility-.*\.zip",
+                  "semver": "none"
               },
               {
-                  "tool_name": "vuln-exporter",
-                  "tool_repo": "fortify/FortifyVulnerabilityExporter",
-                  "asset_regex": ".*/FortifyVulnerabilityExporter.zip",
-                  "add_semver": true
+                  "toolName": "vuln-exporter",
+                  "toolRepo": "fortify/FortifyVulnerabilityExporter",
+                  "assetRegex": "FortifyVulnerabilityExporter\.zip",
+                  "semver": "major"
               },
               {
-                  "tool_name": "debricked-cli",
-                  "tool_repo": "debricked/cli",
-                  "asset_regex": ".*/cli_.*.tar.gz",
-                  "add_semver": true
+                  "toolName": "debricked-cli",
+                  "toolRepo": "debricked/cli",
+                  "assetRegex": "cli_.*\.tar\.gz",
+                  "semver": "major",
+                  "artifactTypes"": {
+                      ".*linux_arm64.*":           "linux/arm64", 
+                      ".*linux_i386.*":            "linux/x86", 
+                      ".*linux_x86_64.*":          "linux/x64", 
+                      ".*(macos|darwin)_arm64.*":  "osx/arm64", 
+                      ".*(macos|darwin)_x86_64.*": "osx/x64", 
+                      ".*windows_arm64.*":         "windows/arm64", 
+                      ".*windows_i386.*":          "windows/x86", 
+                      ".*windows_x86_64.*":        "windows/x64"
+                    }
               },
               {
-                  "tool_name": "sc-client",
-                  "tool_urls": {
+                  "toolName": "sc-client",
+                  "toolUrls": {
                      "23.1.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_23.1.0_x64.zip",
                      "22.2.1": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_22.2.1_x64.zip",
                      "22.2.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_22.2.0_x64.zip",
@@ -68,7 +84,7 @@ jobs:
                      "20.2.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.2.0_x64.zip",
                      "20.1.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.1.0_x64.zip"
                   },
-                  "add_semver": false
+                  "semver": "minor"
                }
           ]
       run: echo "matrix=$(jq -r -c . <<< "$CONFIG")" >> $GITHUB_OUTPUT
@@ -78,6 +94,10 @@ jobs:
   generate-tool-definitions:
     needs: setup
     runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
     strategy:
       max-parallel: 1
       fail-fast: false
@@ -89,34 +109,50 @@ jobs:
     - name: Check
       env:
         MATRIX: ${{ toJSON(matrix) }}
-        TOOL_NAME: ${{ fromJSON(toJSON(matrix)).tool_name }}
-        TOOL_REPO: ${{ fromJSON(toJSON(matrix)).tool_repo }}
-        REGEX: ${{ fromJSON(toJSON(matrix)).regex }} 
+        TOOL_NAME: ${{ fromJSON(toJSON(matrix)).toolName }}
+        TOOL_REPO: ${{ fromJSON(toJSON(matrix)).toolRepo }}
       run: |
         echo "MATRIX: $(jq -r -c '.' <<< "$MATRIX")"
         echo "TOOL_NAME: [$TOOL_NAME]"
         echo "TOOL_REPO: [$TOOL_REPO]"
-        echo "REGEX: [$REGEX]"
     - name: Generate tool definitions
       uses: ./internal/generator
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        tool_name: ${{ fromJSON(toJSON(matrix)).tool_name }}
-        tool_repo: ${{ fromJSON(toJSON(matrix)).tool_repo }}
-        tool_urls: ${{ toJSON(fromJSON(toJSON(matrix)).tool_urls) }}
-        asset_regex: ${{ fromJSON(toJSON(matrix)).asset_regex }}
-        sign_key: ${{ secrets.SIGN_KEY }}
-        sign_passphrase: ${{ secrets.SIGN_PASSPHRASE }}
-        add_semver: ${{ fromJSON(toJSON(matrix)).add_semver }}
-    - name: Configure git
+        toolName: ${{ fromJSON(toJSON(matrix)).toolName }}
+        toolRepo: ${{ fromJSON(toJSON(matrix)).toolRepo }}
+        toolUrls: ${{ toJSON(fromJSON(toJSON(matrix)).toolUrls) }}
+        tagRegEx: ${{ toJSON(fromJSON(toJSON(matrix)).tagRegex) }}
+        assetRegex: ${{ fromJSON(toJSON(matrix)).assetRegex }}
+        signKey: ${{ secrets.SIGN_KEY }}
+        signPassphrase: ${{ secrets.SIGN_PASSPHRASE }}
+        semver: ${{ fromJSON(toJSON(matrix)).semver }}
+        artifactTypes: ${{ fromJSON(toJSON(matrix)).artifactTypes }}
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+    - uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "chore: Update cache & tool definitions"
+        
+  generate-tool-definitions-zip:
+    needs: generate-tool-definitions
+    runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+    steps:
+    - uses: actions/checkout@v4
+    - name: Generate v1 zip-file
       run: |
-        git config user.name github-actions
-        git config user.email github-actions@fortify.com
-    - name: Commit updates
-      run: | 
-        git add . && git commit -m "chore: Update ${{ fromJSON(toJSON(matrix)).tool_name }} cache & resources" \
-          && git push || \
-          echo "No update needed or update failed"
+        git pull
+        cd v1
+        zip -r tool-definitions.yaml.zip *.yaml
+    - uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "chore: Update tool definitions zip file"    
               
         
         

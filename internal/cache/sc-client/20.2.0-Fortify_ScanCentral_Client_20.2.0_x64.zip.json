@@ -1,7 +1,0 @@
-{
-  "rsa_sha256": "rhs4ieWBi5WlBnyCUNSgWxF+nEAS0EKXy/CEC0gqOV7nlxpo7p2fX/DL7aOrMRXKy9r9VDDAcnNjG5ymjViUpDwCfu5LTdOCG3jNHndso2I0KMZYaVZHgMuMv7ai4K4Nkeez4ZBFIjnkLfmutV0mbdAUvE5i2yzU4q+yUeLgE/aj1cLebQWm3ctF8oKhJYW1vL8AeWbwdlONjsQ0zFqU0tVAxu7PUDKvG62A7rkIqqBHALPYILFhaXdXrtSVqbrSprOXxJj2mx5sUEz+vHS+KWy6al1Dgbh7Si6lWK3x7XctTPZdRcbQlMEjVU33T3UKt4tIp1Z7AV6J2jcIZoDWvg==",
-  "sha256": "c559e1e08c0d90af71e77bdbb806731f818f59d4b3da7e41c02a307495c38d06",
-  "version": "20.2.0",
-  "downloadUrl": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.2.0_x64.zip",
-  "stable": true
-}

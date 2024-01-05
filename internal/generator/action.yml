@@ -5,28 +5,35 @@ inputs:
   GITHUB_TOKEN:
     description: 'GitHub token used to perform GitHub operations'
     required: true
-  tool_name:
+  toolName:
     description: 'The tool name for which to generate tool definitions.'
     required: true
-  tool_repo:
+  toolRepo:
     description: 'The GitHub repository for which to generate tool definitions. Required unless tool_urls is specified.'
     required: false
-  tool_urls:
+  toolUrls:
     description: 'JSON string specifying tool versions & URLs for which to generate tool definitions, in the format {"<version>": "<url>", ...}. Required unless tool_repo is specified.'
     required: false
-  asset_regex:
-    description: 'Optional regular expression to define what releases/assets to include, matching <version without v-prefix>/<asset name>'
+  tagRegex:
+    description: 'Optional regular expressions to define what release tags to include'
     required: false
-  sign_key:
+  assetRegex:
+    description: 'Optional regular expression to define what releases assets to include'
+    required: false
+  signKey:
     description: 'Base64-encoded RSA signing key, usually provided through GitHub secret'
     required: true
-  sign_passphrase:
+  signPassphrase:
     description: 'Passphrase for the RSA signing key provided throgh sign_key, usually provided through GitHub secret'
     required: true
-  add_semver:
-    description: 'Boolean indicating whether semantic versions should be added to the output'
-    default: 'false'
+  semver:
+    description: 'Define what semantic versions to include; can be none (default, only full versions), minor (only minor and full versions) or major (major, minor and full versions)'
+    default: 'none'
     required: false
+  artifactTypes:
+    description: 'JSON string specifying artifact lowercase download URL regex to artifact type mappings {"<regex>": "<type>",..}. Default value: "{".*"="default"}"'
+    default: '{".*"="default"}'
+    required: true
 runs:
   using: node20
   main: 'dist/index.js'
