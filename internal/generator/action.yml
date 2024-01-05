@@ -33,7 +33,7 @@ inputs:
   artifactTypes:
     description: 'JSON string specifying artifact lowercase download URL regex to artifact type mappings {"<regex>": "<type>",..}. Default value: "{".*"="default"}"'
     default: '{".*"="default"}'
-    required: true
+    required: false
 runs:
   using: node20
   main: 'dist/index.js'
