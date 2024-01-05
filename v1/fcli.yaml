@@ -9,7 +9,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v2.1.0/fcli-linux.tgz
         rsa_sha256: INtTQFUnCHsNfyJnM25cVDMjcpMs1rh2ibF8dlHks7WWCSygUVHnsch3oyUWkFCYYL1CcI5SynD2zR65c+JKqsjsCh01WHoyb8oRlAZIvpPpS0AraGcEbcXLO9ZgVZUmhtmfkx2wtMRU9JLgNsYKbtadQcYUfIZVRs/0DGGp5tWAtlyYRKCafzo8ap3SWfbShzt3gybCz2NkLJyVUKjMDcZ/EYdkYZ1QRsL2X5MH24BZMdxOXP4ayem7BdkZIoLVA7bgHhEb7G9eR5RgVbKfc32+DeUQ+N5GiEUwiveqmbfnVH1KP+FtVbHGBVxyDkPjFxzSYnL96BzSetKa7EiQkQ==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v2.1.0/fcli-mac.tgz
         rsa_sha256: YYGkXFW/ARLsskLon4Vnf26191d59ceS5HDHDpKULa8VJopGoONJzOKQmrkW2zJwbcMpH55uQCsHikzpPZ5F1NSNALDGn3iDQvTO3ht1J1uoBHT5jdmZBmsQhyhLKbEdSn6hD0OmJw/k9AsllH+zxJ+d1LTxwlsEVUYpv6lLEzW2mbLe8ve50Ei7GgwZUExGysawC3vPYricqu6hH1apZWln4EKXpED7DY9okvbguwPxM4qbNeA0q5Dp3fI/BkKyQ+ELE/davvOGpDYMp0FWC2WeyZfPrhS+aPLByGg/1gFRNIYTXzdOvUQVm6rbkviIzPD1tJ54sN99txU6StPbOA==
       windows/x64:
@@ -26,7 +26,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v2.0.0/fcli-linux.tgz
         rsa_sha256: WrRtdMSI0HUMQEWJLb0H6Mt4lV7DFO9682CiYv40nIfKRQXivUTUNi0mRNkhmbDdKoS21q663vCiipY82WLeEbhluDbmjapMnQH6IdEHnvYgq1S0W14u8inUqdOyt5bi8tVzvg6MhuAkGW/wruoUQngLRwqi5j4PngYjvEWg0rV4VTE9IxYAnfP62VnbnpbPDFxUlQlrXPFr9FJbmQHGb/MoyUvxJ/uJMtr58MyEqORS+7dmkU8lblDN3/B8PJiWPB93Ig+h3BZogdRr1khwpC4I0mSlw8CrdBZ1IoLfVmjvsMGblacmo2AMr8bvHUPC9QLbpHg2yd1XZOojILkjXQ==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v2.0.0/fcli-mac.tgz
         rsa_sha256: nkWXYYo6TpSQN1LppG6Mp2NNN9gVrFNia8HKUwfkRV5rAN2axZDz0/OBhbf+T0oV1PwOF/Uq5ShxKmqkK03cFy7nLr3UUp9Ox+pAmjALIIZP06+zVvfVFow11P0UjPaz5lNvjIi/93lRKiZ25pXbUtU5T0P+meUArxPEaxOCjmkDs4uTp0GeSJb0eb8sMQhEsN/GjcIR+Ug4CHWvIIL69sYbTuYD2x8DnpIKH5Ssj3gP0YSSYqxEyLhVV3flYhZoGQjzi9XLbZZh+FWtf2U0DHpGyinbVkWrC0aqk2kTj+E8UH+6IU4mfaj6L0tu7nAZw6MwPzxwrgiPfPllccGZaQ==
       windows/x64:
@@ -44,7 +44,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.3.2/fcli-linux.tgz
         rsa_sha256: liq3zP5fxSsEwmR8FxaszkbGfObtJ+Gx1DiCALMl+yflYK4tn3fDYNd9SJUSZf0lib+LA4SamjZxRNMIb1u6pPY5/2SdaGF13kVpL7bVummB8OfyxwO11DE3qQP0sSvIF5b8WUShd/a7SgQJEbw1Qrt1JVkEwPGFD4GJlI4zxhlKvRO+XHFCvq6xI+8UCXkZUFsT9nyeCBARNN0qKt/qGgNUTyqLUuH3bH2lH42jJ/u2h/T7ihwdCUGFLJhkk65WfSyRH3z3nGRgR6fCRPPTBdmDQwjSKNUbv2Bp9qNqTT0Q7cYZ/b+grV4rfrf1+AYVE5p/ZP+1eFlpN6ofCyA6+w==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.3.2/fcli-mac.tgz
         rsa_sha256: BtuNSieV4KuId3ssZJj1TbN2db6cJ89cz5OM84WCUj3eRj9nPIlyUSQoHddOvJ9r7Di+paWqFX+WHH8PqbdZRjWY424iVLuYTJS/rUhmqkAstPBu1GC4W3tfjrvcr5ZRgWKNZ86mug7gvIxNCQ55GycgjW2okAuPSpA9OwFNSEbRbJaCkWigiHvH1VENDJ97wdVGGQk3RPlsniWHkxWfm80dNekORIplcdqse/1Kjd06BSTFTOHpwwRvLRVYSKrf7DuTGvATxAX+Zuv4IUhg3o0wy/5FinIIfimaTXYt0rnn72haUxgeGD/O2YDdYsMsckFJM7copyRg667ITAcygA==
       windows/x64:
@@ -60,7 +60,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.3.1/fcli-linux.tgz
         rsa_sha256: qwnyKWbQw0ObWI/EHE2gd3X0GAeG3DfQRW0z1oI3ouIpbKYP6pxZhtC5KWOxa9L+9PEVcGz2cwP9wn/hMtkSW0uTCRvBim/bHk3qExMPrlVxKFxODrAakRPPXHGIySs8WDyuSKHTT4lQ1S4rwWf6vgwGIcsqfAdqVkUR9PJHRLG7+gLJnjKzcZKh8vug1JZJzIMB6mb0unf+iIFjSJ+AIGLnQcxLSur60cleGm/ZAVwEkl47RaH8V0nluO0iXCpjnUT/cIlWnhlc2Lr85+TQCFIhn3V7c7G/w6SwXe5b7MGD0r5G7OAutQOcNxLoaFGtULQBbSmnJiMhS8H9K9bBLg==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.3.1/fcli-mac.tgz
         rsa_sha256: kuhOZiFVy1f71NcBsu8QcigDZIkqZ7GXJ/w/fJRAvqhRF0kiI80LYoMP+Zj5EfplH1eFOr3FRm6ipWMsxb9TUW82Y0FxtJgrf+JhL46CtU1tIneUFnTvhnweVrKatH6AGi89pvsofqNT4e/UVf6G8grA2JeB+o1vpgy/ynG/Eo8qMSgPXf/KMxOMND1dCsDmpc0KzIM4e8DbAXxZp50BbhQ8+yPJZbbhJDLae9czQFhI81R6MdGt2vJ97SWiGQ2R1IN9+EtZQgbrrsZCgbjRsEEfKGkBb5W5z5Tzz5YQC+KpdgiXPfWYMSvwi6cJUk30T8GLgWW/Rp3GcFH3PndCTg==
       windows/x64:
@@ -76,7 +76,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.3.0/fcli-linux.tgz
         rsa_sha256: UnLyUh1aZSwGTzoUrcFRZPQq/pWdBTXbVx3UbxCh+L6E/EQ2cerkbqnM8R9U18PHoO6c+YA8889m4HW1KtshUl/xK651DWGX9qalmX6oKGsDDyBwfLSdYfoC7lUQS1a0hQQBhWQSz9jxF1Rqhz1iHC2F4lOlBw41MYtMOootPhXbAh4hcQ1joiDN6q1xf3nCM+nfV0ArE6YJfnfT3qP5QLhMnBeUIVM0AiHZcx4O2lBlLzCOuI4QucOGJY/vLyh7wHgc2URo5u5P64G47CQ8/EUM3/4PbMsncbCSybNjNnp2dWqLlZVHPCATHRdJG7VPYEW4i91C3Xzu7id7E3gRlg==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.3.0/fcli-mac.tgz
         rsa_sha256: aJmdgQPwAGRTIFSLgNoBFiaP6x+mGXZ9lfN3be4oxJkxgRt0mkAo71fCF1AK+2u+SFo1o6lRqxglV56ynwQeRtQKlWFd9f7vf7wUf7xYEGBloRS/d/wDinQuxiXNYtUpKcYAV4IjWXXRZbUJZnFv43M1Ej448IKaAF9ny8fdAAeVXF7oZ9yhA1oRq7xrTaDvo7qX4hKTRGa93PfniZ2BtLB8LtUMU2+6fsKyVNPpGAGKmFl8GCgb2GKWCpyPAb/arIAhxe9FuGgZXjQQMzE5781VG/qt64wk5M8OUzs8VBV4prHrUyKbj6ntxAKp1Dt6hm0aAsS1rHs7Lf71gLWwaQ==
       windows/x64:
@@ -93,7 +93,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.2.5/fcli-linux.tgz
         rsa_sha256: mdckaUNSljkpfIHz+TYxhBzt9p7tvhOSnSetKrrcEw0IaaMjPt7i5jYLhjYvsjrJZ8pGtGAE46HfZ+wqPsrgxWpI7CUlUd7Htt1yU942QpLDGlTfjzUk1J1hl1u/qT5z8DdGB47PJ0wxLZLkMvvFx4w8p3LbOjv5PDia807MYSD+zqxvEauVPM4A4QwOFxeFtNEIlmQrgMhRVQXf6Un7/jmklOkz28+8z3y72iq0O5qPdn5RwLjZQajw4vA3yY1T18FChP/qEDE4ig7iRvSmAgPnMJhoHL/DXV1ZgMoZKQcqg+rca15s6M8z0at+jecCZ7tBI4yr8ifpKfJMWPqfTg==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.2.5/fcli-mac.tgz
         rsa_sha256: IWQGCL/XXh74mBfbkAzvpksKZ1K5R6WBGjm4n9iYoaXshV7uXgxOKzvs0c1vtukIuDfTaoKaR+cn0CgvRHa2GcFdQ1MO7vTDJ02pNVEF5LR5WTnCzDqTt8FrkWpMQudeAEd1ho048vu5tjlsbIHDx005I7qsBTRCQlRkRiI0ONurH6AWHKvbm2D5uu5SIHPLwMf+vyfiokHx87csb0CG8/u//GRUChRFwisrdKrSgPCyGQg1CxCaXIATya+zpOXxpv5ywl5U9rMSS1yfVRkYzyhK3p468y7MOrnpZ3tc1PHAGa1mM1DL3hr6KB8z2SsBYzp8twLvaMS2FeC/zWboFA==
       windows/x64:
@@ -109,7 +109,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.2.4/fcli-linux.tgz
         rsa_sha256: AdaBTrieoFtxtGBAYf7seUSGJTDDRSUUNRL3y7Wq1/f7kAdSHwz1rN65xDFok9fUlxJ6dRtmcBUZx9WWOkU2DA3oG/ZnulBOSY064KqAKIELaKmMva5ULOkzcSMOo6PB6+LJ6z5N8Ap+FpYcbIhudVEjlWQPVaRT8v+i5/A0ydz/4ifk24dQpLKxyXYhOp4u007QrvoGeOshHvSPQgnyAPylPf/QcXzYu1ZkUJkHD7uL7wVs2x8T3PYa0Y1mQ4HJH39FBxnJ7qMJO1t9aGEqw4SBUhir6lk0xXS989dMIfuO0D23U2chRGB7IBOzAHT7JHF4nmMCKodJ73RX5ufaUw==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.2.4/fcli-mac.tgz
         rsa_sha256: NJhVBHT45Ta60x3h+cVpDcx9LCeDcTlf8aGh3W3gpVW3QrHzkkSVc+Y/tOJ23BsxqdICHVpWRbuF7dDcNZ2NA6R1p+14DU3UWRjszMN+7k5JqfRm5kKOuWLigLej29fUbrhAYksjKuL81Lz27vbgbhvPb5BClTzTpOn5zNBzzhRVRLmGpn07KEl+lITgGNba7budjrVfMncQ4XyXQznOM1Vapq+NjQHr6Fz7G4kFwg/LSP6Lg1dai1DatqorpvSjSNiKy5PTD4GkoYCygYnpyHHI3Kn/VqseK5nvvhbLoLFY4h9Iy9GOXwzRQx4Fkv4VDDEA1MDY8sFUroX1FEGoIA==
       windows/x64:
@@ -125,7 +125,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.2.3/fcli-linux.tgz
         rsa_sha256: HOOFUl85Zcjt6ang7uVKG6++KJ0qNbHUPgFwIqS7oWtSZHTZl6PaghqbbBb1LMPsspLKl1rEq8v0NbJ11Oep3FfX/ZRuykuYjxfmLiZss3QM8LJgoix/iav+mvXINsKzOljrexweik9W/DQK+Vn3rfP2CW2554mdIqAwwAPiFgArzo492bXR47PitJ+MDUz20KCCCgR/NQ0UXpQdXX5RvRnMNGmku2k+7F8LyxKeJGwZTKdXemMif1lhbDv4G44uu7D2LiZqxjaUv1mAx0fR/hu8A5gCm/Eo9aW7lGu/f36rgONoXVoyZoIGb4XveeXDPfJjuAHIzPjOCSigy30+nQ==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.2.3/fcli-mac.tgz
         rsa_sha256: RZOJClDt6IAZ0z9P9ZqAenC5Oc9u4SKcFl5VI+zRgyqX+b/W5+xujEiVlp7t+gz0Hbi8/fc2CAlF4Nt6H/bHGVoE8NTaPiSSW83OjbjcY+Ti5ab0YAX9MRlI9l5xF/cktWxqog1YNqeRTSpUS4srhFimWbhOGKaiRrQW69H0hY5YfCdogsmCjo7qcOAb5a4msM23oTjSVNDr3YnnZuQKCFUWiuLPzVRWYRXwbj63LMnwGb6SW2jSPbpU9L1h5ZZ848w6Rrs2mlM/GVT0AoBwbYzL9x7x+ZB0Is2cOSCmcnx1Q4WEZah0MBy0RXwvZXJ/Al+cL6dvqqz6E+eLcLIxoA==
       windows/x64:
@@ -141,7 +141,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.2.2/fcli-linux.tgz
         rsa_sha256: Cwd4gqdc4VtZCZFnnYIOzM7XcSA6VsSa8O34DxsnlNeJnf/gat/eyHjM2syCjaaVEe7K+1IeC6+J5dSkY9Rr1B0XgmET9ni4jtLSYbCWcDGhJzE84QTuWxV8OuprsB/5qPNp/5dh3Q1lzZg/qocUzwodgZQakksm8mVrYRcS3aq1nKR9odzkePLLm7dM/6Yw25GikktvI9tiVqc5yK8QXCvITL19Mm7N2NfAfdFNERYmxAGSK3zK+uge+WhonUkZ4ogsqwOayhaOoeKAlYpepp4yEDgcz0KQDL4KbOLML/yVDK7t0EJleqtBM6OjBoXDKzNblUwq1M3d/dYXOJc1WA==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.2.2/fcli-mac.tgz
         rsa_sha256: iTHOiIKIg2lKsMWIhqmhfX1W0Xk83iTej62RIXlOyee3Yw0Xe8VaCBXIl0GJNDqGwC2p05nGJ9w5RuVOiWpCb+BF6/X7CRC+eY4FrDVJxltWDLxtkRYxM1DKF3hpK9cHwdAEztkxTLLytgtpoXGhRmOHQ4b0ooqQwVQF1cNZUOX+6ZvAhGar8rDQYurXAUWrRtWqR0Rrbb6UecSgvQh8D7aYJBHabBtn0dyVpuffJslqcXLhM2QdactVGNEva0EYZemh4lr9JcsZsUtkzugleameuiq/d0g58L2lyGsYyUPZ8/jAaQO7gkdNaz9NSIAoIEyZHJhQ9nWPm/aLAThjQQ==
       windows/x64:
@@ -157,7 +157,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.2.1/fcli-linux.tgz
         rsa_sha256: lONNHqYv8v+csVCkKwq9zHXqOD0x5BjY0TZcvggYNyi1jkHjHq6cUsUHErEZkqtfg/csIInqVhf0Wp0GsOZaba74YmZud0d07FSJbq8CYrdW9IZzI6HkktNyujjP4AXhmemC1X44MT2Qv0Ucev7JuhMkDaS217hBAcY2B2Wl84SQJjGo/fGzXmLbBvTeSG00evfLbMZmC7NdQ9CxVbojKrcoQT7zq1yz4/cP2dtUG8zCp9IJ8FP7GHVVYUwE00bZIWu4ORI485q75JkIp1X+aqFf9eR5VllULe2Z+Z2xgGqEiRygqB4ujCd8jE0psOjxJ9/aosMrYYlkSJs1I47q1Q==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.2.1/fcli-mac.tgz
         rsa_sha256: ixbifbhFCsWZLZBVQJ5VmVFocLTk3ANyhznwjZCOz5UaNVvdQonjhkAL1UAmfmR0DFPrjLh7RApy3q05b64JGphk4AtxJ1c/XwP7+6adH8KdP/UKh4TWuiOKzet4kYkcNxMo1AGaIVOJCbBsGCL33NY65LPoh1/z6j+mHuW36Nj7Azgtzx/cDTBQK1AZ8uoCmRmEtjtlK9a9Q5NclfNAQmecXthdU0F9RK/uZM5plvcChUh9jvUXrG42Oofu2wzUVEyvA6iZIYB9qlnKe7I0YJaG7JdvPyUOs9qoI6bqbVJ2e0diU6k2wEC6lnUtpAZhAyfJrQG+XvBHgeboLbcqSQ==
       windows/x64:
@@ -173,7 +173,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.2.0/fcli-linux.tgz
         rsa_sha256: hY7Mpf9HhYY0OYAs0Wo+QrOuZVgUPbdihVTXpzeP2rTykZzteI6yAcxOcg4C/NumSaHNhUQrsrrif9YTLr6EWUDlxDzjtotxneOX2LnvlQZO8j7/fVw1eozbSQwaMSrs3uuwLShO/BIJGHIvaSRjeHkG8t78SJkwSVkXHrbJtcsyLsyj4lB6SARTfaOUGlEbneBJ5vLImd32nlOVmELcOcZPs7XDwTysPcTVPwBnkPJZOeRX4uneuLgm6y2NLGuEyBDjwEhZV0cfBcB+4ToyPVg9js+0qtGUoX9JxpegjebMwkCmxWuROO84UVNkd99h01z5RayWq4UEsL8lBiuUwA==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.2.0/fcli-mac.tgz
         rsa_sha256: lxVGVO6jQf653ZgK0/DvDID6+17UgaeZlOsZgvmmmiJwpgKZDEayX9iCtUcOLjUt4fVWfMya/eiOpFu2Eun/fKRnHlmXwN4TI7rxsKd3L2rZ0oDOaDlhmHBWlb9BjHvLWJVQJ4QJZCKyBu+j3QMQeDyJNdvp0pb0twDixT3OSsygylA/hGYoYs+zMP6EUjzrMabxVtYNpKnzij5xkrgfxkOCBDvAmjf5UxVkQVKomWzltdqVqzqvNDsIgEUEKhliDiNIkjXRPpxd4y9tFfEtN/JAlMVY+WYudmD/j+XDuzx82nJIOZk3Qo1wWPrKq9XbEYuwCzpO11QEfo292PL/jg==
       windows/x64:
@@ -190,7 +190,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.1.0/fcli-linux.tgz
         rsa_sha256: R4XhWHXyor02jdIp/MixCPJdujTI3c/O5AC1xE2q6zlhhjshDxBgaLNx2sovfh8cV6phZo9jXkYEVz/i1n6YDY6RRE4LaVkSGracaamjodqN/cRlCD8WaifihyMcBYqkJaH/zYgQRFYGHhtTnYyM9xtQ/BzfF79dF2l6cvkjfPkGDgJ0TgrkPHwzG/3XqWycqi74PXdZbAiKc4z+4Ah/A2q9yVkuePEMRAGbwbsD4ED1yHL6McgrBEgqgmPJyNpHc5N/vwJgthH5RmaxNpm9OR4n1UmUgm1uKap0m9/3BCPR/aEawiuH0B2gb2u6u5T2Hzjc56U0TjyLHzPeFvcbfA==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.1.0/fcli-mac.tgz
         rsa_sha256: WvflYLhE909yZOG+08liqc+e+cX3gG8iAxw8F9T9l8M98dirYZjlz+mjuqFm/KbnwKEUGrZd+N0iyM3WAEFqDx21xNJzDOPzxRTLnF/AGB6coUav3sPLMeh0VU/n7XntrpWFODbCy/qEg/iwQV23rQx+wFZLFdKwAP+U4qWM5A33Ql6SSOtqRXCzMvzlpoOd0jSLx9xAzXZexQ0LqAr9uKHiP685yWRho+h7loLx9mUDHvod6YX5jM17yCt97ujYCr77iotCy4QdqCruu6l1y0J+u0umZhbueolGq3w8FlEogwJRiVJPmc9mvtjcWFpLpJ8fLprVJPI4G/MIpnSozg==
       windows/x64:
@@ -207,7 +207,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.0.5/fcli-linux.tgz
         rsa_sha256: hZR5mmyy7hubvgEvFwMJlgjWa7oX62IdbRtI0XT13AzwZnb8uvixnTXlIugXXPJYSMNcPEYDVcC9nGf4IgTY63bNZ+1QHmCS0ku3/kYc8piaGylDmZ+Yp8TBS08TqQi1M2qaLCgFQK6xloq3U9CIi6NvIc+TA9EeudxeCZUlYTe0kL0kjdk3LjY2oOnQHNey6ovUNkwjzIfCbzy7yvqGXWas1sZ1h+ORhV0m1wXQb5x8YadKFVhLZoJWBz130J0AK1d2ixgG9am1cpxZjghmek7QBtaKo9IPkbCCljs/Y/1gyVIRnKxP+Z+roaw0/MLu1EWW/qBFeQvPJW2F5VBpXw==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.0.5/fcli-mac.tgz
         rsa_sha256: KDB/3Lh3xAg81gPUH7/02j462hHLN77HB9Qdbo6Y/rHZVoJvodWuBsAIFGOpjx7Zy0uOhLHVitys53fLSkghGpeEaLchEKfVnS/N67wYNGZm606lUrwHzsA6sADigfMcCHaufO1UN6NUS2k8kEsYJnq+/rHsPgZJpSln4r1FdL8wS6VY/bS+kHEDk5YEmv+/mgp4xQDAK5UlT6es/N/elScDIkqvFUfcAILtyC9cRqsE9lDlquqII5qH7LF+tF4NyJrTBrsnCS0YZI40xkOkM6JIGTxbn1GC83nuPn6cZadKi8FFN0aIHuI6uhcADUu1CCxs/PQ6i42VdX9b/83IsQ==
       windows/x64:
@@ -223,7 +223,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.0.4/fcli-linux.tgz
         rsa_sha256: YoeULPjztDEYr+ILB/JbBnhOyz2ADivQmTBeIaLg6boC70b/1HBwXx51jMnbTRvd8GdSMsrCTrjGs/W2La0kZ2c23BC+dGK6nj37sdrFhbIvdwCgwhjKxQ95WDqr/8cAgbn1znqjI+NwzIJM+yhGBCnLkDL2p11y9VN9nZofe6KD72hyH+7xDRk/yXZ3CLkNpIRk8nvdXLrnE3KuvjxMv3h93DBhYipMYO1VLMfNMCrxUccRZrjUCAnp5bosWchcSt1ZkepiblOed4oe2iIDkyrV2UYliRQlflfI176YZmyK5ZrlSc7YQpdteRKYy/tdre4Rae1cXzILrrb8wRbojg==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.0.4/fcli-mac.tgz
         rsa_sha256: gxCYAfAdgd+7HeQzKBKfPcZb+1rsPjZ7mwHD6SlntHl2blUrCRipFqp5ZFGZpIqF/uBuVXvBGQC3l6tQvV7sK2rSn4n5vWbbclfnxhnYWZzPH1bSNzpUsozxJHa/WwZtAcS6uoYYy1wQQ6N1FnTkB0ZpyVBEkuBMQacJtykvdgCRnt6LUrI0QMit4wUuR3xWV+flz5qVUETTfa6v7YKZlU8h01VlNWSmdTPNzYSASg+/VQJrrsPxGxoXBXktYv7fBwor7RNIL1ULon6b65vPNiFhUt8OZ6vST7Dygnp2wCeuKcy5/kDR4vy2z7n3yzKvpXCy3YMopMgbWDa41T3FCw==
       windows/x64:
@@ -239,7 +239,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.0.3/fcli-linux.tgz
         rsa_sha256: YkTUNNVYfxFeGyPQvaa7RLs77aopBfKf8zbznJQhpejZlZc3hMbKUgdFwpJgDc+rTqv+kBBlKEdFj/Xc+tJpm4Zf2A2mQWHLBFMC3xzxuH0nn4lh6jwYTK+2V6+W/WbTY+pM1hzXa/07erHxuDsPVo/RClCU63QxRwbgC6oBfo+//Lt6WVDqWSasChTSfsOjoRc7foopkfRN3pjKKYPxT3drNyrxjzuOrbIsKP83yFLYczID9sTwYBIeYphn5xdARppZa/RvZKcjYGPoED7DO/kxDpA4ZL7buvxiWtV9mVwsb3DOYOnYtFDlhsfF6xfet6RfnYBSd/6HmlrI0oIidQ==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.0.3/fcli-mac.tgz
         rsa_sha256: q+tiXsX7NpuQG5amnhEFGij4wXtQxesGDFiXHt3x9GpQ9UQ/LhsJJhnqtLUT+WxfNCDC83nie3ukm37nRu2K98fCpoqAaixAjsmoC4Sa0fdyX7VBBswFXQRYrBswZox4zaS1uqNuKKKcVpGREdqolW77Ww8XWWaC1Iq/QF5iD0+lkojt7BRQDp+hPYfP1eH8rUAiczwNWAR+xJLrTxMKT0Am5VSX49IPBaSdeOeqoH+CqVxWqudrwqh8vMzU5TJi3HCBuGsRpse+Y6u4d4F4PTJQd0M75poaomBmKUQwTKUFk9e0RDd9Eq5nGWQU0d+u965141D56ZLJytbvcKRY6Q==
       windows/x64:
@@ -255,7 +255,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.0.2/fcli-linux.tgz
         rsa_sha256: YynV4d469yHpS3mbF/99AGm3ZpExLVgUdN9T8hVaqAQfsxTKWDD7tIbzUOBMUCaAlWdTCFFidyaZldanyrTLb5Qw7TrTHHkociOoS5DwTUAWeljRgSK2CRiZISq4aOwhn/iC6OdT2uOkyihJvAucZ+EGxesufoCNqcZVPj7EURTrEHsdyPEOjHGPHlqA/z55gAZRJypAjLJin+cOObgaxcdTzesJbmpBJRqqvDjqKvjgnBaePFFj1kBc1gqdOP7FokxiYRPYKolxCg5NoCBKvZWUXMIMzxiSa10eYRlJE6XcPTxU9O9Xse31eNAbEgVXNUvmCHAdDKyKP9aQO0et8w==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.0.2/fcli-mac.tgz
         rsa_sha256: Wl6Q34yFoDzremZ6uEEKAT7wRI8tyczaXoquWMbevhKrXdIf7vRvlxdczMDZ/yrLc0MogWVZ3P2EKAWnM1Uz1UuJrT3t9KIGeUmDlb9RE9+XcuF4F0cZGRPM5D1swjUNoOnqISuZYbBdbXHclGhE3t92xlsM3YeoBIvG8YfSIhvzyktGCKKBXXPxw4bbOiYOUwFgumjy5wJoTzjCfJNfdIka/y6OMut5tAuWowWtPokfbb7dRgYRyEgLmOnp3zx5kLQJV3z8tN8oZMG28Pt9UBekaCVN1B3rK97blf14hT+ETgzhJWnINX3qXOFFpT7RM49VBYTN90mkIX/ZMii4KA==
       windows/x64:
@@ -271,7 +271,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.0.1/fcli-linux.tgz
         rsa_sha256: gyEYm8gZmqL2+Gh0ebeg7eSx01or0IUqU8ZXtwSVFRfPpT/54OhbbwcXRJ6lL0vycKL/HoFatoBXu1TPLIQoHkL3vDeTyggAMPqXmj0SNcOrru03AJJ5kgnzd7h5ttidT/491ewukY93n3mP0GvUe63D1OA2gg73a/uJSnkKzxDDHqB9JjFTxvT6Hn348S05MBXPhBpC8d5Y0k+6r7bPYEXzEBEmLgUYGDaPffcw0oZg74XhvpbTczEIzdG7L8kqnO++fKsPbktwOfnnPOChe06T1EUAWRAfqbtbEuP5JgpLe34mcHFoJC2DfR2OrNKaV9XL2c8wEpNnjrEZwUa7kw==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.0.1/fcli-mac.tgz
         rsa_sha256: HRF2iaSHgxQOeaLPY099jR3shRcoPxXcEiF6X2fV6vYIM/Rl66eMUDTI0VYg07Qj7KgVezmTBvg1E61c4V+OLhCfDbWgEYX6pVWAGY9+RB59fkBqh8bjkQmq3ZwfybO8BvY8TKvZxxDP5lgAqac4tLLnQqMWtmDTg/OKPwTN3Q/II4p9kyQNPRlKUXa/kRG0gjDRBid4tNLCfZjzoRNiTE25FkKf8t8oiFjRri+L4KzZtdJlyS0fYJG3ya0laO5j/6sj08+bUpdIRv7Lw0CoAQbumQ0kiwGR2tIloFA1W0sJYRzvsA/vyzqcU+8NNaeONHz1LtNx3q+e8b6B2+WSiQ==
       windows/x64:
@@ -287,7 +287,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.0.0/fcli-linux.tgz
         rsa_sha256: IpvxmBJtzK/3hzll8a3DK/5QhYKzL2ZFCdP0/t4wgJw5J10GbUANITHEr2IZEtjWf8kEYP15YnP84+GIEsSENfTCp6gbMEXG2apTF0dKt7hxsZ8TylQGeD+Aa52cntvXRQZc1MecHVnQi0vw/3Iw9wgUoiaCc1EpbO7hl0/3u+ZbS1WsNDJ9VwylgNYSH1kmJTP5+QbhEZBw18Ib1UVFwjSgSMUJ3RHBkR73dX1NXaHHDyMSbdzEB2xQLXDr4vhjQPPcnRQBsPODsrec0sIVj5uSrbCJxS00XsGy4uy51W+VEqMCGFXAEko3z6NIcUNWd+t4i899EHoo/HU/3oqZvA==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/v1.0.0/fcli-mac.tgz
         rsa_sha256: FgEUaJhPcUlZsZClXOAH1Jej7qEiMk5DvdInPBTEpGtHOZWpf9c2njJkdAHTfix5+lcJoOLCTMyjNsj0PClQjnXBaCJ+BB1CZFALJJPNYBLqr8PKSTCYxQocQ9194gKi2Ch7TMQON352qZkQ6KYnntcaMe/U4dP1O1qKcaME4MS/Z5uvBkK14Y31+HECGHkSUNRZ/BSCNoYQRm1P9XtsDmz3CTeQdsYGmjKkYYkjYIzjNDIM5VgT7PNAYizqmoRDKgi61jgtwj9MALWylZV13qi++Y5qj65DQIlelUXTyrbIatWLuEJ6ApzX6p1CfOiHyQDxOp+iXCFxrxB2MfvoCA==
       windows/x64:
@@ -303,7 +303,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/dev_main/fcli-linux.tgz
         rsa_sha256: M+hnQz+xImcxUjbGRZ+v0KAmreO4l8oOs9lVCz4Zmmow60i0DJ17imGyXi2ukY6oYr99llXDzVKGGHKAjR++qUCTOAvY7jK6o8Ttc+eOr4KpQr/x8Muw1L9031DMnIYOR8lmR10lazy7uUIYC0pQoACmKszYXXnyq0x9gMknFLtpY6APBOAZEEHL9DNdWl6EPMLN4JMmwXGQ4DeObiUkpZ5WByxP3L+yegIqz/PnskoDjDeykvn3M082YlHR+1MJ29WmjRaybDLuzylR9WWCjBMYR0M3WaG+3OXFlZqgso7XhiNXtjE6WZN6XlOMWx+FYKgVXnWTc+zNykvTZBnMEQ==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/dev_main/fcli-mac.tgz
         rsa_sha256: oVjBZRPsTBCLh5Lg2BWWNpfWEQFKQDfxgpB/zHowXqY1wj1/txL5he+X28iQQOf89AuNniuGuEcAbmWSGSFFg7MmmID1zkqn5KPCkbJNbP91SFJuatNV6Rgpf7befAtxZRayN5VnbTEpjDnEKzJSQXOgASwQyRN46SOcBBaBsktDFUZYl8gguYaOBd6n4SAIQmGACPdJXs3c6ixSKW6DHVdf9sKZvSzJlagAIGha0DQBzQYEJDLhou5ZAwFHCEDMEN4ij4eIPLb6Za6nTpI8Q7W6mZyP2iy5n5f6r/eiUqOez68btV9zzFBDRQUn7Ha3h3ViGREH8KcqfH/NQ4sbSw==
       windows/x64:
@@ -319,7 +319,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/dev_github-action/fcli-linux.tgz
         rsa_sha256: qBL5hXHc7ppZBen5SFV5Id87HLg4ygZwD7ZLvcvmXEJiTU5wlij92qpauhI3ZwdVeHrggFDTfzK7xtZPP3X3aohYhRW2o7DJRuJ1lZxWbOMVqZMXKZ2Nyrvp50FpX2VD7q8l36tyCh8Uz9OMhoz7ZruHpTOdk3O32rrOvNMptQZY11D4HbmHJ8iBTGQSBAB7+keFZyQ9PRlE+h6TYfyiFLQJWGguvVzf4dijdfJKdHqqYxvk57n+vN7uI5xdRD1g8oGu5sj2tco5AISqp7ZgxdRO+zEOfQLMou492TBYZ2unwwZw+GuDrbbTSa3KPsM4w0mFqXOeKT2HNdTYl/PzyQ==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/dev_github-action/fcli-mac.tgz
         rsa_sha256: agBcgxIYuD/W2w8K1RpcmYjRVxA1+YEAxJDgmD5RfIFjDztLBUPFg4jDUfebaTR7l/qaVjPkh1pDnd1pFu9b1kXFCkknHE9BlRSoiVq+OX+aL5S+7egjzhgUBSZJjbieMfceY0UdUJPofP65dI5+ZdR9E7zyqf5vUELHTI3KWmsIQ2gRkg9w6ixgOfV+WU20+/UWMM/uhKmnzuzx+u26JqvSnK+rAWBi4qDv5X6D9OUV+aOPY9k2wI4uWrIQMkuZpST7OnRnKKbIF+22Xpiie7dQRbS6+gvNUAvC0dzHh2u3geRbRJn+CeY91Pm91f8hauIsHFgZYRoZZG+MFYPv/w==
       windows/x64:
@@ -335,7 +335,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/dev_develop/fcli-linux.tgz
         rsa_sha256: HugryVxLMWT8RFuNq30xaEwTDsVKbiideK3q94Fn0UaL57l84/dTaen3++3Xoi30qo1vknxE9luV+7D0U4/c5bpjUTOOCT435QRPMSFLIum6cWtPa+F1EqUAChgrd7rrt3V2qDzrquRdUmSFt321ixNXJGcjiFs53lXNW30pKuaFKGaHQ3qzt7Rg2GkqFQ5v1y/9VCYz2KbcKkVfG34i2qV5Y4dFBnt2tqMMI2OXDwSPCQqru0l9FmM442EzadhoIxQOXsShoxkRoqQ2bqmmcSODl34XmHOnOQnFnP0b2zM6bBrhDGNn5RfIXgOjgnStyjoFzrRKRT/qJplYK6nsrA==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/dev_develop/fcli-mac.tgz
         rsa_sha256: mKUYdRtzyDqdxcYnKQQcC0CyUyaDZCTRUKZDZeki0tXB+fyUQtXRcRwFsA9RZXeMZb/nLhllIWLMlXjKQGD10qB04jqJvxjZWARz6m43vXxRJAe6vrGWwB9dQVkJ2MkA7LxM1Mai5FbhypB3LWQdf5u0bNl1RHkcscMP67xJfgcIVT9TbPiiQaGwLQBrOjtlO7xFkz7bXo9TQwyqlPrIkl/YVgzwpbac/8hqh6NahLwCeOdotsSyCZtrJNgIWxpXPPbssFbGZ5SkaVT2jcStxOOSLzIk/8ZethekgIWOgK9BDX5LtXd0+jUJ6kPIVXHJaVDTM4aTwyeGDTTrN1juFA==
       windows/x64:
@@ -351,7 +351,7 @@ versions:
       linux/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/dev_2.0.0-beta/fcli-linux.tgz
         rsa_sha256: D0622fErJpra2MS7kkd10LExRFjV9eyYe6lsMB/bEoCUOKR54pTs999n7apCAsmN5HYrqhuIJT9ACITxfnQH0WMcGv0DVuvcWHKRpksEr+vD9xZiE9iApT+rtqYXmJmdiUoiLJsJz2h7p81jI0Vuz2MnN9v9Y8UoYHhjkqPGwsQdq0THxvBfR/0ep0HD9fe5py5rrGXlFblhgBGeG6VZwdLhkszrFjJor03L+M9GHwAlTONKHtK5/pzvt947FJD91j1j8eKRd1We5N5+w/K0kXDYylEyZiqtMaX8JK/zGNmsSYcG7Llv3P9ooJTrdOpXQH3uKLAUDhyUXsDP6HWF9A==
-      osx/x64:
+      darwin/x64:
         downloadUrl: https://github.com/fortify/fcli/releases/download/dev_2.0.0-beta/fcli-mac.tgz
         rsa_sha256: PlHgNWK3QAb6dNZ1JJtsJ6mLdWykNiSfLBN+2yHraRgNAMudcSSwtToOxcu1aCH4GhZ4eRzKS2ZWlIetwnpSObdjYRAs8ijHsab1P89QqXcZMQlF06T6fqljlTcNIRzy0bf+SGOdb4aPiWiUV7ZwhokeWjTkZTW7rAF8Pci9d5SNnCiTVrj6wH7jjSqk6db7eAS9jI8r53CEZ4dU2xUsL484D2tKdVeIemoXAPkeJZ5GSlagYEA8BPh0y76qZXHuBxOoIjkwyAiuCHAwgPIM6UyyZdXhdBvpTUtdDoZKZGOPScZLrl7XvQM9IRLEU0G11VVNm2X2AOncbd5SmQyQnw==
       windows/x64:
