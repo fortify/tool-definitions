@@ -34932,7 +34932,7 @@ exports.assetRegex = core.getInput("assetRegex", { required: false }).trim();
 exports.toolRepo = core.getInput("toolRepo", { required: false });
 exports.toolUrls = core.getInput("toolUrls", { required: false });
 exports.semver = core.getInput("semver", { required: false });
-exports.artifactTypes = JSON.parse(core.getInput("artifactTypes", { required: false }));
+exports.artifactTypes = JSON.parse(core.getInput("artifactTypes", { required: true }));
 exports.workspaceDir = process.env.GITHUB_WORKSPACE;
 
 
