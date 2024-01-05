@@ -43,7 +43,7 @@ jobs:
                   "toolRepo": "fortify-ps/FortifyBugTrackerUtility",
                   "assetRegex": "FortifyBugTrackerUtility-.*\\.zip",
                   "semver": "major",
-                  "tagMappings": { "(\d+.\d+)", "$1.0" }
+                  "tagMappings": { "(\d+.\d+)": "$1.0" }
               },
               {
                   "toolName": "vuln-exporter",
