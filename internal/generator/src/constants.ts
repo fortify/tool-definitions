@@ -1,7 +1,7 @@
 import * as core from '@actions/core';
 
 function nullIfEmpty(s: string) : string|null {
-    return s.trim()=='' ? null : s;
+    return s.trim()=='' || s.trim()=='null' ? null : s;
 }
 
 export const signKey = Buffer.from(core.getInput("signKey", {required: true}), 'base64').toString('ascii');

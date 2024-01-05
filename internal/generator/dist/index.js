@@ -34924,7 +34924,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.workspaceDir = exports.artifactTypes = exports.semver = exports.toolUrls = exports.toolRepo = exports.assetRegex = exports.tagRegex = exports.githubToken = exports.toolName = exports.signPassphrase = exports.signKey = void 0;
 const core = __importStar(__nccwpck_require__(2186));
 function nullIfEmpty(s) {
-    return s.trim() == '' ? null : s;
+    return s.trim() == '' || s.trim() == 'null' ? null : s;
 }
 exports.signKey = Buffer.from(core.getInput("signKey", { required: true }), 'base64').toString('ascii');
 exports.signPassphrase = core.getInput("signPassphrase", { required: true });
