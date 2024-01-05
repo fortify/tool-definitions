@@ -127,7 +127,7 @@ jobs:
         signKey: ${{ secrets.SIGN_KEY }}
         signPassphrase: ${{ secrets.SIGN_PASSPHRASE }}
         semver: ${{ fromJSON(toJSON(matrix)).semver }}
-        artifactTypes: ${{ fromJSON(toJSON(matrix)).artifactTypes }}
+        artifactTypes: ${{ toJSON(fromJSON(toJSON(matrix)).artifactTypes) }}
     - name: Commit & Push changes
       uses: actions-js/push@master
       with:
