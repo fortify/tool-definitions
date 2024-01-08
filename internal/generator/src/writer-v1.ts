@@ -31,6 +31,7 @@ export async function write(versionDescriptors: VersionDescriptors) : Promise<vo
 class OutputData extends Map<string, string|Array<VersionData>> {
     constructor(versionDescriptors: VersionDescriptors) {
         super();
+        this.set("schema_version", "1.0");
         this.set("versions", versionDescriptors.map(vd=>new VersionData(vd)));
     }
 }

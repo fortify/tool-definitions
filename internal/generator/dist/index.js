@@ -35474,6 +35474,7 @@ exports.write = write;
 class OutputData extends Map {
     constructor(versionDescriptors) {
         super();
+        this.set("schema_version", "1.0");
         this.set("versions", versionDescriptors.map(vd => new VersionData(vd)));
     }
 }
