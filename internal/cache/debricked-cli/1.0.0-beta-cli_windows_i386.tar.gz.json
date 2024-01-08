@@ -1,5 +1,5 @@
 {
+  "downloadUrl": "https://github.com/debricked/cli/releases/download/v1.0.0-beta/cli_windows_i386.tar.gz",
   "rsa_sha256": "UCu2U8G/XZh1BjhHFttyu7AHop0TZdLulViaPsCybk3dFO+G+0LiNdzBYZ7sCLO96qPiarW64bc9XwDp4YnYU4xxXiDQ74yzZGluMMXbe+p1jQxYLIQ5COcBnfhhypEOjLv5P3HdA4NURN5oYRYsZ6JXEZ8mY0r5eLla1mw6jpZSYMUVHy/zzMj3J2pFHdeG33+Fr9pTyjTZc6HbZNyUT83yyQyZ2On5YMyYoyyoXiyS1WihRrD4EkShkg/aK/VufiUVQE2J+/Sio4sX6LhkmHPNfgXHjTYw3sGrZcckUl14S/VrMNr55/kLH2nQKry9r1WsOb05iIKq/6hMtD54jQ==",
-  "sha256": "e4547cb0078230c50f7b50e68e27a427c7acee290fcd8cf7f75983b7bf5fea13",
-  "downloadUrl": "https://github.com/debricked/cli/releases/download/v1.0.0-beta/cli_windows_i386.tar.gz"
+  "sha256": "e4547cb0078230c50f7b50e68e27a427c7acee290fcd8cf7f75983b7bf5fea13"
 }
