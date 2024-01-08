@@ -35140,7 +35140,7 @@ class PartialArtifactDescriptor {
     asArtifactDescriptor(versionDescriptor) {
         return __awaiter(this, void 0, void 0, function* () {
             const cacheFileName = __classPrivateFieldGet(this, _PartialArtifactDescriptor_instances, "m", _PartialArtifactDescriptor_getCacheFileName).call(this, versionDescriptor.version, this.downloadUrl);
-            if (versionDescriptor.stable && fs.existsSync(cacheFileName)) {
+            if (fs.existsSync(cacheFileName)) {
                 core.info(`Resolved from cache: ${cacheFileName}`);
                 return JSON.parse(fs.readFileSync(cacheFileName).toString());
             }
@@ -35148,7 +35148,10 @@ class PartialArtifactDescriptor {
                 core.info(`Caching data for ${this.downloadUrl}`);
                 yield fs.ensureFile(cacheFileName);
                 const fullArtifactDescriptor = yield __classPrivateFieldGet(this, _PartialArtifactDescriptor_instances, "m", _PartialArtifactDescriptor_createArtifactDescriptor).call(this, this.downloadUrl);
-                yield fs.writeFile(cacheFileName, JSON.stringify(fullArtifactDescriptor, null, 2), "utf-8");
+                if (versionDescriptor.stable) {
+                    // Only write cache entry for stable versions
+                    yield fs.writeFile(cacheFileName, JSON.stringify(fullArtifactDescriptor, null, 2), "utf-8");
+                }
                 return fullArtifactDescriptor;
             }
         });
