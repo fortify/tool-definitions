@@ -35145,11 +35145,12 @@ class PartialArtifactDescriptor {
                 return JSON.parse(fs.readFileSync(cacheFileName).toString());
             }
             else {
-                core.info(`Caching data for ${this.downloadUrl}`);
-                yield fs.ensureFile(cacheFileName);
+                core.info(`Generating data for ${this.downloadUrl}`);
                 const fullArtifactDescriptor = yield __classPrivateFieldGet(this, _PartialArtifactDescriptor_instances, "m", _PartialArtifactDescriptor_createArtifactDescriptor).call(this, this.downloadUrl);
                 if (versionDescriptor.stable) {
                     // Only write cache entry for stable versions
+                    core.info(`Caching data for ${this.downloadUrl}`);
+                    yield fs.ensureFile(cacheFileName);
                     yield fs.writeFile(cacheFileName, JSON.stringify(fullArtifactDescriptor, null, 2), "utf-8");
                 }
                 return fullArtifactDescriptor;

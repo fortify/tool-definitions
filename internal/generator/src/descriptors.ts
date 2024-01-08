@@ -131,11 +131,11 @@ export class PartialArtifactDescriptor {
             return JSON.parse(fs.readFileSync(cacheFileName).toString()) as ArtifactDescriptor;
         } else {
             core.info(`Generating data for ${this.downloadUrl}`);
-            await fs.ensureFile(cacheFileName);
             const fullArtifactDescriptor = await this.#createArtifactDescriptor(this.downloadUrl);
             if ( versionDescriptor.stable ) {
                 // Only write cache entry for stable versions
                 core.info(`Caching data for ${this.downloadUrl}`);
+                await fs.ensureFile(cacheFileName);
                 await fs.writeFile(cacheFileName, JSON.stringify(fullArtifactDescriptor, null, 2), "utf-8");
             }
             return fullArtifactDescriptor;
