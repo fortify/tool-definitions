@@ -1,1 +1,3 @@
-TODO
+This repository hosts Fortify tool definition files, listing available versions of various Fortify tools together with download URLs and related information like file signatures. For tools hosted on github.com, the tool definition files are automatically updated every day. For ScanCentral Client, which is not hosted on github.com, there may be a small delay before new versions get listed in the tool definition files.
+
+The tool definition files are primarily used by [fcli](https://github.com/fortify/fcli) and the Fortify [setup](https://github.com/fortify/github-action/?tab=readme-ov-file#fortifygithub-actionsetup) GitHub Action to allow for Fortify tool installations, but may also be used for other purposes.
