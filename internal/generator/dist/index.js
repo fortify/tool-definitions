@@ -34923,6 +34923,10 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.workspaceDir = exports.tagMappings = exports.artifactTypes = exports.semver = exports.toolUrls = exports.toolRepo = exports.assetRegex = exports.tagRegex = exports.githubToken = exports.toolName = exports.signPassphrase = exports.signKey = void 0;
 const core = __importStar(__nccwpck_require__(2186));
+/**
+ * This module defines various constants used by the other modules, mostly consisting
+ * of GitHub inputs.
+ */
 // TODO: Fix input handling from matrix in publish.yml. If certain properties are not defined
 //       in the setup job, these are passed as the string 'null' in the generate-tool-definitions
 //       job. This causes default values as defined in action.yml not being applied, and receiving
@@ -35003,7 +35007,7 @@ var __asyncValues = (this && this.__asyncValues) || function (o) {
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-var _VersionDescriptor_instances, _VersionDescriptor_artifacts, _VersionDescriptor_addAlias, _PartialArtifactDescriptor_instances, _a, _PartialArtifactDescriptor_cacheDir, _PartialArtifactDescriptor_getCacheFileName, _PartialArtifactDescriptor_updateArtifactDescriptor;
+var _VersionDescriptor_instances, _VersionDescriptor_artifacts, _VersionDescriptor_addAlias, _PartialArtifactDescriptor_instances, _a, _PartialArtifactDescriptor_cacheDir, _PartialArtifactDescriptor_getCacheFileName, _PartialArtifactDescriptor_createArtifactDescriptor;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PartialArtifactDescriptor = exports.ArtifactDescriptor = exports.VersionDescriptor = exports.VersionDescriptors = void 0;
 const core = __importStar(__nccwpck_require__(2186));
@@ -35013,6 +35017,15 @@ const fs = __importStar(__nccwpck_require__(5630));
 const path = __importStar(__nccwpck_require__(1017));
 const node_stream_1 = __importDefault(__nccwpck_require__(4492));
 const semver = __importStar(__nccwpck_require__(1383));
+/**
+ * This module defines various classes that hold version and artifact
+ * data, combined with various utility methods operating on those versions
+ * and artifacts.
+*/
+/**
+ * This class holds zero or more VersionDescriptor instances, providing
+ * regular Array methods as well as some methods specific to VersionDescriptors.
+ */
 class VersionDescriptors extends Array {
     addAliases() {
         const allVersions = this.map(v => v.version);
@@ -35024,6 +35037,12 @@ class VersionDescriptors extends Array {
     }
 }
 exports.VersionDescriptors = VersionDescriptors;
+/**
+ * This class holds information about an individual version, like version
+ * name/number, version aliases and artifacts belonging to this version.
+ * Several utility methods are available, for example for comparing instances
+ * of this class, adding new artifacts, and for adding the appropriate aliases.
+ */
 class VersionDescriptor {
     constructor(version, stable) {
         _VersionDescriptor_instances.add(this);
@@ -35064,6 +35083,9 @@ class VersionDescriptor {
     }
     addAliases(allVersions) {
         if (semver.valid(this.version) && this.stable) {
+            if (this.version == semver.maxSatisfying(allVersions, "*", false)) {
+                this.aliases.push('latest');
+            }
             const major = `${semver.major(this.version)}`;
             const minor = `${semver.minor(this.version)}`;
             const majorMinor = `${major}.${minor}`;
@@ -35080,14 +35102,36 @@ _VersionDescriptor_artifacts = new WeakMap(), _VersionDescriptor_instances = new
         }
     }
 };
+/**
+ * This class holds information about artifacts, like download URL and
+ * hashes/signatures. Instances of this class are usually created through
+ * the PartialArtifactDescriptor::asArtifactDescriptor method.
+ *
+ * Note that PartialArtifactDescriptor will cache instances of this class;
+ * when adding/renaming properties in this class, existing cache entries
+ * must be manually removed in order to regenerate the previously cached
+ * entries.
+ *
+ * As such, ideally this class should only contain properties that are
+ * relatively expensive to calculate, thereby reducing the need to
+ * (frequently) add or rename properties.
+*/
 class ArtifactDescriptor {
-    constructor(partialArtifactDescriptor) {
-        this.rsa_sha256 = "";
-        this.sha256 = "";
-        this.downloadUrl = partialArtifactDescriptor.downloadUrl;
+    constructor(downloadUrl, rsa_sha256, sha256) {
+        this.downloadUrl = downloadUrl;
+        this.rsa_sha256 = rsa_sha256;
+        this.sha256 = sha256;
     }
 }
 exports.ArtifactDescriptor = ArtifactDescriptor;
+/**
+ * This class partially defines an artifact (only download URL for now), and can be used
+ * to generate a complete ArtifactDescriptor instance through the asArtifactDescriptor()
+ * method on this class. ArtifactDescriptor instances will be cached; if no cache entry
+ * is found for a given version and download URL, this class will calculate the various
+ * ArtifactDescriptor properties and generate a new cache entry for the new ArtifactDescriptor
+ * instance.
+*/
 class PartialArtifactDescriptor {
     constructor(downloadUrl) {
         _PartialArtifactDescriptor_instances.add(this);
@@ -35103,7 +35147,7 @@ class PartialArtifactDescriptor {
             else {
                 core.info(`Caching data for ${this.downloadUrl}`);
                 yield fs.ensureFile(cacheFileName);
-                const fullArtifactDescriptor = yield __classPrivateFieldGet(this, _PartialArtifactDescriptor_instances, "m", _PartialArtifactDescriptor_updateArtifactDescriptor).call(this, new ArtifactDescriptor(this));
+                const fullArtifactDescriptor = yield __classPrivateFieldGet(this, _PartialArtifactDescriptor_instances, "m", _PartialArtifactDescriptor_createArtifactDescriptor).call(this, this.downloadUrl);
                 yield fs.writeFile(cacheFileName, JSON.stringify(fullArtifactDescriptor, null, 2), "utf-8");
                 return fullArtifactDescriptor;
             }
@@ -35115,12 +35159,11 @@ _a = PartialArtifactDescriptor, _PartialArtifactDescriptor_instances = new WeakS
     const url = new URL(downloadUrl);
     const name = `${__classPrivateFieldGet(_a, _a, "f", _PartialArtifactDescriptor_cacheDir)}/${version}-${path.basename(url.pathname)}.json`;
     return name;
-}, _PartialArtifactDescriptor_updateArtifactDescriptor = function _PartialArtifactDescriptor_updateArtifactDescriptor(artifact) {
+}, _PartialArtifactDescriptor_createArtifactDescriptor = function _PartialArtifactDescriptor_createArtifactDescriptor(downloadUrl) {
     var _b, e_1, _c, _d;
     return __awaiter(this, void 0, void 0, function* () {
         const sign = crypto.createSign('RSA-SHA256');
         const hash = crypto.createHash('sha256');
-        const downloadUrl = artifact.downloadUrl;
         const response = yield fetch(downloadUrl);
         const readable = node_stream_1.default.Readable.fromWeb(response.body);
         try {
@@ -35139,9 +35182,9 @@ _a = PartialArtifactDescriptor, _PartialArtifactDescriptor_instances = new WeakS
             }
             finally { if (e_1) throw e_1.error; }
         }
-        artifact.rsa_sha256 = sign.sign({ key: constants.signKey, passphrase: constants.signPassphrase }, "base64");
-        artifact.sha256 = hash.digest('hex');
-        return artifact;
+        const rsa_sha256 = sign.sign({ key: constants.signKey, passphrase: constants.signPassphrase }, "base64");
+        const sha256 = hash.digest('hex');
+        return new ArtifactDescriptor(downloadUrl, rsa_sha256, sha256);
     });
 };
 _PartialArtifactDescriptor_cacheDir = { value: `${constants.workspaceDir}/internal/cache/${constants.toolName}` };
@@ -35192,6 +35235,12 @@ const core = __importStar(__nccwpck_require__(2186));
 const github = __importStar(__nccwpck_require__(5438));
 const constants = __importStar(__nccwpck_require__(9042));
 const descriptors_1 = __nccwpck_require__(3784);
+/**
+ * This module provides functionality for retrieving VersionDescriptors in
+ * descending version order. Based on action inputs, the getVersionDescriptors()
+ * method will either generate version descriptors for a given GitHub repository,
+ * or from a given set of versions and download URLs.
+*/
 function getVersionDescriptors() {
     return __awaiter(this, void 0, void 0, function* () {
         let result;
@@ -35331,13 +35380,14 @@ const core = __importStar(__nccwpck_require__(2186));
 const loader = __importStar(__nccwpck_require__(123));
 const v1Writer = __importStar(__nccwpck_require__(1783));
 /**
- * Main entrypoint for this GitHub Action.
+ * Main entrypoint for this GitHub Action. This will use the loader.ts module
+ * to load a VersionDescriptors instance (as defined in descriptor.ts), then
+ * use the writer-v1.ts module to write the 'version 1' tool descriptors.
  */
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const versionDescriptors = yield loader.getVersionDescriptors();
-            //versionDescriptors.forEach(v=>core.info(`${v.version}: ${v.getVersionAndAliases().reduce((s,v)=>s+=v+',','')}`));
             v1Writer.write(versionDescriptors);
         }
         catch (err) {
@@ -35394,6 +35444,22 @@ const yaml = __importStar(__nccwpck_require__(4083));
 const fs = __importStar(__nccwpck_require__(5630));
 const outputDir = `${constants.workspaceDir}/v1`;
 const outputFile = `${outputDir}/${constants.toolName}.yaml`;
+/**
+ * This method is responsible for writing the `v1` tool descriptors to the `<workspace>/v1`
+ * directory, based on the given version descriptors loaded by loader.ts and passed to this
+ * method by main.ts.
+ *
+ * This method uses various `Data` classes defined below to define the output structure, and
+ * then uses the `yaml` module to convert this into yaml format before writing the output to
+ * the output file.
+ *
+ * The `Data` classes all extend from `Map` instead of using plain class fields to ensure
+ * output order. If we'd use plain class fields, then for example each version entry might
+ * first list aliases and artifacts, before listing the actual version number. This wouldn't
+ * be an issue for programmatic processing, but does affect human readibility of the output
+ * file. Especially if users want to modify these files (for example overriding download URLs
+ * or reducing the set of supported versions), human readibility is just as important.
+*/
 function write(versionDescriptors) {
     return __awaiter(this, void 0, void 0, function* () {
         const output = new OutputData(versionDescriptors);
@@ -35405,7 +35471,6 @@ exports.write = write;
 class OutputData extends Map {
     constructor(versionDescriptors) {
         super();
-        this.set("defaultVersion", versionDescriptors[0].version);
         this.set("versions", versionDescriptors.map(vd => new VersionData(vd)));
     }
 }

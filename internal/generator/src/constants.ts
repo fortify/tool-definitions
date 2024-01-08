@@ -1,5 +1,10 @@
 import * as core from '@actions/core';
 
+/**
+ * This module defines various constants used by the other modules, mostly consisting
+ * of GitHub inputs.
+ */
+
 // TODO: Fix input handling from matrix in publish.yml. If certain properties are not defined
 //       in the setup job, these are passed as the string 'null' in the generate-tool-definitions
 //       job. This causes default values as defined in action.yml not being applied, and receiving

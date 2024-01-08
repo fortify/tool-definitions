@@ -7,7 +7,17 @@ import { default as Stream } from 'node:stream'
 import type { ReadableStream } from 'node:stream/web'
 import * as semver from 'semver'
 
-export class VersionDescriptors extends Array<VersionDescriptor> {
+/** 
+ * This module defines various classes that hold version and artifact
+ * data, combined with various utility methods operating on those versions
+ * and artifacts.
+*/
+
+/**
+ * This class holds zero or more VersionDescriptor instances, providing
+ * regular Array methods as well as some methods specific to VersionDescriptors. 
+ */
+export class VersionDescriptors extends Array<VersionDescriptor> { 
     addAliases() : VersionDescriptors {
         const allVersions = this.map(v=>v.version);
         this.forEach(v=>v.addAliases(allVersions));
@@ -18,6 +28,12 @@ export class VersionDescriptors extends Array<VersionDescriptor> {
     }
 }
 
+/**
+ * This class holds information about an individual version, like version 
+ * name/number, version aliases and artifacts belonging to this version. 
+ * Several utility methods are available, for example for comparing instances
+ * of this class, adding new artifacts, and for adding the appropriate aliases.
+ */
 export class VersionDescriptor {
     constructor(version:string, stable:boolean) {
         this.version = version;
@@ -49,6 +65,9 @@ export class VersionDescriptor {
     }
     addAliases(allVersions: Array<string>) : void {
         if ( semver.valid(this.version) && this.stable ) {
+            if ( this.version==semver.maxSatisfying(allVersions, "*", false) ) {
+                this.aliases.push('latest');    
+            }
             const major = `${semver.major(this.version)}`;
             const minor = `${semver.minor(this.version)}`;
             const majorMinor = `${major}.${minor}`;
@@ -65,15 +84,39 @@ export class VersionDescriptor {
     }
 }
 
+/** 
+ * This class holds information about artifacts, like download URL and
+ * hashes/signatures. Instances of this class are usually created through
+ * the PartialArtifactDescriptor::asArtifactDescriptor method.
+ * 
+ * Note that PartialArtifactDescriptor will cache instances of this class;
+ * when adding/renaming properties in this class, existing cache entries
+ * must be manually removed in order to regenerate the previously cached
+ * entries.
+ * 
+ * As such, ideally this class should only contain properties that are
+ * relatively expensive to calculate, thereby reducing the need to 
+ * (frequently) add or rename properties.
+*/
 export class ArtifactDescriptor {
-    constructor(partialArtifactDescriptor : PartialArtifactDescriptor) {
-        this.downloadUrl = partialArtifactDescriptor.downloadUrl;
+    constructor(downloadUrl : string, rsa_sha256: string, sha256: string) {
+        this.downloadUrl = downloadUrl;
+        this.rsa_sha256 = rsa_sha256;
+        this.sha256 = sha256;
     }
     downloadUrl : string;
-    rsa_sha256 = "";
-    sha256 = "";
+    rsa_sha256 : string;
+    sha256 : string;
 }
 
+/** 
+ * This class partially defines an artifact (only download URL for now), and can be used 
+ * to generate a complete ArtifactDescriptor instance through the asArtifactDescriptor()
+ * method on this class. ArtifactDescriptor instances will be cached; if no cache entry
+ * is found for a given version and download URL, this class will calculate the various
+ * ArtifactDescriptor properties and generate a new cache entry for the new ArtifactDescriptor
+ * instance.
+*/
 export class PartialArtifactDescriptor {
     static #cacheDir = `${constants.workspaceDir}/internal/cache/${constants.toolName}`;
     constructor(downloadUrl : string) {
@@ -89,7 +132,7 @@ export class PartialArtifactDescriptor {
         } else {
             core.info(`Caching data for ${this.downloadUrl}`);
             await fs.ensureFile(cacheFileName);
-            const fullArtifactDescriptor = await this.#updateArtifactDescriptor(new ArtifactDescriptor(this));
+            const fullArtifactDescriptor = await this.#createArtifactDescriptor(this.downloadUrl);
             await fs.writeFile(cacheFileName, JSON.stringify(fullArtifactDescriptor, null, 2), "utf-8");
             return fullArtifactDescriptor;
         }
@@ -101,18 +144,17 @@ export class PartialArtifactDescriptor {
         return name;
     }
     
-    async #updateArtifactDescriptor(artifact: ArtifactDescriptor) : Promise<ArtifactDescriptor> {
+    async #createArtifactDescriptor(downloadUrl: string) : Promise<ArtifactDescriptor> {
         const sign = crypto.createSign('RSA-SHA256');
         const hash = crypto.createHash('sha256');
-        const downloadUrl = artifact.downloadUrl;
         const response = await fetch(downloadUrl);
         const readable = Stream.Readable.fromWeb(response.body as ReadableStream<Uint8Array>)
         for await (const chunk of readable) {
             sign.update(chunk);
             hash.update(chunk);
         }
-        artifact.rsa_sha256 = sign.sign({key: constants.signKey, passphrase: constants.signPassphrase}, "base64");
-        artifact.sha256 = hash.digest('hex');
-        return artifact;
+        const rsa_sha256 = sign.sign({key: constants.signKey, passphrase: constants.signPassphrase}, "base64");
+        const sha256 = hash.digest('hex');
+        return new ArtifactDescriptor(downloadUrl, rsa_sha256, sha256);
     }
 }

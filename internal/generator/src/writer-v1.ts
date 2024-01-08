@@ -6,6 +6,22 @@ import * as fs from 'fs-extra';
 const outputDir = `${constants.workspaceDir}/v1`;
 const outputFile = `${outputDir}/${constants.toolName}.yaml`;
 
+/** 
+ * This method is responsible for writing the `v1` tool descriptors to the `<workspace>/v1`
+ * directory, based on the given version descriptors loaded by loader.ts and passed to this
+ * method by main.ts. 
+ * 
+ * This method uses various `Data` classes defined below to define the output structure, and 
+ * then uses the `yaml` module to convert this into yaml format before writing the output to
+ * the output file. 
+ * 
+ * The `Data` classes all extend from `Map` instead of using plain class fields to ensure 
+ * output order. If we'd use plain class fields, then for example each version entry might
+ * first list aliases and artifacts, before listing the actual version number. This wouldn't
+ * be an issue for programmatic processing, but does affect human readibility of the output
+ * file. Especially if users want to modify these files (for example overriding download URLs
+ * or reducing the set of supported versions), human readibility is just as important. 
+*/
 export async function write(versionDescriptors: VersionDescriptors) : Promise<void> {
     const output = new OutputData(versionDescriptors);
     await fs.ensureFile(outputFile);
@@ -15,7 +31,6 @@ export async function write(versionDescriptors: VersionDescriptors) : Promise<vo
 class OutputData extends Map<string, string|Array<VersionData>> {
     constructor(versionDescriptors: VersionDescriptors) {
         super();
-        this.set("defaultVersion", versionDescriptors[0].version);
         this.set("versions", versionDescriptors.map(vd=>new VersionData(vd)));
     }
 }

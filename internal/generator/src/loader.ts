@@ -4,6 +4,13 @@ import * as constants from './constants';
 import { VersionDescriptors, VersionDescriptor, PartialArtifactDescriptor } from './descriptors';
 import { components } from "@octokit/openapi-types"
 
+/** 
+ * This module provides functionality for retrieving VersionDescriptors in
+ * descending version order. Based on action inputs, the getVersionDescriptors() 
+ * method will either generate version descriptors for a given GitHub repository, 
+ * or from a given set of versions and download URLs. 
+*/
+
 export async function getVersionDescriptors() : Promise<VersionDescriptors> {
     let result : VersionDescriptors;
     if ( constants.toolRepo ) {
