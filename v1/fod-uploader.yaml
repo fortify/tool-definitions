@@ -1,7 +1,7 @@
-defaultVersion: 5.4.0
 versions:
   - version: 5.4.0
     aliases:
+      - latest
       - "5"
       - "5.4"
     stable: true
