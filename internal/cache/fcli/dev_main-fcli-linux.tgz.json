@@ -1,5 +1,5 @@
 {
+  "downloadUrl": "https://github.com/fortify/fcli/releases/download/dev_main/fcli-linux.tgz",
   "rsa_sha256": "M+hnQz+xImcxUjbGRZ+v0KAmreO4l8oOs9lVCz4Zmmow60i0DJ17imGyXi2ukY6oYr99llXDzVKGGHKAjR++qUCTOAvY7jK6o8Ttc+eOr4KpQr/x8Muw1L9031DMnIYOR8lmR10lazy7uUIYC0pQoACmKszYXXnyq0x9gMknFLtpY6APBOAZEEHL9DNdWl6EPMLN4JMmwXGQ4DeObiUkpZ5WByxP3L+yegIqz/PnskoDjDeykvn3M082YlHR+1MJ29WmjRaybDLuzylR9WWCjBMYR0M3WaG+3OXFlZqgso7XhiNXtjE6WZN6XlOMWx+FYKgVXnWTc+zNykvTZBnMEQ==",
-  "sha256": "f673634e4eb7074d1654716a785d41c8f00ba77f0e9c97556c639540ebe43e47",
-  "downloadUrl": "https://github.com/fortify/fcli/releases/download/dev_main/fcli-linux.tgz"
+  "sha256": "f673634e4eb7074d1654716a785d41c8f00ba77f0e9c97556c639540ebe43e47"
 }
