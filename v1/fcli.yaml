@@ -1,3 +1,4 @@
+schema_version: "1.0"
 versions:
   - version: 2.1.0
     aliases:
