@@ -1,7 +1,7 @@
-defaultVersion: 23.1.0
 versions:
   - version: 23.1.0
     aliases:
+      - latest
       - "23.1"
     stable: true
     artifacts:
