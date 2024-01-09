@@ -1,0 +1,7 @@
+{
+  "name": "cli_windows_arm64.tar.gz",
+  "downloadUrl": "https://github.com/debricked/cli/releases/download/v1.7.6/cli_windows_arm64.tar.gz",
+  "contentType": "application/gzip",
+  "rsa_sha256": "ARpB2ojZseQBkn81H0CXWXxGZ63KuIxd95aIhfLzN0sZzds492uYp2q+CpbiSLmBD+PUc4xEd4/bmL0pzH8sajHGv1P8a/1DiJeYtCRao0e8uxSzBx1JzEUeZId7KlQMNLVR+YsMg0xMpRlzPYEq8HtgjDjN+G7gGJWE1wR/UOzSv9u9KuO1g8BwJIiHiG/RsCMH4IDshn+DozapYai30UnVQEhZtyI2Ju83O48FAooDmzrlt2sFo8muKh4S8/c/NU7jyE43BTkTH72Vg1Ea9comzm8Ozu+AXQHQhTY9W8g61MVq1fUepw2DylXvB0ckTZyg6wq519y6/M29B5kRuw==",
+  "sha256": "37b585d28ffe75eebe00d126a0d80fa09b549b0c316519f546e095c8784673c7"
+}

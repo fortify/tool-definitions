@@ -1,0 +1,7 @@
+{
+  "name": "cli_linux_arm64.tar.gz",
+  "downloadUrl": "https://github.com/debricked/cli/releases/download/v1.1.0/cli_linux_arm64.tar.gz",
+  "contentType": "application/gzip",
+  "rsa_sha256": "dyFw0mT3IQ4RPghLpcdFPmribq/KGXv36FJP5ytI2nXFqgzfVMwbs4w+cbEb9xUXlV5feRDseXSxF8zZol1hpj2JhKziT+15BQ+xDLlVgPuW5uzWvtX/H9bsta93kE3V7mpXKVpgGHbYGXVcPUOj4EQgllC8OmUiK4IUfye52PZO7r5FlT67/g1nSyy1QAGhU2XSuPNADEN/nN+kvDy2CCqUYOJT5P1GzqLeV7xuCVHvD+rGDAtlXX7QUYbCVdaqwmigNW2bT4egO5Eou1H8i40+GJ2nXKMPv+JxJB2rh8aIxFy/ZHzb4R/5UErlY+26P3cfwd+nsPinkMnsgupgjQ==",
+  "sha256": "6f3ce17a32d111d6aed04ebfa49889dfc6e279a0c18e40787fa57f19c48f13e0"
+}
