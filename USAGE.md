@@ -37,7 +37,7 @@ Where needed, custom integrations may use these tool definition files to allow f
 Following is a general description of the tool definition yaml file structure:
 
 ```yaml
-schema_version: 1.0        # Version of the yaml schema used for this file
+schema_version: "1.0"      # Version of the yaml schema used for this file
 versions:                  # Top-level element listing all tool versions
   - version: 1.0.0         # Single tool version definition
     aliases:               # Optional list of version aliases, primarily

@@ -34997,13 +34997,6 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
     return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
-var __asyncValues = (this && this.__asyncValues) || function (o) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var m = o[Symbol.asyncIterator], i;
-    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -35164,28 +35157,12 @@ _a = PartialArtifactDescriptor, _PartialArtifactDescriptor_instances = new WeakS
     const name = `${__classPrivateFieldGet(_a, _a, "f", _PartialArtifactDescriptor_cacheDir)}/${version}-${path.basename(url.pathname)}.json`;
     return name;
 }, _PartialArtifactDescriptor_createArtifactDescriptor = function _PartialArtifactDescriptor_createArtifactDescriptor(downloadUrl) {
-    var _b, e_1, _c, _d;
     return __awaiter(this, void 0, void 0, function* () {
         const sign = crypto.createSign('RSA-SHA256');
         const hash = crypto.createHash('sha256');
         const response = yield fetch(downloadUrl);
         const readable = node_stream_1.default.Readable.fromWeb(response.body);
-        try {
-            for (var _e = true, readable_1 = __asyncValues(readable), readable_1_1; readable_1_1 = yield readable_1.next(), _b = readable_1_1.done, !_b; _e = true) {
-                _d = readable_1_1.value;
-                _e = false;
-                const chunk = _d;
-                sign.update(chunk);
-                hash.update(chunk);
-            }
-        }
-        catch (e_1_1) { e_1 = { error: e_1_1 }; }
-        finally {
-            try {
-                if (!_e && !_b && (_c = readable_1.return)) yield _c.call(readable_1);
-            }
-            finally { if (e_1) throw e_1.error; }
-        }
+        readable.pipe(sign).pipe(hash);
         const rsa_sha256 = sign.sign({ key: constants.signKey, passphrase: constants.signPassphrase }, "base64");
         const sha256 = hash.digest('hex');
         return new ArtifactDescriptor(downloadUrl, rsa_sha256, sha256);
