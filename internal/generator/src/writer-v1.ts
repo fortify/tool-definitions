@@ -51,6 +51,7 @@ class VersionData extends Map<string,string|boolean|Map<string,ArtifactData>|Arr
 class ArtifactData extends Map<string,string> {
     constructor(artifactDescriptor: ArtifactDescriptor) {
         super()
+        this.set("name", artifactDescriptor.name);
         this.set("downloadUrl", artifactDescriptor.downloadUrl);
         this.set("rsa_sha256", artifactDescriptor.rsa_sha256);
     }

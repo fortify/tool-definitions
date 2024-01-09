@@ -1,6 +1,7 @@
 import * as core from '@actions/core';
 import * as github from '@actions/github';
 import * as constants from './constants';
+import * as path from 'path';
 import { VersionDescriptors, VersionDescriptor, PartialArtifactDescriptor } from './descriptors';
 import { components } from "@octokit/openapi-types"
 
@@ -26,7 +27,8 @@ export async function getVersionDescriptors() : Promise<VersionDescriptors> {
 async function getVersionDescriptorsFromJSON(toolVersionDescriptorsAndUrls: {[key: string]: string}) : Promise<VersionDescriptors> {
     const result : VersionDescriptors = new VersionDescriptors();
     for (const version in toolVersionDescriptorsAndUrls) {
-        const partialArtifactDescriptor = new PartialArtifactDescriptor(toolVersionDescriptorsAndUrls[version]);
+        const downloadUrl = toolVersionDescriptorsAndUrls[version];
+        const partialArtifactDescriptor = new PartialArtifactDescriptor(path.basename(new URL(downloadUrl).pathname), downloadUrl);
         result.push(await new VersionDescriptor(version, true).push(partialArtifactDescriptor));
     }
     return result;
@@ -90,7 +92,7 @@ async function addGitHubReleaseAssets(versionDescriptor : VersionDescriptor, rel
             core.info(`Ignoring asset ${asset.name} (${release.tag_name}); doesn't match regex ^${constants.assetRegex}$`);
         } else {
             core.info(`Adding asset ${release.tag_name}/${asset.name}`);
-            await versionDescriptor.push(new PartialArtifactDescriptor(asset.browser_download_url));
+            await versionDescriptor.push(new PartialArtifactDescriptor(asset.name, asset.browser_download_url));
         }
     }
 }

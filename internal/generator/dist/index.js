@@ -35014,7 +35014,6 @@ const core = __importStar(__nccwpck_require__(2186));
 const constants = __importStar(__nccwpck_require__(9042));
 const crypto = __importStar(__nccwpck_require__(6005));
 const fs = __importStar(__nccwpck_require__(5630));
-const path = __importStar(__nccwpck_require__(1017));
 const node_stream_1 = __importDefault(__nccwpck_require__(4492));
 const semver = __importStar(__nccwpck_require__(1383));
 /**
@@ -35117,7 +35116,8 @@ _VersionDescriptor_artifacts = new WeakMap(), _VersionDescriptor_instances = new
  * (frequently) add or rename properties.
 */
 class ArtifactDescriptor {
-    constructor(downloadUrl, rsa_sha256, sha256) {
+    constructor(name, downloadUrl, rsa_sha256, sha256) {
+        this.name = name;
         this.downloadUrl = downloadUrl;
         this.rsa_sha256 = rsa_sha256;
         this.sha256 = sha256;
@@ -35133,13 +35133,14 @@ exports.ArtifactDescriptor = ArtifactDescriptor;
  * instance.
 */
 class PartialArtifactDescriptor {
-    constructor(downloadUrl) {
+    constructor(name, downloadUrl) {
         _PartialArtifactDescriptor_instances.add(this);
+        this.name = name;
         this.downloadUrl = downloadUrl;
     }
     asArtifactDescriptor(versionDescriptor) {
         return __awaiter(this, void 0, void 0, function* () {
-            const cacheFileName = __classPrivateFieldGet(this, _PartialArtifactDescriptor_instances, "m", _PartialArtifactDescriptor_getCacheFileName).call(this, versionDescriptor.version, this.downloadUrl);
+            const cacheFileName = __classPrivateFieldGet(this, _PartialArtifactDescriptor_instances, "m", _PartialArtifactDescriptor_getCacheFileName).call(this, versionDescriptor.version);
             if (fs.existsSync(cacheFileName)) {
                 core.info(`Resolved from cache: ${cacheFileName}`);
                 return JSON.parse(fs.readFileSync(cacheFileName).toString());
@@ -35159,9 +35160,8 @@ class PartialArtifactDescriptor {
     }
 }
 exports.PartialArtifactDescriptor = PartialArtifactDescriptor;
-_a = PartialArtifactDescriptor, _PartialArtifactDescriptor_instances = new WeakSet(), _PartialArtifactDescriptor_getCacheFileName = function _PartialArtifactDescriptor_getCacheFileName(version, downloadUrl) {
-    const url = new URL(downloadUrl);
-    const name = `${__classPrivateFieldGet(_a, _a, "f", _PartialArtifactDescriptor_cacheDir)}/${version}-${path.basename(url.pathname)}.json`;
+_a = PartialArtifactDescriptor, _PartialArtifactDescriptor_instances = new WeakSet(), _PartialArtifactDescriptor_getCacheFileName = function _PartialArtifactDescriptor_getCacheFileName(version) {
+    const name = `${__classPrivateFieldGet(_a, _a, "f", _PartialArtifactDescriptor_cacheDir)}/${version}-${this.name}.json`;
     return name;
 }, _PartialArtifactDescriptor_createArtifactDescriptor = function _PartialArtifactDescriptor_createArtifactDescriptor(downloadUrl) {
     var _b, e_1, _c, _d;
@@ -35189,7 +35189,7 @@ _a = PartialArtifactDescriptor, _PartialArtifactDescriptor_instances = new WeakS
         }
         const rsa_sha256 = sign.sign({ key: constants.signKey, passphrase: constants.signPassphrase }, "base64");
         const sha256 = hash.digest('hex');
-        return new ArtifactDescriptor(downloadUrl, rsa_sha256, sha256);
+        return new ArtifactDescriptor(this.name, downloadUrl, rsa_sha256, sha256);
     });
 };
 _PartialArtifactDescriptor_cacheDir = { value: `${constants.workspaceDir}/internal/cache/${constants.toolName}` };
@@ -35239,6 +35239,7 @@ exports.getVersionDescriptors = void 0;
 const core = __importStar(__nccwpck_require__(2186));
 const github = __importStar(__nccwpck_require__(5438));
 const constants = __importStar(__nccwpck_require__(9042));
+const path = __importStar(__nccwpck_require__(1017));
 const descriptors_1 = __nccwpck_require__(3784);
 /**
  * This module provides functionality for retrieving VersionDescriptors in
@@ -35266,7 +35267,8 @@ function getVersionDescriptorsFromJSON(toolVersionDescriptorsAndUrls) {
     return __awaiter(this, void 0, void 0, function* () {
         const result = new descriptors_1.VersionDescriptors();
         for (const version in toolVersionDescriptorsAndUrls) {
-            const partialArtifactDescriptor = new descriptors_1.PartialArtifactDescriptor(toolVersionDescriptorsAndUrls[version]);
+            const downloadUrl = toolVersionDescriptorsAndUrls[version];
+            const partialArtifactDescriptor = new descriptors_1.PartialArtifactDescriptor(path.basename(new URL(downloadUrl).pathname), downloadUrl);
             result.push(yield new descriptors_1.VersionDescriptor(version, true).push(partialArtifactDescriptor));
         }
         return result;
@@ -35334,7 +35336,7 @@ function addGitHubReleaseAssets(versionDescriptor, release) {
             }
             else {
                 core.info(`Adding asset ${release.tag_name}/${asset.name}`);
-                yield versionDescriptor.push(new descriptors_1.PartialArtifactDescriptor(asset.browser_download_url));
+                yield versionDescriptor.push(new descriptors_1.PartialArtifactDescriptor(asset.name, asset.browser_download_url));
             }
         }
     });
@@ -35494,6 +35496,7 @@ class VersionData extends Map {
 class ArtifactData extends Map {
     constructor(artifactDescriptor) {
         super();
+        this.set("name", artifactDescriptor.name);
         this.set("downloadUrl", artifactDescriptor.downloadUrl);
         this.set("rsa_sha256", artifactDescriptor.rsa_sha256);
     }

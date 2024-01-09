@@ -24,7 +24,7 @@ inputs:
     description: 'Optional regular expression to define what releases assets to include'
     required: false
   signKey:
-    description: 'Base64-encoded RSA signing key, usually provided through GitHub secret'
+    description: 'Non-wrapped base64-encoded RSA signing key, usually provided through GitHub secret, generated using `base64 -w0 << private-key.pem`'
     required: true
   signPassphrase:
     description: 'Passphrase for the RSA signing key provided throgh sign_key, usually provided through GitHub secret'
