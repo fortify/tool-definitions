@@ -149,6 +149,9 @@ jobs:
       run: |
         git pull
         cd v1
+        # Set last accessed/modified date on yaml files to have same
+        # zip output if files themselves haven't changed
+        find . -name "*.yaml" -exec touch -a -m -t 197001010000.00 {} \;
         zip -r tool-definitions.yaml.zip *.yaml
     - uses: stefanzweifel/git-auto-commit-action@v5
       with:
