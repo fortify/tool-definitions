@@ -10,6 +10,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v2.0.4/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: lTGfrKT+u4SAVsFuxa9h/ImPsfia5M6QniN39JGOVvLLV7ENxwwJbi8HTsiKR24jrRwu1311TXv4fmsSTS/qmMtxHrJeQAxKu2ke0u9IV9ZqQwRZCW/+A1XnMleYHUhoLK8/GIEWMm9RkjDOo8fGFkVLe/fW9lpVhFkuC5yiAPwXA6mCgtYXjLB+VSldB9ZCU7WMGJTAwuMm0wrt4Isen2eG4sKhlXT6lhz4tIZwsX7TDVltiqmAdJG1lGKG5x9MKqelpQVsswnE933kQ+V05EPv5lQ2rPF3ORGWP9+Smt6fS4cpmomo51XyrgUHeaCh3oyJ33fS2XgK0fd+H8jUDw==
   - version: 2.0.3
     aliases: []
@@ -18,6 +19,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v2.0.3/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: E4tz0cuQz0o6/1s+zMD5Om1mp130BASqBzosHfBzzlD8CV8R1U6fBsHfgJNrSt1VulRSkwvEtJ0wiI9Gb9TTFYnhbLBrYqKtabFHJyYUcTdn5A9KVegKLQljOtDWPieHWepvxTccIhKKQ7Q3EJB+JfMXdJSDnAz06BQCmcE/4gJzaIEMYfAQJQfi6q0WwQqJklD/1Q7lg2Mo03uDgKeMl5OWdG3tvcVt/iK2Ck3sMx6VndpIEpS9Ci0dKZypozd5eaF7uixuuU51KLjXQ4KsHsrew0PB8K1SsJNpAQUB86dSg81lMAZXUT+V7NnziHF5swRhEIZnStD+5bQzLTE4cQ==
   - version: 2.0.2
     aliases: []
@@ -26,6 +28,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v2.0.2/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: igmQVSt979xYSLVr4fj359tKITFidCziT1ZRozE96dZUmqaQV93ZkUGIt9VDghEwxBYLcD1ZFMZDm8YFqFzMTFWtwme3um8IgTTDEUGmsAsW3SBqsILCG07hKjQ7vCR3kRsOKauLFRMQ1m4ZuPyAzmvKeO78pRqPCtFYYkGDfaFKTLI4hHFscS5bkAPxldKNKbder3zJkfsUrGiH8abb0Yd5IhGKcZeUTteUB5FlJHAJyR9OVrQy597jTkTEjID3CUX6oSpL3B0EGaPq9gy+8mvWuTUsjraQZLZeAubXhbGcyGh8u6AqRyiHNtDPHEJOeTORiQtcp7ZdP8eOBtavcA==
   - version: 2.0.1
     aliases: []
@@ -34,6 +37,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v2.0.1/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: kmwpM53bGPc8cIXB4kRtn4MvnKareNNsNHXT5lPnMCRkqADuBRCBw/Y070b/OeXzrta1dzYvXb4FxSnLgKJLum9duPk2ckkQYrZq4GtRqAxkwH7W0yOi76y5gKTB9ejPObbEQ5CEdse3DhfKNM96//kv74ri5GwQncDHmiBuP+J1HO2hkrj4WS2eDdvzl6szQS4z9FM0O2VZLyK0b7o50z5L2r/7QMDwyO+zWHnrQMOhWpx0YhBzD+bajBCyv7ZsaW5Oq83R680vw3C8kODg35CbEe3qxXq41lorO96O+xSXj7gaaFCg29Z4342lx9RPhXMHVF3H534/Am20X05raA==
   - version: 2.0.0
     aliases: []
@@ -42,6 +46,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v2.0.0/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: nY4h7zN17BeWnhk4xpw+SZdBQ5zjg1oCD7mOEk3HeSfrgdtT4wx1ETaEp+tEsrr4B7tHq63lImzXAlbSsEh/SSlB44CvYfHQhyJawTyy93d5prPgbEkATTIy/3nohUgtU/JIXWW2+fe7xCnx5MADf8WWgHmcD9Ij00fg4i0fYPem19Fw8DCfUVj4rBP5/foL0PrcYbCK0TH5CWOtffeXsg1dYzJD2eMmUH61l+ebywYIfWerpexQ3etGhHveGRn4tIum4LJElE9UIkbZo1F4G30r2wwSQ5n95GP+IIdDm+Wi9DzmKHCJeQKT9PZhnwibO7TJxUnw4sx0BU35LnYJ7Q==
   - version: 1.8.0
     aliases:
@@ -52,6 +57,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.8.0/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: m3IJ300OxNpmiNm6GW4Aipu9djQFEEQy3eNxMo8roZe7IAX0TaXgW9O6+gbXu2+5Z1Yriw1fu6F1h/9znmzQKNy38CmR+tgQ7YvzL7vX5rNlbLE177rmeSk8wh7QEblPhfgieMsUd2t1/Aqt9Dh1q8AQ1tnH10GN2dxsmuX8pDcB2ehmYGYaEDWS2CIAnPgv+TO5QuzTmSiEHErsjc8IPu0p9nnrqL9KOt43WNvCKS55szXStHzgA6lsPZiQ7CoD7Cy04gIpYErkNq3yFn8V+dUEG7nexzaeCR9M/C4/+d3bZmqnIWMgwzQekc/G7YVBcnp3DXF8snexDo4UpQo4bg==
   - version: 1.7.0
     aliases:
@@ -61,6 +67,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.7.0/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: d7off3qyqaFpVEJegm//iIPU4d0n2uBWVJVKa8TyWSRTwH0sieiH9JRq7jE3LBC0f+Gtfv8wxBPqRCL5JmgJcUD3VvTsA0+fYjYSEEhpSAU6bhfh+E+Nji6OuDwDf7juMQ5eTsY5fqo4CCyoeY6UNrkyZX1aGs3X8scNezGigGpZApPKfzy2wv3aiMnEze7qdFtmbp88JGwVgbvjzsbSMrfrheRFuC6w3AmLdoA+CYDTf6qNTPm4N8c9SavWocBClpPbjqH0kTMbZXANU1ZmLmvw7yR9JihZXQ5elRDijsLFH5PjWZIZTTbeqeWhU5ATRfXTJrAAXvebFBjG5PyWeA==
   - version: 1.6.0
     aliases:
@@ -70,6 +77,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.6.0/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: XlxcM5x9oBVvT1rC43IfTGGGgvkL1uQ2s8T3Pb9ODQM/FpOmspFAzCAVRpLwMYKnRk4yor5Iyw/Bi7CVuk5BU3bsCjpsNQSlG2hP4Bl2KC3VWhXrwGn0KgQmPXXLnbYuBAMytmC8wkGqpeJA8z/iWnACpMzLG7kPj3CKqWVEyfkUE4yhk/xWdva6FWyL/j6NtFyFvfAJ3mP0hirQZR7UY8k+FQByFf4FOSxIRbJ5KmHtX/mltzPqG1JUci2RXYvZjD8Cr71aOLO7t5IWd/Q16DI1b8B0XsqSh5H1mOe90ZAS1h2ehkEcc2AfHJvWgbu+MAm33ZvG9+pm8hnMyq9MBA==
   - version: 1.5.5
     aliases:
@@ -79,6 +87,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.5.5/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: NSsgjQ5y8HkCkZxSJC28p212gd3o3ulZUhmqSdqboR6fl3YGKkKOo2RspJpVoOm3sqKZDTuAp4//S8Nkck7aa3yhPi4qqbxL1ca/h+u+53dN3B5egXuNGUQQ6y8EqRYM8fZtxXIO8BSH0dqR86rZmfoN7fDIRFYiye1nfqQYQ77iJCr1wywZAAAUjeFq+A59hJq5ToCcaoRfYg6ZLDfFlsRexDQVMT5EkxWZxc1X2kpeMyVNmu78aaTeE7n/FT3y9b0wZPOEaYYm50JTehXX9QFeM05C/w61HhKUJ5pKVILQIPB33pzbBBmqzTPWqLAVRPFRIH3ALYUVmy+Azp5Oew==
   - version: 1.5.4
     aliases: []
@@ -87,6 +96,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.5.4/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: KCuaO4an9reJVjJhvntA7UUTHeF8OUrm+ARUko2xbmBrLc550Wv5aJ61lAQwu0jMr+sAoeeL0/4tLPlEO3TWyaC/Laq7/6AQZXKSt+O5rzIm2/xKS1xRzxoQV13Vasw7KGk1H+tOXiJakxCewlGQxNvMuf2sH/G4eoqpuQxKM9EoabALZX2Jeov4B1z+gOkzbuU4qZmEN3ZF/Y47BjBu98J6nCBGmaW+30DGL4UioOyq/g+g0J0B/0UYpASjk0SbtuYb2h2vwjV+yyHzj1hbXm2gfC+xUwkRoYU1/9UptYtfJWjICB5DrfibMfAAdNeY23kt1nEQg9nsZZ6qIyqUkA==
   - version: 1.5.3
     aliases: []
@@ -95,6 +105,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.5.3/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: aPaDJChEo1TJlyU2SNlkk+lt0eWvNCscL9jtr1MeuPHNoiYnHM6dF4YUzcHed8JTM/OrtAqPMV/ttEmA+wjSbDwRO6XvEcpQtHVwIXBL/GIsCMdvnLsHZD2+MSKzBSjnNvKU/1DKMkVLEMMWiGIGS+YJhA5metL64ghlLJAVJX6Z5rpZ18F/etbVTieHBhe8FPhoOuhx0tpvlx49FRoJmRGTRHueyd8Pp4fAk6flDHskwyKbOIuhKbMEy9GRjFt+Lop925jJ3FzVkS5Mgr8QvFwnLgaUDrKlC3pv/egz2o+uM9p3mbeoqXrEpcIX9hLzK9akQbSdGwOd/Le5vZDjpA==
   - version: 1.5.2
     aliases: []
@@ -103,6 +114,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.5.2/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: kjSgMJwauKBODKOWdZwOnvx9r0N3f8jpRgjXULbHegP9eb88t9rl/RzqeEVRaGXgHEAx2nQagwBWWrUVBNmYyedj1d/lCX3cScPIl0qn1sS+frlCTPTC/on8hziM5OAUeGALmzTv/J9H1XKFri5cF5FlvJyjs2/K2vHJsLU/NCrI7GLITCziEzAG4yHkB0rt0kbi57l2hFbme5hfw7S59B5U/g7JHqiufsPvMmrRS1NECEspfSjQIXuEcjLVCQwmGlzwEFLImjve7rsinmMzpyUOqZHbHWndIC+L3JIEeqhBzPT/TTkgUadkfO4wNgXO0Tb+gVnBK+QuUK2nx0oaKg==
   - version: 1.5.1
     aliases: []
@@ -111,6 +123,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.5.1/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: mgIl3l5p3YXs6DnxKBmezvFofyPGcFLWmibDOXD/lrqchLMWvW5W/aGh/jppkB46ezZhlXZa78OQZ5PXuzzqXVFHslhHUc/32HZvistwJEX+/PJCPkKfPHtD9V21oEIZnBho4EeS6dIav5Q1Ij5HNHwxPRDz28UdsKsQJGofqxuJvf5+IlLVp46PA68k0hRzOpWDPWmoSbM8Jr0v6KA1/O3AINJZkeK0zGD4PZirgBxcuzX4KURLj7QAYCLUzJNksQoVX6dB6dfmHQdX/yVKvU+Fpy3FZ3rGK8g31CR/3MYfrKqU4w3dNAlbVzCB2PWFLG2wPGfBxFYIhYzMHQfCUQ==
   - version: 1.5.0
     aliases: []
@@ -119,6 +132,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.5.0/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: YFnIlDex/X6qsfuVzJ4j2dBRlXQBueli8dRfjvkugydc0U1bwv14icg55tQ6UVE7PJRweRIaPySPP/CobQXxciSkmZr7OwR3T+hzMum9j370tcNK924J8CnnnX+xsNNW2Q0QxXP8RFXYxvs/FBulfOUeYmN5k3QlE3xjhF6ejDLQdg6V4choAJ9IkVXhlxz9YShABSm0dxnVLliemql11CnYATy0upccTgSY8pDYfDgM9JqvfdfxKFTBpDaRge9ZwLp2Q/Y4NWuSidPRv1mlAB4byVpMKZMeA6LdTrjilN0kH4/3yVTWMFZqSV0VS9wWMbgEH77Mjybm8tPB5s9Kcw==
   - version: 1.4.1
     aliases:
@@ -128,6 +142,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.4.1/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: NUGquNpy/TiDFojK+ogMXUJIpYZXnzuukIKRJmcGTOeGjKQdWgDGhJayc9uUYdfuTJGY20CgEtHnN46gzwAt5c5NmYGhgQcPXkR8n2edqwrU9098howDmk2XDDgvfx/YTRaK8ztU1dPXj677umAQWbs8njRwCh/UV5ApP//0iCCuAJmiKY5XV1Z+2WlUD8tqALVT2+QkvOavJJ4iMy83BjJz7qrDuGS3DhdWuCDMHbygXqN0P//CinS9WNcjlfE9ZrVuKKrOEXTe7bVgecplDYJ60r2E0Pm7YPTu48lPreXonDioX1R5CfOC9gFW1Hvniy2/P5veu4PsC8VQ1z0sNw==
   - version: 1.4.0
     aliases: []
@@ -136,6 +151,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.4.0/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: iCSJdUR9jd1A/4ng+B2eOsV7jKvhMBiFJ2zUrL98W9SN7MKkhpf/IRUz2T7LtY3gof5OGy49b9Ebw6xsHqm4XEVzKcC+kZ+0AXsNfGUKccRu2qMXKylSH9rxseocLGT+0Oz6f0JNaeWlyHuIDMachXp2l+jz1IWtTYgIOXWDv+K43/tuF/Crk82IvH8+OLyIjCmu4EU6jo978ljexRTjv36uunmmeh9Y48did5gA2fEUZ6RyNIaOCa3gZ6tcP2d8amD5ntQMnWr6RwUUzzWecBARmE7zyIWxg8t9UP08p/dPQFY3wtQyjAtuUXlksL361wuiti4swDFvUH6bCSuKXQ==
   - version: 1.3.1
     aliases:
@@ -145,6 +161,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.3.1/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: MeZtqrbV9ufZfL13fQNT/ph8RQ6YqWl1w3AYtiAu2os4qb2ug6/1s7hWIFLfzfZ14+TdN8cLUlOSZp3DWW5/WbyiZ2gxZsNlPCWceFzsrPtPmvNrStZOfxBJ8bd1ibqkw/jtvHHRqD3XuuWAvHTsHd3bRMw3j/L0H8Jg7zXAq5ivfeQ3dXVIxaU6ufDUIxYAyeAUHD5as/7d802OLWDJvTPufx8cUUNTYgpKpc74casRx2UQP7HySoY9z5AZTOUpQK+edy47XeF+vpQUEJuUBQxMkZqrcar+W7/ao5hhJDpkRq5ByP3VSR+hoy6arPS0pRWsiwT2Yhnf75IY/gPgbg==
   - version: 1.3.0
     aliases: []
@@ -153,6 +170,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.3.0/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: NB+wHwxOvTGIJNvSgFnhY/3xQlC+M9G7t/RquZnQ6LIYdDMldydSYgJi7I2fqaKgp9gSzLgruaRNjBNceLGM6Pv/untyTqP+0QlQklsEDGOCVHNzXE0SvI8d7aZgxraWIzbvzAtcWHMPAiWSAwqM9iIJA4CatASh0CAMtuYAOfSC7+PYBN171/Esehys/yUHeEad4aMn6EGX7YKe2OT0DyfXzWRSL0EYCS0IHxTKwBrukc+rSgTQFPJjoaBa9dO6jibPtpth9eoK01AuGs1ywZPdSpeTZW4IMJ0PFLPc3pAJuS49erJUQrwrio7kTwXf4NgOzKxgnbLnodUE0L2kVg==
   - version: 1.2.1
     aliases:
@@ -162,6 +180,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.2.1/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: iNQcIUCeRQYBkB7P6/Rk2CJv2TIauLKJXqRA3b+vHlVc+awEVwkWWFaq1g9l+dp+rjXUoppWummt9in05RbPGRs9J0iAPEBF/tkbU6tqb1GetE5M3k+WM2U838p3Ba/andysUmkPNuU1aIAWmkBAd8iedHrYulpSvuKm1ezc3p483RL8EVG9A4+LkoCaRz4hxzaCRDNo3L39iASfaMtNZXPgcDkQOTUtCarnT+uLJ1C9QzAjZ7QbVzQylK5s+vVyJhR+PtgUx8Ckg40z34ShoZ0qQ90V8v9Dey1Gz/YHmvGn7K6FNG8f7GSycPNWUEiQC06i1d9b7oRZMlDqJaUBKA==
   - version: 1.2.0
     aliases: []
@@ -170,6 +189,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.2.0/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: N6FlacBnf+saNsAhMEzi8LSg1/gYOQ8zvHIne+WTTMegv4PdSKGq02/VPOAdzlLsYKQNu+sseArSP4SnPYCZ0iryEkvdHPALcf2U93MlZyAv84+bHOaRJw57T3QVRKSnxrY+5J5RN7SQoxSM4pK+W7S3gQYvvRvuTcqVVENmnMHbiCN1NsAa6lHcupgKqPppF68eUr47r+zo4XSZ7o9BETBU5Ka9frXEa7jffdLHfmU/bvo3zRnYJbHK/t1FAV3YTP9WRAMilt/b4MhMta1z2S/jHfPs8BGAMpD0Yraf0mIAu468rMGD4GTeMXP1Ax/HUEaiB7QHw5P8wM9jfcy1bw==
   - version: 1.1.3
     aliases:
@@ -179,6 +199,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.1.3/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: lhZ8IMchlxX0vFF1MIILcOYHqKecjK4w3j+zRiX59IeCTp1GNR00/++8ICHyy9mLR/pyBeloGhm34D0hVg6exukQPxEWNL4bbvLH1GDXMalCRor84mZWj2G1OVupqIT0iOUhuI+7vPg8wlsolfpwm7jH/dPGuLiThCovEKIusLHkRoF2ZQ0S6XCkYCydxg9yJFmMmcA4+zRpcjolQmghh9eJrQTmD3P7VyNGfgE6Hw7O3hJ/nxZyT21Ka/PjXpjZ5U5Xwi1nsqr6n9lJSsV3BjzOYW3IvMwdoDsDt5uymWY7Vj2H27ghjg9u7Dv3r1XmMkpd9eKsXR+7IwZuCrk9Og==
   - version: 1.1.2
     aliases: []
@@ -187,6 +208,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.1.2/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: g+WCIMfMWPwZ+8nkxsAgsTM1u5rMm4wfKHZ4SDHcsWKsh4Y48cWE/AQYnjJx/tLbDnxAESSFWCLQIQstsvlHrQ0bYSprO8s6mtjjzp90cVFmUOYmfEq1MRGD3RSX6uNvdmXBGFj5hQceqXy3KiULQpMQzTi8KpE0vO4lO8vjPWAOjld+mWXrnRtFcsRwJB81AB9eaKUktBLwnaOuzn2vybDivFTA7hlhcK8joUXsyMWVcNDvgj4GZdQkFBzuPURWIAgH6Srp+wfLwPhJT5tprLDEt5IPDTNfRf2670LubhC4jyQUrgIuWD90qOiRyMQ/1cg9r49dUsJynaaM8OrN2A==
   - version: 1.1.1
     aliases: []
@@ -195,6 +217,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.1.1/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: Z3MgkQjj0YoUrzuoYbYhP1ON6BjL/e4qnlv1+jP4lQVFDDZU/MZSArPjs2p3DERz5jzifIMVJOAhH8Bju3i/62/JgWW6QFegVieoOW4QcHBwN3WfYtlsoI0jUgyKLATtgzqC1Nz0zdjiNzerdGCUFiBHQ+lOIrvrTDFx/g8ID5+9/dLlxwls2FycSpvaBxCd0WT9ochIkZLoQSg5d78pKitjSRHBYeM7HGbvmFjLLzICr0xoQVypeZNvMiLJm2BNb5ELmGY/dUUvPFNWrOAywhvGiE9dzK5HG9LB33MsPHjnTuyah82ynYOdUlQivhq76+4TSKq26cFPeAi6gscDvQ==
   - version: 1.1.0
     aliases: []
@@ -203,6 +226,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.1.0/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: LjNRwgW/nDGCg6rny40re8hqlL+TcZWlh47qu2mE8+y4xn7i3PajA4D8YDBsduBLg0wFMrYz1kOKnYYHg99GenUCRbI4TaUF3ll8N6qJLNAElw7LAm+PWEv7KpZN+QQ29otPvyW2+vcjC18qONztiIvSHioig8kiw9xUcQaw9ZM5usHf1jsvLUwCGyRH/sZZuR/HFv46sD66XMWT3KeZTdY24weqAQMRC2BF6cLVwnDB7YOMm9s9gptVDjcVTS6hhgRlJDW/9aywt0Whzjgw8SFw2fGpnSElS90jZRTSmf0uKSLszCsi6qtJOigtakZQpTTbfUc30gVB+dBocxOoDg==
   - version: 1.0.1
     aliases:
@@ -212,6 +236,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.0.1/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: AfowwUQnJG4P9Mhmc2XIWnXpCnb0sYIeV1sLguXNCpvBGztNTNQVhB0gzRm8+090Zg7R7DwBIT9hc6e5vvOw7yB/OxeL/FM0IXDl+jfwfHGfvZvVp+dMTxn9p5lmbwEDVuZf+Dkb8g+elYFutamFjyjXKBB0Sw4JJZ2ElDOfWLtsr2Ofc6NLCdyCCRrLhfQopc0T53lFOmSTiTawnr2JryrXLT1TitRr7cAOmxOSzS5Om49Qq5TTbJBKzqekzykV8mn+9embyhlSN8+vCS/ylWaMqGGTLhQrEOPygBB7DRZQT+SpEYtBFd1yPy79c1iEVn7jNqg9IGvwXJI5VpwTFA==
   - version: 1.0.0
     aliases: []
@@ -220,6 +245,7 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.0.0/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: dq2WCcuk3fA4KwCI9c2F5UsM97EmSJ021Lhf92L5aLp0wgaNOvOjmBnkP+PmoPL7A+GfdgbNaaAGQ8kBm3yQJRVO95aGZt5RvO4VCEd7jNrv1HgMora5VZIFSFJCdiAxaTf9/k8jO/gllDMuvJGTYfqsEKc3WTX3KihdD7n6MUPNJ2XL0EA7urHN+mIvXAzSUb3TNFFAO196+bkW6y46rizpHd7laJn+eABXtHtnV27LY0DbGGu8q7Rtpw4eyzbDepIr+I91cg4usF3YpBAXDhFNnP5NMvCpOR9FMZYn65sQXdXgq2QyMDEZWKEJ8XLUs8E/4b7hF3n8qOF36sn/9w==
   - version: dev_main
     aliases: []
@@ -228,4 +254,5 @@ versions:
       default:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/dev_main/FortifyVulnerabilityExporter.zip
+        contentType: application/zip
         rsa_sha256: fCjKkFsD4JGryHxgAnsJ2p3XnGjeHu7Ny699grRQ9tKaIH164Yp9YuJ+gweOHZIqJDuRrhbVtxwXKOMZlV39P4G5kZjyf8Zr9PhvkYVuGMCDyMxJdM4wnbIRXbhcBMfzyS83M1DExFABnVwR0uDhVeKxhzNn8r8QW2eZXLaCzbLf10a029f1L9/uc5JOOlY4NCPGPILhhjb5jPBPU5aGz6EOjBB0KLhb+OLaIvoOL83BdXs40L9eBYG/fJBTljuJAL2uas9EXg99sT+J2TVx3WbKdxvrIh7a5X/KEyUfyHgqBE4spX2zjvcuMP53NXEfGzZN9E8yrxlqVfQEB1fLgA==
