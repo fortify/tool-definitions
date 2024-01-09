@@ -35292,7 +35292,6 @@ function getGitHubVersionDescriptor(release) {
     return __awaiter(this, void 0, void 0, function* () {
         const result = new descriptors_1.VersionDescriptors();
         const version = mapTag(release.tag_name).replace(/^v(\d+.*)$/, '$1'); // Remove 'v' prefix if it is followed by at least one number;
-        core.debug(version);
         let releaseExcludeReason = getReleaseExcludeReason(release);
         if (!releaseExcludeReason) {
             const versionDescriptor = new descriptors_1.VersionDescriptor(version, !release.prerelease);

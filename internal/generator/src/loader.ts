@@ -50,7 +50,6 @@ async function getGitHubVersionDescriptors(toolRepo: string) : Promise<VersionDe
 async function getGitHubVersionDescriptor(release: components["schemas"]["release"]) : Promise<VersionDescriptors> {
     const result : VersionDescriptors = new VersionDescriptors();
     const version = mapTag(release.tag_name).replace(/^v(\d+.*)$/, '$1'); // Remove 'v' prefix if it is followed by at least one number;
-    core.debug(version);
     let releaseExcludeReason = getReleaseExcludeReason(release);
     if ( !releaseExcludeReason ) {
         const versionDescriptor = new VersionDescriptor(version, !release.prerelease);
