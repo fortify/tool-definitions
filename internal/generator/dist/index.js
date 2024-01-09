@@ -35162,7 +35162,7 @@ _a = PartialArtifactDescriptor, _PartialArtifactDescriptor_instances = new WeakS
         const hash = crypto.createHash('sha256');
         const response = yield fetch(downloadUrl);
         const readable = node_stream_1.default.Readable.fromWeb(response.body);
-        readable.pipe(sign).pipe(hash);
+        readable.pipe(sign).pipe(hash).end();
         const rsa_sha256 = sign.sign({ key: constants.signKey, passphrase: constants.signPassphrase }, "base64");
         const sha256 = hash.digest('hex');
         return new ArtifactDescriptor(downloadUrl, rsa_sha256, sha256);
