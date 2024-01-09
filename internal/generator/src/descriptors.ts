@@ -153,7 +153,11 @@ export class PartialArtifactDescriptor {
         const hash = crypto.createHash('sha256');
         const response = await fetch(downloadUrl);
         const readable = Stream.Readable.fromWeb(response.body as ReadableStream<Uint8Array>)
-        readable.pipe(sign).pipe(hash).end();
+        // For some reason, readable.pipe(sign).pipe(hash) doesn't work
+        for await (const chunk of readable) {
+            sign.update(chunk);
+            hash.update(chunk);
+        }
         const rsa_sha256 = sign.sign({key: constants.signKey, passphrase: constants.signPassphrase}, "base64");
         const sha256 = hash.digest('hex');
         return new ArtifactDescriptor(downloadUrl, rsa_sha256, sha256);
