@@ -53,7 +53,6 @@ class ArtifactData extends Map<string,string> {
         super()
         this.set("name", artifactDescriptor.name);
         this.set("downloadUrl", artifactDescriptor.downloadUrl);
-        this.set("contentType", artifactDescriptor.contentType);
         this.set("rsa_sha256", artifactDescriptor.rsa_sha256);
     }
 }

@@ -40,11 +40,7 @@ The `internal/generator` Node.js-based action is responsible for actually genera
 * `main.ts`: Main entry point for this GitHub Action, using `loader.ts` to load version and artifact data, and `writer-v1.ts` to write the `v1` tool definition files.
 * `writer-v1.ts`: Responsible for writing `v1` tool definition files.
 
-#### Action inputs
-
-See action.yml
-
-#### `internal/cache` directory
+### `internal/cache` directory
 
 Some of the information in the tool definition files is relatively expensive to calculate. For example, tool artifacts must be downloaded in order to calculate file digests and signatures. As such, the `internal/generator` action caches this information in the `internal/cache` directory in files named `<tool name>/<tool version>-<artifact file name from download URL>.json`. Just like the tool definition files themselves, any new/updated cache files are automatically committed to the repository by the GitHub workflow.
 
