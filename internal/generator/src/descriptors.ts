@@ -98,14 +98,16 @@ export class VersionDescriptor {
  * (frequently) add or rename properties.
 */
 export class ArtifactDescriptor {
-    constructor(name: string, downloadUrl : string, rsa_sha256: string, sha256: string) {
+    constructor(name: string, downloadUrl : string, contentType: string, rsa_sha256: string, sha256: string) {
         this.name = name;
         this.downloadUrl = downloadUrl;
+        this.contentType = contentType;
         this.rsa_sha256 = rsa_sha256;
         this.sha256 = sha256;
     }
     name: string;
     downloadUrl : string;
+    contentType: string;
     rsa_sha256 : string;
     sha256 : string;
 }
@@ -120,12 +122,14 @@ export class ArtifactDescriptor {
 */
 export class PartialArtifactDescriptor {
     static #cacheDir = `${constants.workspaceDir}/internal/cache/${constants.toolName}`;
-    constructor(name: string, downloadUrl : string) {
+    constructor(name: string, downloadUrl : string, contentType: string) {
         this.name = name;
         this.downloadUrl = downloadUrl;
+        this.contentType = contentType;
     }
     name: string;
     downloadUrl : string;
+    contentType: string;
     
     async asArtifactDescriptor(versionDescriptor: VersionDescriptor) : Promise<ArtifactDescriptor> {
         const cacheFileName = this.#getCacheFileName(versionDescriptor.version);
@@ -134,7 +138,7 @@ export class PartialArtifactDescriptor {
             return JSON.parse(fs.readFileSync(cacheFileName).toString()) as ArtifactDescriptor;
         } else {
             core.info(`Generating data for ${this.downloadUrl}`);
-            const fullArtifactDescriptor = await this.#createArtifactDescriptor(this.downloadUrl);
+            const fullArtifactDescriptor = await this.#createArtifactDescriptor();
             if ( versionDescriptor.stable ) {
                 // Only write cache entry for stable versions
                 core.info(`Caching data for ${this.downloadUrl}`);
@@ -150,10 +154,10 @@ export class PartialArtifactDescriptor {
         return name;
     }
     
-    async #createArtifactDescriptor(downloadUrl: string) : Promise<ArtifactDescriptor> {
+    async #createArtifactDescriptor() : Promise<ArtifactDescriptor> {
         const sign = crypto.createSign('RSA-SHA256');
         const hash = crypto.createHash('sha256');
-        const response = await fetch(downloadUrl);
+        const response = await fetch(this.downloadUrl);
         const readable = Stream.Readable.fromWeb(response.body as ReadableStream<Uint8Array>)
         // For some reason, readable.pipe(sign).pipe(hash) doesn't work
         for await (const chunk of readable) {
@@ -162,6 +166,6 @@ export class PartialArtifactDescriptor {
         }
         const rsa_sha256 = sign.sign({key: constants.signKey, passphrase: constants.signPassphrase}, "base64");
         const sha256 = hash.digest('hex');
-        return new ArtifactDescriptor(this.name, downloadUrl, rsa_sha256, sha256);
+        return new ArtifactDescriptor(this.name, this.downloadUrl, this.contentType, rsa_sha256, sha256);
     }
 }

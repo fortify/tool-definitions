@@ -35116,9 +35116,10 @@ _VersionDescriptor_artifacts = new WeakMap(), _VersionDescriptor_instances = new
  * (frequently) add or rename properties.
 */
 class ArtifactDescriptor {
-    constructor(name, downloadUrl, rsa_sha256, sha256) {
+    constructor(name, downloadUrl, contentType, rsa_sha256, sha256) {
         this.name = name;
         this.downloadUrl = downloadUrl;
+        this.contentType = contentType;
         this.rsa_sha256 = rsa_sha256;
         this.sha256 = sha256;
     }
@@ -35133,10 +35134,11 @@ exports.ArtifactDescriptor = ArtifactDescriptor;
  * instance.
 */
 class PartialArtifactDescriptor {
-    constructor(name, downloadUrl) {
+    constructor(name, downloadUrl, contentType) {
         _PartialArtifactDescriptor_instances.add(this);
         this.name = name;
         this.downloadUrl = downloadUrl;
+        this.contentType = contentType;
     }
     asArtifactDescriptor(versionDescriptor) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -35147,7 +35149,7 @@ class PartialArtifactDescriptor {
             }
             else {
                 core.info(`Generating data for ${this.downloadUrl}`);
-                const fullArtifactDescriptor = yield __classPrivateFieldGet(this, _PartialArtifactDescriptor_instances, "m", _PartialArtifactDescriptor_createArtifactDescriptor).call(this, this.downloadUrl);
+                const fullArtifactDescriptor = yield __classPrivateFieldGet(this, _PartialArtifactDescriptor_instances, "m", _PartialArtifactDescriptor_createArtifactDescriptor).call(this);
                 if (versionDescriptor.stable) {
                     // Only write cache entry for stable versions
                     core.info(`Caching data for ${this.downloadUrl}`);
@@ -35163,12 +35165,12 @@ exports.PartialArtifactDescriptor = PartialArtifactDescriptor;
 _a = PartialArtifactDescriptor, _PartialArtifactDescriptor_instances = new WeakSet(), _PartialArtifactDescriptor_getCacheFileName = function _PartialArtifactDescriptor_getCacheFileName(version) {
     const name = `${__classPrivateFieldGet(_a, _a, "f", _PartialArtifactDescriptor_cacheDir)}/${version}-${this.name}.json`;
     return name;
-}, _PartialArtifactDescriptor_createArtifactDescriptor = function _PartialArtifactDescriptor_createArtifactDescriptor(downloadUrl) {
+}, _PartialArtifactDescriptor_createArtifactDescriptor = function _PartialArtifactDescriptor_createArtifactDescriptor() {
     var _b, e_1, _c, _d;
     return __awaiter(this, void 0, void 0, function* () {
         const sign = crypto.createSign('RSA-SHA256');
         const hash = crypto.createHash('sha256');
-        const response = yield fetch(downloadUrl);
+        const response = yield fetch(this.downloadUrl);
         const readable = node_stream_1.default.Readable.fromWeb(response.body);
         try {
             // For some reason, readable.pipe(sign).pipe(hash) doesn't work
@@ -35189,7 +35191,7 @@ _a = PartialArtifactDescriptor, _PartialArtifactDescriptor_instances = new WeakS
         }
         const rsa_sha256 = sign.sign({ key: constants.signKey, passphrase: constants.signPassphrase }, "base64");
         const sha256 = hash.digest('hex');
-        return new ArtifactDescriptor(this.name, downloadUrl, rsa_sha256, sha256);
+        return new ArtifactDescriptor(this.name, this.downloadUrl, this.contentType, rsa_sha256, sha256);
     });
 };
 _PartialArtifactDescriptor_cacheDir = { value: `${constants.workspaceDir}/internal/cache/${constants.toolName}` };
@@ -35268,7 +35270,8 @@ function getVersionDescriptorsFromJSON(toolVersionDescriptorsAndUrls) {
         const result = new descriptors_1.VersionDescriptors();
         for (const version in toolVersionDescriptorsAndUrls) {
             const downloadUrl = toolVersionDescriptorsAndUrls[version];
-            const partialArtifactDescriptor = new descriptors_1.PartialArtifactDescriptor(path.basename(new URL(downloadUrl).pathname), downloadUrl);
+            // TODO Get contentType from input
+            const partialArtifactDescriptor = new descriptors_1.PartialArtifactDescriptor(path.basename(new URL(downloadUrl).pathname), downloadUrl, "application/x-zip-compressed");
             result.push(yield new descriptors_1.VersionDescriptor(version, true).push(partialArtifactDescriptor));
         }
         return result;
@@ -35336,7 +35339,7 @@ function addGitHubReleaseAssets(versionDescriptor, release) {
             }
             else {
                 core.info(`Adding asset ${release.tag_name}/${asset.name}`);
-                yield versionDescriptor.push(new descriptors_1.PartialArtifactDescriptor(asset.name, asset.browser_download_url));
+                yield versionDescriptor.push(new descriptors_1.PartialArtifactDescriptor(asset.name, asset.browser_download_url, asset.content_type));
             }
         }
     });
@@ -35498,6 +35501,7 @@ class ArtifactData extends Map {
         super();
         this.set("name", artifactDescriptor.name);
         this.set("downloadUrl", artifactDescriptor.downloadUrl);
+        this.set("contentType", artifactDescriptor.contentType);
         this.set("rsa_sha256", artifactDescriptor.rsa_sha256);
     }
 }

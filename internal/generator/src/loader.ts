@@ -28,7 +28,8 @@ async function getVersionDescriptorsFromJSON(toolVersionDescriptorsAndUrls: {[ke
     const result : VersionDescriptors = new VersionDescriptors();
     for (const version in toolVersionDescriptorsAndUrls) {
         const downloadUrl = toolVersionDescriptorsAndUrls[version];
-        const partialArtifactDescriptor = new PartialArtifactDescriptor(path.basename(new URL(downloadUrl).pathname), downloadUrl);
+        // TODO Get contentType from input
+        const partialArtifactDescriptor = new PartialArtifactDescriptor(path.basename(new URL(downloadUrl).pathname), downloadUrl, "application/x-zip-compressed");
         result.push(await new VersionDescriptor(version, true).push(partialArtifactDescriptor));
     }
     return result;
@@ -92,7 +93,7 @@ async function addGitHubReleaseAssets(versionDescriptor : VersionDescriptor, rel
             core.info(`Ignoring asset ${asset.name} (${release.tag_name}); doesn't match regex ^${constants.assetRegex}$`);
         } else {
             core.info(`Adding asset ${release.tag_name}/${asset.name}`);
-            await versionDescriptor.push(new PartialArtifactDescriptor(asset.name, asset.browser_download_url));
+            await versionDescriptor.push(new PartialArtifactDescriptor(asset.name, asset.browser_download_url, asset.content_type));
         }
     }
 }
