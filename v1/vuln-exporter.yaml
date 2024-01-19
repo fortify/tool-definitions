@@ -6,7 +6,7 @@ versions:
       - "2"
       - "2.0"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v2.0.4/FortifyVulnerabilityExporter.zip
@@ -14,7 +14,7 @@ versions:
   - version: 2.0.3
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v2.0.3/FortifyVulnerabilityExporter.zip
@@ -22,7 +22,7 @@ versions:
   - version: 2.0.2
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v2.0.2/FortifyVulnerabilityExporter.zip
@@ -30,7 +30,7 @@ versions:
   - version: 2.0.1
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v2.0.1/FortifyVulnerabilityExporter.zip
@@ -38,7 +38,7 @@ versions:
   - version: 2.0.0
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v2.0.0/FortifyVulnerabilityExporter.zip
@@ -48,7 +48,7 @@ versions:
       - "1"
       - "1.8"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.8.0/FortifyVulnerabilityExporter.zip
@@ -57,7 +57,7 @@ versions:
     aliases:
       - "1.7"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.7.0/FortifyVulnerabilityExporter.zip
@@ -66,7 +66,7 @@ versions:
     aliases:
       - "1.6"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.6.0/FortifyVulnerabilityExporter.zip
@@ -75,7 +75,7 @@ versions:
     aliases:
       - "1.5"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.5.5/FortifyVulnerabilityExporter.zip
@@ -83,7 +83,7 @@ versions:
   - version: 1.5.4
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.5.4/FortifyVulnerabilityExporter.zip
@@ -91,7 +91,7 @@ versions:
   - version: 1.5.3
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.5.3/FortifyVulnerabilityExporter.zip
@@ -99,7 +99,7 @@ versions:
   - version: 1.5.2
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.5.2/FortifyVulnerabilityExporter.zip
@@ -107,7 +107,7 @@ versions:
   - version: 1.5.1
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.5.1/FortifyVulnerabilityExporter.zip
@@ -115,7 +115,7 @@ versions:
   - version: 1.5.0
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.5.0/FortifyVulnerabilityExporter.zip
@@ -124,7 +124,7 @@ versions:
     aliases:
       - "1.4"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.4.1/FortifyVulnerabilityExporter.zip
@@ -132,7 +132,7 @@ versions:
   - version: 1.4.0
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.4.0/FortifyVulnerabilityExporter.zip
@@ -141,7 +141,7 @@ versions:
     aliases:
       - "1.3"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.3.1/FortifyVulnerabilityExporter.zip
@@ -149,7 +149,7 @@ versions:
   - version: 1.3.0
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.3.0/FortifyVulnerabilityExporter.zip
@@ -158,7 +158,7 @@ versions:
     aliases:
       - "1.2"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.2.1/FortifyVulnerabilityExporter.zip
@@ -166,7 +166,7 @@ versions:
   - version: 1.2.0
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.2.0/FortifyVulnerabilityExporter.zip
@@ -175,7 +175,7 @@ versions:
     aliases:
       - "1.1"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.1.3/FortifyVulnerabilityExporter.zip
@@ -183,7 +183,7 @@ versions:
   - version: 1.1.2
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.1.2/FortifyVulnerabilityExporter.zip
@@ -191,7 +191,7 @@ versions:
   - version: 1.1.1
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.1.1/FortifyVulnerabilityExporter.zip
@@ -199,7 +199,7 @@ versions:
   - version: 1.1.0
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.1.0/FortifyVulnerabilityExporter.zip
@@ -208,7 +208,7 @@ versions:
     aliases:
       - "1.0"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.0.1/FortifyVulnerabilityExporter.zip
@@ -216,7 +216,7 @@ versions:
   - version: 1.0.0
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.0.0/FortifyVulnerabilityExporter.zip
@@ -224,7 +224,7 @@ versions:
   - version: dev_main
     aliases: []
     stable: false
-    artifacts:
+    binaries:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/dev_main/FortifyVulnerabilityExporter.zip
