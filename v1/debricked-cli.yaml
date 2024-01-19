@@ -1843,7 +1843,7 @@ versions:
       windows/x86:
         name: cli_windows_i386.tar.gz
         downloadUrl: https://github.com/debricked/cli/releases/download/v1.0.0-beta.2/cli_windows_i386.tar.gz
-        rsa_sha256: ON826I7eN0epCGnwo54jBSaayuT2cd8kjOHN1D3HiFfn2iTwI4RH50bHFwwRw1wndv1O9AJIhYEwWEXUeaDkT8PqXV7ZXWn3Se41br4CEeKVDdIK7LgixgNa4uVkA4brAFXtw6jnN//+paik+8MXeOxNY7uHnd//hBsYyICeK9UEh8Klav8wly43f8o1AhAw4tDF+ejop0l4OJXmtU8Zpie1UMpzfshxm3WBAtvlwJMwxEdwmT8Nq34ZE/IRHr77NOMinaPCwkSzVYzJTMcjbSWMyhJmDQnYoOBOYfqjJbKtssPTzlU+b9tLs0g3xzylkP+gR68J9NAE8vSsV59QdA==
+        rsa_sha256: JhAu2YdqBzVGJ4AfIhKVYkW0WmODOwvOjJ/Xz0umDGF2P+1HaG99X4qw6YoHTgzceAlKUNsshKE9YHw9iaH25pDjIWDrRAMBxt2Sgc+O+0UneIYKDeqykLqN44uZjYdVfyIczI6OzG8KYlUWhjszkh5hAWxcPs4xzEX/4BIcYMfZjlHrcIRzwI5ozGAGhuZtRQyp/QplGdJAcq26Hf7Uihhml+AopGCLx58vMnRli11cK1pRTTMbrapkoGU3mpKfnceFV8QU00U7rwfzmtYFCK/aiCB93kk/r08E4aUylVqxb6gTDn5UmsnaaG6jgMRH2hxbfEdSXlzbH9nmdvd+UA==
       windows/x64:
         name: cli_windows_x86_64.tar.gz
         downloadUrl: https://github.com/debricked/cli/releases/download/v1.0.0-beta.2/cli_windows_x86_64.tar.gz
