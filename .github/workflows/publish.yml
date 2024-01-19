@@ -146,7 +146,7 @@ jobs:
         signKey: ${{ secrets.SIGN_KEY }}
         signPassphrase: ${{ secrets.SIGN_PASSPHRASE }}
         semver: ${{ fromJSON(toJSON(matrix)).semver }}
-        artifactTypes: ${{ toJSON(fromJSON(toJSON(matrix)).artifactTypes) }}
+        binaryPlatforms: ${{ toJSON(fromJSON(toJSON(matrix)).binaryPlatforms) }}
         tagMappings: ${{ toJSON(fromJSON(toJSON(matrix)).tagMappings) }}
     - uses: stefanzweifel/git-auto-commit-action@v5
       with:
