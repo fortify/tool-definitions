@@ -6,7 +6,7 @@ versions:
       - "4"
       - "4.12"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-4.12-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.12/FortifyBugTrackerUtility-4.12-dist.zip
@@ -15,7 +15,7 @@ versions:
     aliases:
       - "4.11"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-4.11-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.11/FortifyBugTrackerUtility-4.11-dist.zip
@@ -24,7 +24,7 @@ versions:
     aliases:
       - "4.10"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-4.10-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.10/FortifyBugTrackerUtility-4.10-dist.zip
@@ -33,7 +33,7 @@ versions:
     aliases:
       - "4.9"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-4.9-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.9/FortifyBugTrackerUtility-4.9-dist.zip
@@ -42,7 +42,7 @@ versions:
     aliases:
       - "4.8"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-4.8-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.8/FortifyBugTrackerUtility-4.8-dist.zip
@@ -51,7 +51,7 @@ versions:
     aliases:
       - "4.7"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-4.7-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.7/FortifyBugTrackerUtility-4.7-dist.zip
@@ -60,7 +60,7 @@ versions:
     aliases:
       - "4.6"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-4.6-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.6/FortifyBugTrackerUtility-4.6-dist.zip
@@ -69,7 +69,7 @@ versions:
     aliases:
       - "4.5"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-4.5-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.5/FortifyBugTrackerUtility-4.5-dist.zip
@@ -78,7 +78,7 @@ versions:
     aliases:
       - "4.4"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-4.4-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.4/FortifyBugTrackerUtility-4.4-dist.zip
@@ -87,7 +87,7 @@ versions:
     aliases:
       - "4.3"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-4.3-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.3/FortifyBugTrackerUtility-4.3-dist.zip
@@ -96,7 +96,7 @@ versions:
     aliases:
       - "4.2"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-4.2-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.2/FortifyBugTrackerUtility-4.2-dist.zip
@@ -105,7 +105,7 @@ versions:
     aliases:
       - "4.1"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-4.1-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.1/FortifyBugTrackerUtility-4.1-dist.zip
@@ -114,7 +114,7 @@ versions:
     aliases:
       - "4.0"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-4.0-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.0/FortifyBugTrackerUtility-4.0-dist.zip
@@ -124,7 +124,7 @@ versions:
       - "3"
       - "3.9"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-3.9-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/3.9/FortifyBugTrackerUtility-3.9-dist.zip
@@ -133,7 +133,7 @@ versions:
     aliases:
       - "3.8"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-3.8-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/3.8/FortifyBugTrackerUtility-3.8-dist.zip
@@ -142,7 +142,7 @@ versions:
     aliases:
       - "3.7"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-3.7-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/3.7/FortifyBugTrackerUtility-3.7-dist.zip
@@ -151,7 +151,7 @@ versions:
     aliases:
       - "3.6"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-3.6-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/3.6/FortifyBugTrackerUtility-3.6-dist.zip
@@ -160,7 +160,7 @@ versions:
     aliases:
       - "3.5"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-3.5-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/3.5/FortifyBugTrackerUtility-3.5-dist.zip
@@ -169,7 +169,7 @@ versions:
     aliases:
       - "3.4"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-3.4-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/3.4/FortifyBugTrackerUtility-3.4-dist.zip
@@ -178,7 +178,7 @@ versions:
     aliases:
       - "3.1"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-3.1-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/3.1/FortifyBugTrackerUtility-3.1-dist.zip
@@ -187,7 +187,7 @@ versions:
     aliases:
       - "3.0"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FortifyBugTrackerUtility-3.0-dist.zip
         downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/3.0/FortifyBugTrackerUtility-3.0-dist.zip
