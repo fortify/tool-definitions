@@ -6,7 +6,7 @@ versions:
       - "5"
       - "5.4"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v5.4.0/FodUpload.jar
@@ -15,7 +15,7 @@ versions:
     aliases:
       - "5.3"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v5.3.1/FodUpload.jar
@@ -23,7 +23,7 @@ versions:
   - version: 5.3.0
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v5.3.0/FodUpload.jar
@@ -32,7 +32,7 @@ versions:
     aliases:
       - "5.2"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v5.2.1/FodUpload.jar
@@ -40,7 +40,7 @@ versions:
   - version: 5.2.0
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v5.2.0/FodUpload.jar
@@ -49,7 +49,7 @@ versions:
     aliases:
       - "5.0"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v5.0.1/FodUpload.jar
@@ -57,7 +57,7 @@ versions:
   - version: 5.0.0
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v5.0.0/FodUpload.jar
@@ -67,7 +67,7 @@ versions:
       - "4"
       - "4.0"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v4.0.4/FodUpload.jar
@@ -75,7 +75,7 @@ versions:
   - version: 4.0.3
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v4.0.3/FodUpload.jar
@@ -83,7 +83,7 @@ versions:
   - version: 4.0.2
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v4.0.2/FodUpload.jar
@@ -93,7 +93,7 @@ versions:
       - "3"
       - "3.1"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.1.0/FodUpload.jar
@@ -102,7 +102,7 @@ versions:
     aliases:
       - "3.0"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.8/FodUpload.jar
@@ -110,7 +110,7 @@ versions:
   - version: 3.0.7
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.7/FodUpload.jar
@@ -118,7 +118,7 @@ versions:
   - version: 3.0.6
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.6/FodUpload.jar
@@ -126,7 +126,7 @@ versions:
   - version: 3.0.5
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.5/FodUpload.jar
@@ -134,7 +134,7 @@ versions:
   - version: 3.0.4
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.4/FodUpload.jar
@@ -142,7 +142,7 @@ versions:
   - version: 3.0.3
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.3/FodUpload.jar
@@ -150,7 +150,7 @@ versions:
   - version: 3.0.2
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.2/FodUpload.jar
@@ -158,7 +158,7 @@ versions:
   - version: 3.0.1
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.1/FodUpload.jar
@@ -166,7 +166,7 @@ versions:
   - version: 3.0.0
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v3.0.0/FodUpload.jar
@@ -176,7 +176,7 @@ versions:
       - "2"
       - "2.0"
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v2.0.4/FodUpload.jar
@@ -184,7 +184,7 @@ versions:
   - version: 2.0.3
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v2.0.3/FodUpload.jar
@@ -192,7 +192,7 @@ versions:
   - version: 2.0.2
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v2.0.2/FodUpload.jar
@@ -200,7 +200,7 @@ versions:
   - version: 2.0.1
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v2.0.1/FodUpload.jar
@@ -208,7 +208,7 @@ versions:
   - version: 2.0.0
     aliases: []
     stable: true
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v2.0.0/FodUpload.jar
@@ -216,7 +216,7 @@ versions:
   - version: 4.0.1
     aliases: []
     stable: false
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v4.0.1/FodUpload.jar
@@ -224,7 +224,7 @@ versions:
   - version: 4.0.0
     aliases: []
     stable: false
-    artifacts:
+    binaries:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v4.0.0/FodUpload.jar
