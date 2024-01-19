@@ -31,7 +31,7 @@ jobs:
                   "toolRepo": "fod-dev/fod-uploader-java",
                   "assetRegex": "FodUpload\\.jar",
                   "semver": "major",
-                  "artifactTypes": { 
+                  "binaryPlatforms": { 
                       ".*": "java"
                   }
               },
@@ -40,7 +40,7 @@ jobs:
                   "toolRepo": "fortify/fcli",
                   "assetRegex": "(fcli-linux\\.tgz|fcli-mac\\.tgz|fcli-windows\\.zip|fcli\\.jar)",
                   "semver": "major",
-                  "artifactTypes": { 
+                  "binaryPlatforms": { 
                       ".*fcli.jar":    "java",
                       ".*linux.tgz":   "linux/x64",
                       ".*mac.tgz":     "darwin/x64",
@@ -53,7 +53,7 @@ jobs:
                   "assetRegex": "FortifyBugTrackerUtility-.*\\.zip",
                   "semver": "major",
                   "tagMappings": { "(\\d+\\.\\d+)": "$1.0" },
-                  "artifactTypes": { 
+                  "binaryPlatforms": { 
                       ".*": "java"
                   }
               },
@@ -62,7 +62,7 @@ jobs:
                   "toolRepo": "fortify/FortifyVulnerabilityExporter",
                   "assetRegex": "FortifyVulnerabilityExporter\\.zip",
                   "semver": "major",
-                  "artifactTypes": { 
+                  "binaryPlatforms": { 
                       ".*": "java"
                   }
               },
@@ -71,7 +71,7 @@ jobs:
                   "toolRepo": "debricked/cli",
                   "assetRegex": "cli_.*\\.tar\\.gz",
                   "semver": "major",
-                  "artifactTypes": {
+                  "binaryPlatforms": {
                       ".*linux_arm64.*":           "linux/arm64", 
                       ".*linux_i386.*":            "linux/x86", 
                       ".*linux_x86_64.*":          "linux/x64", 
@@ -101,7 +101,7 @@ jobs:
                      "20.1.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.1.0_x64.zip"
                   },
                   "semver": "minor",
-                  "artifactTypes": { 
+                  "binaryPlatforms": { 
                       ".*": "java"
                   }
                }

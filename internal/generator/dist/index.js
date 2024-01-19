@@ -34921,7 +34921,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.workspaceDir = exports.tagMappings = exports.artifactTypes = exports.semver = exports.toolUrls = exports.toolRepo = exports.assetRegex = exports.tagRegex = exports.githubToken = exports.toolName = exports.signPassphrase = exports.signKey = void 0;
+exports.workspaceDir = exports.tagMappings = exports.binaryPlatforms = exports.semver = exports.toolUrls = exports.toolRepo = exports.assetRegex = exports.tagRegex = exports.githubToken = exports.toolName = exports.signPassphrase = exports.signKey = void 0;
 const core = __importStar(__nccwpck_require__(2186));
 /**
  * This module defines various constants used by the other modules, mostly consisting
@@ -34948,7 +34948,7 @@ exports.assetRegex = nullIfEmpty(core.getInput("assetRegex", { required: false }
 exports.toolRepo = nullIfEmpty(core.getInput("toolRepo", { required: false }));
 exports.toolUrls = nullIfEmpty(core.getInput("toolUrls", { required: false }));
 exports.semver = defaultIfEmpty(core.getInput("semver", { required: false }), "none");
-exports.artifactTypes = JSON.parse(core.getInput("artifactTypes", { required: true }));
+exports.binaryPlatforms = JSON.parse(core.getInput("binaryPlatforms", { required: true }));
 exports.tagMappings = JSON.parse(defaultIfEmpty(core.getInput("tagMappings", { required: false }), '{"(.*)": "$1"}'));
 exports.workspaceDir = process.env.GITHUB_WORKSPACE;
 
@@ -35007,7 +35007,7 @@ var __asyncValues = (this && this.__asyncValues) || function (o) {
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-var _VersionDescriptor_instances, _VersionDescriptor_artifacts, _VersionDescriptor_addAlias, _PartialArtifactDescriptor_instances, _a, _PartialArtifactDescriptor_cacheDir, _PartialArtifactDescriptor_getCacheFileName, _PartialArtifactDescriptor_createArtifactDescriptor;
+var _VersionDescriptor_instances, _VersionDescriptor_binaries, _VersionDescriptor_addAlias, _PartialArtifactDescriptor_instances, _a, _PartialArtifactDescriptor_cacheDir, _PartialArtifactDescriptor_getCacheFileName, _PartialArtifactDescriptor_createArtifactDescriptor;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PartialArtifactDescriptor = exports.ArtifactDescriptor = exports.VersionDescriptor = exports.VersionDescriptors = void 0;
 const core = __importStar(__nccwpck_require__(2186));
@@ -35046,21 +35046,21 @@ class VersionDescriptor {
     constructor(version, stable) {
         _VersionDescriptor_instances.add(this);
         this.aliases = [];
-        _VersionDescriptor_artifacts.set(this, []);
+        _VersionDescriptor_binaries.set(this, []);
         this.version = version;
         this.stable = stable && !semver.prerelease(version);
     }
-    push(partialArtifactDescriptor) {
+    addBinary(partialArtifactDescriptor) {
         return __awaiter(this, void 0, void 0, function* () {
-            __classPrivateFieldGet(this, _VersionDescriptor_artifacts, "f").push(yield partialArtifactDescriptor.asArtifactDescriptor(this));
+            __classPrivateFieldGet(this, _VersionDescriptor_binaries, "f").push(yield partialArtifactDescriptor.asArtifactDescriptor(this));
             return this;
         });
     }
-    getArtifacts() {
-        return __classPrivateFieldGet(this, _VersionDescriptor_artifacts, "f");
+    getBinaries() {
+        return __classPrivateFieldGet(this, _VersionDescriptor_binaries, "f");
     }
-    hasArtifacts() {
-        return __classPrivateFieldGet(this, _VersionDescriptor_artifacts, "f").length > 0;
+    hasBinaries() {
+        return __classPrivateFieldGet(this, _VersionDescriptor_binaries, "f").length > 0;
     }
     compareTo(other) {
         if (this === other) {
@@ -35094,7 +35094,7 @@ class VersionDescriptor {
     }
 }
 exports.VersionDescriptor = VersionDescriptor;
-_VersionDescriptor_artifacts = new WeakMap(), _VersionDescriptor_instances = new WeakSet(), _VersionDescriptor_addAlias = function _VersionDescriptor_addAlias(allVersions, alias, matchingTypes) {
+_VersionDescriptor_binaries = new WeakMap(), _VersionDescriptor_instances = new WeakSet(), _VersionDescriptor_addAlias = function _VersionDescriptor_addAlias(allVersions, alias, matchingTypes) {
     if (matchingTypes.includes(constants.semver)) {
         if (this.version == semver.maxSatisfying(allVersions, alias, false)) {
             this.aliases.push(alias);
@@ -35269,7 +35269,7 @@ function getVersionDescriptorsFromJSON(toolVersionDescriptorsAndUrls) {
         for (const version in toolVersionDescriptorsAndUrls) {
             const downloadUrl = toolVersionDescriptorsAndUrls[version];
             const partialArtifactDescriptor = new descriptors_1.PartialArtifactDescriptor(path.basename(new URL(downloadUrl).pathname), downloadUrl);
-            result.push(yield new descriptors_1.VersionDescriptor(version, true).push(partialArtifactDescriptor));
+            result.push(yield new descriptors_1.VersionDescriptor(version, true).addBinary(partialArtifactDescriptor));
         }
         return result;
     });
@@ -35296,7 +35296,7 @@ function getGitHubVersionDescriptor(release) {
         if (!releaseExcludeReason) {
             const versionDescriptor = new descriptors_1.VersionDescriptor(version, !release.prerelease);
             yield addGitHubReleaseAssets(versionDescriptor, release);
-            if (versionDescriptor.hasArtifacts()) {
+            if (versionDescriptor.hasBinaries()) {
                 result.push(versionDescriptor);
             }
             else {
@@ -35335,7 +35335,7 @@ function addGitHubReleaseAssets(versionDescriptor, release) {
             }
             else {
                 core.info(`Adding asset ${release.tag_name}/${asset.name}`);
-                yield versionDescriptor.push(new descriptors_1.PartialArtifactDescriptor(asset.name, asset.browser_download_url));
+                yield versionDescriptor.addBinary(new descriptors_1.PartialArtifactDescriptor(asset.name, asset.browser_download_url));
             }
         }
     });
@@ -35488,8 +35488,8 @@ class VersionData extends Map {
         this.set("aliases", versionDescriptor.aliases);
         this.set("stable", versionDescriptor.stable);
         const artifacts = new Map();
-        versionDescriptor.getArtifacts().forEach(artifactDescriptor => addArtifact(artifacts, artifactDescriptor));
-        this.set("artifacts", artifacts);
+        versionDescriptor.getBinaries().forEach(artifactDescriptor => addArtifact(artifacts, artifactDescriptor));
+        this.set("binaries", artifacts);
     }
 }
 class ArtifactData extends Map {
@@ -35508,12 +35508,12 @@ function addArtifact(artifacts, artifactDescriptor) {
     artifacts.set(artifactType, new ArtifactData(artifactDescriptor));
 }
 function getArtifactType(artifactDescriptor) {
-    for (const regex in constants.artifactTypes) {
+    for (const regex in constants.binaryPlatforms) {
         if (artifactDescriptor.downloadUrl.toLowerCase().match(`^${regex}$`)) {
-            return constants.artifactTypes[regex];
+            return constants.binaryPlatforms[regex];
         }
     }
-    throw `No artifact type mapping found for ${artifactDescriptor.downloadUrl}`;
+    throw `No artifact platform mapping found for ${artifactDescriptor.downloadUrl}`;
 }
 
 

@@ -33,8 +33,8 @@ inputs:
     description: 'Define what semantic versions to include; can be none (default, only full versions), minor (only minor and full versions) or major (major, minor and full versions)'
     default: 'none'
     required: false
-  artifactTypes:
-    description: 'JSON string specifying artifact lowercase download URL regex to artifact type mappings {"<regex>": "<type>",..}. Default value: "{".*"="default"}"'
+  binaryPlatforms:
+    description: 'JSON string specifying artifact lowercase download URL regex to artifact platform mappings {"<regex>": "<platform>",..}'
     required: true
 runs:
   using: node20

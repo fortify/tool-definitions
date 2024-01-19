@@ -43,8 +43,8 @@ class VersionData extends Map<string,string|boolean|Map<string,ArtifactData>|Arr
         this.set("aliases", versionDescriptor.aliases);
         this.set("stable", versionDescriptor.stable);
         const artifacts : Map<string,ArtifactData> = new Map(); 
-        versionDescriptor.getArtifacts().forEach(artifactDescriptor=>addArtifact(artifacts, artifactDescriptor));
-        this.set("artifacts", artifacts);
+        versionDescriptor.getBinaries().forEach(artifactDescriptor=>addArtifact(artifacts, artifactDescriptor));
+        this.set("binaries", artifacts);
     }
 }
 
@@ -66,10 +66,10 @@ function addArtifact(artifacts : Map<string,ArtifactData>, artifactDescriptor : 
 }
 
 function getArtifactType(artifactDescriptor: ArtifactDescriptor) : string {
-    for ( const regex in constants.artifactTypes ) {
+    for ( const regex in constants.binaryPlatforms ) {
         if ( artifactDescriptor.downloadUrl.toLowerCase().match(`^${regex}$`) ) { 
-            return constants.artifactTypes[regex];
+            return constants.binaryPlatforms[regex];
         }
     }
-    throw `No artifact type mapping found for ${artifactDescriptor.downloadUrl}`;
+    throw `No artifact platform mapping found for ${artifactDescriptor.downloadUrl}`;
 }

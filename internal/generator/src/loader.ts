@@ -29,7 +29,7 @@ async function getVersionDescriptorsFromJSON(toolVersionDescriptorsAndUrls: {[ke
     for (const version in toolVersionDescriptorsAndUrls) {
         const downloadUrl = toolVersionDescriptorsAndUrls[version];
         const partialArtifactDescriptor = new PartialArtifactDescriptor(path.basename(new URL(downloadUrl).pathname), downloadUrl);
-        result.push(await new VersionDescriptor(version, true).push(partialArtifactDescriptor));
+        result.push(await new VersionDescriptor(version, true).addBinary(partialArtifactDescriptor));
     }
     return result;
 }
@@ -54,7 +54,7 @@ async function getGitHubVersionDescriptor(release: components["schemas"]["releas
     if ( !releaseExcludeReason ) {
         const versionDescriptor = new VersionDescriptor(version, !release.prerelease);
         await addGitHubReleaseAssets(versionDescriptor, release);
-        if ( versionDescriptor.hasArtifacts() ) { 
+        if ( versionDescriptor.hasBinaries() ) { 
             result.push(versionDescriptor); 
         } else {
             releaseExcludeReason = 'no matching assets';
@@ -91,7 +91,7 @@ async function addGitHubReleaseAssets(versionDescriptor : VersionDescriptor, rel
             core.info(`Ignoring asset ${asset.name} (${release.tag_name}); doesn't match regex ^${constants.assetRegex}$`);
         } else {
             core.info(`Adding asset ${release.tag_name}/${asset.name}`);
-            await versionDescriptor.push(new PartialArtifactDescriptor(asset.name, asset.browser_download_url));
+            await versionDescriptor.addBinary(new PartialArtifactDescriptor(asset.name, asset.browser_download_url));
         }
     }
 }

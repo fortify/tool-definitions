@@ -41,16 +41,16 @@ export class VersionDescriptor {
     version : string;
     stable : boolean;
     aliases : string[] = [];
-    #artifacts : ArtifactDescriptor[] = [];
-    async push(partialArtifactDescriptor : PartialArtifactDescriptor) : Promise<VersionDescriptor> {
-        this.#artifacts.push(await partialArtifactDescriptor.asArtifactDescriptor(this));
+    #binaries : ArtifactDescriptor[] = [];
+    async addBinary(partialArtifactDescriptor : PartialArtifactDescriptor) : Promise<VersionDescriptor> {
+        this.#binaries.push(await partialArtifactDescriptor.asArtifactDescriptor(this));
         return this;
     }
-    getArtifacts() : Readonly<ArtifactDescriptor[]> {
-        return this.#artifacts;
+    getBinaries() : Readonly<ArtifactDescriptor[]> {
+        return this.#binaries;
     }
-    hasArtifacts() : boolean {
-        return this.#artifacts.length > 0;
+    hasBinaries() : boolean {
+        return this.#binaries.length > 0;
     }
     compareTo(other: VersionDescriptor) : number {
         if ( this===other ) { return 0; }
