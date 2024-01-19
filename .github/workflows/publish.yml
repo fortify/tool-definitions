@@ -30,7 +30,10 @@ jobs:
                   "toolName": "fod-uploader",
                   "toolRepo": "fod-dev/fod-uploader-java",
                   "assetRegex": "FodUpload\\.jar",
-                  "semver": "major"
+                  "semver": "major",
+                  "artifactTypes": { 
+                      ".*": "java"
+                  }
               },
               {
                   "toolName": "fcli",
@@ -38,7 +41,7 @@ jobs:
                   "assetRegex": "(fcli-linux\\.tgz|fcli-mac\\.tgz|fcli-windows\\.zip|fcli\\.jar)",
                   "semver": "major",
                   "artifactTypes": { 
-                      ".*fcli.jar":    "default",
+                      ".*fcli.jar":    "java",
                       ".*linux.tgz":   "linux/x64",
                       ".*mac.tgz":     "darwin/x64",
                       ".*windows.zip": "windows/x64" 
@@ -49,13 +52,19 @@ jobs:
                   "toolRepo": "fortify-ps/FortifyBugTrackerUtility",
                   "assetRegex": "FortifyBugTrackerUtility-.*\\.zip",
                   "semver": "major",
-                  "tagMappings": { "(\\d+\\.\\d+)": "$1.0" }
+                  "tagMappings": { "(\\d+\\.\\d+)": "$1.0" },
+                  "artifactTypes": { 
+                      ".*": "java"
+                  }
               },
               {
                   "toolName": "vuln-exporter",
                   "toolRepo": "fortify/FortifyVulnerabilityExporter",
                   "assetRegex": "FortifyVulnerabilityExporter\\.zip",
-                  "semver": "major"
+                  "semver": "major",
+                  "artifactTypes": { 
+                      ".*": "java"
+                  }
               },
               {
                   "toolName": "debricked-cli",
@@ -91,7 +100,10 @@ jobs:
                      "20.2.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.2.0_x64.zip",
                      "20.1.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.1.0_x64.zip"
                   },
-                  "semver": "minor"
+                  "semver": "minor",
+                  "artifactTypes": { 
+                      ".*": "java"
+                  }
                }
           ]
       run: echo "matrix=$(jq -r -c . <<< "$CONFIG")" >> $GITHUB_OUTPUT

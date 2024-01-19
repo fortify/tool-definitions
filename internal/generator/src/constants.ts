@@ -29,6 +29,6 @@ export const assetRegex = nullIfEmpty(core.getInput("assetRegex", {required: fal
 export const toolRepo = nullIfEmpty(core.getInput("toolRepo", {required: false}));
 export const toolUrls = nullIfEmpty(core.getInput("toolUrls", {required: false}));
 export const semver = defaultIfEmpty(core.getInput("semver", {required: false}), "none");
-export const artifactTypes = JSON.parse(defaultIfEmpty(core.getInput("artifactTypes", {required: false}), '{".*": "default"}')) as {[key: string]: string};
+export const artifactTypes = JSON.parse(core.getInput("artifactTypes", {required: true})) as {[key: string]: string};
 export const tagMappings = JSON.parse(defaultIfEmpty(core.getInput("tagMappings", {required: false}), '{"(.*)": "$1"}')); 
 export const workspaceDir = process.env.GITHUB_WORKSPACE;

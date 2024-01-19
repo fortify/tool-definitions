@@ -34948,7 +34948,7 @@ exports.assetRegex = nullIfEmpty(core.getInput("assetRegex", { required: false }
 exports.toolRepo = nullIfEmpty(core.getInput("toolRepo", { required: false }));
 exports.toolUrls = nullIfEmpty(core.getInput("toolUrls", { required: false }));
 exports.semver = defaultIfEmpty(core.getInput("semver", { required: false }), "none");
-exports.artifactTypes = JSON.parse(defaultIfEmpty(core.getInput("artifactTypes", { required: false }), '{".*": "default"}'));
+exports.artifactTypes = JSON.parse(core.getInput("artifactTypes", { required: true }));
 exports.tagMappings = JSON.parse(defaultIfEmpty(core.getInput("tagMappings", { required: false }), '{"(.*)": "$1"}'));
 exports.workspaceDir = process.env.GITHUB_WORKSPACE;
 
