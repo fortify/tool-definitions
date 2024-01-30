@@ -170,12 +170,7 @@ jobs:
       run: |
         git pull
         cd v1
-        # Remove the existing zip file to remove any obsolete entries
-        rm -f tool-definitions.yaml.zip
         zip -r tool-definitions.yaml.zip *.yaml
-    - uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_message: "chore: Update tool definitions zip file"   
     - name: Update v1 tag
       uses: richardsimko/update-tag@v1
       with:
