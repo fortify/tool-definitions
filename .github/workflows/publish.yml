@@ -162,15 +162,15 @@ jobs:
       contents: write
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - name: restore timestamps
+      uses: chetan/git-restore-mtime-action@v2
     - name: Generate v1 zip-file
       run: |
         git pull
         cd v1
-        # Set last accessed/modified date on yaml files to have same
-        # zip output if files themselves haven't changed
-        find . -name "*.yaml" -exec touch -a -m -t 197001010000.00 {} \;
-        # Remove the existing zip file, to make sure fixed last modified
-        # dates prevent the zip file from being updated
+        # Remove the existing zip file to remove any obsolete entries
         rm -f tool-definitions.yaml.zip
         zip -r tool-definitions.yaml.zip *.yaml
     - uses: stefanzweifel/git-auto-commit-action@v5
