@@ -153,7 +153,7 @@ jobs:
       with:
         commit_message: "chore: Update cache & tool definitions"
         
-  generate-tool-definitions-zip:
+  publish-zip:
     needs: generate-tool-definitions
     runs-on: ubuntu-latest
     permissions:
@@ -175,7 +175,22 @@ jobs:
         zip -r tool-definitions.yaml.zip *.yaml
     - uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        commit_message: "chore: Update tool definitions zip file"    
+        commit_message: "chore: Update tool definitions zip file"   
+    - name: Update v1 tag
+      uses: richardsimko/update-tag@v1
+      with:
+        tag_name: v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+    - name: Create Release
+      uses: ncipollo/release-action@v1.13.0
+      with:
+        allowUpdates: true
+        artifacts: v1/*
+        omitBody: true
+        replacesArtifacts: true
+        tag: v1
+             
               
         
         
