@@ -1,10 +1,46 @@
 schema_version: "1.0"
 versions:
-  - version: 1.8.7
+  - version: 1.8.8
     aliases:
       - latest
       - "1"
       - "1.8"
+    stable: true
+    binaries:
+      linux/arm64:
+        name: cli_linux_arm64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.8/cli_linux_arm64.tar.gz
+        rsa_sha256: l7pLaWTmjLm/SWnHF/i4O0gnjqUHFMBm5/3MvlKxfvJzEFSTc069xfcKMHjCzdxDT+yNSF8ITNqSPBIG1FoZGoKqJqvxYOykxgR/HzYLU8CVLuZrEYR/Kq15wldYOTBZ1RhZUg1KSEZef1jdZIPnmwE6xVAfB+mWb9Qo3uYLgD1cT5LjdWSawvm4rSBmmtgpjnheS/xnwmObx3uThmyzAxOE0MWxgNVisVKCdtirsNLIMqipUnn7aIGmKfBk4WtkR52aymSUGsQ+qexJKz60l9JFs5TMoJHlxkYOl+nqCaPxfE60tje3kNAWQHEqdLgRJ/6w31HOpp4o19Ub1ZPiMA==
+      linux/x86:
+        name: cli_linux_i386.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.8/cli_linux_i386.tar.gz
+        rsa_sha256: rcKvFvvUPFG91BGm2wQH80lZVvJENRcfUPryCECHy4/XXjh+BzWHG5wGm5V7Xz0JFtcnSbx6ySDx5+B97wpb5Zdg18j1vyB8MzANP7xzncyAS8ztXr5SDltT4W+QOgZ7aLBXkkqdsGfRW3fYGs1QNmW1Qi2RdTcZb6Ma133F6upATwBNYKzl2SlwoD+umgTXMDoMDLX4Xbbq+Elayhdnr0d/Z/HPScK/ZzZUpf0cqW/CH3Ed6R1JbzJKdj2GOrUu31tyT/UhTGaHFfUsHnYFowYj6RwhN0wTFsHFR3Qp4ZHom2gCyVWvdqpYAlfeXN1IJvMNxFYCsPtX//iiaQ+6AA==
+      linux/x64:
+        name: cli_linux_x86_64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.8/cli_linux_x86_64.tar.gz
+        rsa_sha256: DwXgGTq8QeN/MSS/1/dOTbp/F2fObf86hcRFMyfWHgHu+zeL7E9M7V6Pi0fvNx7QKXKImRhJrjyNWUjgJfsu+3K9BaHpgweO4a2q0HQVxObSEfyDfFjbo1NUtnMcWDLMZkBFrqjzEJGdIYJIHe0j0girrsBUG/tG0yLxA1F3TCuuvsm7UqB+obqXQyWLQfvJZ8y7f0jcLVE26YxLdOtIHhIDFaff63/XaWjS8nEcUjjoaEePlmTNWUSggaLE8yzWlNQwbqP0ddOv6s8Y5Bhkw66bMco7pXh4tsCzfLPe64DZ1GPJskfy7oJo5wGl90D+/+RvfIyLSDLdb1o4f4km0w==
+      darwin/arm64:
+        name: cli_macOS_arm64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.8/cli_macOS_arm64.tar.gz
+        rsa_sha256: mLG5ckGppKTJWjgA52NsmVQO+0XWaMsJwvQTrLfFAHYEbvx2XYmKelmC5tVyvR4o/04IfF9eSDbHEMZupK90sdJVZSMsKppKNXnk1UDq6dy55L7QYes35tnvr9zsG+1mzrx/J7EcqSWfv+UL0psgYvwB5sB3iPZzl78IQzmXcec4Ty95gfodYTReUqjgtyfmm+Jz979J730Hc/F/Dgh0Sb2XHPYfZKFVCJ5fBe9uAiNv3bsTrtIANL9HMsswwA6k1MHTSwyKU4l7BwuUyXcxNaywXyicU1ef6Q/iZghkk+nR99dVQPnIA5E3jTQxhf30Z5bEMDA3b6eNgyYa82xG6w==
+      darwin/x64:
+        name: cli_macOS_x86_64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.8/cli_macOS_x86_64.tar.gz
+        rsa_sha256: XjIYHaCTBJxUVIdYjyxp4qG34+eR982op10IpyacvdF+0gMWZxrzcGq0SuSM8xi3HYqexSIyBDNSWxwXspwY8TlixWCl5VbLf1bgIAyNvCUkKUVHsyoqLsssbSdmuFONVt+filI9DhaMiaKMqJj0/V0awZA+pW0F+cPyh5T/Vm8Om6RKgJmvODgk0+S+GajjNrs+tiHqOnBXmtPgleGErfw3epXF1NZT0h0QffRQrhSbkCxNDfVbThw0amccR6yF5LBURfKRXs7Pg+jvxCT7ZAGefVuVkySAvwBESWE0znxVqNh+wcieidDwuW/NJBuc175l0vl9+GmV8rUtWX+LGg==
+      windows/arm64:
+        name: cli_windows_arm64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.8/cli_windows_arm64.tar.gz
+        rsa_sha256: jiH2ReekwzjR1hdMCvDuHThCQtrOez7APt/DSuX9Yakb3xz4p86/t3EiU7mW/lE5r8c7P8Z6QsDtQ6lIV6QMqKt3Z1kD4mXQruhtc78rgEkHiWr5n1KwtV1o75GIMduLjikV5nt7Z4Cmwt8QDeXGK+qSMs7VWyIgx1V27GlCDgdR9dXsfbLIA2xkUhwROPpv9zUEN2tTIXf1LtDkpcf1ix21KDHMzL9xqVN0LWPVMn13pEA8EsHNm4tJi+1UJYBs6Qe4SFjcfU2BoRwsir1rBeoNutFXpsC8NkvIMWAk9YzCEVYdTS9RdpALCZGI0aNhPrLNt1SZFp6a+V553LeNng==
+      windows/x86:
+        name: cli_windows_i386.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.8/cli_windows_i386.tar.gz
+        rsa_sha256: XHaTQ/k4oVTx/EKs+Tt1eusttulmgcASlRAoejGmrO3H4mJgltHomKemGcA0Pv58tlU0oE+S1TXSSpRd2wPc8AhE1oEjhUFqW91e9hOwxcbBHeT/1Ogf3uUdFFLW8hHtyc6kAaVZTFqMz/WET07MNhUpnsO9m51NDWmte+AtZSkSadR6Nuy4MLzG0M3nNKI7YOyAVQ9cuRM4xL4kqueidj/YuWejXNBWKINdf29EtJ0/S5ZNI1a5mEMIpqYvt93+1Hsb+JnHf6gt8iMpMkAm3hUhYDM+slzC/twxgfuEPpmc9j1QsaRlbmcIZCvLeCZoyIpJNpCRDO89/tXPV9TQWg==
+      windows/x64:
+        name: cli_windows_x86_64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.8/cli_windows_x86_64.tar.gz
+        rsa_sha256: Bt/QGOkEpTWhnZSl7iZfzsugcJOKwmZAWp1SQBYgu85+Ix301QF+2QFJes2a44Cjpme+exjxSUlrcJLlicodEN6rQgCTOpcXa1wdZaK3ANd3srHZimIf8w72ufsHgcv8H/BHCsPHX3U02PW2AiB6lPdz7Yy0WAgvuPM3+nomM1LXafZO+ExCu7+2lWNHfV5aeEUld5WhgUmS8kp2yiGAaGKJRpqUigLUT+zvmcltHrGSds3hd99PUnExsrY5Gv2hHfDsexEdoT0jBo/7qB3aM+TQ5sdO+VjkZtO4xZEjwYY+BMxdRY9u4DCSDg+sx5AqRxL19JdNXRNGZVuZWkOA1A==
+  - version: 1.8.7
+    aliases: []
     stable: true
     binaries:
       linux/arm64:
@@ -39,6 +75,42 @@ versions:
         name: cli_windows_x86_64.tar.gz
         downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.7/cli_windows_x86_64.tar.gz
         rsa_sha256: H2eC0lnX3p+udo5oydxT8rdbKdbXn29qkfoJzEz+cn932jNGh2/90s7opvaeqX6g7gbSiVAM1v3EFN3leYDkGfc+kr/rknmrM7JC5vKvkcsAi3oLDCr9CibfUTpMAyYz1jWD5jGKxvxniFIeE7e8TAYGWzU0h9Ec1t/S9n1jCGIsnp3CTuWenzPSldT5jh2hL3NmzVIONjtTlUDhyu0mg84wiyVpoUJAOQ6k1WdQGgc22KI55noqs58x81BFGxGCC9WUIJe3I02iTUL73MQpoxmRrWgX3Yy/RtUQWHCxqdcCm90a1XBzhhWCWOv8PhELe5V+amdsvnAMFTBhLL8iKA==
+  - version: 1.8.6
+    aliases: []
+    stable: true
+    binaries:
+      linux/arm64:
+        name: cli_linux_arm64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.6/cli_linux_arm64.tar.gz
+        rsa_sha256: KXRwMvLGPm9InI058AUyKVJVjpDdQscL39qAyMr8ZQRTTFyfdocAxZRGVSpR/1wLAYzBt8ltCfMpeM7p8bE4r2x5UKLJxIs8SldTrwjoO0yuLwatoU8ANYJg5uwAhJW1aCnD90YuQeNbq4AC73lA9XjsHpup8qJ7KtY+ChJKyKwHXu3V1JMGsmTAFpOHjRgd+vAkWSFMJ45P/5IKbdsyxrZ3zefWXY1FfszkXTTtDQ3pEnwtDMm6r08IinD4XlzbsqtIuGrCNNtpywWOmXlVuPo/xiI31FkMRqu8sto8iJPj3C7/aIwOB262g1q5iKyZEYRRpFLtXLzBGL5TlKSR2w==
+      linux/x86:
+        name: cli_linux_i386.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.6/cli_linux_i386.tar.gz
+        rsa_sha256: ZX1cstl+bO4AhlBFLSLGct6Q8qo4TkakUhYuHX34DvpP3No4z9wYcL19NfYGisBackAy+lJOQ3YUslQqe3fc0JtE0Pv6rxQhTacXOi0vmRPCpgCSevLnJ/6X4DvlNdZuBojsvAec4y8ZqmWcjz3bcLHltLEYaHSrxgKcgVUaK9V/BFQM/FettxPARQD1+LdBt8F7EiIP1C2qM6myrcZ3x6+LZ6XHh7M95yoOQXJfY5IcMYjjk3ZUYLQHa4Ea/EduUiUFsE6pgHzcqD1sxo/6lzaEMyq8JBLouAwCrn4STZnoAMX9s6aXPl5xTSDjnwimIw8oGgZ5QRAU/yk0yq8Tmg==
+      linux/x64:
+        name: cli_linux_x86_64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.6/cli_linux_x86_64.tar.gz
+        rsa_sha256: M2NnDlEV6Ak/FcppHQxvvC++qn2k6eoL3cirYlkkxxcuXkCYzrU8JZ1G+tpprc/viyO1aGFkiIiS06/lHtTJ9We8ApcxlMDIjTifwdGLjrlKVvmHiuvBViQNVXnIhSJSx63iMaGOBaPiQrVGJOjpq0Y0RDntmWkk102f1fxa/4xa7RCg9adIVwpo6/0kToTily/GaILdM39ixrhBYkN9wPj+h6A3PmI8aoAlduF42ULnZiYz2U7y7KnDxqkuxBYO/bDmfj5JgEb1xGsBm72l5w1ynlKLrwML7HT08oEgLiNjfwHXRKSqmwnO3tHa7N0HL9krhdftrcOPMRwXWrHUDA==
+      darwin/arm64:
+        name: cli_macOS_arm64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.6/cli_macOS_arm64.tar.gz
+        rsa_sha256: gbCzslmH+kX33auM5wl6l44RrS99MOA+7L6MzsI+zWsTB6FN7a7GaYeXG59AK2WLejeCYzk5Gi6bQ1OoHkTEONVo049D4ZCJRif01VNZI68Lde1HT7fgR/4dpKGULJwbbnHQcZxZrXKIBMPupZYiUfrRnI5KFVct8myUzkl0I9yXD3VxnLHLjp4OZiY2BTLskVlFm5I12BhhEJC5rEVlhi8THjFY3aClh/nRLc/hP6Fef54yeumi/1e/6aUDSQAR3CbTvN+w9zzJroFYD/UOZiuI+YveDFBRLHzk4m+m57+oIKBlBCAXGU6l26bad7Vk+/bq/lDv/6ZcshsdzMp3QA==
+      darwin/x64:
+        name: cli_macOS_x86_64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.6/cli_macOS_x86_64.tar.gz
+        rsa_sha256: FUnw6cZPoFj6QqTXCa3o1fy8ZmlAe3keGWQWPNitSLYevvC6qD35x77yShZkT2vFidgYqIRo+i2BSAF9LdsLfd0Z2E62/Y7Jk7e3Pgb/gyAfG9ioyPJM1VKiu7JSW7k6AWSJmDv1Whn/IKJRFg2mqHcGNqNMhVVbG/91LEPBsyDtz+6l4NMpZtnca5sEJLaXT73bQnPJx80EVkbAaVaCy+JhCYU9eU9xja0cwJi0AhtkrOybk5kzjIChN5Kh8oet5EI9VnYH0AFrlwFR3T1vij4ixN8G4RzfQTCqyA19re6DmZypTSHwM344+e3lAO1L/6PgZW+KiXE55BOigUWJQQ==
+      windows/arm64:
+        name: cli_windows_arm64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.6/cli_windows_arm64.tar.gz
+        rsa_sha256: jaLNxwM56HqA3Lj2qtCpoP/yk9aVhrnA1iYFL4cIjc9ZNcJF2BKAy4sTgbTuZACmVWlxzsjMKumv0OfB/akNam+/L3u5c6dXhexH2CHg1g324JfVF8w7fxuwBfAwiJ7I8VxVN8+8Qmanfrv5Y6rEXOFdq8LV4JRG+i31wkUJuvWD35nWaobXnQp4g9iLPL8sNCV+e7Q8rj3bBnpqvP0lxFawc2jwem1oEAhchMKe/iOSqKcMgwPxOhKkcicRuSZzASc+CQU8BwB0d/1MSXy96U4aUkjVyJySixYDibkQ0WrUBjZrmWivvD/N9rgyPaMC26FI66GtIfYHHYHWfsSXEA==
+      windows/x86:
+        name: cli_windows_i386.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.6/cli_windows_i386.tar.gz
+        rsa_sha256: eQaQ7hLOUk4J5i9yYnjejMjdIpA/w0sGokn4OUFeFtvFc/sAHIsq6Enzu/yG0Hea0cjXIO3OjZNKNo1oZdWaV+OCot494sdpMsOy4xYn3gJmNsIjDuPVOBdU1AjVU95zKNr2oSYKilM6x/gQeCF8+5G7ngm2tKJkw9nJvEc2CY5F5X1L3vZj0bFD+oMaBQ4KtnI+Xn4xV771hl1yLhAtcIEeVFtsXKU9LoJtaz7aXujXgaV0AaEQOdZTtfLZBwRbJKibfpNt3GfxyPq6jE3wXcg1W1fUl8EhRT4VAEAojxOZI7cyEBDJfShp+ytMUCX9U4ctK02KnnAmZ3nQo0xqaA==
+      windows/x64:
+        name: cli_windows_x86_64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.8.6/cli_windows_x86_64.tar.gz
+        rsa_sha256: Sjzwy2Lz4/Lsew1260zadoSeA/OQLpPsc9yQIJpaXQg0xU1T41sPqEWPJTK//BHgfXihV6jFo66/LY6sX3KvrbDrqdARWBfIDepYLcEDHTwqxyjOA7DjJZMPnXtzBk1CBv4XMdpXDwfBLgNJ/pXru46em5aHGdKiDfdV1GGj0nhM8dD8E9frmQYBN/ENshpIozgKbaebQGej0t6k3vnmlUGmileHF7u1YmUtwO3ibkKEXiIIthJOe2OPI8Mf+KKv0DPuK5213+y61gVKT5fywJ2EH8i9U7apY0eGP4CyWMSKg+qTyHeZAAF1/aouKq4/XE/HS3/Z3RVFl0E/rTEGrg==
   - version: 1.8.5
     aliases: []
     stable: true
