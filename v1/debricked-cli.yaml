@@ -1,10 +1,46 @@
 schema_version: "1.0"
 versions:
-  - version: 1.9.1
+  - version: 1.9.2
     aliases:
       - latest
       - "1"
       - "1.9"
+    stable: true
+    binaries:
+      linux/arm64:
+        name: cli_linux_arm64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.9.2/cli_linux_arm64.tar.gz
+        rsa_sha256: nUkWkRaXmKdXow13iqtSdOMc70jig3hvzyUvJ+d1zyH++gx+8R4++WckIZMAykjbYl6oJC5CTFTAGcmTlVJnoDfWmnLQ55pk5DF0ZGUwaCwvvRbSwGPyGcM24RWN/YFxGX+PrOXNb56igEt3h0fxxyYzaiXHLaCdewhbE5DC3JuSNxxQzCLPwYlnE3VxHOTAPOxc9YTFJreA4kNzj2/qGxIid/9SMmvJjdjjRH+9aplKQXvik1TW4W5L27Ap9jRDoqLUXJIRih+EQ/5A/2+jm5+ThrTjS40f/cGTEEexVdVfJCwi6TuMygOF2I6mUe5NtwKBnuaqaKt5lpaFjGPVaw==
+      linux/x86:
+        name: cli_linux_i386.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.9.2/cli_linux_i386.tar.gz
+        rsa_sha256: P+jIbr7LOq8+wpt9ajnPEgkdqrdoHKrGOvqEFSdfncnoXiySHCPB78PHgfSGNLd8Yh7vGIAYgbqqpmb8PkHNVfkXGfdrEeemiRsupXh31vYsRWFzWP7A00v51v6Z5IYkCxJz7nOKr1N+SKsImkt2jhW0hYeXYAZ1zHs/ruInAVxeBNLPUwxMq1//eHOH1CcVvPF83PNWYEm4HBLrAbjyyYemxhSCYLaXzGFrKezovdX1spQsWc7n4FkRiOsf3UpyO9l2qlprd1zuTg4QpFISLvVITCEIj1zqW733Doa5VlxtYC282GDEUbwQuI1uI6pVX1rZ1L2LMxJWNBq9EIIeLg==
+      linux/x64:
+        name: cli_linux_x86_64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.9.2/cli_linux_x86_64.tar.gz
+        rsa_sha256: XwmTYxqym748kzJjoQ862BWTl+ULag9xRKBZWXaLfdE4/Re/Ndix0u/RrBKSU6C9oeCXXrBr9nAUi1iiFYWa5Ne/PbsiA0ucSOhfC7FUefHFmlkKqTkncqifBKFAvdjx4/LH+XSW6j8xH/fvFMARUId6VJ1SJemt52qeZWq4ehpKoZprrOxdzPxUZ4iaKuCElZKMdyDK/cG5CQoYY99bIyinRC72q3gG5NVvJUpAhC1iziK3hdOcgurGIceEOpTVumiJemnZXxHFlkSnDDQWMZDVI/k/DxVUxgn6fqXr1ZWd74tWT3uVaot580S19ZDrX2sinhjL+5Or4e1nXvT4lQ==
+      darwin/arm64:
+        name: cli_macOS_arm64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.9.2/cli_macOS_arm64.tar.gz
+        rsa_sha256: WQXuD5Y1a7MNvaVVGP7Suo+Yq2IRb7CUGsdoG2rPkDqRHKSmRPgDAGtuBvoYK1kz6+ED0gc0ufn3229pKL/Cz5gHap1CPRi717uLAEZ5zc8MSbApv0YgjpdOteU8Tr77VGhHmOF7xtsLydrG+EpipHqeKy3OZxlQgxN5ZBITR8DReCb+gvAGG1zNL2xMnzwY6cDinc/KkNYSTJNYs6Gow+xLjnv00ffarBhjt5Lc7o9xHWpAFizad3+YAgQeBZUKDDIwhR9njaJJjLHMxdHjcu/YOUyA3WRpglp5HtH55UhUejn6vmyjnVI4N8XgClyuU7vq+4CVXahrHKg4hvzYEQ==
+      darwin/x64:
+        name: cli_macOS_x86_64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.9.2/cli_macOS_x86_64.tar.gz
+        rsa_sha256: N9Gm+JosBDPu3AM19rDtZwryQEGGXiCQYFmvGv2Im6RRewKC2ElvtZX9X4iBMEWf1X8ZaHSehlfY5MmSMf5p66GVWauWARPbLws83cxXUK8spVOXzBaD7ZjsWzbtynyDK0HQSK6x3QXBNPcbG+3zRBnnqHNix1PbT9wKDH8RwagWbHG7J8PcPIk/E1j9IwLfjSpfke5xvhkwxyeIp/Uw7/x7vVDTQ85/5rssnbi3CqTR+UFa0Pd6nuMsoV2uAtsPfYEUDaSTlf/vZ+R4UUr8YiujVYVTCgud0tWYhQjgS6do9aVZtjQ4Q36KpSgFgOMMBVIf9XXGiKz64kQffAwJXQ==
+      windows/arm64:
+        name: cli_windows_arm64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.9.2/cli_windows_arm64.tar.gz
+        rsa_sha256: TtwqGA+SmChf1B899Ep5Kz/HlVc2RpYVtcChFakaXbFJW3zZcWGepB+QR4Yuhc9tzVFsTqq9UY+bCPI0u72YPyTrMsx8g17wCQZvhi687RH6K/2wLpVPy+XEvHqkwrIfBtgpV/VEQAzwqVCl2KM5vWetPZS4FJeMOwdiuXBYYpa/LQ87gEYYG4NqgVYaRynuMINBnqnA5bOS+I0f812pE++fHnOx70vhNiHe2HE06zR6v3a1QLlB5xigBFIp2l0Hhzx9z5s6gDCa/wIZoeaInnbC2vydraB0fOOcEmXqruiW6FveupygllBlskoyYvwrdaVkKMBUJ6g+NNw7tueAtg==
+      windows/x86:
+        name: cli_windows_i386.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.9.2/cli_windows_i386.tar.gz
+        rsa_sha256: UUN1genDF6tXJ4G6+aGuImWOnRtTP6j4fsCOaYLONcnz4c9lE5kf8xo43ed6o5cAg9dPUtsaiIqIHHot56OK50zDty4laRA95i6TXb/z/Rh41hAq//bUP0QBGXpp4YlWUKWURRXIRbg6HmnH+gBtQiQKBP4lkihH+4WXK5RnMIM0NSh7XPQrkJL3BWAR2ZgeA/foutEdtwt7K8QZQKPLV3FigoR8GW8BapySIQA0kOJ4Qk7vJXk3dqoGoQrIqbqQ6ZFe/s6kjONJ0+dkaWs04bV0xC0NPpDhxWr+pGP9KNDUWkP1wJFUbgs65Emg8qewNzyWFjYjfqI5gRpDtgVXQw==
+      windows/x64:
+        name: cli_windows_x86_64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v1.9.2/cli_windows_x86_64.tar.gz
+        rsa_sha256: OjthCZk/WeqJeOOqlPk09vVuEe/ehZPyBklT9LNG6cZzcZB78VbdhGN/Tp0//r4QEoI0OKXtCBFVPcBn9g28+vcnShtInW2PFthxlCQRXkFiNXwQ4TaeNI3RcwVO7hgaS2DQtDYBkhbZVa9cWTJ1/p9nMM9EX0XYPNhjN9Kuv1H1vV723C8sFyS3BS+bh1uyy+Q4+QD2rIxAPWBM898xfZMOOo6ErvWFmjEy5snEgsOnE23Nyv9WpCoRuoAbGh4sEIGAD6Z/ccWjZYjl1058JJOEjBXJw9r3t3FTNkEIaLI7qRUJ4pV9a1RFfbhpcA4SQmNbIQpPLVRWWJR807vJBQ==
+  - version: 1.9.1
+    aliases: []
     stable: true
     binaries:
       linux/arm64:
