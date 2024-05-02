@@ -1,9 +1,18 @@
 schema_version: "1.0"
 versions:
-  - version: 4.12.0
+  - version: 4.14.0
     aliases:
       - latest
       - "4"
+      - "4.14"
+    stable: true
+    binaries:
+      java:
+        name: FortifyBugTrackerUtility-4.14-dist.zip
+        downloadUrl: https://github.com/fortify-ps/FortifyBugTrackerUtility/releases/download/4.14/FortifyBugTrackerUtility-4.14-dist.zip
+        rsa_sha256: Qd25T+8QOeTHNbAOURIbT3Wv+cLvEENPc5ThH9SVAR6pkAqj84gBY5Lzd0fzbJ6NR+yQk179UTG1wts9kLGCouEYRXcgo3gHI3/qfOFXC+MQh6luXvp/6XzkyGo6tFpwmZGqmSAwOUsJFwN24F+gpmclGhaZex4Vc9uszD/vIMQwdCIAklcM3SniBWhDogx5eXMiefFsSuog1unZyxn2/glAbm+ZbcZ/Tajjo3abs+VDx7vJyeG1vuu5gPx99tYfg9HNB4HSbGPclmjg9jCMyvcj8cQmEr/bNHsFkZsvEbm5l/6OkGdd5C54etvSeVNkNHN0EeIyx5hBuW3IJOqrRQ==
+  - version: 4.12.0
+    aliases:
       - "4.12"
     stable: true
     binaries:
