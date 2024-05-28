@@ -236,4 +236,4 @@ versions:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/dev_main/FortifyVulnerabilityExporter.zip
-        rsa_sha256: fOgHtBTr2mgot53fGB9crjkXK0ycJyuJnNYXwr1Y57INc6AXzDC/i6HM5PP7MbFVXuw1crQMMQpmtQCqwl5KGgZCRJrtEQsL832syL1jwnOqoUjP+TQwXJX5xWeNdUxLRS4SSlw0KEmIreWRBVkckkGrX46gTMiYAgZj25pTDtnJvAfOwCZem2aC6FWppiCGu9FZ11CwZ7/7XEDtrzzrmxLXV+SsCTDFWLoIo24uk04oW4XJEFoheX4UaEl5dU5p2lw9ctwdBBQjP2jrjmYeUQiknDAln9Fy1RQsPNjBPpd7DSCHXReJ0lmzJXEbT0vZ0Q4oXr7Yuu58mICsiNzSVQ==
+        rsa_sha256: hwS43QjOIVifvOsQX1z0ft68j/z1xj94zTeD2f4dz9L3XVPpzRHUA92jL2xh2B5QQH4IU9VbIadaUyrIAR9w4JxTfuGc70LIzKvL3fBEBafJK2LDRTFC0n9b/r4sTJJbegnv5I9qendgYNwGVLZ3v7NFMzj9y6rrzPdlmjKnROUi9x83ktFL0SOrDFttAYOSZwn0wfNJLSXctWkAjNkYt63kXR6LTosuFfmAFuHG1e3eqC7apE6EtFK34qmHywmsAehlz+fomOCYnnXqYf+6Rjpx/P6aB6F13cqGlm/KcxRX5DfyumquXd+jlKtf1TX+7RlGbaoM7E+S4xn3F+NJGg==
