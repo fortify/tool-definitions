@@ -1,9 +1,18 @@
 schema_version: "1.0"
 versions:
-  - version: 2.0.5
+  - version: 2.1.0
     aliases:
       - latest
       - "2"
+      - "2.1"
+    stable: true
+    binaries:
+      java:
+        name: FortifyVulnerabilityExporter.zip
+        downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v2.1.0/FortifyVulnerabilityExporter.zip
+        rsa_sha256: ME296yNZHHVaCQvIe6nCe5Er5etUUyC3sCGtviU+UJhKoH3IJ8abAvMWNvuDeSyLDoUGy+EAC0+RiwQJHXTbKE2kFS1ZCNt7LKz+AfPeQwOaBoz0Nx8jms6joOB8q9bJGrVVd6opeHdEFWCEPT2So7Z4ArUiWSOT2UhDtKrm93Yjk2hzFISG+eXInhQ9TR30CzjVHXXtfJVXlPJ+o//1ULiGwXBeRSM0ZvBPF1OGJSn8v73AErM2bns+SCPtBAC2Thv/qNZvWBf46slGokatv6zbYiO13xrHv2mrDgSP4m5uqBe5Aygf/qBSaRxng+ILukwQjGNSOM2HVrs6BRPT2A==
+  - version: 2.0.5
+    aliases:
       - "2.0"
     stable: true
     binaries:
@@ -236,4 +245,4 @@ versions:
       java:
         name: FortifyVulnerabilityExporter.zip
         downloadUrl: https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/dev_main/FortifyVulnerabilityExporter.zip
-        rsa_sha256: hwS43QjOIVifvOsQX1z0ft68j/z1xj94zTeD2f4dz9L3XVPpzRHUA92jL2xh2B5QQH4IU9VbIadaUyrIAR9w4JxTfuGc70LIzKvL3fBEBafJK2LDRTFC0n9b/r4sTJJbegnv5I9qendgYNwGVLZ3v7NFMzj9y6rrzPdlmjKnROUi9x83ktFL0SOrDFttAYOSZwn0wfNJLSXctWkAjNkYt63kXR6LTosuFfmAFuHG1e3eqC7apE6EtFK34qmHywmsAehlz+fomOCYnnXqYf+6Rjpx/P6aB6F13cqGlm/KcxRX5DfyumquXd+jlKtf1TX+7RlGbaoM7E+S4xn3F+NJGg==
+        rsa_sha256: Jz8aYOaFiuDpclTygsiatsyhcZ84i+tsFjCQWtXkx1v4lwB2Hi24kQlSbdVXr8ha/si+cUnje8pm902y2SXeOUMtwtXBN01MaIHLGiSIDsLW/XKUI1zwuOdF2e88Rt9YRQSC4HTNjVgg5CHm1SNxSGRpVgV2TcfqhSrq1uYb5W3hp5jg98SKfNJ34OmNb+UrFsv+rocPyyCtZm5x2U2+jfitxu4t23xfzvctcaKuRFJOZs0RS6sqb1DZTQwtH/NK9H5VyfU9NqMeHKtRdNa20wRn5GTuJqWldubKzA4XVG9HBGgwjY+jLGLbT0HbM720/Dp/YKwcHt/WGuEYOBb09g==
