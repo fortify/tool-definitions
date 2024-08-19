@@ -35027,8 +35027,8 @@ const semver = __importStar(__nccwpck_require__(1383));
  */
 class VersionDescriptors extends Array {
     addAliases() {
-        const allVersions = this.map(v => v.version);
-        this.forEach(v => v.addAliases(allVersions));
+        const allStableVersions = this.filter(v => v.stable).map(v => v.version);
+        this.forEach(v => v.addAliases(allStableVersions));
         return this;
     }
     sortByVersion(descending = true) {
