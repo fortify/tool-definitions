@@ -601,16 +601,16 @@ versions:
       linux/x64:
         name: fcli-linux.tgz
         downloadUrl: https://github.com/fortify/fcli/releases/download/dev_develop/fcli-linux.tgz
-        rsa_sha256: rcWLNWXhkFkJ+xlB++sGiqwmx1fI/kvphToXOLee1rAYNmiHeUt2hdjv9J53Widordz2Ztimq7fHlNUNdMAYkB9rvSJWRR94cbJbbbvl95XmYdtQEY1Ln0jL6uIt1G03deoYklkYDvfjq4ZqqgWT4Dw1nD62fPZ40DrJ2+YirPRw2eCo03Bj+QJTSzVIpxkAr3ZKr/aiLmpTxf3YLRPLeJmSn4M12t5vBnW72ZPvl+K+GKM6mpFFTjUV4YQ/+qF9aTScBfbM0SRLyCD1v9no5DzkX2Ze8t99DOf5EdvYGi2U3iSK5BYn6ghw2RR7xlXV+9BEntdUPHLPi5A7z4Hukw==
+        rsa_sha256: bLJdcy2Yue5xQ+Pgq1LSzio+M+HJYMTYmpMG1XuBiaYaYA638ps3RJ6CARvs/N+CnDN+WPu6rapFnI/s1vNVGAxHE2/unTtH1wxZyDfRfgytAz+nb4vEOAlW8Z+407ae8EoiwaX5Mak8a+pKDg5z+SCqkgNghUjVqOzOn+X2NCs2F0e4C+rxmyq/lgVLU8kLQ2u1QeelhUhPl1vYKCp2gAQYpOlrp5hOOXfRxyB/m5m4BjWr03ff3V72frBsFFJqxt5J8z8NojM47e3jZDyh8Dz2/UOtG2C7/zXwgQgjFmqbP0jCkzgQFgFcgN9uNfFfYOyS821pllFUa927GAvJQQ==
       darwin/x64:
         name: fcli-mac.tgz
         downloadUrl: https://github.com/fortify/fcli/releases/download/dev_develop/fcli-mac.tgz
-        rsa_sha256: XVRAhknyIDFVaZOHELkva0JoqotB1JKCNj+LD1Pw+kxqr289Znrflzvgi15WrZimu/u2qwWaG4FjLyE1KD3NsViMnKnAvJKbhC0cVDdYpMYpoRivnoMXmIHxWcNW92dkOJwbijMLI6WtYec/ZTs9Yi/hJdESiLp7x/gBT6ZUoTCBay+UdHi0EpZY9bc3Rch/0Sd/4Hlj2N2k1CqQL7XFmJjH3DI9oWt+rYb0sdHZHK1FwCmYtAMf5HpCwgKYCe113yXj1YgDgffRDMmjoCTTQcEa9LCwxiZYcwH/WmP1UtjUiB/+yr683DqY7N3a0tpJTDDHJriWoo6O2H3JtDtCYA==
+        rsa_sha256: h2gSpaBV7LmV+fmHmU/OYX/HvxAeIlq/C+rgNccOhMVauhlUYqwm2IxcOiWzgkxbBuEOQq7ZKdSX5d1FzP0MsDIcq3d0vlz56wafqZG160QbaXyekxnnx2yKX1GrczCIljrLOQxnR3iR5RBIexbttHoxdlsM8C+eIZyRcc7dcyVKXdLbsNvdHyrw56lS20qub2hvw54khYA1dcH2RKLHCnSBLd+aY9MgVX855gPNI3Q8Mt2I9FYxlbxb0Km1KrjmSoJFXJW6/2QLoN/xl0JfJJPS2Hd3mXZ+ENmMRDb9oD3MwvqK0GtLKOQi9hLwGfIrEgpV++rFM0fuUHCd2Spglg==
       windows/x64:
         name: fcli-windows.zip
         downloadUrl: https://github.com/fortify/fcli/releases/download/dev_develop/fcli-windows.zip
-        rsa_sha256: E9Q27GGJ/kQN6G17/eELP+t4sRGE+4jT7C0TUl4b7QMLXIwOFmgqngXBL/RT6EUqyy0WI6LpooI5dh6/7ilElhOxgC+nYfY6QpFj2jnSUMbIipqvIWlVnuZGF9u19aXJo+TeTQeInZbXQUUtDv/NpRjeiaHiG6SK35SeKTWMbTD772Uahu/1mcm2TD2XKikz99Nd6p3nEz9jAIgmSZ7mnP0Xk6rAJvcGT7gDdl1ofJViDIi8g4ayBzAuMe/EHNAwnICIoIrlv53RNKc+EcVqb70WlIy+L98MVuxAqg3ZsDSVFl88JjsVRmYkEes83NWO6e5M7+8bmTlrBFAu5q05DQ==
+        rsa_sha256: e70C6XU0m+AAjAEcLPxDGAgCp9aVNwgL0ZKzDlgByBe0khpYRPsBGf3mbWQgQobdwX38fS5J/oWil2395ChWXLZEiC6aQL+N7Ms7H4xEV9BA6g6D3cy9KrLdwUonMPWoH8WQxNaI9KXA+uXsiX20JIwBtgW320C6AkUy5l3WAaQHzSDXAwK/l4EQx2ULldkNp01A+AfD4856KVqBbg0LqTh+TIzHP9AJjGATJFxPMlHYbGwxj5qWxAd9FbS5l23lWHwjNqKgj3Cm3R1DYc30YSVsnBCFacr2Y5g+kz6RVQOTlcqG5GDN4271iEZZF6vVVqexUzs5IJYmUbPbNLJBPA==
       java:
         name: fcli.jar
         downloadUrl: https://github.com/fortify/fcli/releases/download/dev_develop/fcli.jar
-        rsa_sha256: nSN7Ph0hNJ3ITOSdm8NASgjIyYd1Yew3SLvHAnh+pZ4p7Wjc7nRC1RZoU5+yc1Fa/RKi636z+fKdCPUjGdFmWRM0hmJ6NSf+ZndK+CZnklWU91jirgHqgw1akNXnlLaQ09Ar2jbLju0nqpDz/tsXJON5N6jMKw4qheCKvqkUQucC+NLNIgqy8Pf6gXsP9I6EdgrN4DnWUSkwyUXILJ1DMHT6tqrMHo0+O+DQsEwmhnn4eoRjwyshE9IY4xObHXa9pFc6I2XCyeqQZgsu1RmWwpOKeFPGqWFpk0CCLAMMCsrrHK2NpUrIQ7BVS7bbJunjxQUvi05WjN6Fx8DY/gyPPA==
+        rsa_sha256: RziERHLYgZHriTMOQsWAAIJpFAqRy1zbRKYuF6DvAYxNLwnvQpeUEClQmCIPXNM8zy8xdWqZHwWkNTojX5/pxVEx+BFMFkjGpvLTeL+0Z0qSjhXdPxjmI6GewQQstdjcTPNYn6mjOq/f1Woi0xPQ1SaWdww61dXZKrjekWe9zTzcjLw+mDDOEQ4TZtglvKp3AM3iC3ZS4t1qmYp6rwDTVub+jVYxOKlp2E2x/ub7+M13lmdSH+UqFknbffx5jSeBl7wPD6f02q1GrZ9lVFU47tP2ZrTqFdiVZI8FCMWlt88uV7FcaR0PTWhfXkqjVy7MBI53bgezhYlK3o/i0V/VWQ==
