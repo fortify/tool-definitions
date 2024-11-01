@@ -84,7 +84,8 @@ jobs:
               },
               {
                   "toolName": "sc-client",
-                  "toolUrls": {
+                  "toolUrls": { 
+                     "24.4.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_24.4.0_x64.zip",
                      "24.2.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_24.2.0_x64.zip",
                      "23.2.1": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_23.2.1_x64.zip",
                      "23.1.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_23.1.0_x64.zip",
