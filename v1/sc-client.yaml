@@ -1,8 +1,17 @@
 schema_version: "1.0"
 versions:
-  - version: 24.2.0
+  - version: 24.4.0
     aliases:
       - latest
+      - "24.4"
+    stable: true
+    binaries:
+      java:
+        name: Fortify_ScanCentral_Client_24.4.0_x64.zip
+        downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_24.4.0_x64.zip
+        rsa_sha256: alq1keKAabOGO3GTMyuiX3TWKFPzOHaqaD45mAQeMcTnmbczLNnqe8U1NovSrNVWd1RKouwWvR+ZkEo1QmjG35T45ymM33gyUBVpvyT6zzq/2kzIuP3rlyPNiG+eLB1Bq7TnuvRytndUKpQWRbvNY/1a0o6t5vcNMwswLlQEix+rfBcjU4A2hov65KZSMoeAAgqLQd0qbE7lRmzAnJuk03ssWEF0PDTzVjuJFfrf8DljsAhp6QL1jq0sg/B9oXbNz8q4zOeupQ6+j7UJ4x+kBUfz/JI9oKHMXxSSNGCswORhB1WWRfytLqqsfGNY3VhLypxIWvc+UwatthngVozmpg==
+  - version: 24.2.0
+    aliases:
       - "24.2"
     stable: true
     binaries:
