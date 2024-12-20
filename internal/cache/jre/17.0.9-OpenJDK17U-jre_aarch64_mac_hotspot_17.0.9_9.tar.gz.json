@@ -1,0 +1,6 @@
+{
+  "name": "OpenJDK17U-jre_aarch64_mac_hotspot_17.0.9_9.tar.gz",
+  "downloadUrl": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.9%2B9/OpenJDK17U-jre_aarch64_mac_hotspot_17.0.9_9.tar.gz",
+  "rsa_sha256": "I3cB7UY1G+JI3EUBEM91rUSdNj4pi+qsxti3rps66Caim21D2NJBXiwLyUM2khnpzxIARwGPZOg7/puSx6WUtv3C0ZRb5lEthqFwyMnqoNsptXDEEJMSuC9Ifv3r8Xd0tlWONdE8T7vcRLhQtZ3bV9uNi9g//VRi5dSCkzFjgoSVwTLtGKmxlw1UevgeC46RvCqvrAMvuW+WZx3qpLAv+0IKNn+rqDuCZGlPTD11S4l6YN/S6S4Bz/lsCOZudNJSulWJ+olLVL0yELx+h56NlpeujgkijbJFVicYo8EGCAlQ6k89sGnPBl+gK9P4cXeaPCJZBRKHsN8UIGq6uFWEPA==",
+  "sha256": "89831d03b7cd9922bd178f1a9c8544a36c54d52295366db4e6628454b01acaef"
+}
