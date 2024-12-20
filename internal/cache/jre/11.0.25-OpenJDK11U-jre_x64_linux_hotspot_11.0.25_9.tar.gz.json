@@ -1,0 +1,6 @@
+{
+  "name": "OpenJDK11U-jre_x64_linux_hotspot_11.0.25_9.tar.gz",
+  "downloadUrl": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.25_9.tar.gz",
+  "rsa_sha256": "lpXtxodeUaJ6pjeg98whuunMEKkMr9qWqkQIFixQk3TO92NSCndPwSVPLbVReMdeoNeIITllf4JgS+90sIZUoM0FHbJGn16a4prKWBeBtloas5++j2wgnTydLJ5NXxzPDnq5o+UUdeLIIrLgKOyqny3ONy8jmm8NtGOvnDJ2c8KOZyPnhE7RNA//PAwgRvv4aEXH69yDggjBvrXR3pyl6x3UE3u9v38M+i2V4tXv1ebZPS2Xdt9Y2RFbJzMRdvgcVLZjHFsU7SMTvcq+kyY+M2zjzd7OffneXrV57E4C16bt0oyzmFi4m3xdtzlIBYNaRp6oKeGWA/NPUN6SXudhgg==",
+  "sha256": "84cd7101f39172a4db085fb52940595bb14dad6bc3afb5bf82ee497eceaf86d3"
+}
