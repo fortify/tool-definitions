@@ -35254,7 +35254,7 @@ function getVersionDescriptors() {
             result = yield getGitHubVersionDescriptors(constants.toolRepo);
         }
         else if (constants.toolUrls) {
-            result = yield getVersionDescriptorsFromJSON(JSON.parse(constants.toolUrls));
+            result = yield getVersionDescriptorsFromToolUrls(JSON.parse(constants.toolUrls));
         }
         else {
             throw "Either tool_repo or tool_urls input must be specified";
@@ -35263,13 +35263,16 @@ function getVersionDescriptors() {
     });
 }
 exports.getVersionDescriptors = getVersionDescriptors;
-function getVersionDescriptorsFromJSON(toolVersionDescriptorsAndUrls) {
+function getVersionDescriptorsFromToolUrls(toolVersionDescriptorsAndUrls) {
     return __awaiter(this, void 0, void 0, function* () {
         const result = new descriptors_1.VersionDescriptors();
         for (const version in toolVersionDescriptorsAndUrls) {
-            const downloadUrl = toolVersionDescriptorsAndUrls[version];
-            const partialArtifactDescriptor = new descriptors_1.PartialArtifactDescriptor(path.basename(new URL(downloadUrl).pathname), downloadUrl);
-            result.push(yield new descriptors_1.VersionDescriptor(version, true).addBinary(partialArtifactDescriptor));
+            const versionDescriptor = new descriptors_1.VersionDescriptor(version, true);
+            const downloadUrls = toolVersionDescriptorsAndUrls[version];
+            for (const downloadUrl of downloadUrls) {
+                yield versionDescriptor.addBinary(new descriptors_1.PartialArtifactDescriptor(path.basename(new URL(downloadUrl).pathname), downloadUrl));
+            }
+            result.push(versionDescriptor);
         }
         return result;
     });

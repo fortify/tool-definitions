@@ -17,19 +17,22 @@ export async function getVersionDescriptors() : Promise<VersionDescriptors> {
     if ( constants.toolRepo ) {
         result = await getGitHubVersionDescriptors(constants.toolRepo);
     } else if ( constants.toolUrls ) {
-        result = await getVersionDescriptorsFromJSON(JSON.parse(constants.toolUrls));
+        result = await getVersionDescriptorsFromToolUrls(JSON.parse(constants.toolUrls));
     } else {
         throw "Either tool_repo or tool_urls input must be specified";
     }
     return result.addAliases().sortByVersion();
 }
 
-async function getVersionDescriptorsFromJSON(toolVersionDescriptorsAndUrls: {[key: string]: string}) : Promise<VersionDescriptors> {
+async function getVersionDescriptorsFromToolUrls(toolVersionDescriptorsAndUrls: {[key: string]: string[]}) : Promise<VersionDescriptors> {
     const result : VersionDescriptors = new VersionDescriptors();
     for (const version in toolVersionDescriptorsAndUrls) {
-        const downloadUrl = toolVersionDescriptorsAndUrls[version];
-        const partialArtifactDescriptor = new PartialArtifactDescriptor(path.basename(new URL(downloadUrl).pathname), downloadUrl);
-        result.push(await new VersionDescriptor(version, true).addBinary(partialArtifactDescriptor));
+        const versionDescriptor = new VersionDescriptor(version, true);
+        const downloadUrls = toolVersionDescriptorsAndUrls[version];
+        for (const downloadUrl of downloadUrls) {
+            await versionDescriptor.addBinary(new PartialArtifactDescriptor(path.basename(new URL(downloadUrl).pathname), downloadUrl));
+        }
+        result.push(versionDescriptor);
     }
     return result;
 }

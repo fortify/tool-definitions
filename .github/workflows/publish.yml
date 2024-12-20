@@ -83,29 +83,46 @@ jobs:
               {
                   "toolName": "sc-client",
                   "toolUrls": { 
-                     "24.4.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_24.4.0_x64.zip",
-                     "24.2.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_24.2.0_x64.zip",
-                     "23.2.1": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_23.2.1_x64.zip",
-                     "23.1.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_23.1.0_x64.zip",
-                     "22.2.1": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_22.2.1_x64.zip",
-                     "22.2.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_22.2.0_x64.zip",
-                     "22.1.2": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_22.1.2_x64.zip",
-                     "22.1.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_22.1.0_x64.zip",
-                     "21.2.3": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.2.3_x64.zip",
-                     "21.2.2": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.2.2_x64.zip",
-                     "21.2.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.2.0_x64.zip",
-                     "21.1.4": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.4_x64.zip",
-                     "21.1.3": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.3_x64.zip",
-                     "21.1.2": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.2_x64.zip",
-                     "20.2.4": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.2.4_x64.zip",
-                     "20.2.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.2.0_x64.zip",
-                     "20.1.0": "https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.1.0_x64.zip"
+                     "24.4.0": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_24.4.0_x64.zip"],
+                     "24.2.0": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_24.2.0_x64.zip"],
+                     "23.2.1": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_23.2.1_x64.zip"],
+                     "23.1.0": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_23.1.0_x64.zip"],
+                     "22.2.1": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_22.2.1_x64.zip"],
+                     "22.2.0": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_22.2.0_x64.zip"],
+                     "22.1.2": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_22.1.2_x64.zip"],
+                     "22.1.0": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_22.1.0_x64.zip"],
+                     "21.2.3": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.2.3_x64.zip"],
+                     "21.2.2": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.2.2_x64.zip"],
+                     "21.2.0": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.2.0_x64.zip"],
+                     "21.1.4": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.4_x64.zip"],
+                     "21.1.3": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.3_x64.zip"],
+                     "21.1.2": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.2_x64.zip"],
+                     "20.2.4": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.2.4_x64.zip"],
+                     "20.2.0": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.2.0_x64.zip"],
+                     "20.1.0": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.1.0_x64.zip"]
                   },
                   "semver": "minor",
                   "binaryPlatforms": { 
                       ".*": "java"
                   }
-               }
+               },
+               {
+                     "toolName": "jre",
+                     "toolUrls": { 
+                        "21.0.5": [
+                            "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jre_x64_linux_hotspot_21.0.5_11.tar.gz",
+                            "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jre_aarch64_mac_hotspot_21.0.5_11.tar.gz",
+                            "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jre_x64_windows_hotspot_21.0.5_11.zip"
+                        ]
+                     },
+                     "semver": "major",
+                     "binaryPlatforms": { 
+                         ".*aarch64_mac.*": "darwin/arm64",
+                         ".*x64_linux.*": "linux/x64",
+                         ".*x64_mac.*": "darwin/x64",
+                         ".*x64_windows.*": "windows/x64"
+                     }
+                  }
           ]
       run: echo "matrix=$(jq -r -c . <<< "$CONFIG")" >> $GITHUB_OUTPUT
     - name: Check
