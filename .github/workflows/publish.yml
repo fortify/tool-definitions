@@ -3,8 +3,6 @@ on:
   schedule:
     - cron: '5 3 * * *'
   push:
-    branches:
-      - main
       
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -158,6 +156,7 @@ jobs:
   publish-zip:
     needs: generate-tool-definitions
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     permissions:
       # Give the default GITHUB_TOKEN write permission to commit and push the
       # added or changed files to the repository.
