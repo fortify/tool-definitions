@@ -1,0 +1,21 @@
+schema_version: "1.0"
+versions:
+  - version: 21.0.5
+    aliases:
+      - latest
+      - "21"
+      - "21.0"
+    stable: true
+    binaries:
+      linux/x64:
+        name: OpenJDK21U-jre_x64_linux_hotspot_21.0.5_11.tar.gz
+        downloadUrl: https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jre_x64_linux_hotspot_21.0.5_11.tar.gz
+        rsa_sha256: GO0M0WFksU3URXZuy3qk8LKMbRneU2ZQwz2IzpOdrQ1AJR2vclyl/FP607ffskLLmZjuevT4JJOzlwVMOmxU2zspg44EptTrla0iTCgYsbCfuGiqEHK4Zk3n9vSt3DXr1k51vHruTwSNDgrOG+uD1RIo6359JTu1eBhvxFY53D1IRprKXead1ognELOYsCTcOyxaLpycdfwZkKDK9iW+jwXMa3Y1g2RpMzZB8AoePJNxIhuyy56/Deg+hZ9y7xbNL1uMkkEkwQIDqQP+zpVqIF4JUGfQQsC8W939GCVnG4eW3x6i0sdqFpJJQRNPUUjsmmzSZPAfyKcJY19RsiVyeA==
+      darwin/arm64:
+        name: OpenJDK21U-jre_aarch64_mac_hotspot_21.0.5_11.tar.gz
+        downloadUrl: https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jre_aarch64_mac_hotspot_21.0.5_11.tar.gz
+        rsa_sha256: qYMGJCeI9V1mPdPTFjQKvPHTSBcLEjOk0ewS3Jf/fHJm74Kk+UayZ0C2C5uyuKn/yiIq1896bo9oghRFZfMzyMnnKRsqjwChigcfvqvKSeW+0gcNcQ5FvdwDNKUwYIT2gqIqoQsJOPs65fq00g/oJNHqjYhp2h07FfiDWy9REW161DlhSaOQR8FH7O/Oidi1LPt+OygHp+FhxYKrZcNX8ZpHEQQgfFUxJzPSea4E6OovIJdccBszhPoHVEC1mBLcdBqbYuN1eEFZgLcOd8HzEywIHczWT3wlzZpgfPWpvJ37IzG5E24M835ki6Ow1Enf+CBwkghI969MSr6sAhoSGQ==
+      windows/x64:
+        name: OpenJDK21U-jre_x64_windows_hotspot_21.0.5_11.zip
+        downloadUrl: https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jre_x64_windows_hotspot_21.0.5_11.zip
+        rsa_sha256: KkWyvgJozmp0mZrp0GoHavT/iWtRyDW5KLl5t1qlOOphSmngOvMfx/hkwpqbv7Epkx074CB3S1sticzdTWYDnwMJjeuZ8UK6elVUT+MWWCVNUIJftAZYgG+SAKpRd5Fo/a40+vO7rcm/i4ZKCZYJ8/rplYjEA8eoKpOvkcUyQ60w6jV48+Vog68YdjIhx62KdLErGS6DR2nKzSqRAKsSR94ZCZhIs/nVS6Mb4ytUaSpNDKmSnUKOjKeHmqAMZQ8XyTwzSaLLWE2n5EHwaI+LDwuX5DP5mHu0ugMOamrjR8NcGBT6SvgWun4KjzAlFbxHccWjrfZutCRpMLOCZCj67Q==
