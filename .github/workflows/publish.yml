@@ -104,6 +104,9 @@ jobs:
                   "semver": "minor",
                   "binaryPlatforms": { 
                       ".*": "java"
+                  },
+                  "extraVersionProperties": {
+                      ".*": {"jre": "17"}
                   }
                },
                {
@@ -113,6 +116,16 @@ jobs:
                             "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jre_x64_linux_hotspot_21.0.5_11.tar.gz",
                             "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jre_aarch64_mac_hotspot_21.0.5_11.tar.gz",
                             "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jre_x64_windows_hotspot_21.0.5_11.zip"
+                        ],
+                        "17.0.9": [
+                            "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.9%2B9.1/OpenJDK17U-jre_x64_windows_hotspot_17.0.9_9.zip",
+                            "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.9%2B9/OpenJDK17U-jre_aarch64_mac_hotspot_17.0.9_9.tar.gz",
+                            "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.9%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.9_9.tar.gz"
+                        ],
+                        "11.0.25": [
+                            "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jre_aarch64_mac_hotspot_11.0.25_9.tar.gz",
+                            "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.25_9.tar.gz",
+                            "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jre_x64_windows_hotspot_11.0.25_9.zip"
                         ]
                      },
                      "semver": "major",
@@ -166,6 +179,7 @@ jobs:
         semver: ${{ fromJSON(toJSON(matrix)).semver }}
         binaryPlatforms: ${{ toJSON(fromJSON(toJSON(matrix)).binaryPlatforms) }}
         tagMappings: ${{ toJSON(fromJSON(toJSON(matrix)).tagMappings) }}
+        extraVersionProperties: ${{ toJSON(fromJSON(toJSON(matrix)).extraVersionProperties) }}
     - uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "chore: Update cache & tool definitions"

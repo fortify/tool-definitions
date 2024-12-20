@@ -31,12 +31,12 @@ export async function write(versionDescriptors: VersionDescriptors) : Promise<vo
 class OutputData extends Map<string, string|Array<VersionData>> {
     constructor(versionDescriptors: VersionDescriptors) {
         super();
-        this.set("schema_version", "1.0");
+        this.set("schema_version", "1.1");
         this.set("versions", versionDescriptors.map(vd=>new VersionData(vd)));
     }
 }
 
-class VersionData extends Map<string,string|boolean|Map<string,ArtifactData>|Array<string>> {
+class VersionData extends Map<string,string|boolean|Map<string,ArtifactData>|Array<string>|Map<string,string>> {
     constructor(versionDescriptor: VersionDescriptor) {
         super();
         this.set("version", versionDescriptor.version);
@@ -45,6 +45,10 @@ class VersionData extends Map<string,string|boolean|Map<string,ArtifactData>|Arr
         const artifacts : Map<string,ArtifactData> = new Map(); 
         versionDescriptor.getBinaries().forEach(artifactDescriptor=>addArtifact(artifacts, artifactDescriptor));
         this.set("binaries", artifacts);
+        const extraProperties = getExtraProperties(versionDescriptor.version, constants.extraVersionProperties);
+        if ( extraProperties ) {
+            this.set("extraProperties", extraProperties);
+        }
     }
 }
 
@@ -72,4 +76,17 @@ function getArtifactType(artifactDescriptor: ArtifactDescriptor) : string {
         }
     }
     throw `No artifact platform mapping found for ${artifactDescriptor.downloadUrl}`;
+}
+
+function getExtraProperties(valueToMatch: string, propertiesByRegex: {[key: string]: {[key: string]: string}}) : Map<string,string> | null {
+    const result = new Map<string,string>();
+    for ( const regex in propertiesByRegex ) {
+        if ( valueToMatch.match(`^${regex}$`) ) {
+            const properties = propertiesByRegex[regex];  
+            for ( const property in properties ) {
+                result.set(property, properties[property]);
+            }
+        }
+    }
+    return result.size==0 ? null : result;
 }

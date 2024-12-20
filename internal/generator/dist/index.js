@@ -34921,7 +34921,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.workspaceDir = exports.tagMappings = exports.binaryPlatforms = exports.semver = exports.toolUrls = exports.toolRepo = exports.assetRegex = exports.tagRegex = exports.githubToken = exports.toolName = exports.signPassphrase = exports.signKey = void 0;
+exports.workspaceDir = exports.extraVersionProperties = exports.tagMappings = exports.binaryPlatforms = exports.semver = exports.toolUrls = exports.toolRepo = exports.assetRegex = exports.tagRegex = exports.githubToken = exports.toolName = exports.signPassphrase = exports.signKey = void 0;
 const core = __importStar(__nccwpck_require__(2186));
 /**
  * This module defines various constants used by the other modules, mostly consisting
@@ -34950,6 +34950,7 @@ exports.toolUrls = nullIfEmpty(core.getInput("toolUrls", { required: false }));
 exports.semver = defaultIfEmpty(core.getInput("semver", { required: false }), "none");
 exports.binaryPlatforms = JSON.parse(core.getInput("binaryPlatforms", { required: true }));
 exports.tagMappings = JSON.parse(defaultIfEmpty(core.getInput("tagMappings", { required: false }), '{"(.*)": "$1"}'));
+exports.extraVersionProperties = JSON.parse(defaultIfEmpty(core.getInput("extraVersionProperties", { required: false }), '{}'));
 exports.workspaceDir = process.env.GITHUB_WORKSPACE;
 
 
@@ -35480,7 +35481,7 @@ exports.write = write;
 class OutputData extends Map {
     constructor(versionDescriptors) {
         super();
-        this.set("schema_version", "1.0");
+        this.set("schema_version", "1.1");
         this.set("versions", versionDescriptors.map(vd => new VersionData(vd)));
     }
 }
@@ -35493,6 +35494,10 @@ class VersionData extends Map {
         const artifacts = new Map();
         versionDescriptor.getBinaries().forEach(artifactDescriptor => addArtifact(artifacts, artifactDescriptor));
         this.set("binaries", artifacts);
+        const extraProperties = getExtraProperties(versionDescriptor.version, constants.extraVersionProperties);
+        if (extraProperties) {
+            this.set("extraProperties", extraProperties);
+        }
     }
 }
 class ArtifactData extends Map {
@@ -35517,6 +35522,18 @@ function getArtifactType(artifactDescriptor) {
         }
     }
     throw `No artifact platform mapping found for ${artifactDescriptor.downloadUrl}`;
+}
+function getExtraProperties(valueToMatch, propertiesByRegex) {
+    const result = new Map();
+    for (const regex in propertiesByRegex) {
+        if (valueToMatch.match(`^${regex}$`)) {
+            const properties = propertiesByRegex[regex];
+            for (const property in properties) {
+                result.set(property, properties[property]);
+            }
+        }
+    }
+    return result.size == 0 ? null : result;
 }
 
 

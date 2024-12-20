@@ -36,6 +36,9 @@ inputs:
   binaryPlatforms:
     description: 'JSON string specifying artifact lowercase download URL regex to artifact platform mappings {"<regex>": "<platform>",..}'
     required: true
+  extraVersionProperties:
+    description: 'JSON string specifying version regex to extra properties object {"<version regex>": {"<property>": "<value>",..}'
+    required: false  
 runs:
   using: node20
   main: 'dist/index.js'

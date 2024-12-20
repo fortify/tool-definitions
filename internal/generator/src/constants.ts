@@ -31,4 +31,5 @@ export const toolUrls = nullIfEmpty(core.getInput("toolUrls", {required: false})
 export const semver = defaultIfEmpty(core.getInput("semver", {required: false}), "none");
 export const binaryPlatforms = JSON.parse(core.getInput("binaryPlatforms", {required: true})) as {[key: string]: string};
 export const tagMappings = JSON.parse(defaultIfEmpty(core.getInput("tagMappings", {required: false}), '{"(.*)": "$1"}')); 
+export const extraVersionProperties = JSON.parse(defaultIfEmpty(core.getInput("extraVersionProperties", {required: false}), '{}')) as {[key: string]: {[key:string]: string}};
 export const workspaceDir = process.env.GITHUB_WORKSPACE;
