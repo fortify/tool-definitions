@@ -55,3 +55,21 @@ versions:
         name: OpenJDK11U-jre_x64_windows_hotspot_11.0.25_9.zip
         downloadUrl: https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jre_x64_windows_hotspot_11.0.25_9.zip
         rsa_sha256: q6jTWiD9Irv3rl8wi/phWpsdKfPPBV2X9yX8FtJuZ/auyaxpqALY7flCZO9qBBzSRWxgUtvz5zTT7FXqSJX4ZmVlMLnkoVuzRfLHXg03loKgyvQTdoxhbjdvIxakZApkB1feDu6GboZ2fYEV5ynkXE6ra7ZA1ihZOGiEzXDikWmPAZt5K/h3xLHV8Dm3aubayday7KquNXpvXrQ8Tkk9DUmf3SexKxA2oi1PI9C/jDg4Ix7F1/taDJoDbMsmZJmFV4nPai7k2f2272YfPihgQS1+swl8Uu1HBN/YBgcUhwrNDnzQomUUGrBJBCwTd/hCQlO7EIjj2IeYKCFbp+hzDg==
+  - version: 8.0.432
+    aliases:
+      - "8"
+      - "8.0"
+    stable: true
+    binaries:
+      darwin/x64:
+        name: OpenJDK8U-jre_x64_mac_hotspot_8u432b06.tar.gz
+        downloadUrl: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jre_x64_mac_hotspot_8u432b06.tar.gz
+        rsa_sha256: CjQrZsS8pRIlp99jSHF0Jg0Lb8LzIBhGkUJKuqSbj9TBQ0edsVUe0LqfCFvKm6KE8sClePLozpy/06gRzJJN5CQ+DIl3eqpvsrLuu1qEry7ITdM1Tfej5YvdPcnxHAR8JQOYuTaK0XjjfkniB72aSMRfof/R79U0dBQzEgfQgdsSwNdbtn1VT7bPGUPDerxjicU7dHB3Az5SCQ7PbBWRfgZBar2wfkGT/GPFr7Js/aaRiJdpq+c2w8Az7m2a5sl2DM1XxGXLkRgIa0tXDpYZWKKjPoim9vQMSkKgU/RHZ8hzfIQaEAle8ReN8QjT+crPVQpzVl6UoFenY6lQP9ZleQ==
+      linux/x64:
+        name: OpenJDK8U-jre_x64_linux_hotspot_8u432b06.tar.gz
+        downloadUrl: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jre_x64_linux_hotspot_8u432b06.tar.gz
+        rsa_sha256: Xbqmc4amxz497M6klCXS95U31LpfWhOpEuGDRL9tuWIxrJGyjsLy5KmlDW2i5wv/Z83+SEJq/EjXZ04TNUqkqOHNP8cpJv80ArO0m+Jl2v0EiTa3sFyidPQnc7UQp7YQ7Ob4Kpr8684KGrq4aXFAYJiQdAusEEGeab33mwoQSTeCEoipUPAxOVsB4wgxIxJWwY4fBmsA+sdBeFasPxajSl8F3brkyMhIqV8LU104YnTHOeI3Rp74h0fmrPk8AKAf0db526ZusV4OA/Aezm/Z1NaP02awyvinbMxwPR6VTPs4NONjuj1Pj9NMcgwDIuVY0ATf6gmma292WefMtrR/CA==
+      windows/x64:
+        name: OpenJDK8U-jre_x64_windows_hotspot_8u432b06.zip
+        downloadUrl: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jre_x64_windows_hotspot_8u432b06.zip
+        rsa_sha256: MZrCU2zdIebUeHlFBFM+RM9kBwiUCvx3NGW7Y1s20XoWXUIGeje8dkvoJzjXnocoXYmmPg29F6es2NFmbzC2yAdqH0clV4s2HT+I6S1g4AN1DH8VXfnTGWahKl+yxmKO6Gj5tMwkf6hO9EgHj4a0/eevSBmJnIOsZUNmlgjSSTB5hhVKC2XkLxC+etS6KAZnXBge6Qzg42jCaWoD/i90aOi1qAxuJjBwYK1/c6zP7KTkeTvT+M28RoAq9uFqndF6vHre9YmoZ8B86/C5XcSvf9V1fv2+MyxLzgd6bfDmCLIhjB6JQWqnAXCS0HGYJgW5pkOHEMuhVpnsEP7u622g6w==
