@@ -98,8 +98,10 @@ jobs:
                      "21.1.4": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.4_x64.zip"],
                      "21.1.3": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.3_x64.zip"],
                      "21.1.2": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.2_x64.zip"],
+                     "21.1.0": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.0_x64.zip"],
                      "20.2.4": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.2.4_x64.zip"],
                      "20.2.0": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.2.0_x64.zip"],
+                     "20.1.6": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.1.6_x64.zip"],
                      "20.1.0": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.1.0_x64.zip"]
                   },
                   "semver": "minor",
@@ -107,7 +109,11 @@ jobs:
                       ".*": "java"
                   },
                   "extraVersionProperties": {
-                      ".*": {"jre": "17"}
+                      "24.*": {"jre": "17"},
+                      "23.*": {"jre": "11"},
+                      "22.*": {"jre": "11"},
+                      "21.*": {"jre": "11"},
+                      "20.*": {"jre": "8"}
                   }
                },
                {
@@ -127,6 +133,11 @@ jobs:
                             "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jre_aarch64_mac_hotspot_11.0.25_9.tar.gz",
                             "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.25_9.tar.gz",
                             "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jre_x64_windows_hotspot_11.0.25_9.zip"
+                        ],
+                        "8.0.432": [
+                            "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jre_x64_mac_hotspot_8u432b06.tar.gz",
+                            "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jre_x64_linux_hotspot_8u432b06.tar.gz",
+                            "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jre_x64_windows_hotspot_8u432b06.zip"
                         ]
                      },
                      "semver": "major",
