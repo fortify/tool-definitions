@@ -43,7 +43,7 @@ versions:
         downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_23.2.1_x64.zip
         rsa_sha256: OTgxB4C7/qVxZ1/qBiIX9TJTbiaYJaKGr7mDdlIXqzCgsW2+rJg4fxKai6MOkTGUb0C8lST2iaxt/iYkGre26oQX+uwcc3A8mB+hx0x68yrsmCi2KvWJQj9nrlc5QhTttQNfHKMnHDu1xE8cuXxB5G8CQonvDOCnp3J8LIqqqZ7iUefNNdPd7C2j2Ef9gUd0gVSykxfYWpkV/4c8YtzjYim60vLCNWeaSZ6kWRiGiujZTac80/oDY3yyeXt9TikZ31pBV/w/r8/IOMf/Kb1i0qZdQHwRIbM0xaH92tnaFe+MjrSAAaTuLA1EsbAQGLySJSxGEvXnAD0CwukFR5cu9Q==
     extraProperties:
-      jre: "17"
+      jre: "11"
   - version: 23.1.0
     aliases:
       - "23.1"
@@ -54,7 +54,7 @@ versions:
         downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_23.1.0_x64.zip
         rsa_sha256: HGheXtrHWXUbFPYr5VUICyY0Sdk2sveS2l0terBjYaEq/3zsajkj4nZFbSeLMz88wzWRszRbsBTMMFsCloXzOs3KgANir4+x8wueldSuhkZPk4C+HkdLBp/Zo9fUoemq2KgU8CBer1yGoleGQ8grX04hqnG9RblKRlW3/l39uhOGsbKzKpoF17T/e18lk9icf/HjmIwWjeEq93ido/1LXxsM+enKJzrFJ7HUbH3aRpe/Q1XbmlKzOolCTnR7Hl8PlQJcRPSRXkWpbfTG4vP/7MDj08YKlpCcbdj/UojuRN2B9byUfvBLkKHKGfisY1XTs8hywVa+/2b2r/T5iwsOgA==
     extraProperties:
-      jre: "17"
+      jre: "11"
   - version: 22.2.1
     aliases:
       - "22.2"
@@ -65,7 +65,7 @@ versions:
         downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_22.2.1_x64.zip
         rsa_sha256: eWlL29WU0grgJaRH8D1YvqQbhAuOx4mecGlu7n5vibctJ14ijg5XIIMD15Th0Lo/TapZjQJjUaUkfkzWbfJLo0gZujApQqVAeUq7iQ8xg+mpI92UvE2n4XvwO/DoQ7TSi+I6dNHnaD+g1vwmAxu58qCjdW494e8dQ/sLPhJduMPwNp1e2MG+uq4SwAc7XcN0U4gB3hz9qXQULoCAYBjv9LvNNxswdSwvzAATWsF8Ir+Uoy8mhVw0bLwbGSW2dGvy61i5hhLT92Tsv9BO2GDaiZIlbuGozwJiV4+m8jRVmU+rvqRyEYnS00aaypvizdOa2qX7dEsjSq00nZXkewdapg==
     extraProperties:
-      jre: "17"
+      jre: "11"
   - version: 22.2.0
     aliases: []
     stable: true
@@ -75,7 +75,7 @@ versions:
         downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_22.2.0_x64.zip
         rsa_sha256: hykkeoNaWwtqdKspGZbZ5O5QRRnD+GoSI4YLz5lONtq2GsysDVIrX6ttFvJV2Ymp5SRgWLu04ZjwcM+FvWd1FYoXrCKJ30sJFhIFhTqH/idF+N/kZthhRCahknEJRTtkYFtD6BDHV64nWHbWScYcMRYLneOCZfHqcXXXW6cgu0ZqpTKFMQs1/T/F4ZUNIGGS9icUdwD3wFg9f8f3OCgToLQL+WQwI124Jba21OqVrPAvZ7dqiIVD4HzdjW5ALXUzTjSXSHBz/sUoNFUgaUnzDpxI7YFPC9/h9Y7OX5OAtEjMHf4PHI5Wcnu5QgER6V+zfoQq6WwsU+ti5XejsHvSAQ==
     extraProperties:
-      jre: "17"
+      jre: "11"
   - version: 22.1.2
     aliases:
       - "22.1"
@@ -86,7 +86,7 @@ versions:
         downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_22.1.2_x64.zip
         rsa_sha256: km8tXBcrx3MPJNuoyUE94DZl+zHIiU5SESs6QFxzT7t9IzCM68GNpMdn9Sdz7Pyhh2CbKCEEM6oAVFKgLeTmmOXf1Dqxe5r4afwSsmyeCZm0hWwCLms/jFum8eitDDxLWU9l3jmcZCCGrLTBZv5/Ukj8wIPysAufHE9oTVxIC/Ro3kCYjCaHexIeYttV2wL4Kunsy8ZNTqu6sJIl1tSlvxW7sm1CjVQWf7Rvv1ObjfFDIdE3L1h6DyNL1ctrzPLvJIsw5qBnt0CZclenB01dtl1/mNVHkPINnvro7SYHY3djkJ2Jfbjgi1NlfFwpe2Pf6rurCIUgPN1F+h3NNkCnug==
     extraProperties:
-      jre: "17"
+      jre: "11"
   - version: 22.1.0
     aliases: []
     stable: true
@@ -96,7 +96,7 @@ versions:
         downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_22.1.0_x64.zip
         rsa_sha256: gXU751huycxDK3kR9Pi0k1uuh9Ws16m5msAw++mIeB0+bhIy79QVadN2D30Uy1jQHC8up1IjBgDLCsacCyx+y5JRvvAdiqCwFwvijbZIo1seLXWGsEWttcDREM50qVc4GombZ+5EM0ENJaRng3KfvAjTl5Cc0dld5w0lu8vkZJpfQbHF83HrvA/hQF6U1UU0YdHYtetwigqISujEV//ZqFgh78k76DakCr6PIu2yGC//aaXS/0eMu38eoDcqZeovDspWvddQrwJlh4gScDRd5L4wNACXuVpxi87k1dB8gPp+YO8RgXXf1WtghIIFczl2Q+8o8mw8p1DV3nzgtwRxNw==
     extraProperties:
-      jre: "17"
+      jre: "11"
   - version: 21.2.3
     aliases:
       - "21.2"
@@ -107,7 +107,7 @@ versions:
         downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.2.3_x64.zip
         rsa_sha256: cHS0YT1E2EDKSlqciNtx0e8xZAP2QSkKqH6fS745i6GLYMmNjx/jKD9yQsV7NQz8hb9W5yf+N0EbMuOF0y10umxGJgPtTVqSB8m8JEvMxFz6L934wDWZMgNklmVqVbIziEn0OA+atucQUvZK6Gr1/BUlRyKMLcaRy5aaUJjmp/y6zPh3qX4cVojp4d73oC9tWTqjajNRse3yb0lutrv4UUFuaIi4kOe/GykKvvgVBgDjh4vFj1Ut94CVZv2TLoy518KTCGFoPRdm9WZ5EtTkOzwarG14kiMFAMJQDuVAMAVRpjUSm+yFIb/5/CXVKXhPzA53gLfbxWj7wBBK8F+UDA==
     extraProperties:
-      jre: "17"
+      jre: "11"
   - version: 21.2.2
     aliases: []
     stable: true
@@ -117,7 +117,7 @@ versions:
         downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.2.2_x64.zip
         rsa_sha256: ADA3A8Q5/WHiXcOj0DWNMorssw9mL6XL6xyMSMWvZKUvL7AKn3+yn+QThNH0UBu6gB4ug+6toidOrzCLk1QRC9mDbB7gtnUAoB7+GWUnxycThvZz6gIFyX+TAD9PrAZYD7rj5fHQ6Hbop1sJqkGdSKrM6cExLFcG67WzVOjVfzg6ojQ6uMGPifoHd4MhmR6yOGzI/alePbuXkhmKs0ZX8Aw4LFFUQeI3vj7ZYopwherh+PnuUmfrt9yJLfy0SwarYXCCUs2h2wDKTpMjS1RjiZdNnCXlTfjcfPsXQXAqKJkcgJEd/6oZbwVCC3sa2IpKfvUZ5ssaNxkfjpQbI2zerQ==
     extraProperties:
-      jre: "17"
+      jre: "11"
   - version: 21.2.0
     aliases: []
     stable: true
@@ -127,7 +127,7 @@ versions:
         downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.2.0_x64.zip
         rsa_sha256: Ue3XJmzUNDuaIWRCx73FKdWjSkOcEwT3dKa38pbeWyWdJKKBi7SM9Jr+A17+cjJY7IyyXD7BSSk6gZ/qkZ+YAJg/ok0MpMKuWkOpkjfYH+BxImci4evdWjpkXQWRPTnwqQVovQdoLVg7QEY1CKGShSQy2LHe3raT0SIZMqXBjRIyUo/sRGxJL8do+T/QRzcVp3uHabQ+QbrxQbAiOj67q/Zdy+vRUEQr52fM8hrqar+O6WtQEbKQXoO+4jVkjL2vdZOUlKjjuX6zCeb/dyYQ7bRSYH5c9tBVpt1GKj2NB1KUuBhHQVxDurt3RpQrkvE7EvfJKtQEa+6bIwnwxEIJwQ==
     extraProperties:
-      jre: "17"
+      jre: "11"
   - version: 21.1.4
     aliases:
       - "21.1"
@@ -138,7 +138,7 @@ versions:
         downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.4_x64.zip
         rsa_sha256: cljuATlGJkFKdELMOn1yzcCaI9U56eH5+yujSChMrSi49XxLryjudVZ1e2TTBvn/tE0cYR3V+CRvGVop90uSCiI+BpTSe1bS4KxfKALa55ZgPvliOXy7GTKrJlXkzhD6IejIbzAFK24FOK+JDaKlP1WDfKLNmKDcUQP7Z+5/UGj1IB9rPIxo5cf5tZvl1kuDOFl90V/YlLnIOB6VtC3jxbGhdIDXsBGOj8+LuNWw9lRrkIuy5wwR4tFzbzEiUUZxJ5nWkn2edpdcUeZBKPfSYApFxkFvdJMEAZNvhs7HTDVGAiuAVfcb3Xe+ZIsAQ6lsX2OW93URnurHtd602956qQ==
     extraProperties:
-      jre: "17"
+      jre: "11"
   - version: 21.1.3
     aliases: []
     stable: true
@@ -148,7 +148,7 @@ versions:
         downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.3_x64.zip
         rsa_sha256: NhVoCC/0xVO6+3pSuZNRVLAuUgEefDtQYu0HKTJ6LBwta0ONmdcMSArHJIL0xNyg2m/mVXTjNN9gk9XtC/bF6HzRCCjhjGN5lwgEPCX5kN+WvAUAHGD/Sqn5UzhYyLVMs5GnN2m42v5c0lK5Lr9J/25Qi4HyF9dkJGJH5LAEXbsGdXl9OuqaS/XFNkVioqWGRcJ+tHAMvfrOAht9aE8tp+MtoLc/jcK5xn4uc8aMuQnS7Rw9Lrp8nBHI03iAOH+5N0+gjN8WuHigy7sKCKdLIqDOWmgQ3r+9J2x8rrEcw9RVzd0BeUDA+AHhWJYQAGlbd4OYgmJe9UA1bIzMO+mSzg==
     extraProperties:
-      jre: "17"
+      jre: "11"
   - version: 21.1.2
     aliases: []
     stable: true
@@ -158,7 +158,17 @@ versions:
         downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.2_x64.zip
         rsa_sha256: Sc2nGhiTSFqhBkLfxF//zLLk2ygdkysytfZOP/Bw8+ooeiEdSypm2T14DuheSjsQMOb+gmeJFTqXq6ENPOYSgFI0GPAtlO/Bgt4fYEHSsHyPCpJUoV8iLWS/2PnwbVQVzaBtnvCy14MUF173qrtoWOiUKUPlLlaL/RRF8UiI2I4bK0W6ferHXyw3d9JqI+aYuDMMXR7fF3XqEuGKI0qfKN5zI8LYUKkXw/zhmj4nZFZ4x0nLn3BxL9xs1ejjEA/p48knf0WJsWOkGgRFmwPs6oprJZyOaWWrovKrFdGsdTcWiShW77H9Iu79nA3cUdsfVFFsaKB1+48/vGKdynVxuQ==
     extraProperties:
-      jre: "17"
+      jre: "11"
+  - version: 21.1.0
+    aliases: []
+    stable: true
+    binaries:
+      java:
+        name: Fortify_ScanCentral_Client_21.1.0_x64.zip
+        downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_21.1.0_x64.zip
+        rsa_sha256: laaObc3aA4bN0popjlpuzZ8pIRqjReGzfY7ds/M9SygOeo+xXqi+iby1aX/OKY+BsRCeXi5k2s7V6xOgKj3vaJPVh4ZamKIlgXpO75z/axdI6d4Ie97xDL83kHBQH67tTiSfIALZ92EC1RTYMPjpCCKQPQ0YnRVhHR2Or8DUnzMv0kNYF645KDmR1T6T6041mJo2Pkf1EnHAvL3UsXThxPLC6Yi///gWUVtahAPQ1zHZj04DVzt6k88JJSyx/RR8rD3Vi5mBLk3FNCpU7fwTgHFdNXzDvuazNdT4YOXZ+7R1CuNAt6XRc6NjLDsmElZurytWfvix9wsYmsa525o4pA==
+    extraProperties:
+      jre: "11"
   - version: 20.2.4
     aliases:
       - "20.2"
@@ -169,7 +179,7 @@ versions:
         downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.2.4_x64.zip
         rsa_sha256: Kp+1o8sQm/TLQTFIPxNjAU8rVNKBg5lH87RqJLr5In8KJj8FP4bbxTc5Tzyw/5LYXkbaq1KF5tHP8BWD2CtlyhoBgWKCe/SW1dckKWYaLOCDsh/9DJ9ktywGGWZEzq3CBcil3UqRxZBX316vRcleFMhbM7kQPGNl1k4PzpEveXKfxqHO1bjjo8lAw+fYP8NGaeNAbe9WnGJYcUtXCziGVLYRtRNFKlIxOJve94oG81wNBdjuFRh2hQQvo2H3MtUMloI8OFYn1LI+BhbldmmFqwQcuKO/T77xobxIj//fybsN92opjomxa7Vgdnq1e8WW3+20tcqfDXLesRI16zECIg==
     extraProperties:
-      jre: "17"
+      jre: "8"
   - version: 20.2.0
     aliases: []
     stable: true
@@ -179,10 +189,20 @@ versions:
         downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.2.0_x64.zip
         rsa_sha256: rhs4ieWBi5WlBnyCUNSgWxF+nEAS0EKXy/CEC0gqOV7nlxpo7p2fX/DL7aOrMRXKy9r9VDDAcnNjG5ymjViUpDwCfu5LTdOCG3jNHndso2I0KMZYaVZHgMuMv7ai4K4Nkeez4ZBFIjnkLfmutV0mbdAUvE5i2yzU4q+yUeLgE/aj1cLebQWm3ctF8oKhJYW1vL8AeWbwdlONjsQ0zFqU0tVAxu7PUDKvG62A7rkIqqBHALPYILFhaXdXrtSVqbrSprOXxJj2mx5sUEz+vHS+KWy6al1Dgbh7Si6lWK3x7XctTPZdRcbQlMEjVU33T3UKt4tIp1Z7AV6J2jcIZoDWvg==
     extraProperties:
-      jre: "17"
-  - version: 20.1.0
+      jre: "8"
+  - version: 20.1.6
     aliases:
       - "20.1"
+    stable: true
+    binaries:
+      java:
+        name: Fortify_ScanCentral_Client_20.1.6_x64.zip
+        downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.1.6_x64.zip
+        rsa_sha256: IMpTXMNveYlC/J2AE+0HU1npcUTw8PPkaJQfiRvMKFUhkSQJ0gKQ01HB++K4sbykBIZk/mtCzh7taqVtCAJUHCQ3Ehq/I96MjAlGbA5FTq3o3LymSZ4ayINLTnEqXx1ztuDmO5QRb/dTw/l2Sqw7D61L1HNk5nwL4Ko5VwEvAzmudaGycStMHTsCA0D+C/FJAT4brSC61IPTrtgOURoqgJbz5QIm1VoYXccAWnB8taivHK13JSD3Ni8qIMPn3LKP+6xFn1i0ffU43eWPJp4sfhHq0OewwqpmCNvXbc2yAksCl0rsCUuu0W/S0O6jXBGZ3E+FujzxvEe4YT1YIHSWzg==
+    extraProperties:
+      jre: "8"
+  - version: 20.1.0
+    aliases: []
     stable: true
     binaries:
       java:
@@ -190,4 +210,4 @@ versions:
         downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_20.1.0_x64.zip
         rsa_sha256: BA8DFJFk9yIQd732ocCDHIj2KIAdkDZWmayMytcNzuFu2ec+5Uf7s8AAOI5wMszyhr/R3L83VejDKzW/uonAfDj71s4CpztlNpCYyY+qIA2xXSl2Fy73vniHLw80gZ9ixLVtrliivGKubju4WXDheRU8EA8Pf6MUfAIdSESCjlFq7/bp0ATgkWj1V1N6rRAIetsCXp34Sm97kl+FtEKUVVukznDsk6BSFsWQblqdiGD42NXCcsQZENPGyMA4eyP/1uq9BAbjWRI6UwBB05rpQOfrM+Wx/y380Xc7rFAqYBYR1+IdUcp6CkW0N9Nk1uzi5lnyViScJnilrWUJF5beZw==
     extraProperties:
-      jre: "17"
+      jre: "8"
