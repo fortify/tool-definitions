@@ -185,7 +185,7 @@ jobs:
         toolName: ${{ fromJSON(toJSON(matrix)).toolName }}
         toolRepo: ${{ fromJSON(toJSON(matrix)).toolRepo }}
         toolUrls: ${{ toJSON(fromJSON(toJSON(matrix)).toolUrls) }}
-        tagRegEx: ${{ toJSON(fromJSON(toJSON(matrix)).tagRegex) }}
+        tagRegEx: ${{ fromJSON(toJSON(matrix)).tagRegex) }}
         assetRegex: ${{ fromJSON(toJSON(matrix)).assetRegex }}
         signKey: ${{ secrets.SIGN_KEY }}
         signPassphrase: ${{ secrets.SIGN_PASSPHRASE }}
