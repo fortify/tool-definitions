@@ -67,6 +67,7 @@ jobs:
               {
                   "toolName": "debricked-cli",
                   "toolRepo": "debricked/cli",
+                  "tagRegex": "^v\\d.*"
                   "assetRegex": "cli_.*\\.tar\\.gz",
                   "semver": "major",
                   "binaryPlatforms": {
