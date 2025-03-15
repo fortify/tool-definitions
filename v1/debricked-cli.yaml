@@ -3857,7 +3857,7 @@ versions:
       darwin/arm64:
         name: cli_macOS_arm64.tar.gz
         downloadUrl: https://github.com/debricked/cli/releases/download/v1.0.0-beta.2/cli_macOS_arm64.tar.gz
-        rsa_sha256: CpHE503bKp3NKu1iwcwvEdxzwYhLwtBXdoyDFTCsfTaGztrgilZCDDq0sa6dR6aqVUeGWq44l2EPlwIYEnzbUSoyqFKyygY+vdz1va74KF6eRw1+ef28EOSPGeKRsk/iFOOVh8z3Hsf52GeM4U+YFXTKRZRWp3y5kp4BZ7FLxe/b61MadiHMlhbxc4Ef5NMPI+Sf8y1CopYo07c+JxiDzlT9c/GUmwW3MPXxGajeMUKhhQqjNkefSyTKd2s7rAPUdDhEl6Zeg6wPwU5fdfQcczIszqkdAMCLVKNMYaDnijHy/em9SBLu3L7sE8Yrf+BJD8ooiDty4P45I66hwzaqXw==
+        rsa_sha256: ajXytQ+npx6/n1jdD07ZaCErr7iEyTHQOqQtjC3JZCjKQlTTK5Y8yw+bll6CQqcOBhcWxXpO0IwEzMADfl84HoUyqSij3KNy81sco49p6uW5/C7AYH6Yjx5epY1QBGcxm5W4ra8RX3zLeBtva4rXipSfpQDPm3B2MZZ4HwQzA5xD5REWQ00MbAhbzSVHtg1CwRcsP4Q5KaWp3qwlycKZ7zywvLMf+TttxBjK5iub8T3xv/c4lLEipMJR/EN4+miE9O6rck8rB7DF8Xji6uDa2w28jOstnIhWwyLKlQFTxWSiM4JtUkAJVeLz3V9ktkZCuRZFK1BV8DrLXefoFm0lJA==
       darwin/x64:
         name: cli_macOS_x86_64.tar.gz
         downloadUrl: https://github.com/debricked/cli/releases/download/v1.0.0-beta.2/cli_macOS_x86_64.tar.gz
