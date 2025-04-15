@@ -37,6 +37,7 @@ jobs:
                   "toolName": "fcli",
                   "toolRepo": "fortify/fcli",
                   "assetRegex": "(fcli-linux\\.tgz|fcli-mac\\.tgz|fcli-windows\\.zip|fcli\\.jar)",
+                  "tagRegex": "v\\d+\\.\\d+\\.\\d+",
                   "semver": "major",
                   "binaryPlatforms": { 
                       ".*fcli.jar":    "java",
