@@ -1,10 +1,18 @@
 schema_version: "1.1"
 versions:
-  - version: 5.4.1
+  - version: 5.4.3
     aliases:
       - latest
       - "5"
       - "5.4"
+    stable: true
+    binaries:
+      java:
+        name: FodUpload.jar
+        downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v5.4.3/FodUpload.jar
+        rsa_sha256: kcaifGyY3Me0AZOeBc/X/x3mrE7mxbs3aCZj8NYnd8T/QR1g9LCoDt8ZbraIia0Mgdy7e1pdQEH7joD2GrAv+MP1QCCUsx8WM1IaKrdkAQx9R+Q5GeuPbPVe0L5TJ8aGaLw8TF9SzzcZkr6rAj+kinrPegAp4aL+D0BH5dJhoTkYr05khj8sAo+U8DLfANavg7CzvuIwlQbTbzdTYYWz9OmfYbCv21qYGu6Xs0z4Miu/31VxCvw+oJWgzFcQnjZm0MKF5OTfg9KphBn0mRtZ1Tn2r2gAvz/tzee0/47KXMvI/CZHEEppqYSvB2sZusrypi5yrxly0X6wz1OMkZdshQ==
+  - version: 5.4.1
+    aliases: []
     stable: true
     binaries:
       java:
