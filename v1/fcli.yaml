@@ -1,10 +1,30 @@
 schema_version: "1.1"
 versions:
-  - version: 3.5.0
+  - version: 3.5.1
     aliases:
       - latest
       - "3"
       - "3.5"
+    stable: true
+    binaries:
+      linux/x64:
+        name: fcli-linux.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.5.1/fcli-linux.tgz
+        rsa_sha256: PFOQ4asWrW2mo87eIXEsN+6x0PR02ix3MvI3XM1mA9oEvYWKlcaXinDTJ0Ziy2WltsKvBacYBux4abNaYQzpUu0d9RMjyHx+KvPAR3T85jEqXjWMipGbsVgTOEbdNrNvnhYdkpKjUXzqNXg6Us+8g8Ivb6EHvqKVy5T8GDB54AE/VDPN2a9dfKTElDXVC2ZeXKItot2znXHrKNWgZ+wWxP7Yd6/oJKyE401+LSpTT3SIxTrcEKhdUhKGcxWM+lINou6//qqlxkrzRw1HbVQzyGk9TGO412K5I+1KFzfBXvrXAjzw5F1BDnHC6oUQoMXxOd8suo1Jy4utbakLt9e2+g==
+      darwin/x64:
+        name: fcli-mac.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.5.1/fcli-mac.tgz
+        rsa_sha256: m6eXLZBLcEcShsgF/PkYFexSkhJjz+R3GdLMQki8qdnZUwrmJSOGP/GNwsPHZNqKDJ8p5SN/sXXma5w9YnytW4pS6SOvXHCQUJMfV4pb0hxfrp3RLBR86BiLwL8xWHx9cFiwZe3Od/NY+xOPm5suj0FWO1KEkYFY3udR4Dl2KIpI/yBVzVkxWS2vrJ0NhjKztcOkL17UXtz5QEGY1f1E++svNndDD4jM2lxqC7I29lK4/gOrhByS6EK946qP04GIExzoLJz1zhFjLPn//5RK2frsyku1g7KpeGNG+v+0H8MsLyNNLAv5zE6OBcAkSxDXDrbdI0LJEkwZdIez69lxdw==
+      windows/x64:
+        name: fcli-windows.zip
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.5.1/fcli-windows.zip
+        rsa_sha256: UwV3RRhdOokGivUjiWpQp3Ii1zA/qLWqd3t45J9CzIqkoKKoJ58KLUldJXiEKJ5XgyUZwUjbslVArxwaigveWsF61c4AsQoQXk2AweO23ocEQBdLGZ23Tg8zUv9fJe0IazbyrXwocJl0xvs/JCeuBiqdLm4xvNjGzLusiQuEzZiZ71WmDp0s849HK6JFld1NkpD/TR1LycMm3wIq9eSOF/EDVsQbvq7f1WP8MMfW86bJdC0Mps9QjHpyJyYid4HjuCVHEKUe4vA4+Ouk7ZtDYBXVUbND3+xjDi8kFZkwM1wOSerGi9aYJXCR4ASYpAsb19kj5E56NNoIOmsqEqwTBg==
+      java:
+        name: fcli.jar
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.5.1/fcli.jar
+        rsa_sha256: GD3nO9cuBaG8PS+oQJ8130RhotaMCuiJ/S7xl5Kc6K69mHB/8wrQ/LoZekYyfZ4LP31ElbyWMxmfLHDf+J1q1V886WTAxVRwboOlndUjtYpk67nm/Aey1ZBS9rUU1KmGVanpxmN5TUAwrhs0o26/nq7sJWadLIv77kf3+rGe79xri8bMQ87pGJE347ZLU5JoV43V/2/aYoIL89Z1Zmu83Ieuz9HsvH9yDTOgb+tSblWT7ZFaIX/Yyuvqj3n1LWxHP1m7qeKpgx2LcYcBIrFo3vg0l7U4yXRPCanpJB+rr5zaKvDFeq1aZ0Ixhfk+LSOnJH2VXb07BSzO4/5jrx7BRA==
+  - version: 3.5.0
+    aliases: []
     stable: true
     binaries:
       linux/x64:
