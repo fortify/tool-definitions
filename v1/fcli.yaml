@@ -1,9 +1,30 @@
 schema_version: "1.1"
 versions:
-  - version: 3.8.1
+  - version: 3.9.0
     aliases:
       - latest
       - "3"
+      - "3.9"
+    stable: true
+    binaries:
+      linux/x64:
+        name: fcli-linux.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.9.0/fcli-linux.tgz
+        rsa_sha256: eBXwp9hRlKICqMml2pJkg3PHWhEn0OBCsGyMb7gp9P18AnP3ixutyHXXF6gpRohryRptPUHal4VqwOwzDNrt/AXLq/SRfn4SMEASe+4i/bD8PZKu1xGPBbToxoDh7fjEICyPBpEFfPc7dfypCnClyvPGNxQP1y0ryv4ZARqUaC8MPfkN49jcHKyyjKdxxk91r0D6MQS8wLIr8Og5u3UxUbe0wa1OIyNmAXkizwGcToyUdAdY2xe8U8nv+n3il4VQBE4tpGma/zsnWVWIv2NkD5oGpKn8BmK+UqFFZlQDwYhWY4qsTgFEwQnzXmvaANbebAVQwZwfpW81UY+E5dnCzg==
+      darwin/x64:
+        name: fcli-mac.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.9.0/fcli-mac.tgz
+        rsa_sha256: BkYCbiqgzoQk9zClgS9WDIVJ+B9sxlDvEXBH81YeCiWwDapz1tyP/Mq0tJ2NfNvP0+5YkyhXR29hHi9aNNVc85nrJ18ZMw55L5do1YCIF4S6PZJ0URUzxRQIFjoTzcKTefsRQ0ZRJrisu9j1bwuEKCb0qDlkAzVdi2JUfBi0zwsyRUS6l1PG8SGwnLzV3auKksbYafusCOzxw7GSi2elyBk08lB8iiZr0pvfkz1yeCtcNuUC3RT0hzvYMEPkK/VFwCasO+rMs6MwcGrCvFgEZj3bUrQv73jAeG4o2mHFFJ0GBVVqsm/N1L0vZEuhsL7SMsmmLI3h3+HGxu1y8TGLnQ==
+      windows/x64:
+        name: fcli-windows.zip
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.9.0/fcli-windows.zip
+        rsa_sha256: JxOTBfcbGot/jFm+ad9+dKlexg5BmZh3KZY8ryCNXclrty9DIPqw5YIzkp1Css26oiYejmCPaUm8AL+rwckQKcfQq0Tp0pGRQMD49tkbNBs+ipfr5AsOdQtFiW63jXZi6oJzWKFolX6qK5E98bnocaaeD7W7vejk72y4FPo0z4YXJl2yh+g68wxRliTQbuTR68BCjfJd9qplQJuLLUsGTisoXG4nXpq0lirOAn4m5A40sjJUpO+HPDfzIKzLVXQXMGIZZ9/raZ6IrcCYv9/JPYwXPj7dGM/N92mx8B8mIgobKS/d6JjlMwA79Gxg4DcwiFe41ZrJYdJmdWT8eJQb9Q==
+      java:
+        name: fcli.jar
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.9.0/fcli.jar
+        rsa_sha256: qJ4vMESAwArjpmBwsWosKnAFQO7IqrcT9MJ0Mq2FrFwGlvqa/EM50+oR6rsV0bVHX7NibT40EjZUpGnsg7FbEF+PsRSz2j/u623wqJT8taS4NDbEVaIVn+N4KezWYRNGFCp5xBRDgz0j1nZ46KvsfJG7MvXhxulekfvTTtY7ME5LzM/1OzgTDsHqAn2HjCKVLM1Fr6sy3ehc5GYp90WPY9wWXEX7HaudDqg35+1MyUxnWB+xfI1MUAx4chJ9acEjZhiCpIZtYaoD9fHVuLTbs8yHSTz5eMb4U8AOszGTRfLMuZp0giru+tkGSy+q2OSWg5Fcq3pSuNN3i4gA+P7/ZQ==
+  - version: 3.8.1
+    aliases:
       - "3.8"
     stable: true
     binaries:
