@@ -1,10 +1,51 @@
 schema_version: "1.1"
 versions:
-  - version: 3.9.0
+  - version: 3.10.0
     aliases:
       - latest
       - "3"
+      - "3.10"
+    stable: true
+    binaries:
+      linux/x64:
+        name: fcli-linux.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.10.0/fcli-linux.tgz
+        rsa_sha256: KXD4lftKJey2hF136673y/gngrRG8qub8ERp7SNKRUhULGtoMAncdMRR3syfWOl1JzVW4huuKx8J14Bialcl7A4eatRmbzIekRGlWVYDTYYhyHyqrY9a2+y0VlN8jVfdO9ApYyAEVHyoDMAiMfzaOTh0hmSCA4lIOufh5ZZz5/dPCLAd7C87/ZgxQwIhX27G5Hrai5gPcGGT9AvQNrgMeblL4S48vwd/PGYOouAeVlQQO06NcOSKW/oVCXOQzFeg5hO8aLJj0py2Vmh+59KcHcCedOOnlSgQHYAu92o4i5JGZixX4nl5/bGKl4KY4H/kroLTqcCmr1RzxCVLxTJ/lA==
+      darwin/x64:
+        name: fcli-mac.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.10.0/fcli-mac.tgz
+        rsa_sha256: bQUu21jbrJN9371jVTwqOg2XIHDszu+wseUDcvy2SCoryCTGy3DTxPxxMf4ix9I/rsSLnCqCxKrOZkiXDBaD4xsl6xjTLI2S25gy+zMXK7WVCbcjjUa5H2fQDWzWuKKFXbKchoR3BbdN6e5/mgrZsLUA1wUKnsAaS4WC5Xmj1MdJGnnldIfjUFgQxy0FkesHKA9yGrCaRQ5oW6WSzqyDntmsItjM4SZ35tCjjqUVQVAszZ0qnc2sAkeLqN8pXdZ3uihxV8f/wVXAcHZvxl7LEPwfdPDIzdL/Kq+wKnrJivMK0uTvLY7LK235IJu8qa6CWFNpLiqkyRCilcnefPWRPA==
+      windows/x64:
+        name: fcli-windows.zip
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.10.0/fcli-windows.zip
+        rsa_sha256: ZYRUzyrnWmrm2aImA5cr49kGKLkzzv1Rw484Ooah0vlHzaNIJT9P7QJO6hyiLsBtPKjt/AA9eCfWDOg+lKc0zjXKMcHmBaFSsRiqZqXnzrLQek5NoixsXj4EJ6/403IA6PuKdoHVFOKO1XsNSJLw4GljSfap2jd92oE3sGcdLMhLOXXubk7N2JHCM9dQaR7D1scsuWFjeqHA2fsPdhvvbJrBjQ4AObPCgUOUplwoX032Bz5iF1hoI0VjsTH2NGSNczCaTRfXRo8wG5DY98NaasFyv30VdJiytg7G2UpvMgXfceYRN8iofiadQdqO0++dFhc7c4OcTwrcv7dW8DVwDw==
+      java:
+        name: fcli.jar
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.10.0/fcli.jar
+        rsa_sha256: MDMKRSuzXbbB//NQMbc2qjNAIzafkfgl0FKcmZNCTRrqHruFPoEv0EIF8+NobOm+zettJeFV/5GtvzO4MF1uXuoj/oS/411vV66zOCydJNN+0YyKy0FTWjPojM9zSEVEpRbAU2jJe5pJtgO/J5KSb+LjPbJJfepVNhhbGX3AJjkAIhfakgPjE4xowjJCL1DT+P5on729u9mcIe8PvzwCR9PXmix/Ul+utCMJgtsAPPdZOsm7BCEY+8II2v3PZVm1ZLb+6h9Mp6h8HJhz4LWUdqPXOaNJs72N6n2uybtDE3MBfACSapJUMsJoWcJ8sTwkEmoSQZ6X3hWYH2Ek6eOa/Q==
+  - version: 3.9.1
+    aliases:
       - "3.9"
+    stable: true
+    binaries:
+      linux/x64:
+        name: fcli-linux.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.9.1/fcli-linux.tgz
+        rsa_sha256: E6/4Gm8eVwyIOtq6RqT7Jqnm/usPAB/ycEGh7Sx3qn1yg+ebYvhR51Opzh+yGFWNhiwLw0EnFfnqAmkwDXaK9DA7oS821C52g2nxny3mLdzWJf/hCTSo3RXG+URuvJK6ssxNYMgyEcK4D04RweewbpBi17IZ7dpRrTEuSEOqehYUVVpmlNWLI9HQEV6G21C4SzbFmViaDBTQc8syAlO5+b3Z1jLI0pDiTU/Vk0P6l77zHZvoARkAdEMVds3wYY5BrDoea2GieMG5Bo5C2sO5xRQ5LG+cw6G8JwN+HGKObKQJs8C56e1fNVUuSG7Vmn6rwDxL6H+fAWQ4ZVqPovpBPw==
+      darwin/x64:
+        name: fcli-mac.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.9.1/fcli-mac.tgz
+        rsa_sha256: DaFa55bzrKzM7N5C7Ex42pddzuMmmpJSnWlhoFYNNcDx9aFxRRGgJd56dsvVPwQeF5wbvHJKuJ/WsZhn4/8SDXfWYZMhGdTBYFy9GOLWFiUcrnczX9Klp0IBJWJdTaSvB+a2cSkHxoU+PTjy0PE13dtQ9uhPpLAavWzKFfZnxJHLsBscyYwrtR5SfBkvsaWuNFrIiq90S18oRhyhrfP1wiJ1BIxqvfaqlVtCJSkTCKZrNa8RPGgDw8bvuklW0guGUJnb9oBqb7brwI+LK/F15HrVuP3anHRFnAaZNOrGx0Kpnm1ftXJDo9qZhdEnyGzrgggKn4nw9vk5Z1owxX/omg==
+      windows/x64:
+        name: fcli-windows.zip
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.9.1/fcli-windows.zip
+        rsa_sha256: WVPLpOcpok3vaXU0SDp2nYekT8OZVUCJduVfZJhXuOgYFcCJj61ZDmDrSXRx2hZzfezkVv5qG4nIFt58HaRni/YZpBR7tFUZZx+M4fOzFLUnZbuOoOXNTv90o4c09ZWoFryybvtEgF6dQ7m3Wtpue3EwIj0nJprnk5G5mrOiocAmC6f7ZuZ1VV/rrS8CUTtztrkeyRzhXXocEVBUN2i2LyawDOsmuodwsEMOGFPkgSDooyETVk2+wZncXkrE+fY1KlTNCJk89H8KprQpngdD0USAfk6vtzxAG2d9w5tn7ul8iKPp/9jeqIAcTBiC0l4wrI18kctv8ALcixJynXsQLw==
+      java:
+        name: fcli.jar
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.9.1/fcli.jar
+        rsa_sha256: SIEd+5StMG6urO7Z0HS6JAefvVn0aW7obCyrSONRSQi8FpSknHrM1lti4yDP+LtcQQpq+RgbkqcJzcrOIvT67IZGz24LXP1Mz6yw62qxZKT3BynKWOCmOzqLC1KeYDnQmpLbk8C8B3MGn8TX+gdRqNPXy9bEkr12ZQjDkDH7PaH/ITlf4DhqTx48UkTfi+YPxZPLPxeLHrBTPxQmGnAfJxQMnEniTlkC92JegL+54mw63q5Xj4vAS+fBMlLfml8RFuWavFvFXAfEji2o5uFskfQ870l/vQIf/1FPWWcNmRs2MDneJVjXQ4fkGkNoA1pzn2zT/fEjVX4EfU7nj26mQQ==
+  - version: 3.9.0
+    aliases: []
     stable: true
     binaries:
       linux/x64:
