@@ -42,7 +42,7 @@ jobs:
                   "binaryPlatforms": { 
                       ".*fcli.jar":    "java",
                       ".*linux.tgz":   "linux/x64",
-                      ".*mac.tgz":     "darwin/x64",
+                      ".*mac.tgz":     "darwin/arm64",
                       ".*windows.zip": "windows/x64" 
                     }
               },
