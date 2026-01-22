@@ -1,10 +1,30 @@
 schema_version: "1.1"
 versions:
-  - version: 3.14.2
+  - version: 3.14.3
     aliases:
       - latest
       - "3"
       - "3.14"
+    stable: true
+    binaries:
+      linux/x64:
+        name: fcli-linux.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.14.3/fcli-linux.tgz
+        rsa_sha256: JZ1FtHg7AwiTH9ebSgbx5BJSPB4rEylPOs0TZ0eXK+yezOmiLu2NsJXMSiVuQiZhxyXR/W/cYvi5XgUL1bQBrNIoJzar6VSDuN5cFVf6mhNQbl6kAe+7Fq5BhGA+XssPy6AhGlmkS6JnGDQfQKE6gf37f1g14oy0z+l1igpO5LoafJquF2wO5Arx0a26JwgdZmHzwXgkR6Bdd16y4yyBK60EqeMT4TabozTCxMx2S1axm7gv8pAQENsTgeVjgFbLipkrSasOZu7vJU6Qa4v4IZrYaIMV0T6VZrs5Ylhq629TgK6piL7zd2k0sTJmixhFl7OuQQFnctnDJ+xBUECTdw==
+      darwin/arm64:
+        name: fcli-mac.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.14.3/fcli-mac.tgz
+        rsa_sha256: mnX4eUc10/JWPZ/oIj0gLe4aID2h7Bz88xCjJ4XZaegvl2Uqr7Bvf4n2wW6ZjVb05R4g7gzlTEXy7ZwaICYyGonia59iQQNGTHA5+HkpPsCcDFifaQpK9ZkanXvmQoLIn9ybXQpZkSovedPIazy63dN1I/3xU6dm3RqxvQQ0xe6ENApotpdUYokAexVAPiHXVFk6Ai8PscUwbYRQagq/SPZHoJIGLpeE5Ia9GGCGueFtetqtUXj+n3H1AsbBOHjs8W2EtpJNE3n2ZoXdvKW3DhP2RfCsJWCIlq/IlX7uK12VwWHYGA7g8eRLhPWjPtsld4HQz40AaLZ1+XDlAJU/7A==
+      windows/x64:
+        name: fcli-windows.zip
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.14.3/fcli-windows.zip
+        rsa_sha256: SCdzJ/hPHllBg22HO1LVZfk6y+QCnGMOzCTYy7wzrjvopLbIGkVdfsgxJIBWhi8k59KsVMDsFKGPZkKaq32tkzABxQunwYh8jOlmuHbgPKUKclV0bj54b9CsYPhNu45RP+AYbF6KomSbIPKlzNLxBYJOzA1AUBc+4saCU4vLzVWg+FK03I9aqcGhblnJec4wK+9/460miPXwV+KA2gbrYpQhtLfx+aO8WDmGlC/3v/n/OWtQbREGWiJ97gkkfz9flOQPR7WBVwE1KE66D/6Fm3LODOeeS8fNEUKXFlMSHjzS390zoj+EmXvEvuJhMq21yvxsoiSvE18smKyL62o/tA==
+      java:
+        name: fcli.jar
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.14.3/fcli.jar
+        rsa_sha256: llNa7HfZ3GyJ0bVk0LGGsrLoebWLsLiwm4wMePNMJEcf2/nVKT3qrBEafVHZe3SzwlaTD25GvBFcU6RTjcqqPiIWZe99MimYeaxqCgoaIAO1AQ3HYP/mcIj8sd/UoXJGDRQPUK4SKMDL/gK/RkmqmZu60oOhTiXJc6RaFTACD2oIRPmtBjHUUa1rZpQ/jBkRhtqEKa0f+H2aRZKdiN12AD35VNs2KRb4DvXQXgbPLfCuELzbip5ufUmE7EcDzq5nqMTt3jsUFjikSICZuT7bczm5gqe3QUp13Ap39VA5ObY7Ud3rmACcPLwJyijtSFoLMo7EYpw5LnCQMiXnmrZ80Q==
+  - version: 3.14.2
+    aliases: []
     stable: true
     binaries:
       linux/x64:
