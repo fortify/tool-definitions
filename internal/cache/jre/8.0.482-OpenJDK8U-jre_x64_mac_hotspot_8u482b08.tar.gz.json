@@ -1,0 +1,6 @@
+{
+  "name": "OpenJDK8U-jre_x64_mac_hotspot_8u482b08.tar.gz",
+  "downloadUrl": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u482-b08/OpenJDK8U-jre_x64_mac_hotspot_8u482b08.tar.gz",
+  "rsa_sha256": "IWsjxmcGtwEU7pOCuxRTYAdLaNlMKDwuTS65TXFWTKarc1rVU4OygzBSBTHvrWA62NNEJ5oThPdVy+IJfvmAmWaIEsrRvxNghHM83i0vUwXxJyAbsE2y2mc4i3JdXpkwxPu8yXqHn0ZP/0rwKeOxIWsdIufUlYBKPBJtgjORvUbG/ju59wk82nTuFCJbyiGV7D6zKoZAR5Gt+5WIm1pjl6XkP9XYjRIg0pTDYAZLB8rIAxz1bhFft/4eRwqT5GuIu7+bCWsUWfF1CPZrUrrcVsyMRpsnDI0RQ9KaAaKSzOn/Xc1Fpg9MYtluAEtqCuOKTgsQLAIBVmEeZsRazv4rzA==",
+  "sha256": "df3c40357842b742fc5f838302c017835b9baeb48dd6213dde9b3774075dab90"
+}
