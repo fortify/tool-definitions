@@ -221,7 +221,7 @@ jobs:
         binaryPlatforms: ${{ toJSON(fromJSON(toJSON(matrix)).binaryPlatforms) }}
         tagMappings: ${{ toJSON(fromJSON(toJSON(matrix)).tagMappings) }}
         extraVersionProperties: ${{ toJSON(fromJSON(toJSON(matrix)).extraVersionProperties) }}
-    - uses: stefanzweifel/git-auto-commit-action@v5
+    - uses: stefanzweifel/git-auto-commit-action@04702edda442b2e678b25b537cec683a1493fcb9
       with:
         commit_message: "chore: Update cache & tool definitions"
         
@@ -238,20 +238,20 @@ jobs:
       with:
         fetch-depth: 0
     - name: restore timestamps
-      uses: chetan/git-restore-mtime-action@v2
+      uses: chetan/git-restore-mtime-action@d186aca54f8760da4dec55313195e51ed3ebb0b3
     - name: Generate v1 zip-file
       run: |
         git pull
         cd v1
         zip -r tool-definitions.yaml.zip *.yaml
     - name: Update v1 tag
-      uses: richardsimko/update-tag@v1
+      uses: richardsimko/update-tag@aab2434e9a5040687874aa39d1c6377ec0cb0d94
       with:
         tag_name: v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
     - name: Create Release
-      uses: ncipollo/release-action@v1.13.0
+      uses: ncipollo/release-action@b7eabc95ff50cbeeedec83973935c8f306dfcd0b
       with:
         allowUpdates: true
         artifacts: v1/*
