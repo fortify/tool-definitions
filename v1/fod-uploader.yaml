@@ -236,7 +236,7 @@ versions:
       java:
         name: FodUpload.jar
         downloadUrl: https://github.com/fod-dev/fod-uploader-java/releases/download/v4.0.1/FodUpload.jar
-        rsa_sha256: U+mBf3HmYDEiL462fv2vLD0o7Ri9Cxw3v/vvIbfpT50BQQPyqRZ9bQ+VQzKGYc9BnigUH8XN+70WeCPbpJLlQrFUB458tzQhbnHbGN7WMDjVXrVdSVTdFevonefZs6lE/muaelyA+cjPEhyt3bgT6U6oPiVV9nvA6VKCXm1lA9tRQtO/q61H8bt8M/bhVrlA2RmbTsCuScY/HqRsrHYjhaXo8T6GpOVHyF6BKPqX/L7vpJhC8S3LUr5thFQL52NHqeuvPocs8WvVQXBKYRdHU5PofN6u9XINA1Rh+d3uH+Dk8uhn2fJZO7b5LaJaJ3u50Drk1vn1wEnMZ2qYCXEU8w==
+        rsa_sha256: HwhbPnFK6sofBVJidwNnd4Q0TAiAXc6lySN+XEdXZcOBbGQXritDm3We1YM8jE65R6bdBJTGEHMAEvgmcqpNIY4KL0JZcx4JwOIcWlijjPCWirSxlG9LfaB1GK4ZtEu6LRPcOu+VoFCme+Udga1VjlKseBAvoOGIyv6uC+WUyHKrLsBgHgOvIpwBOLDzD6WUTYr7CVplTJsw+W1R25oQjuKdg/PV7bF9A06YGXDl1IISL4kiU/XQoAcLaZtQK9UJGeiY+RM1+i8nCLVMv1I28c8ncab17NiRp+6D360O5vUGzj/1599u+l8Q0p63SdjEuIwtcDG7H7b32SQGmYRvmQ==
   - version: 4.0.0
     aliases: []
     stable: false
