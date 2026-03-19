@@ -195,7 +195,7 @@ jobs:
       matrix:
         include: ${{ fromJson(needs.setup.outputs.matrix)}}
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - run: git pull
     - name: Check
       env:
@@ -234,7 +234,7 @@ jobs:
       # added or changed files to the repository.
       contents: write
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
       with:
         fetch-depth: 0
     - name: restore timestamps
