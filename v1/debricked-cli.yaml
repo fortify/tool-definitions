@@ -4052,11 +4052,11 @@ versions:
       windows/x86:
         name: cli_windows_i386.tar.gz
         downloadUrl: https://github.com/debricked/cli/releases/download/v1.0.0-beta.3/cli_windows_i386.tar.gz
-        rsa_sha256: ih6N39Yfbsds++rEaEYdzOWUkvb9E1Lc2dFSB8gAuIT8CuSWwNEJbQ+WvtIDucC0+XlpEVANuAa7RkMPabED/BOudHtd/bGTkSd8/2HFACsEdrV0euUrf/mL5nvM+M6Sb/S5ukfTnnW93i7Mt3OOZi3Cu5o28HUngW75cXlJhiWRTC8zHGWsTWAW1sypNrBWF44G743hyd0Wq95rEGoh9N5LLLaxBy1ua6We9pI27HdAUouqw/P4VDQDQSfOnoZ7vKunvjXOVjyhdjR1xKC5zpcsK7TZnLKSj7C3x0OjWAr0X0aFZ273vjRgw8gUUcU8i1cMavj90kXOtB87jkb5WA==
+        rsa_sha256: GZo+mX/zHY9Wuh3eUNSr68nJg5/ze/ciT5ZU59bFme6jRiX0p9WAr5l7LaUT9QDD3PWHInBzlDUJqgrNq36SEuAE+rJvldhanAYfYaBQMgfKH7oDrwWCJlsh8YQqRzxAUiPudp7HDtjqsTeTteFYrygMjffT+guWr/4FJlm2Z7qnmZPfFNNGi7PQHbMvSkvqvQ3uHTCJK98kSHFylLZuKTj8f33YPrk0orl7s8TpTyS/8j6F4bHS6KIyCq7euT+4QGm5OocAcCL4W4l3D07lCAOiTdqb5Y8+LpyQpJnZnWq0UCg5BBHcM8YSbzwHTRfj2dPMdjDGMMuqDsR2MfOPmQ==
       windows/x64:
         name: cli_windows_x86_64.tar.gz
         downloadUrl: https://github.com/debricked/cli/releases/download/v1.0.0-beta.3/cli_windows_x86_64.tar.gz
-        rsa_sha256: aZSi77DJUpQzjZsH/Ttxl0f9m6tCJO+fg/j2dnjJkmFZB/ww28tM1srPwxqbMx26A3GVjBSYNouikjYuELVJFNa7QJMFEVnjFJvs2s0/92afksZYnhQWP6E9h/i5wpbANL1faGiBa3kFDZJ+DcgvVVrB2RngnJrt2MF6n+7YfAUo+tO7W6M654dwOjXgIQsL3Wyr4qpSoB9F4iGVerIJ+Cel7p5DUMf3v9hIFYrTJ3BmEX3ZhuGHN7vU49OzNAUAekQ1pyBhcFrKx5+zMtlM1+vW1xwF76vrEmmyAVN3Px1EpRrReR6siMCjai2DuH8uevX/Pc6AZ7jwZF4QG9Z86g==
+        rsa_sha256: GZo+mX/zHY9Wuh3eUNSr68nJg5/ze/ciT5ZU59bFme6jRiX0p9WAr5l7LaUT9QDD3PWHInBzlDUJqgrNq36SEuAE+rJvldhanAYfYaBQMgfKH7oDrwWCJlsh8YQqRzxAUiPudp7HDtjqsTeTteFYrygMjffT+guWr/4FJlm2Z7qnmZPfFNNGi7PQHbMvSkvqvQ3uHTCJK98kSHFylLZuKTj8f33YPrk0orl7s8TpTyS/8j6F4bHS6KIyCq7euT+4QGm5OocAcCL4W4l3D07lCAOiTdqb5Y8+LpyQpJnZnWq0UCg5BBHcM8YSbzwHTRfj2dPMdjDGMMuqDsR2MfOPmQ==
   - version: 1.0.0-beta.2
     aliases: []
     stable: false
