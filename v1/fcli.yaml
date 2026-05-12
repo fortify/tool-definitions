@@ -1,9 +1,30 @@
 schema_version: "1.1"
 versions:
-  - version: 3.18.0
+  - version: 3.19.0
     aliases:
       - latest
       - "3"
+      - "3.19"
+    stable: true
+    binaries:
+      linux/x64:
+        name: fcli-linux.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.19.0/fcli-linux.tgz
+        rsa_sha256: bEv5oOEFIn1j1pgj573vTfTtMuVXHLeVfEGGbEXjt3b69Ih4HuuMTKdVpdoEOG9b67qVGro655dlsYZT/y6/1dHFDWo4vlRgWSkZlqs1w0qAHYDhkVey8rdP+/VVMbkeEEtCY4s3BraEDy7hT27N65nM/d2XnJVbnUGZc68q3Rnl4l81BBfDtFBR+WYYp90OK3I+6re3eKI/1ska6VTJ7Dw7cO6oxUJJHyaiqgJCZxgVouNfXjr26nbosr9TB8jRtL7Q2pB6TjgvH2uxwIBYXEbXqGgOiJoR7JD2dmXzrFxjoXf1zhNi9EpZRGDu9veveBLoS9t6wHYeCeKbks17jw==
+      darwin/arm64:
+        name: fcli-mac.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.19.0/fcli-mac.tgz
+        rsa_sha256: TzutgHaUNiHffBnTbyI1C+ixvuuT58d/1KUzLdNKkp6cgJLtzIudje9BrVdKE30yMprF8VoxXqpZRKaMNX7OPu4JnlcnePv+KdzzEtAIh5mk7BiJuvIKmwIO2GZDCCKExO4DwV3OmDMrWyvFsAmoRDLVGmSgmPhYgiu1F3Puj+N0/ewAiEbwQKDSRXnKZNm0MoBsCiw88OytOmMPHDm0GpVkB1Ung+eO3DolKwYCAaZc+Z8LHyWZbLIRBEeyAMk3/0oT7iE7CqmrpOTRuU0Auxj++2ag2nf8O2qJ5K8o/1o3L/q4dZPsHCwVN0lS4BbfBAPtv3yjUlo5ab/qr5C7Qg==
+      windows/x64:
+        name: fcli-windows.zip
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.19.0/fcli-windows.zip
+        rsa_sha256: N9os4KsSZSh9vQ+jbbUX4cxK5LI9LpUbwZGYywN3ButEobodFIOi584n2SPiJYR3w9XlqfqCa7cbVsREeKeVzY/HavBTUfDxmvxYkdPuUdd35ddnjU8pCNn1ouU9P6zD7OaCxBHJqmuIQmOBvM36hYyUYQnBW72Li5TcPl+Y/aniyB71teX175FIiWKCz5eWN0GUqdpi1LVJIS7LiGLc6vijyezehUqeMBelZey9N/ofSeCFhidGj/8OolYx82PzAUaJeXvYGKpLwz5K35QmcTwAg7semhCZSIReFQLw3Sbjrwo0/s8nA32a8ERCqV+1aMUxpl/UePNVKPkPGoSBLQ==
+      java:
+        name: fcli.jar
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.19.0/fcli.jar
+        rsa_sha256: K8ufr/paRSTwhtX55j/RTPRvwgXurLqzU9FnJ2n4+CpZsxJMX3E8HtsHB43El5pO+/yvGZ9Gq0MxEQ0S+OgKWORicWGsA3BEa2XEum1KI3Hp/3zPgjHoyCZsR02Il6hQwcKU5and0eyzRgTq4mOVxrBoKo4A/qS+62ehi0iSwaZRrtQTHyZ+u8MHch9kkkwjpD6asQWrCUO/rA2A7t8dYX6yjSkv4Jmu26uK+VZEdmAVJ+v/L/7oyQsN+Jl4LO8hupu3ocp6/6gxpan9B6+/W//yooOnQhDWjjNglRiHsPEg/CViFf3rrCWspZOoNuZ7MRKTS4QyYHC0Zl7CZ5fksg==
+  - version: 3.18.0
+    aliases:
       - "3.18"
     stable: true
     binaries:
