@@ -1,0 +1,6 @@
+{
+  "name": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz",
+  "downloadUrl": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz",
+  "rsa_sha256": "SukQS/Ls7baZuiAw+ywRE1qjBgMD76zDGFCFwJvlOCdx8XggkAVfsb7IHLMPOVlqg63DK1mHS08XWKah9zJdJCYNu21D8TBMCFUU3ecvRMI6y7ktXYmLNq2weiFwDtcrrtrM53cn09qzD7wyWQKU4YWWl6C9HaVcys7YWk25IkEVQOek80Fujsv3GhlrbuQgsAeAYL9il1TMJlIeN5sdWfQHqWNPjdAXS7Zif2tf6dOcwtI984bUo0jUfqubmsePQ7kIQDsLqewDSOjCP/dI2RZcb66zsyedeSwcNB8NNDAIKae7+Tbirvl6h+KTF/tm7A8vKeeYCgPw2QSatfL2HQ==",
+  "sha256": "82b74dc9042ce6735624a1ca9585e6a43c44f0f6093a7f2088b0a622f304d62c"
+}

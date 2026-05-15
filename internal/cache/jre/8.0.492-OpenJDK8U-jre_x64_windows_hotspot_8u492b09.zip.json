@@ -1,0 +1,6 @@
+{
+  "name": "OpenJDK8U-jre_x64_windows_hotspot_8u492b09.zip",
+  "downloadUrl": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jre_x64_windows_hotspot_8u492b09.zip",
+  "rsa_sha256": "kmTTkjQ6pYR+sxXW5YpjhQGKiRxVSXd4sKjZ2yD0AXgUjcetyIoUvwoE7Du+VTZNaiwP2zfP8r6kYAorivC/LacmMKH3JLsVdsc6eFkjNTQUrY0B+UtzzLRgtvRywTPt/k9qyg8t6KtA40FwkhtIxrzywodNwj9JHZU9qbSMQt6f8MRKHNUVIG6cSIwmtv/AvEAYJ/BNVCKpL6qzEHGbiRbQY8yjEX2b9X6DfKwA2TYkqQs/JyND25MVFkG9qGgHgqwX1OhR7JSwAAHtvsewsdS5wtU4f7tQerw9ko2HC3X/OSoddrwCohwajRyn5U9GzPPjV7HqORHJrvZjoEdvsA==",
+  "sha256": "bb25b002556afc7ef158cd95ec6270dddb3eecba69acdd7abb9d28b2e9ff0f5e"
+}
