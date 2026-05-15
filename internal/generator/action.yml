@@ -40,7 +40,7 @@ inputs:
     description: 'JSON string specifying version regex to extra properties object {"<version regex>": {"<property>": "<value>",..}'
     required: false  
 runs:
-  using: node20
+  using: node24
   main: 'dist/index.js'
 branding:
   icon: 'shield'
