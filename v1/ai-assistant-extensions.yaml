@@ -1,2 +1,13 @@
 schema_version: "1.1"
-versions: []
+versions:
+  - version: 1.0.0
+    aliases:
+      - latest
+      - "1"
+      - "1.0"
+    stable: true
+    binaries:
+      default:
+        name: ai-assistant-extensions.zip
+        downloadUrl: https://github.com/fortify/skills/releases/download/v1.0.0/ai-assistant-extensions.zip
+        rsa_sha256: dNct7ydZu4QpMY72ylez6gHC20xPgvqouMGY5EimJI/qjeugtlE/4DYLCvUrCDyxKIlvfit31eVSyhlCzNKKH0dVJoqIbxj257FfeZPsj3igYoIHod3qQ6YyOgg+ChdCMKPDLIQjEsptwUQYu3kCFp+M9lDhSWlwJFlNLyGG707gA0Y53oddR5X44b+6DWwzXZQneQmbsRxexvmq6wdXKnawqYcKIqm1xTPxFaJZ9cex09LWCJ27HYuz/QNfLLtcFiSqgKrInF6gFgPt9Cr3Hk+tCfFxBSZQeVJg+CcxTETEX9zWKQg8e2IA6aBeMmjEPB971I/4ya5NdYgMI2FcMQ==
