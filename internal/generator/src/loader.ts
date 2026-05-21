@@ -38,7 +38,7 @@ async function getVersionDescriptorsFromToolUrls(toolVersionDescriptorsAndUrls: 
 }
 
 async function getGitHubVersionDescriptors(toolRepo: string) : Promise<VersionDescriptors> {
-    const octokit = github.getOctokit(constants.githubToken);
+    const octokit = github.getOctokit(constants.githubToken!);
     const ownerAndRepo = toolRepo.split('/');
     const owner = ownerAndRepo[0];
     const repo = ownerAndRepo[1];

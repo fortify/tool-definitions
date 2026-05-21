@@ -23,13 +23,17 @@ function nullIfEmpty(s: string) : string|null {
 export const signKey = Buffer.from(core.getInput("signKey", {required: true}), 'base64').toString('ascii');
 export const signPassphrase = core.getInput("signPassphrase", {required: true});
 export const toolName = core.getInput("toolName", {required: true});
-export const githubToken = core.getInput("GITHUB_TOKEN", {required: true});
+export const dir = nullIfEmpty(core.getInput("dir", {required: false}));
+export const githubToken = nullIfEmpty(core.getInput("GITHUB_TOKEN", {required: false}));
 export const tagRegex = nullIfEmpty(core.getInput("tagRegex", {required: false}).trim());
 export const assetRegex = nullIfEmpty(core.getInput("assetRegex", {required: false}).trim());
 export const toolRepo = nullIfEmpty(core.getInput("toolRepo", {required: false}));
 export const toolUrls = nullIfEmpty(core.getInput("toolUrls", {required: false}));
 export const semver = defaultIfEmpty(core.getInput("semver", {required: false}), "none");
-export const binaryPlatforms = JSON.parse(core.getInput("binaryPlatforms", {required: true})) as {[key: string]: string};
+export const binaryPlatforms = (() => {
+    const raw = nullIfEmpty(core.getInput("binaryPlatforms", {required: false}));
+    return raw ? JSON.parse(raw) as {[key: string]: string} : null;
+})();
 export const tagMappings = JSON.parse(defaultIfEmpty(core.getInput("tagMappings", {required: false}), '{"(.*)": "$1"}')); 
 export const extraVersionProperties = JSON.parse(defaultIfEmpty(core.getInput("extraVersionProperties", {required: false}), '{}')) as {[key: string]: {[key:string]: string}};
 export const workspaceDir = process.env.GITHUB_WORKSPACE;

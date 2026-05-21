@@ -1,0 +1,110 @@
+# AI assistant extensions distribution descriptor v1
+# Defines which AI coding assistants are supported, how to detect them,
+# and where to install Fortify extensions for each.
+#
+# This file is signed (Unicode File Separator + signature block appended)
+# during the tool-definitions publish workflow. Fcli verifies the signature
+# using SignedTextReader before parsing.
+#
+# Schema version uses major-only versioning. A new file
+# (agent-extensions-distribution-v2.yaml) is created only on breaking
+# schema changes. Non-structural changes (adding assistants, changing
+# target-dirs) do not require a version bump.
+schemaVersion: 1
+
+# Processing order matters for the set-cover dedup algorithm:
+# assistants listed first get to "claim" shared directories.
+# Copilot VS Code + CLI are listed first so they share ~/.copilot/skills.
+assistants:
+  copilot-vscode:
+    display-name: GitHub Copilot (VS Code)
+    if:
+      any-of:
+        - glob-exists: ~/.vscode/extensions/github.copilot-*
+        - glob-exists: ~/.vscode-server/extensions/github.copilot-*
+        - glob-exists: ~/.vscode-insiders/extensions/github.copilot-*
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.copilot/skills
+          - ~/.claude/skills
+          - ~/.agents/skills
+      - content-type: agents
+        target-dirs:
+          - linux: ~/.config/Code/User/prompts/agents
+            darwin: ~/Library/Application Support/Code/User/prompts/agents
+            windows: ${APPDATA}/Code/User/prompts/agents
+
+  copilot-jetbrains:
+    display-name: GitHub Copilot (JetBrains)
+    if:
+      any-of:
+        - glob-exists:
+            linux: ~/.local/share/JetBrains/*/plugins/github-copilot
+            darwin: ~/Library/Application Support/JetBrains/*/plugins/github-copilot
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.copilot/skills
+          - ~/.agents/skills
+
+  copilot-cli:
+    display-name: GitHub Copilot (CLI)
+    if:
+      command-succeeds: gh copilot --version
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.copilot/skills
+          - ~/.agents/skills
+
+  claude:
+    display-name: Claude Code
+    if:
+      any-of:
+        - dir-exists: ~/.claude
+        - command-exists: claude
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.claude/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.claude/agents
+      - content-type: plugins
+        source-entries:
+          - claude-plugin
+        target-dirs:
+          - ~/.claude/.claude-plugin
+
+  codex:
+    display-name: OpenAI Codex
+    if:
+      any-of:
+        - dir-exists: ~/.codex
+        - command-exists: codex
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.agents/skills
+      - content-type: plugins
+        source-entries:
+          - codex-plugin
+        target-dirs:
+          - ~/.codex/.codex-plugin
+
+  gemini:
+    display-name: Gemini CLI
+    if:
+      any-of:
+        - command-exists: gemini
+        - dir-exists: ~/.gemini
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.gemini/extensions/fortify-skills/skills
+      - content-type: plugins
+        source-entries:
+          - gemini-extension
+        target-dirs:
+          - ~/.gemini/extensions/fortify-skills

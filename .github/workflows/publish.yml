@@ -161,6 +161,20 @@ jobs:
                          ".*x64_mac.*": "darwin/x64",
                          ".*x64_windows.*": "windows/x64"
                      }
+                  },
+                  {
+                      "toolName": "ai-assistant-extensions",
+                      "toolRepo": "fortify/skills",
+                      "assetRegex": "ai-assistant-extensions\\.zip",
+                      "tagRegex": "v\\\\d+\\\\.\\\\d+\\\\.\\\\d+",
+                      "semver": "major",
+                      "binaryPlatforms": {
+                          ".*": "default"
+                      }
+                  },
+                  {
+                      "toolName": "ai-assistant-extensions-distribution",
+                      "dir": "ai-assistant-extensions-distribution"
                   }
           ]
       run: echo "matrix=$(jq -r -c . <<< "$CONFIG")" >> $GITHUB_OUTPUT
@@ -196,6 +210,7 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         toolName: ${{ fromJSON(toJSON(matrix)).toolName }}
+        dir: ${{ fromJSON(toJSON(matrix)).dir }}
         toolRepo: ${{ fromJSON(toJSON(matrix)).toolRepo }}
         toolUrls: ${{ toJSON(fromJSON(toJSON(matrix)).toolUrls) }}
         tagRegEx: ${{ fromJSON(toJSON(matrix)).tagRegex }}
@@ -228,7 +243,7 @@ jobs:
       run: |
         git pull
         cd v1
-        zip -r tool-definitions.yaml.zip *.yaml
+        zip -r tool-definitions.yaml.zip *.yaml *.zip
     - name: Setup fcli v3
       uses: fortify/github-action/setup@v3
       with:
