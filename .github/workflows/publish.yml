@@ -166,7 +166,7 @@ jobs:
                       "toolName": "ai-assistant-extensions",
                       "toolRepo": "fortify/skills",
                       "assetRegex": "ai-assistant-extensions\\.zip",
-                      "tagRegex": "v\\\\d+\\\\.\\\\d+\\\\.\\\\d+",
+                      "tagRegex": "v\\d+\\.\\d+\\.\\d+",
                       "semver": "major",
                       "binaryPlatforms": {
                           ".*": "default"
