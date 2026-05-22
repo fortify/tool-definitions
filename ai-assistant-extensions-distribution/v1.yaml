@@ -51,7 +51,10 @@ assistants:
   copilot-cli:
     display-name: GitHub Copilot (CLI)
     if:
-      command-succeeds: gh copilot --version
+      dir-exists:
+        linux: ~/.local/share/gh/extensions/gh-copilot
+        darwin: ~/.local/share/gh/extensions/gh-copilot
+        windows: ${LocalAppData}/GitHub CLI/extensions/gh-copilot
     targets:
       - content-type: skills
         target-dirs:
