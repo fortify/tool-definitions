@@ -48,6 +48,15 @@ assistants:
           - ~/.copilot/skills
           - ~/.agents/skills
 
+  copilot-eclipse:
+    display-name: GitHub Copilot (Eclipse)
+    if: false
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.copilot/skills
+          - ~/.agents/skills
+
   copilot-cli:
     display-name: GitHub Copilot (CLI)
     if:
