@@ -83,11 +83,6 @@ assistants:
       - content-type: agents
         target-dirs:
           - ~/.claude/agents
-      - content-type: plugins
-        source-entries:
-          - claude-plugin
-        target-dirs:
-          - ~/.claude/.claude-plugin
 
   codex:
     display-name: OpenAI Codex
@@ -99,11 +94,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.agents/skills
-      - content-type: plugins
-        source-entries:
-          - codex-plugin
-        target-dirs:
-          - ~/.codex/.codex-plugin
 
   gemini:
     display-name: Gemini CLI
@@ -115,8 +105,4 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.gemini/extensions/fortify-skills/skills
-      - content-type: plugins
-        source-entries:
-          - gemini-extension
-        target-dirs:
-          - ~/.gemini/extensions/fortify-skills
+
