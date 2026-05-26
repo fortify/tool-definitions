@@ -266,11 +266,10 @@ jobs:
         done
         exit 1
     - name: Update v1 tag
-      uses: fortify/3rdparty-actions/actions/richardsimko/update-tag/v1@main
+      uses: fortify/.github/.github/actions/update-tag@main
       with:
         tag_name: v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+        github_token: ${{ secrets.GITHUB_TOKEN }} 
     - name: Create Release
       uses: fortify/3rdparty-actions/actions/ncipollo/release-action/v1@main
       with:
