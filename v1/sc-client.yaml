@@ -12,9 +12,19 @@ versions:
         rsa_sha256: HRuN/xmAZqG6X1AZE8mbzHxD3sW3j+PZNy+YQzSHJybdd/mif4x54QSN0qalEmvzalOeDKzk0QLT1T2VM7yNuIk6/WvU+pU831ZoR/WRaXy3yM10Fq3gUNJtykWnESzR2T/FqBegGVbzzUBRvml/3KuDOQxH9N1WgE/wWv8v0BYVpqmetydIwwbGLEQYscuqKZHzqYzYk2D9CzW7gScNZkGLo6iKysnBAGFklPlHyo1TB0VXiBmW6egml8+DFP6yM4+qvbH/sBzb2gah1dv/31n+kC2d+AYN8Rc/+BzCS48zd1iGxIl5nXje6AUV4fslHtc8qis5lRh+a6hKgh8gEg==
     extraProperties:
       jre: "17"
-  - version: 25.4.1
+  - version: 25.4.2
     aliases:
       - "25.4"
+    stable: true
+    binaries:
+      java:
+        name: Fortify_ScanCentral_Client_25.4.2_x64.zip
+        downloadUrl: https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_25.4.2_x64.zip
+        rsa_sha256: UXq07Z48YnFx5iK+lauItfgOWMb4qB649IKDWy4eXzolBpyElaJiRXpQsywsn4I6cVjcN8UED4dG3KYGNEVhewU3hT6ayMr6TavuFSxi6Tqmr7Lk2umfroU3bCdE21z6UUvMv0ZHWLyhUz6QvXTyeWEDy4U8kyTuQx9KXie8pbnV2UFpskYMZ1EGDkuzIUb8/3JydocZkNcto8RR+2iMjcwfWFqOkBJzbbMXK8sEGEwFOdfuicS1W/YzWFJbACaQAJJ9EBrFVf+V7qyhSMRH5yhfhpPIf7seC+OuVVgPbjzTwN3aJH2Q0HWhAXZSyLyOCsHMh8vv0A1W1A0Bs8wk3A==
+    extraProperties:
+      jre: "17"
+  - version: 25.4.1
+    aliases: []
     stable: true
     binaries:
       java:
