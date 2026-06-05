@@ -24,7 +24,7 @@ assistants:
         - glob-exists: ~/.vscode-server/extensions/github.copilot-*
         - glob-exists: ~/.vscode-insiders/extensions/github.copilot-*
         - glob-exists:
-            windows: ${APPDATA}/Code/User/globalStorage/github.copilot-chat
+            windows: ${APPDATA}/Code/User/globalStorage/github.copilot-*
     targets:
       - content-type: skills
         target-dirs:
