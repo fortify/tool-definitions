@@ -81,14 +81,10 @@ assistants:
         target-dirs:
           - ~/.copilot/agents
 
-  claude:
+  claude-code:
     display-name: Claude Code
     if:
-      any-of:
-        - dir-exists: ~/.claude
-        - dir-exists:
-            windows: ${APPDATA}/Claude
-        - command-exists: claude
+      command-exists: claude
     targets:
       - content-type: skills
         target-dirs:
