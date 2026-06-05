@@ -23,6 +23,8 @@ assistants:
         - glob-exists: ~/.vscode/extensions/github.copilot-*
         - glob-exists: ~/.vscode-server/extensions/github.copilot-*
         - glob-exists: ~/.vscode-insiders/extensions/github.copilot-*
+        - glob-exists:
+            windows: ${APPDATA}/Code/User/globalStorage/github.copilot-chat
     targets:
       - content-type: skills
         target-dirs:
@@ -42,6 +44,7 @@ assistants:
         - glob-exists:
             linux: ~/.local/share/JetBrains/*/plugins/github-copilot
             darwin: ~/Library/Application Support/JetBrains/*/plugins/github-copilot
+            windows: ${APPDATA}/JetBrains/*/plugins/github-copilot
     targets:
       - content-type: skills
         target-dirs:
@@ -60,10 +63,11 @@ assistants:
   copilot-cli:
     display-name: GitHub Copilot (CLI)
     if:
-      dir-exists:
-        linux: ~/.local/share/gh/extensions/gh-copilot
-        darwin: ~/.local/share/gh/extensions/gh-copilot
-        windows: ${LocalAppData}/GitHub CLI/extensions/gh-copilot
+      any-of:
+        - dir-exists:
+            linux: ~/.local/share/gh/extensions/gh-copilot
+            darwin: ~/.local/share/gh/extensions/gh-copilot
+            windows: ${LocalAppData}/GitHub CLI/extensions/gh-copilot
     targets:
       - content-type: skills
         target-dirs:
@@ -75,6 +79,8 @@ assistants:
     if:
       any-of:
         - dir-exists: ~/.claude
+        - dir-exists:
+            windows: ${APPDATA}/Claude
         - command-exists: claude
     targets:
       - content-type: skills
