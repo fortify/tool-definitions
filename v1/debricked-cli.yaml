@@ -4044,7 +4044,7 @@ versions:
       darwin/x64:
         name: cli_macOS_x86_64.tar.gz
         downloadUrl: https://github.com/debricked/cli/releases/download/v1.0.0-beta.3/cli_macOS_x86_64.tar.gz
-        rsa_sha256: QzFiHrIt3NXvr7Bef8AcZYc5TjLjTYsCXpmEqBaTXziB+FvwMY+Y729TiM7ORzN8FvRqSu8qECTcnKsvpLJfXC40W2SwRhRO4K54boeVnjBwj2lScPXnWa9gFH8eTmYeii4/OaGBcaEB2WS3JhW3bdN+ktOAhcgeGa/vAC8xjoy5D0egn8noX3e4MUOKS9KYgvJbzRoltuOoMx3AXkC6hlyBUHT3X+YGLz71c5tqZtHgPcL+pwFE7z6zM9qmTjsl6XRJjStG2Iv/pUFgyEh8g9kNnUhj7ynqs5FLicIksNZQVU0//8kwpBTlWamxgqiVZtPMu7dzq6uSEQF8Lr3zPQ==
+        rsa_sha256: Jw0aAovYEBC0F6NjGurJ0AIeZ3tGROBq8S1NrrFr+5KEMSuQTi6IL2nnDoY2ieikXw7UVFLKzhxw4s5www7BkOdyYsKzArjznt/e0xaNUUeygOK2kGqRWnWMkjhpsR5P5Xi0NXl5tzErjgV8eq6becTKAlztAZw4n6h1lJogVuWOCA5iBb+LeRavddS8Ai6XxM+SizIDtN0yhf3zM8RYWunc01YGB7ZlO6c353KynYWYLdDkcGiEmWqPDtp3s2Vt9GdpHOwsr5poeCz6gX+IwF+a7OuGrb6YohC82YvieydZzuTrPrPEuctmvcK+Y2DPrW8wOk+iDG7Edh5sZctvCA==
       windows/arm64:
         name: cli_windows_arm64.tar.gz
         downloadUrl: https://github.com/debricked/cli/releases/download/v1.0.0-beta.3/cli_windows_arm64.tar.gz
@@ -4100,7 +4100,7 @@ versions:
       linux/arm64:
         name: cli_linux_arm64.tar.gz
         downloadUrl: https://github.com/debricked/cli/releases/download/v1.0.0-beta/cli_linux_arm64.tar.gz
-        rsa_sha256: QzFiHrIt3NXvr7Bef8AcZYc5TjLjTYsCXpmEqBaTXziB+FvwMY+Y729TiM7ORzN8FvRqSu8qECTcnKsvpLJfXC40W2SwRhRO4K54boeVnjBwj2lScPXnWa9gFH8eTmYeii4/OaGBcaEB2WS3JhW3bdN+ktOAhcgeGa/vAC8xjoy5D0egn8noX3e4MUOKS9KYgvJbzRoltuOoMx3AXkC6hlyBUHT3X+YGLz71c5tqZtHgPcL+pwFE7z6zM9qmTjsl6XRJjStG2Iv/pUFgyEh8g9kNnUhj7ynqs5FLicIksNZQVU0//8kwpBTlWamxgqiVZtPMu7dzq6uSEQF8Lr3zPQ==
+        rsa_sha256: IIE1N/h2M1TpGk6f1E7kCIDJ3pSJ9g2yMtv4waNipt14kqMv8O4TUKiyeIOvUnllSbQFpFmg9QIm7zyFVDzLAQb6p4CofB3zzqLxdktjoi4EYZpNUbekzucqSFPDkm96leZvysniXjptCfcJxwYVbQgUXbV2h9MVjMEwtHLvNkenDjkRLzN27WUuhicqusbL7dGV2Y3je2r8vVzcQUbLXX1AwohG+8xCWs2XaWzTckhi4lHwi0PkFydTkDF/C+IiJ3iRr5whYv31NXV4rzUjuSZLD+p2YoasCXNHPN0V/gkKI/zKhH6ZrmdB+lNUKwoKlIonM+WCAl4UGneHWWDEYQ==
       linux/x86:
         name: cli_linux_i386.tar.gz
         downloadUrl: https://github.com/debricked/cli/releases/download/v1.0.0-beta/cli_linux_i386.tar.gz
