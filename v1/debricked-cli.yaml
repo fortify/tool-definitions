@@ -1,10 +1,46 @@
 schema_version: "1.1"
 versions:
-  - version: 26.3.2
+  - version: 26.3.3
     aliases:
       - latest
       - "26"
       - "26.3"
+    stable: true
+    binaries:
+      linux/arm64:
+        name: cli_linux_arm64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v26.3.3/cli_linux_arm64.tar.gz
+        rsa_sha256: GB3X+lQK38RUkC6sDtm9gLKEEID5OPzvNERIS6dMJN3TtoYQxoYWoqI1EE7bVE0/7awmFingoDLvBvKjxzGyMzkg4DBIfxWr5IyPJZylMyBtT3Lz2drATzXf3PDghI2ujGkoGENCNFdaQ4Bzr5x69pbIW0BUEpUuKlkePmUYXdjck1VDAL2xtWhUJt0Bdfr9RxAcXT4UgdIFVLJrsafwvTOPcCpAIYaqA/+jW2adVIv5X+ITzSe34HpVieza+UjY4Ll9z0sojCBlcMw8iEAU3bVR+AUNh6mYuf3bvjoRCcWZbTU3F1Q3oB09IuXu2Q+R9KJCHbRtfjql0Ms84Y0JKw==
+      linux/x86:
+        name: cli_linux_i386.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v26.3.3/cli_linux_i386.tar.gz
+        rsa_sha256: eQnVWRT80ns2zGAHDazZo59fAjMPEHcA7eYig0S7g0s61lx9pnEg43K/QmheR53UGvXQnrD2rlsQCOBuV3+TqSLEKikbBGPV+IPWFemqC0HXPvr0QPt0MPJ2YLL7c8AbfKlqN90PFRsP49OR9zoeE2cQ+Snm7QoUuTnYobq6BrWhSNuWzKloicjvjhHzxDau41vVrIP+h6V4RF3Rf6FsBrca7sdW+sH3PLYmo1Khgt0DR0wJ4pN+LJrfU6G86QieLZTI41Vl/FraSCO0mOP+NzpSQSs/Q90gTy6TZdRa5C+lJ7RXjJa+QiR2ITbrACfkeuxXi+RKBc/rm3hKV9ljtA==
+      linux/x64:
+        name: cli_linux_x86_64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v26.3.3/cli_linux_x86_64.tar.gz
+        rsa_sha256: j9eEDkOyROE/IqIsaJ6QDSe3a/JWs8F7Xhe+B7Xok7wrh8avpbrHdWDwfY7E5BXdW+fRvxcnFwGJTCITV1FJ+7GsC+ADy6uI+NKlNzn0pmGE3kBo5fLU+HPDPMqwK612D9BtIp59OGmvT47fH+4cQsOk4zwMOw+0ONzP1tNqceKq+oDL/iwDrbi/7o32Gtex9jgaKwqvWnrFJ/p4DwQVXWxIfyF0GejOemwiynG5mpxgc0CfrGDw9Q8FqqW2ffLkOOX51P9GAh+cH6GJY5Sf3XSF0jeg2FV1/VENnJOHtxb2A3F6psvjXXcRU/HQNSAByEpzouwHBGRNT0fVZ+Q8tw==
+      darwin/arm64:
+        name: cli_macOS_arm64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v26.3.3/cli_macOS_arm64.tar.gz
+        rsa_sha256: PRkfrdkkZLoXJWETz9xNzbJJZthrbE7Fr9uFjnC1r3kGz2iLKunBD7DEHM5B7NdDhBr687b7jaYuhXJQtgZE6thXtywBm44eY5df4Bfmx7BOMmnYqQk8kGu/be6JIsu04OUNyI/hZJp6ZAREuAd1JMENp1PFUQyBgyteOlESllk9vzjxsibaYki5B51G51B4e7AtSHE+cgNLDhqjE8WqEAd+D3tpTHRe4hC4D0pHR0JdqMo8PQ1L1x1FOwNsgdkWehA3SUu+dr8q0+esVHlhcZpBI+0hW5bFKqdmlgRbwp2sa3lg/0pDOjvpENMjtapeERpkPVLwQq44OVngEnBF4A==
+      darwin/x64:
+        name: cli_macOS_x86_64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v26.3.3/cli_macOS_x86_64.tar.gz
+        rsa_sha256: N47L2NwMVj6OECkoU7aHgYsgVbYeGYhVYgpH/R54EcgQx2UQxyOfDIMh0cLnxkX4Lq/YmjdhIpkM5SvgnhN0Z7H+9wHgWE8cZpccrm3Z5CY1WxSJt7tYQVyE1Zk/AKfSHNmhTaEIjyE24pWX5+Qh+EIgBBD5NaonmDaqFiFbvZRG+5+L8SnVatR7pxySqa24VxEQVWjeR+3CHuLGIkLipUUtzHj7Dzdd8gmxoRMhEdExUII7h/uSBHwEt7LxnaP/etjoVV5mrw0k7DbDo/U2g0iiHH1VukTR234/1eixviF0Mi15Jb/5vOjlsjjsi44fG98Poc/PGJPU8AhZmrXC6Q==
+      windows/arm64:
+        name: cli_windows_arm64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v26.3.3/cli_windows_arm64.tar.gz
+        rsa_sha256: MtHUQQbnQwY6dMgMde4ug7cgP/+oDgn4+NIPZlXpgMxnSeStAEitZP98cwNdaPjzH0WEbeDjugUxasSySy9zWBk2Vn9n09pMJbnd7WePQFaesu44Kh2tTBNOEjKNfKIUWXEbR22WmlQLqM7eu9dGE13EmHSoOoUs+FhFSinNE1nCJMXAgxEQ0wnExvkMuxAMIq8Dw3Q7q9kgu9rdOUEibKXfk915O+vYE5L+us3c/Cc4gvSVD++TqcAXtDazTMcBxveZTDA4DL2yoFsZrliW9rQw6Oqrew5E4N7+BA2AxkSUb9KtTu6w75JdSmEJ6b3zoWcgOsFU/r1Oyc8zuy+dJg==
+      windows/x86:
+        name: cli_windows_i386.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v26.3.3/cli_windows_i386.tar.gz
+        rsa_sha256: hS+5+mn5vCEy29zp8U+MShjmBKUWbG6dQG5H4QzfSCCKz9b9rx5ZbzUBN1bOIUodCKL1HP+yuaslT/fqyiE2IJBTJUiX9ilM/8vYuTmm0dNBy08IMPMKZkd6eSvqgpuLdnXmwMOyG3omlJsFb/+y5JuWkD/52DZM6VSHk/jzGDnjBTH5n14As04xy6umlGIQBJ5/0+sSxnu9Jy7kA1cb55/FF0T1Tnap+0Z+YidJAl6R4VNg5RlvcJQALDaZ9I0bLFdglxmozvM1KGo7kpmb/RxNFofAkAnCluB9wQq/bCFRniMz9F04eCySR4CRg/GQYGvZlodTLEkoce7/5wm7WA==
+      windows/x64:
+        name: cli_windows_x86_64.tar.gz
+        downloadUrl: https://github.com/debricked/cli/releases/download/v26.3.3/cli_windows_x86_64.tar.gz
+        rsa_sha256: MVmhn7qFyovtsSFxBAgYIcZYd3Lc6lUJjZ+JmM7uGlLG+xAltPtsUwsVhmIjMjUMUKyWFZ+D5/2kUrqVmGcBVV/CVumjaFskOaEX9MihQLvxL4uUAnXEGmJLhIIkWs30Jdw042a4RoiroB8F+HVlwb1+RbdrxXRV3ev7K0gIupZJsOZsL8JeRtTWNzzOUMAxukt3/RcmXcAPLpy52N6EupJ9eqoIql4XS9TyNxCAgokwsLfX9iowBbK4LbheZwXjZeQTATKXSuFC5vut0YlqrZ+KEXULUJDOTTKqRmTaZWCdmNEPljzIMRo9NshwGdgqRmxtmw7MogSzmaCiFZYTpA==
+  - version: 26.3.2
+    aliases: []
     stable: true
     binaries:
       linux/arm64:
