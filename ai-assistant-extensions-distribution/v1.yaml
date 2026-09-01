@@ -118,3 +118,29 @@ assistants:
         target-dirs:
           - ~/.gemini/extensions/fortify-skills/agents
 
+  kiro:
+    display-name: Kiro
+    if:
+      dir-exists: ~/.kiro
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.kiro/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.kiro/agents
+
+  antigravity-ide:
+    display-name: Antigravity (IDE)
+    if:
+      any-of:
+        - dir-exists: ~/.antigravity-ide
+        - dir-exists: ~/.gemini/antigravity-ide
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.gemini/config/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.gemini/config/agents
+

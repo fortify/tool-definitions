@@ -9,8 +9,7 @@ concurrency:
   cancel-in-progress: true
       
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
       
 name: Publish tool definitions
 jobs:
@@ -226,15 +225,10 @@ jobs:
     - uses: fortify/3rdparty-actions/actions/stefanzweifel/git-auto-commit-action/v7@main
       with:
         commit_message: "chore: Update cache & tool definitions"
-        
-  publish-zip:
+
+  build-and-validate-zip:
     needs: generate-tool-definitions
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    permissions:
-      # Give the default GITHUB_TOKEN write permission to commit and push the
-      # added or changed files to the repository.
-      contents: write
     steps:
     - uses: actions/checkout@v6
       with:
@@ -266,11 +260,33 @@ jobs:
           echo "::error::Tool installation failed: $tool"
         done
         exit 1
+    - name: Upload v1 artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: v1-definitions
+        path: v1/
+        retention-days: 1
+
+  publish-release:
+    needs: build-and-validate-zip
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v6
+      with:
+        fetch-depth: 0
+    - name: Download v1 artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: v1-definitions
+        path: v1/
     - name: Update v1 tag
       uses: fortify/.github/.github/actions/update-tag@main
       with:
         tag_name: v1
-        github_token: ${{ secrets.GITHUB_TOKEN }} 
+        github_token: ${{ secrets.GITHUB_TOKEN }}
     - name: Create Release
       uses: fortify/3rdparty-actions/actions/ncipollo/release-action/v1@main
       with:
@@ -279,9 +295,3 @@ jobs:
         omitBody: true
         replacesArtifacts: true
         tag: v1
-             
-              
-        
-        
-        
-        
