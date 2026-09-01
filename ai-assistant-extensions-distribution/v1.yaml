@@ -130,13 +130,12 @@ assistants:
         target-dirs:
           - ~/.kiro/agents
 
-  antigravity:
-    display-name: Antigravity
+  antigravity-ide:
+    display-name: Antigravity (IDE)
     if:
       any-of:
         - dir-exists: ~/.antigravity-ide
-        - dir-exists:
-            windows: ${APPDATA}/.gemini/antigravity-ide
+        - dir-exists: ~/.gemini/antigravity-ide
     targets:
       - content-type: skills
         target-dirs:

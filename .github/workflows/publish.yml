@@ -9,8 +9,7 @@ concurrency:
   cancel-in-progress: true
       
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
       
 name: Publish tool definitions
 jobs:
@@ -230,10 +229,6 @@ jobs:
   build-and-validate-zip:
     needs: generate-tool-definitions
     runs-on: ubuntu-latest
-    permissions:
-      # Give the default GITHUB_TOKEN write permission to commit and push the
-      # added or changed files to the repository.
-      contents: write
     steps:
     - uses: actions/checkout@v6
       with:
