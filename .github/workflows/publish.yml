@@ -247,7 +247,7 @@ jobs:
     - name: Validate tool definitions
       id: validate-tool-definitions
       run: |
-        fcli tool definitions update --source=v1/tool-definitions.yaml.zip
+        fcli tool definitions update --force --source=v1/tool-definitions.yaml.zip
         failed=""
         for tool in fbtu dcli fcli fod-uploader sc-client fve; do
           fcli tool $tool install -v latest || failed="${failed:+$failed }$tool"

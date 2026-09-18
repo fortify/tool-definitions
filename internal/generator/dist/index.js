@@ -35854,6 +35854,31 @@ const crypto = __importStar(__nccwpck_require__(6005));
 const fs = __importStar(__nccwpck_require__(5630));
 const node_stream_1 = __importDefault(__nccwpck_require__(4492));
 const semver = __importStar(__nccwpck_require__(1383));
+function detectContentType(bytes) {
+    if (bytes.subarray(0, 2).equals(Buffer.from([0x1f, 0x8b]))) {
+        return 'application/gzip';
+    }
+    if (bytes.subarray(0, 4).equals(Buffer.from([0x50, 0x4b, 0x03, 0x04]))) {
+        return 'application/zip';
+    }
+    if (bytes.subarray(0, 4).equals(Buffer.from([0x7f, 0x45, 0x4c, 0x46]))) {
+        return 'application/x-elf';
+    }
+    if (bytes.subarray(0, 2).equals(Buffer.from([0x4d, 0x5a]))) {
+        return 'application/x-msdownload';
+    }
+    const text = bytes.subarray(0, 512).toString('utf8').trimStart().toLowerCase();
+    if (text.startsWith('<!doctype html') || text.startsWith('<html')) {
+        return 'text/html';
+    }
+    if (text.startsWith('<?xml')) {
+        return 'application/xml';
+    }
+    if (text.startsWith('{') || text.startsWith('[')) {
+        return 'application/json';
+    }
+    return 'application/octet-stream';
+}
 /**
  * This module defines various classes that hold version and artifact
  * data, combined with various utility methods operating on those versions
@@ -36003,17 +36028,32 @@ _a = PartialArtifactDescriptor, _PartialArtifactDescriptor_instances = new WeakS
     return name;
 }, _PartialArtifactDescriptor_createArtifactDescriptor = function _PartialArtifactDescriptor_createArtifactDescriptor(downloadUrl) {
     var _b, e_1, _c, _d;
+    var _e, _f;
     return __awaiter(this, void 0, void 0, function* () {
         const sign = crypto.createSign('RSA-SHA256');
         const hash = crypto.createHash('sha256');
         const response = yield fetch(downloadUrl);
+        const finalUrl = new URL(response.url);
+        core.info(`Download response: status=${response.status}, finalUrl=${finalUrl.origin}${finalUrl.pathname}, contentType=${(_e = response.headers.get('content-type')) !== null && _e !== void 0 ? _e : 'unknown'}, contentLength=${(_f = response.headers.get('content-length')) !== null && _f !== void 0 ? _f : 'unknown'}`);
+        if (!response.ok) {
+            throw new Error(`Failed to download ${downloadUrl}: HTTP ${response.status} ${response.statusText}`);
+        }
+        if (!response.body) {
+            throw new Error(`Failed to download ${downloadUrl}: response body is empty`);
+        }
         const readable = node_stream_1.default.Readable.fromWeb(response.body);
+        let byteCount = 0;
+        let firstBytes = Buffer.alloc(0);
         try {
             // For some reason, readable.pipe(sign).pipe(hash) doesn't work
-            for (var _e = true, readable_1 = __asyncValues(readable), readable_1_1; readable_1_1 = yield readable_1.next(), _b = readable_1_1.done, !_b; _e = true) {
+            for (var _g = true, readable_1 = __asyncValues(readable), readable_1_1; readable_1_1 = yield readable_1.next(), _b = readable_1_1.done, !_b; _g = true) {
                 _d = readable_1_1.value;
-                _e = false;
+                _g = false;
                 const chunk = _d;
+                if (firstBytes.length < 512) {
+                    firstBytes = Buffer.concat([firstBytes, chunk]).subarray(0, 512);
+                }
+                byteCount += chunk.length;
                 sign.update(chunk);
                 hash.update(chunk);
             }
@@ -36021,10 +36061,14 @@ _a = PartialArtifactDescriptor, _PartialArtifactDescriptor_instances = new WeakS
         catch (e_1_1) { e_1 = { error: e_1_1 }; }
         finally {
             try {
-                if (!_e && !_b && (_c = readable_1.return)) yield _c.call(readable_1);
+                if (!_g && !_b && (_c = readable_1.return)) yield _c.call(readable_1);
             }
             finally { if (e_1) throw e_1.error; }
         }
+        if (byteCount === 0) {
+            throw new Error(`Failed to download ${downloadUrl}: response body is empty`);
+        }
+        core.info(`Downloaded artifact: bytes=${byteCount}, detectedContentType=${detectContentType(firstBytes)}`);
         const rsa_sha256 = sign.sign({ key: constants.signKey, passphrase: constants.signPassphrase }, "base64");
         const sha256 = hash.digest('hex');
         return new ArtifactDescriptor(this.name, downloadUrl, rsa_sha256, sha256);

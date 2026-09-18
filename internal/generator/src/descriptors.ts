@@ -6,6 +6,19 @@ import { default as Stream } from 'node:stream'
 import type { ReadableStream } from 'node:stream/web'
 import * as semver from 'semver'
 
+function detectContentType(bytes: Buffer) : string {
+    if ( bytes.subarray(0, 2).equals(Buffer.from([0x1f, 0x8b])) ) { return 'application/gzip'; }
+    if ( bytes.subarray(0, 4).equals(Buffer.from([0x50, 0x4b, 0x03, 0x04])) ) { return 'application/zip'; }
+    if ( bytes.subarray(0, 4).equals(Buffer.from([0x7f, 0x45, 0x4c, 0x46])) ) { return 'application/x-elf'; }
+    if ( bytes.subarray(0, 2).equals(Buffer.from([0x4d, 0x5a])) ) { return 'application/x-msdownload'; }
+
+    const text = bytes.subarray(0, 512).toString('utf8').trimStart().toLowerCase();
+    if ( text.startsWith('<!doctype html') || text.startsWith('<html') ) { return 'text/html'; }
+    if ( text.startsWith('<?xml') ) { return 'application/xml'; }
+    if ( text.startsWith('{') || text.startsWith('[') ) { return 'application/json'; }
+    return 'application/octet-stream';
+}
+
 /** 
  * This module defines various classes that hold version and artifact
  * data, combined with various utility methods operating on those versions
@@ -154,12 +167,30 @@ export class PartialArtifactDescriptor {
         const sign = crypto.createSign('RSA-SHA256');
         const hash = crypto.createHash('sha256');
         const response = await fetch(downloadUrl);
-        const readable = Stream.Readable.fromWeb(response.body as ReadableStream<Uint8Array>)
+        const finalUrl = new URL(response.url);
+        core.info(`Download response: status=${response.status}, finalUrl=${finalUrl.origin}${finalUrl.pathname}, contentType=${response.headers.get('content-type') ?? 'unknown'}, contentLength=${response.headers.get('content-length') ?? 'unknown'}`);
+        if ( !response.ok ) {
+            throw new Error(`Failed to download ${downloadUrl}: HTTP ${response.status} ${response.statusText}`);
+        }
+        if ( !response.body ) {
+            throw new Error(`Failed to download ${downloadUrl}: response body is empty`);
+        }
+        const readable = Stream.Readable.fromWeb(response.body as ReadableStream<Uint8Array>);
+        let byteCount = 0;
+        let firstBytes = Buffer.alloc(0);
         // For some reason, readable.pipe(sign).pipe(hash) doesn't work
         for await (const chunk of readable) {
+            if ( firstBytes.length < 512 ) {
+                firstBytes = Buffer.concat([firstBytes, chunk]).subarray(0, 512);
+            }
+            byteCount += chunk.length;
             sign.update(chunk);
             hash.update(chunk);
         }
+        if ( byteCount === 0 ) {
+            throw new Error(`Failed to download ${downloadUrl}: response body is empty`);
+        }
+        core.info(`Downloaded artifact: bytes=${byteCount}, detectedContentType=${detectContentType(firstBytes)}`);
         const rsa_sha256 = sign.sign({key: constants.signKey, passphrase: constants.signPassphrase}, "base64");
         const sha256 = hash.digest('hex');
         return new ArtifactDescriptor(this.name, downloadUrl, rsa_sha256, sha256);
