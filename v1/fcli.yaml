@@ -1,9 +1,30 @@
 schema_version: "1.1"
 versions:
-  - version: 3.25.0
+  - version: 3.26.0
     aliases:
       - latest
       - "3"
+      - "3.26"
+    stable: true
+    binaries:
+      linux/x64:
+        name: fcli-linux.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.26.0/fcli-linux.tgz
+        rsa_sha256: GEr8p5QzJW61xTrPG0EZAoHw4XfAOGnAo57xTaig1JKRDhqVeSoDMVI+72D8GDGg+BQnOlcbjGUUlnX9kQ5L8duayob3Ud5hgdCYKX2WvLrd/QpBmovVPxN4F4o/8oA7yL1kqyqqvd5f/4r4vPpZSgc9KJ5LgldfkLGTawH6x23YtkrsO2dxBhGOA1x3COB3sW3SLWsLoMEyayvnWFShMTsLlJCeOD/NVr9r+Cka3DJEXA7WaL7LwLVyT3EzRWfjMe4ahljRcbaDx966dZzms2kg0vug60UNbgoEgoms5/ubOk0IzehAK/sZOEIATVw2CgGFCR7l36tJAgog7ysOsg==
+      darwin/arm64:
+        name: fcli-mac.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.26.0/fcli-mac.tgz
+        rsa_sha256: GFAavKW2S0UDDgsvn8a+xxwgya+Lv8HNhbKvk5GViN5fmWwomXAlqaq0WRfMDzR5u+JOm1iydw0qHrmVbxVKKi9u850OxYAsI1sDV4Nr8c0uRWQYk9TVCRYDo2YgJ5VLaIE5oks2KEn5o5zdqZ/jIs/2vQqcbEwLjG4ZUV86YhgBsvxMEdI398rL4x7RCubyDvhybfIBdXeUWiVlzJYVmE7D0k1qlc4LLnow82+8EnhlNejknlQidIkLlPTgGVrGZPY4ByMlkjvpxmH6Rldiba0fZCquvitj1t3zS2Jv16ZR9mUk968Q6KKOcrxZkJ6P0t8VEqfdzNAB2d/Ati0Q4g==
+      windows/x64:
+        name: fcli-windows.zip
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.26.0/fcli-windows.zip
+        rsa_sha256: WhELrh5ualo8EG8X+Zse5NQJqE4o/AbxmIVYc2UgKae7ek6gY8YmAQj0v19fq4s3oIYXnFhEbiZ2VBA5WGUwZAgHOiyPjF/frUeq7AipQFxSdH8xlErW5cls9jtkPuLXG+wSz/hRLCmfkJU172DRlAsGlHnhiSkqvxOMFqgTgaMkpJbRbVx5OaAWslCSd2HuKHnvDgzNWjl2/UhY0DBtG1brc292MUr9JMPJzgs8UXyet/VRxEAv5aBwjwCD47ZIvirtSrw7kFnHnFnoeu0yksbyR18S1vEnEumEnwo6n5gte8CTD9j3qJ+DbiUiMjT5wQ0YLWljLXfhBLafJl5XIQ==
+      java:
+        name: fcli.jar
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.26.0/fcli.jar
+        rsa_sha256: QmtmEzd/o3Yav3xeotvnedJuZvwdt4YAYbeuzoDy0KUGk7146nHuF4z0GIrjtcRcj1PhGV7/7Nza8L6dp7P96PsVGtSXBnk4E/zSsA2SfvES4vs1zNDLr3f++xG3h+eLDPk3EcH9P6hMWHftQZppwpGg/LxfX+V5K/aKvzlX/fjR8TB+XOsHff9D4DlMBnVoSy/qEz5rUKqw3b1T8GvzUsFAw7QBnURRc27uZjRHotVkx3qlr7nt5cdyNDrg2OYMzE8tu2xVWkRQtlQPEo+gmIaBTxAAmKUWpJ6FBoHcf07iUnljxsj8LpYGyO4/nyz5c0hkUL6HEBbKWN5ae3iLKg==
+  - version: 3.25.0
+    aliases:
       - "3.25"
     stable: true
     binaries:
