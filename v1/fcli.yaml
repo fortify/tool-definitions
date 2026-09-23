@@ -1,10 +1,30 @@
 schema_version: "1.1"
 versions:
-  - version: 3.26.0
+  - version: 3.26.1
     aliases:
       - latest
       - "3"
       - "3.26"
+    stable: true
+    binaries:
+      linux/x64:
+        name: fcli-linux.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.26.1/fcli-linux.tgz
+        rsa_sha256: VLoCcjKA4Ry1tPPJMuzATXScNlUkE5Gm+yG+fLiB1ThndhTY4hcxWej9adafyLTgNwTuc+SydzfxcqFNv13GAAqQB7v/kPJ4BiZW54eRKaNiUMtDqcUdpbfSV7DNBtpBakzfl6C5qPbQ0vLIdttfRLocDZWJnT07TYm+vOWsN6kZgymAvyiYA3+m8oiaSzoG2AmKszJjoo2xHhmS6yfXaJljM7iQ59/Q/C3/Ba02Cv9gneDQOMXksMqQKTvvnQ+22o6zCYFLAUXH0PEVjaVU+x3SNdwwop6T2+2PBJk84tE6Qih+QQsqe/EmRfrJwUIzY590n7GkwxkNE+qYNXF19Q==
+      darwin/arm64:
+        name: fcli-mac.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.26.1/fcli-mac.tgz
+        rsa_sha256: fDXIPCsFVKr0jNc9IOZMWUknckQqS4qQ5f/P3YK5I8ZvraRqPJCV3285MstKTi49XEWyrL4LZjwVyNS5Ze+EgXPbEsvf5lPO3BbTNe9IToli8WG0h9sg0Mr/vKgR1FiuAnheAf7ikV7cvbNX8suVBYlpUVTBTIIfd+2jAeFEK2Yl9YXLA35eU/EL8xzOdsl+5L7iBT0oVoeQ/ZSgMfsezdD7Jr079giLVdE3r516bDJ20BUnSBfKSSs/YrqPVMv4qLQ/d+XmC4tI78NLNufpiuIddwd3ONg70/tigbDVQ7VybtpiikmbYChtnQj9kCQHBztKGQ8LMUPVLru2VSx8IQ==
+      windows/x64:
+        name: fcli-windows.zip
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.26.1/fcli-windows.zip
+        rsa_sha256: aW9FkpGFZ29fnbbTvSKzKL3kU1OXJUWnaVQ0ayfCY29QbQZZHrgRND3uNH1is7APaXtOUGtIf4L+CNwEU22f13w1b2VGsexpdYF2wlFD6ueiT8OY3Qm/vCx+9qPHeZovFr8cJ6ufkxGgrJKpNIJN04UjIyDcpCXueqhR052OQgOPoAQ+SgtTJ4/FNtuOTuDooA1Qrp1wvUrjnJyjfRylfMUCJGv4UQuTL0kXzgYYzfNmwTlf0ajX6WBNbhcVO9SYAS1jyCFplNqro+5qgTCNSPwq6oI5vRdsIvdwTnWPvQPD7TleyTLnBN0mpMO2DtNNfNMETDwSaHxUBX5IxCLjbw==
+      java:
+        name: fcli.jar
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.26.1/fcli.jar
+        rsa_sha256: Wyx4EkP4mOYvEwPyl3H97b2pGyVsDJJqq8s3WxQEJDXJQekEtnKbXso3MOPi+nrvAHsNby8jss7qGlYG+/6GC3y+5vfgALOd4sP/nv8y3wOHm0gj5HAb9z1ZAM6ltwKxyRghGt7ogdCBz73grd8FHwr3dr29owKgj8VlUHxFJQNATy1L6toRIBVV26Bsth0VeecaE7EbPSXUa0dB8iK9Qk4CXB3OlI5UHxFc267TitBlkG8IL4juS8Hc552wTVD85JB8r+tCJWzH4jEmI4ZwX0xxmY9Bam5QLFKpVrDjmU57a1hMPUyP4zCoRjg105EVduoUAQtYdWZ9ocsMDcAFNg==
+  - version: 3.26.0
+    aliases: []
     stable: true
     binaries:
       linux/x64:
