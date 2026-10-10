@@ -1,10 +1,30 @@
 schema_version: "1.1"
 versions:
-  - version: 3.28.0
+  - version: 3.28.1
     aliases:
       - latest
       - "3"
       - "3.28"
+    stable: true
+    binaries:
+      linux/x64:
+        name: fcli-linux.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.28.1/fcli-linux.tgz
+        rsa_sha256: lKInl/vJJnUu7HnB3mmlOSBWRpQWslEpswVZPRA8lHjXMIkkbvCSatmB/64S52FcnMc74Yfg3wAy3oYtd3xmQySI0tnAHkRuoHDjap3Y3l293dDfHvmbwL2P16zDORxy1fjdC29W4JFG+F2TNf7ZWC+bwuThxfE96c3nEb1FqS9c/5vN+/94UrT2q/56tXdOWti8i4LzV12kdZOzoakCLyn/vFnYlau8VX/x41vCzfgdjSZD1zPF84nivpZxdKF3WFcbfmYT+IB3dG6xsFeVYCFHfqnzjI5qd+oV9A+n3+psArCP6kX5QAt45ygEUerAHcv4xjf5EPzzCeoac0HhrA==
+      darwin/arm64:
+        name: fcli-mac.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.28.1/fcli-mac.tgz
+        rsa_sha256: COJHXWWE/ROVPXStHbWgVRtpJ8iSx3BVlB/xHaLwyCSN5btFo2fuVoJfQWrw5ntJ7ZgPIYFA4zE5lf7qCEJ4OMd6ySeWtjeZFg7GuMFHmMAxHC9qm744RTexrvqSxdabBopnUgjbTDn4DcXmyILyVLbzlSAl3lah9SWyb9jh58MrHmMpqAE+l6MekgMD3do2ic7rMGY/1nWwk6o53JAaTYCSgG5zhfmiUd+4VZZxiXuzemnOGwbQRhV889FsbRsbsWZhRJinpqApu+RSDa/zEsMKO2Fyue9jVJ5w8pw3zf03jJVTf6qghpZ2dvKde+XXVSabAeXsRERfR1BAVD8aDg==
+      windows/x64:
+        name: fcli-windows.zip
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.28.1/fcli-windows.zip
+        rsa_sha256: LQ/qUEq2pvWQ+JauDj1oVUR/a/OGafS/+58cSP7ARVcoDATzJD0i/DGY0zPbm+iIrRAkaGbMMDhsCh0JNyx0I/u1w+/Hw9s1eud3/5ZnYot0awO8roNzJdzpMnt9BLLuc2nbaoNbBVk0wPzp/cyGwHDdS4s2ziybXUalL8WEqlOMnQbNBeZosezQAAkbdFNUz3TJZS23USdNPBNcV8osHiSfZ42NhsCXCEotSZc+eFQevnsVfd1iQO+htav1Sw1nb5W4ErACi8a+hluEsCSL/Mcbb66LWH/67J5PZYwGiceLMspYYbAwXpqt2g/6RnTksf2Xdu1c/118suHAF3zg1g==
+      java:
+        name: fcli.jar
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.28.1/fcli.jar
+        rsa_sha256: oJ3/Nt8hZvOovRQzM95GeKPfTW3fQPlaMePYrqc1v8Hs+V8FQAVIyEH5tAHMY4qimor6SHmM69UW1oKLSibtxqGkT/GPEBvrwuSUyPoGQE3UAgEFy8asLaDeg7pDQfPWhzJDCm228FVu6AUZbWRdhX3VoXlSlyG1JbVQLnT/37IvnJwenDpwJqseLcOBxCVn5F9kfDksRzi0IdZmvwRHfIBnjjWOUxRd81fL7iyQhHFaBTIlfHvYzGVT/C7jOqa7qKK3EWZHQha04uVxMNM6jNQLBX284sCUX9Qezd1MRXwmCcEgP/6NoqhGAJ/AMZKXVFOCZDJCXaCthctkg3Dvwg==
+  - version: 3.28.0
+    aliases: []
     stable: true
     binaries:
       linux/x64:
