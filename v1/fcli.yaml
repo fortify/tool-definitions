@@ -1,10 +1,30 @@
 schema_version: "1.1"
 versions:
-  - version: 3.28.2
+  - version: 3.28.3
     aliases:
       - latest
       - "3"
       - "3.28"
+    stable: true
+    binaries:
+      linux/x64:
+        name: fcli-linux.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.28.3/fcli-linux.tgz
+        rsa_sha256: OonWr0prbQfQ5Auwj5XpPPvs9yOGGJ7biRxPnnUJPcmDomtnMU8Yq00uDJrjfNAcGyF9Jj97P2E/cUqKhl1m5rAqI0PwpwQ9P3GqUm7FeGL0miMjgM/G1HIZBgtsmqeglcBq67RbdgobwM2puvNitVSbUFUXPl5LTeu1j+xZg0tWshpfe7hyzl4S5O/eyyQ1rhmPFIk8FFkkCTyHaX9VqPXTCwlRrgB1XXbC/cvwki7jT8KiCKzWFbzj+AM43QvSAj9iVa65Vw6g4PFdFH1l9Zbknr1hEyWbR1LS1InQf9YK4QTaJ6962Qiz8/CKog4vV62q54lfKDkfy2JQhhdkCw==
+      darwin/arm64:
+        name: fcli-mac.tgz
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.28.3/fcli-mac.tgz
+        rsa_sha256: fy2IV2HC0jFXiD1MvOmHrKTtcdRwGUkovaQ1ajo7KkLWiNKBFQiAZCeftDFKwbEQGr5cEIvAylpaQnQsqo3z3QbdZULwTdinOkr/LngaEJNlq8pxgR5pp5Y0eB9qIql5DsaLyIgRXAU7BCFByqOVjXd9ybwxW/7k0YL+zjr9UW3JkcJDvi/28hvfNG2LRVwHWUdcmLGQlQnHZpyI6FBY1QkjjUsDzs5inVTn1StyqArmuuh171vKuQ2J22VyQCBFcEOzJsakdWd5FeGBvB2sWtBmZBobEo8LW6ZuHLLJfvPLWKFytypRiqmyYFbVn2LycVrz9N14bTg5UcQjr6B+jg==
+      windows/x64:
+        name: fcli-windows.zip
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.28.3/fcli-windows.zip
+        rsa_sha256: AePIqueAmHqCiNnSq1TuP+0nzatQAKFVR/8LvqAlKJ5IdoXJi1jlwRJqcBFm47CsFKPNttDUdxLC90dZf7uvwxDHUqgqqoOlRWK45jLKplFwNlU9P8al+JQwlHP1OttiQB+BYchRodwqygz0Vj1zeIpY5K9JXOW5JbucEC95DHJMMsXM88LM29+oXqHo9RXoNZov3ehYnW/29XtbfF52WsTT2UHM17k6xsRv6q6ch/9yzL0e+4y2rJPt9omokia/Kir9iVugI8zuGzghZsDXSJ/IF0VdWkKIz3Krj+yl83H8t3jWcJqlNw5JGVUE6rPoGVpJWJWxDCnqm6BN2rrK6A==
+      java:
+        name: fcli.jar
+        downloadUrl: https://github.com/fortify/fcli/releases/download/v3.28.3/fcli.jar
+        rsa_sha256: AwNZbFo8H4qv4b5o479EmumOGeIkG5FFdb6/XsIH54f1IgOcOGQYxL4JCab+SzB0Sc21ErQ4rWjd989Qhs67faJqpRmziICTxO8reotI8hwF95n/qtoUttMzT2z7DJ0q5tUJNTGQRLiZuRpBzEEHcgzNYq66NdDah0h8MqmdfFuqLe1YSv6qJ+zsXN31v6sjmyXY9IqXV6+dRrFSgmtp7xRVKKrNZ2DFmk0+PPTRIy9G3JP6qanjqCy7cRFEpWvEpAUVH7/T5LYako565V3INAmyw0J2aDXx7EOFli5nF2YdvG7rO5z8oTJMiScJwCh9GRLdlyRZVZmfnkrMRP/rpQ==
+  - version: 3.28.2
+    aliases: []
     stable: true
     binaries:
       linux/x64:
