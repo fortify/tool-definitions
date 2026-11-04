@@ -144,3 +144,825 @@ assistants:
         target-dirs:
           - ~/.gemini/config/agents
 
+  aider-desk:
+    display-name: AiderDesk
+    if:
+      dir-exists: ~/.aider-desk
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.aider-desk/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.aider-desk/agents
+
+  antigravity-cli:
+    display-name: Antigravity (CLI)
+    if:
+      dir-exists: ~/.gemini/antigravity-cli
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.gemini/antigravity-cli/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.gemini/antigravity-cli/agents
+
+  astrbot:
+    display-name: AstrBot
+    if:
+      dir-exists: ~/.astrbot
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.astrbot/data/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.astrbot/data/agents
+
+  autohand-code:
+    display-name: Autohand Code CLI
+    if:
+      dir-exists: ~/.autohand
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.autohand/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.autohand/agents
+
+  augment:
+    display-name: Augment
+    if:
+      dir-exists: ~/.augment
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.augment/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.augment/agents
+
+  bob:
+    display-name: IBM Bob
+    if:
+      dir-exists: ~/.bob
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.bob/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.bob/agents
+
+  openclaw:
+    display-name: OpenClaw
+    if:
+      dir-exists: ~/.openclaw
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.openclaw/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.openclaw/agents
+
+  codearts-agent:
+    display-name: CodeArts Agent
+    if:
+      dir-exists: ~/.codeartsdoer
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.codeartsdoer/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.codeartsdoer/agents
+
+  codebuddy:
+    display-name: CodeBuddy
+    if:
+      dir-exists: ~/.codebuddy
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.codebuddy/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.codebuddy/agents
+
+  codemaker:
+    display-name: Codemaker
+    if:
+      dir-exists: ~/.codemaker
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.codemaker/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.codemaker/agents
+
+  codestudio:
+    display-name: Code Studio
+    if:
+      dir-exists: ~/.codestudio
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.codestudio/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.codestudio/agents
+
+  command-code:
+    display-name: Command Code
+    if:
+      dir-exists: ~/.commandcode
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.commandcode/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.commandcode/agents
+
+  continue:
+    display-name: Continue
+    if:
+      dir-exists: ~/.continue
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.continue/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.continue/agents
+
+  cortex:
+    display-name: Cortex Code
+    if:
+      dir-exists: ~/.snowflake/cortex
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.snowflake/cortex/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.snowflake/cortex/agents
+
+  crush:
+    display-name: Crush
+    if:
+      dir-exists: ~/.config/crush
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.config/crush/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.config/crush/agents
+
+  cursor:
+    display-name: Cursor
+    if:
+      dir-exists: ~/.cursor
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.cursor/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.cursor/agents
+
+  deepagents:
+    display-name: Deep Agents
+    if:
+      dir-exists: ~/.deepagents
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.deepagents/agent/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.deepagents/agent/agents
+
+  devin:
+    display-name: Devin for Terminal
+    if:
+      dir-exists: ~/.config/devin
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.config/devin/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.config/devin/agents
+
+  droid:
+    display-name: Droid
+    if:
+      dir-exists: ~/.factory
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.factory/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.factory/agents
+
+  firebender:
+    display-name: Firebender
+    if:
+      dir-exists: ~/.firebender
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.firebender/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.firebender/agents
+
+  forgecode:
+    display-name: ForgeCode
+    if: false # ~/.forge is too generic for reliable auto-detection
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.forge/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.forge/agents
+
+  goose:
+    display-name: Goose
+    if:
+      dir-exists: ~/.config/goose
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.config/goose/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.config/goose/agents
+
+  grok:
+    display-name: Grok Build
+    if: false # ~/.grok is too generic for reliable auto-detection
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.grok/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.grok/agents
+
+  hermes-agent:
+    display-name: Hermes Agent
+    if: false # ~/.hermes is too generic for reliable auto-detection
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.hermes/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.hermes/agents
+
+  inference-sh:
+    display-name: inference.sh
+    if:
+      dir-exists: ~/.inferencesh
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.inferencesh/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.inferencesh/agents
+
+  jazz:
+    display-name: Jazz
+    if: false # ~/.jazz is too generic for reliable auto-detection
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.jazz/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.jazz/agents
+
+  junie:
+    display-name: Junie
+    if:
+      dir-exists: ~/.junie
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.junie/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.junie/agents
+
+  iflow-cli:
+    display-name: iFlow CLI
+    if:
+      dir-exists: ~/.iflow
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.iflow/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.iflow/agents
+
+  kilo:
+    display-name: Kilo Code
+    if:
+      dir-exists: ~/.kilo
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.kilo/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.kilo/agents
+
+  kimchi:
+    display-name: Kimchi
+    if:
+      dir-exists: ~/.config/kimchi
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.config/kimchi/harness/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.config/kimchi/harness/agents
+
+  kode:
+    display-name: Kode
+    if: false # ~/.kode is too generic for reliable auto-detection
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.kode/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.kode/agents
+
+  lingma:
+    display-name: Lingma
+    if:
+      dir-exists: ~/.lingma
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.lingma/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.lingma/agents
+
+  mcpjam:
+    display-name: MCPJam
+    if:
+      dir-exists: ~/.mcpjam
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.mcpjam/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.mcpjam/agents
+
+  minimax-code:
+    display-name: MiniMax Code
+    if:
+      dir-exists: ~/.minimax
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.minimax/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.minimax/agents
+
+  mistral-vibe:
+    display-name: Mistral Vibe
+    if: false # ~/.vibe is too generic for reliable auto-detection
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.vibe/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.vibe/agents
+
+  moxby:
+    display-name: Moxby
+    if:
+      dir-exists: ~/.moxby
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.moxby/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.moxby/agents
+
+  mux:
+    display-name: Mux
+    if: false # ~/.mux is too generic for reliable auto-detection
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.mux/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.mux/agents
+
+  opencode:
+    display-name: OpenCode
+    if:
+      dir-exists: ~/.config/opencode
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.config/opencode/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.config/opencode/agents
+
+  openhands:
+    display-name: OpenHands
+    if:
+      dir-exists: ~/.openhands
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.openhands/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.openhands/agents
+
+  ona:
+    display-name: Ona
+    if: false # ~/.ona is too generic for reliable auto-detection
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.ona/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.ona/agents
+
+  posit-assistant:
+    display-name: Posit Assistant
+    if:
+      dir-exists: ~/.posit/assistant
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.posit/assistant/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.posit/assistant/agents
+
+  qoder:
+    display-name: Qoder
+    if:
+      dir-exists: ~/.qoder
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.qoder/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.qoder/agents
+
+  qoder-cn:
+    display-name: Qoder CN
+    if:
+      dir-exists: ~/.qoder-cn
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.qoder-cn/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.qoder-cn/agents
+
+  qwen-code:
+    display-name: Qwen Code
+    if:
+      dir-exists: ~/.qwen
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.qwen/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.qwen/agents
+
+  reasonix:
+    display-name: Reasonix
+    if:
+      dir-exists: ~/.reasonix
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.reasonix/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.reasonix/agents
+
+  rovodev:
+    display-name: Rovo Dev
+    if:
+      dir-exists: ~/.rovodev
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.rovodev/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.rovodev/agents
+
+  roo:
+    display-name: Roo Code
+    if:
+      dir-exists: ~/.roo
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.roo/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.roo/agents
+
+  tabnine-cli:
+    display-name: Tabnine CLI
+    if:
+      dir-exists: ~/.tabnine/agent
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.tabnine/agent/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.tabnine/agent/agents
+
+  terramind:
+    display-name: Terramind
+    if:
+      dir-exists: ~/.terramind
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.terramind/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.terramind/agents
+
+  tinycloud:
+    display-name: Tinycloud
+    if:
+      dir-exists: ~/.tinycloud
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.tinycloud/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.tinycloud/agents
+
+  trae:
+    display-name: Trae
+    if:
+      dir-exists: ~/.trae
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.trae/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.trae/agents
+
+  trae-cn:
+    display-name: Trae CN
+    if:
+      dir-exists: ~/.trae-cn
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.trae-cn/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.trae-cn/agents
+
+  windsurf:
+    display-name: Windsurf
+    if:
+      dir-exists: ~/.codeium/windsurf
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.codeium/windsurf/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.codeium/windsurf/agents
+
+  zcode:
+    display-name: ZCode
+    if:
+      dir-exists: ~/.zcode
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.zcode/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.zcode/agents
+
+  zencoder:
+    display-name: Zencoder / Zenflow
+    if:
+      dir-exists: ~/.zencoder
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.zencoder/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.zencoder/agents
+
+  neovate:
+    display-name: Neovate
+    if:
+      dir-exists: ~/.neovate
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.neovate/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.neovate/agents
+
+  pochi:
+    display-name: Pochi
+    if:
+      dir-exists: ~/.pochi
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.pochi/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.pochi/agents
+
+  adal:
+    display-name: AdaL
+    if:
+      dir-exists: ~/.adal
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.adal/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.adal/agents
+
+  # Auto-detection disabled for the assistants below: their skills dir is shared by multiple
+  # assistants, so its presence doesn't identify a specific assistant.
+
+  amp:
+    display-name: Amp
+    if: false
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.config/agents/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.config/agents/agents
+
+  replit:
+    display-name: Replit
+    if: false
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.config/agents/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.config/agents/agents
+
+  universal:
+    display-name: Universal
+    if: false
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.config/agents/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.config/agents/agents
+
+  cline:
+    display-name: Cline
+    if: false
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.agents/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.agents/agents
+
+  dexto:
+    display-name: Dexto
+    if: false
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.agents/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.agents/agents
+
+  fx:
+    display-name: fx
+    if: false
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.agents/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.agents/agents
+
+  kimi-code-cli:
+    display-name: Kimi Code CLI
+    if: false
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.agents/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.agents/agents
+
+  loaf:
+    display-name: Loaf
+    if: false
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.agents/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.agents/agents
+
+  pi:
+    display-name: Pi
+    if: false
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.agents/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.agents/agents
+
+  sarvam-code:
+    display-name: Sarvam Code
+    if: false
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.agents/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.agents/agents
+
+  warp:
+    display-name: Warp
+    if: false
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.agents/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.agents/agents
+
+  zed:
+    display-name: Zed
+    if: false
+    targets:
+      - content-type: skills
+        target-dirs:
+          - ~/.agents/skills
+      - content-type: agents
+        target-dirs:
+          - ~/.agents/agents
