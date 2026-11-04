@@ -144,6 +144,8 @@ assistants:
         target-dirs:
           - ~/.gemini/config/agents
 
+  # New assistants expose agents targets only when their global definition path
+  # and support for the distributed Markdown agent format are confirmed.
   aider-desk:
     display-name: AiderDesk
     if:
@@ -152,9 +154,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.aider-desk/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.aider-desk/agents
 
   antigravity-cli:
     display-name: Antigravity (CLI)
@@ -164,9 +163,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.gemini/antigravity-cli/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.gemini/antigravity-cli/agents
 
   astrbot:
     display-name: AstrBot
@@ -176,9 +172,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.astrbot/data/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.astrbot/data/agents
 
   autohand-code:
     display-name: Autohand Code CLI
@@ -188,9 +181,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.autohand/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.autohand/agents
 
   augment:
     display-name: Augment
@@ -200,9 +190,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.augment/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.augment/agents
 
   bob:
     display-name: IBM Bob
@@ -212,9 +199,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.bob/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.bob/agents
 
   openclaw:
     display-name: OpenClaw
@@ -224,9 +208,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.openclaw/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.openclaw/agents
 
   codearts-agent:
     display-name: CodeArts Agent
@@ -236,9 +217,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.codeartsdoer/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.codeartsdoer/agents
 
   codebuddy:
     display-name: CodeBuddy
@@ -248,9 +226,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.codebuddy/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.codebuddy/agents
 
   codemaker:
     display-name: Codemaker
@@ -260,9 +235,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.codemaker/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.codemaker/agents
 
   codestudio:
     display-name: Code Studio
@@ -272,9 +244,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.codestudio/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.codestudio/agents
 
   command-code:
     display-name: Command Code
@@ -284,9 +253,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.commandcode/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.commandcode/agents
 
   continue:
     display-name: Continue
@@ -296,9 +262,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.continue/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.continue/agents
 
   cortex:
     display-name: Cortex Code
@@ -308,9 +271,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.snowflake/cortex/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.snowflake/cortex/agents
 
   crush:
     display-name: Crush
@@ -320,9 +280,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.config/crush/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.config/crush/agents
 
   cursor:
     display-name: Cursor
@@ -332,6 +289,7 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.cursor/skills
+      # https://cursor.com/docs/subagents
       - content-type: agents
         target-dirs:
           - ~/.cursor/agents
@@ -344,9 +302,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.deepagents/agent/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.deepagents/agent/agents
 
   devin:
     display-name: Devin for Terminal
@@ -356,9 +311,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.config/devin/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.config/devin/agents
 
   droid:
     display-name: Droid
@@ -368,9 +320,10 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.factory/skills
+      # https://docs.factory.com/harness/subagents
       - content-type: agents
         target-dirs:
-          - ~/.factory/agents
+          - ~/.factory/droids
 
   firebender:
     display-name: Firebender
@@ -380,9 +333,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.firebender/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.firebender/agents
 
   forgecode:
     display-name: ForgeCode
@@ -391,9 +341,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.forge/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.forge/agents
 
   goose:
     display-name: Goose
@@ -403,9 +350,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.config/goose/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.config/goose/agents
 
   grok:
     display-name: Grok Build
@@ -414,9 +358,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.grok/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.grok/agents
 
   hermes-agent:
     display-name: Hermes Agent
@@ -425,9 +366,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.hermes/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.hermes/agents
 
   inference-sh:
     display-name: inference.sh
@@ -437,9 +375,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.inferencesh/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.inferencesh/agents
 
   jazz:
     display-name: Jazz
@@ -448,9 +383,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.jazz/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.jazz/agents
 
   junie:
     display-name: Junie
@@ -460,9 +392,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.junie/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.junie/agents
 
   iflow-cli:
     display-name: iFlow CLI
@@ -472,9 +401,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.iflow/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.iflow/agents
 
   kilo:
     display-name: Kilo Code
@@ -484,9 +410,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.kilo/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.kilo/agents
 
   kimchi:
     display-name: Kimchi
@@ -496,9 +419,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.config/kimchi/harness/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.config/kimchi/harness/agents
 
   kode:
     display-name: Kode
@@ -507,9 +427,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.kode/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.kode/agents
 
   lingma:
     display-name: Lingma
@@ -519,9 +436,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.lingma/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.lingma/agents
 
   mcpjam:
     display-name: MCPJam
@@ -531,9 +445,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.mcpjam/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.mcpjam/agents
 
   minimax-code:
     display-name: MiniMax Code
@@ -543,9 +454,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.minimax/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.minimax/agents
 
   mistral-vibe:
     display-name: Mistral Vibe
@@ -554,9 +462,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.vibe/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.vibe/agents
 
   moxby:
     display-name: Moxby
@@ -566,9 +471,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.moxby/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.moxby/agents
 
   mux:
     display-name: Mux
@@ -577,9 +479,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.mux/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.mux/agents
 
   opencode:
     display-name: OpenCode
@@ -589,9 +488,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.config/opencode/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.config/opencode/agents
 
   openhands:
     display-name: OpenHands
@@ -601,9 +497,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.openhands/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.openhands/agents
 
   ona:
     display-name: Ona
@@ -612,9 +505,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.ona/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.ona/agents
 
   posit-assistant:
     display-name: Posit Assistant
@@ -624,9 +514,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.posit/assistant/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.posit/assistant/agents
 
   qoder:
     display-name: Qoder
@@ -636,9 +523,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.qoder/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.qoder/agents
 
   qoder-cn:
     display-name: Qoder CN
@@ -648,9 +532,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.qoder-cn/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.qoder-cn/agents
 
   qwen-code:
     display-name: Qwen Code
@@ -660,6 +541,7 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.qwen/skills
+      # https://github.com/QwenLM/qwen-code/blob/main/packages/cli/src/ui/components/subagents/create/LocationSelector.tsx
       - content-type: agents
         target-dirs:
           - ~/.qwen/agents
@@ -672,9 +554,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.reasonix/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.reasonix/agents
 
   rovodev:
     display-name: Rovo Dev
@@ -684,9 +563,10 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.rovodev/skills
+      # https://support.atlassian.com/rovo/docs/use-subagents-in-rovo-dev-cli/
       - content-type: agents
         target-dirs:
-          - ~/.rovodev/agents
+          - ~/.rovodev/subagents
 
   roo:
     display-name: Roo Code
@@ -696,9 +576,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.roo/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.roo/agents
 
   tabnine-cli:
     display-name: Tabnine CLI
@@ -708,9 +585,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.tabnine/agent/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.tabnine/agent/agents
 
   terramind:
     display-name: Terramind
@@ -720,9 +594,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.terramind/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.terramind/agents
 
   tinycloud:
     display-name: Tinycloud
@@ -732,9 +603,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.tinycloud/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.tinycloud/agents
 
   trae:
     display-name: Trae
@@ -744,9 +612,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.trae/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.trae/agents
 
   trae-cn:
     display-name: Trae CN
@@ -756,9 +621,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.trae-cn/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.trae-cn/agents
 
   windsurf:
     display-name: Windsurf
@@ -768,9 +630,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.codeium/windsurf/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.codeium/windsurf/agents
 
   zcode:
     display-name: ZCode
@@ -780,9 +639,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.zcode/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.zcode/agents
 
   zencoder:
     display-name: Zencoder / Zenflow
@@ -792,9 +648,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.zencoder/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.zencoder/agents
 
   neovate:
     display-name: Neovate
@@ -804,9 +657,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.neovate/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.neovate/agents
 
   pochi:
     display-name: Pochi
@@ -816,6 +666,7 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.pochi/skills
+      # https://github.com/TabbyML/pochi/blob/main/packages/docs/content/docs/custom-agent.mdx
       - content-type: agents
         target-dirs:
           - ~/.pochi/agents
@@ -828,9 +679,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.adal/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.adal/agents
 
   # Auto-detection disabled for the assistants below: their skills dir is shared by multiple
   # assistants, so its presence doesn't identify a specific assistant.
@@ -842,9 +690,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.config/agents/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.config/agents/agents
 
   replit:
     display-name: Replit
@@ -853,9 +698,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.config/agents/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.config/agents/agents
 
   universal:
     display-name: Universal
@@ -864,9 +706,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.config/agents/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.config/agents/agents
 
   cline:
     display-name: Cline
@@ -875,9 +714,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.agents/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.agents/agents
 
   dexto:
     display-name: Dexto
@@ -886,9 +722,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.agents/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.agents/agents
 
   fx:
     display-name: fx
@@ -897,9 +730,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.agents/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.agents/agents
 
   kimi-code-cli:
     display-name: Kimi Code CLI
@@ -908,9 +738,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.agents/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.agents/agents
 
   loaf:
     display-name: Loaf
@@ -919,9 +746,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.agents/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.agents/agents
 
   pi:
     display-name: Pi
@@ -930,9 +754,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.agents/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.agents/agents
 
   sarvam-code:
     display-name: Sarvam Code
@@ -941,9 +762,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.agents/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.agents/agents
 
   warp:
     display-name: Warp
@@ -952,9 +770,6 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.agents/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.agents/agents
 
   zed:
     display-name: Zed
@@ -963,6 +778,3 @@ assistants:
       - content-type: skills
         target-dirs:
           - ~/.agents/skills
-      - content-type: agents
-        target-dirs:
-          - ~/.agents/agents
