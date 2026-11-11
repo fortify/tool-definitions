@@ -1,0 +1,6 @@
+{
+  "name": "OpenJDK17U-jre_x64_linux_hotspot_17.0.21_9.tar.gz",
+  "downloadUrl": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.21_9.tar.gz",
+  "rsa_sha256": "UjHKRTzKtZNyft2kNlSMfUFNnNoo86ZFKe/FGqfAhHxkPSSEydTOx2U+nPgFWet/GKQnvwqlb3ng2pGbflNsKsMgLRrMKhQAX40azt+5jTlhm09iBuNS1iUysjhFO1L8geHWBOJNbDz9+hUsVaUea8pxlsA2wXxwn8lLAEdTml9n0H2HIx+iiQdn1PDdgxZh+bQc7Bw73uLKYda/sgAaH/TuDgTrjloiAeYe0si6JKqst3MTG7YiEhVt3Wxh3rPDzPrz1dv2u78Yd0ROaTgfGfrnE8PaPqfdO3+Tcx9jjKfY9WDTFwCSyXe5EtR9g02X3YKZPDN99U8Z1J/75H4fBg==",
+  "sha256": "9f41bf88c7900c7097444a1bdeb84146ae692bc08842490ab098063c74bf9a8a"
+}

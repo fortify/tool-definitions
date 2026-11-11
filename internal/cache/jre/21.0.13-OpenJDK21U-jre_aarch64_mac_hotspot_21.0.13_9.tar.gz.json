@@ -1,0 +1,6 @@
+{
+  "name": "OpenJDK21U-jre_aarch64_mac_hotspot_21.0.13_9.tar.gz",
+  "downloadUrl": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jre_aarch64_mac_hotspot_21.0.13_9.tar.gz",
+  "rsa_sha256": "TNrEbXwNVbxWltQ4e1RK4SIm2BiHmPOUeeZLP3zGrz8flSwN09DziY42b3Dgr8y9zV+GZP0A0g8W3OT2Ei1z9qlsq0PA4Wq74uDZt1NxwX/O8/gBCkZiFXvFaiIikB78thtyRqgGIm4EQZNUXIConSZM3n8bgZ6Iw173Z95SbPsm/EKuTVks1CH1ukOa80+DInkj7jLj5/ZABnUNYLEx8vYFFWYkKfj1ZwaljVTqrvWd6Ab7jnKSA9GIiACcnRDmeAsxIg8xfy23QCJNgtNAjbT4m57YuY6fuhOI6Loq0LsgoA3poh53QqOMNM8dBIeQnlybhBe5M+uggrR+yZjelA==",
+  "sha256": "225bab0a09491ef06835488cd942f5d2befa9a0410a2484f0c8bbcf7506ec09a"
+}

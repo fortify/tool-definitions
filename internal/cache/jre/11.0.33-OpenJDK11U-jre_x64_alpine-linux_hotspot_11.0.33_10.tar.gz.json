@@ -1,0 +1,6 @@
+{
+  "name": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.33_10.tar.gz",
+  "downloadUrl": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.33%2B10/OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.33_10.tar.gz",
+  "rsa_sha256": "Y605tz10pRqLO2Z0wUW/zsrJltivBGrIz6KryM9aSU1jcQG1ejXvJqmJAPKmE5FpHIDlTriyTFWzNTcMMo7Gm2YJv/XHFG3xfM12/HKfY4q+uIt089AwJpKyaJvWQMLOmgJ3686v1x8Zjs9uma77gi73CW9MUQn6FL4XMSB7Mai6NmPd50txoCSonmpR2klZyJQPQ78vLnn6XuhGGrsTjtSrzf5+IFHn6TocNhtyQmPC/L0PbhtEVfl+LOVjk1Wm43NrySjtt9b1r7R/aSOI87vyqV+VCXTbcc2vWdg7u4MYPgx1xZbYy7dpQbvbLmiPUqYpecHi2Y+3+ZtWkkWSQA==",
+  "sha256": "8e569f461461ac364ac9e9d14a2b70c15e3869dc9b41da2c6817bc7b02297567"
+}

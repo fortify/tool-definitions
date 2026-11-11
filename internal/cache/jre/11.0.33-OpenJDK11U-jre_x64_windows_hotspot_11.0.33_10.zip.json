@@ -1,0 +1,6 @@
+{
+  "name": "OpenJDK11U-jre_x64_windows_hotspot_11.0.33_10.zip",
+  "downloadUrl": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.33%2B10/OpenJDK11U-jre_x64_windows_hotspot_11.0.33_10.zip",
+  "rsa_sha256": "gEo/NCMiOUb1c8CmA8JziYpCHo//6xyPxPcdCX1fLarsw+myhBjh34LO8AO6HxwwcvXktboBQhKlybsB6EgwAbox259lnDC0G6lKA1847OsZkAr6vozMB7NL1E4vKM/PO57k0ROwD4b7JVhBE84DYOmqfXs12TvRnSy9I4G5iHiwLPtXCrXTo+VDhj8iCFmLV4zfI3pCr9tBcTvKrwu7UAEmvpmQaFFd5uC2enL62YgrdwhOPq07/7PGD2/qOBR3nfgsJTOUXx1xnc2tBKgzG/NqhNWgMu1IGo+5M7v16mGhU3nR/EQvzF+X+G2GXk63qyxF0ihmW+AsIAFqziQ0qw==",
+  "sha256": "d07c70035f7462924cd385912d76d50622baa17b15e5260df8facabcf2fff998"
+}

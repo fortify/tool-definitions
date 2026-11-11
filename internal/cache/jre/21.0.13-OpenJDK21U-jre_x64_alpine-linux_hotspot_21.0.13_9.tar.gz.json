@@ -1,0 +1,6 @@
+{
+  "name": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.13_9.tar.gz",
+  "downloadUrl": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.13_9.tar.gz",
+  "rsa_sha256": "Xr186Epb9Q+D+uANhQxYB+Ll1SudgY/AEcuMA4fGXORuhufNxC71GclQsdkwm01MROTNKIPi7VYYt2goEQfi6GQfmIr9vIfBO1Ae0GA5Y0l9Wjv/NRb2QaoF1oQexUOxCdPqLOJw2bag9ijgthIt74DpHzmBkX8VLZKGipa4IFur/FcLpwnC7C2hhI0JOhtvEUrZwIK3guda20labDYbEJ74I/AswqNOvK6E/9Qbc6Nu/zsWo/6YKXlmWDkvq0rRAvFgDevKMYAX3IDoyKCZeqWO+C+ozvYh9b+UKQ7RztO5McLkfYDrtXNYh7TnYFpEpokgb7osRPFobsLYRBinTg==",
+  "sha256": "9138eab0f7d230e17163953f015ec9ae2431dbc49069c658b7f991e45b54fb9b"
+}
