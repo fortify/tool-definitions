@@ -1,0 +1,6 @@
+{
+  "name": "OpenJDK8U-jre_aarch64_linux_hotspot_8u512b09.tar.gz",
+  "downloadUrl": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u512-b09/OpenJDK8U-jre_aarch64_linux_hotspot_8u512b09.tar.gz",
+  "rsa_sha256": "BGWVTNakLEe94dMJlxYhqJWY9wMJaWMIAQko8IN7lEdu++Tq44/FBoBA2c4bTYVxfNrtKNn1kEREyCroebe2wE8BgRjs+7uLidjSeMwWvc8nNe2pfzyY9hg/q6hwR+ysCWROgqsv9qWD3p/265RkaJYSoXzAuKLtL+b0TFwaZHrpDN3zQxTVe2tfk/ZJCj99WsaSLhBfC7SWa2felgUduDvIDKc6F/7AXV8EUhPnJgJqca40Qw1IeP3rgzmcdzcimsiUWPNAThT2ENKTTNzSq7c9V4rjs0wzvw6FHYAgPkInKlc7h9hV0OfJnHkReY9l7zLaLQopu2jYscPby9s4Ng==",
+  "sha256": "9b45f49bc6e54cf9170aebe0ee45f48a833222325cb3b2d6d21220eee4c5207b"
+}

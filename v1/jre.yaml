@@ -83,29 +83,25 @@ versions:
         name: OpenJDK11U-jre_x64_windows_hotspot_11.0.33_10.zip
         downloadUrl: https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.33%2B10/OpenJDK11U-jre_x64_windows_hotspot_11.0.33_10.zip
         rsa_sha256: gEo/NCMiOUb1c8CmA8JziYpCHo//6xyPxPcdCX1fLarsw+myhBjh34LO8AO6HxwwcvXktboBQhKlybsB6EgwAbox259lnDC0G6lKA1847OsZkAr6vozMB7NL1E4vKM/PO57k0ROwD4b7JVhBE84DYOmqfXs12TvRnSy9I4G5iHiwLPtXCrXTo+VDhj8iCFmLV4zfI3pCr9tBcTvKrwu7UAEmvpmQaFFd5uC2enL62YgrdwhOPq07/7PGD2/qOBR3nfgsJTOUXx1xnc2tBKgzG/NqhNWgMu1IGo+5M7v16mGhU3nR/EQvzF+X+G2GXk63qyxF0ihmW+AsIAFqziQ0qw==
-  - version: 8.0.492
+  - version: 8.0.512
     aliases:
       - "8"
       - "8.0"
     stable: true
     binaries:
       linux/x64:
-        name: OpenJDK8U-jre_x64_linux_hotspot_8u492b09.tar.gz
-        downloadUrl: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jre_x64_linux_hotspot_8u492b09.tar.gz
-        rsa_sha256: QoXvUECuzM88Vrzt9c84EcuP2EHeSHhHsSFqF0gGTV2W+0PSE3L7Fu9jgwgVlcyb7YlSj5CjXoqpwgYe45iBOycNMn4SkP4A3dZ9+fXZpiSBcGETqjWvCJyqNXeRUq8Cx9brJcc4wRvl/bz0eMZwuO3GMpRJbevqGOB4NEhpZVkDoMT+Mb029cJXLshrzMw0XObGRFypipxGvMBOnuzf/D9QXVOaNoruj41wx5c34rGrt9RB3x1LlwbS+Ip98mRxDTG1d4JBxCOzkRBBCo/VDV/MXCnQWwYsMMLLadxTZpYVgoB86Y/WVxt/pbq5eqzQvPxFvlS3HktBvXKqh3yA+g==
+        name: OpenJDK8U-jre_x64_linux_hotspot_8u512b09.tar.gz
+        downloadUrl: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u512-b09/OpenJDK8U-jre_x64_linux_hotspot_8u512b09.tar.gz
+        rsa_sha256: kK79E6Cqh7HETIDam8E6E0lA4xjUfM8CDUxBrrAPY3HjebDjFfmkTGSLut/A8HT+50t+CjkbxykBLRG/mItq+3uI3odaISQh4U3XJ/gCVfdx+i2p1WNXTNBJ8ABwAeA3boSX23OcIyH48yYr7NypB9nyLBoLKZPTinKgoK/vQ+XU6AQvB5m9HnwovbAgsRrkQJec1CWkGfLX+Se63Ws+8mlJhmNTbXCK62dIsKXgVdyCZcHdOo7XzfgcfODdrsp4UWeoYnqWuE2OlDRV5nEg4XWCcCaDa3CBA4dPDb80gllkocL8bG6W+9LsbadB/jdQfPf0gUHaQLARS8JQVvSGrA==
       linux-musl/x64:
-        name: OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz
-        downloadUrl: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz
-        rsa_sha256: SukQS/Ls7baZuiAw+ywRE1qjBgMD76zDGFCFwJvlOCdx8XggkAVfsb7IHLMPOVlqg63DK1mHS08XWKah9zJdJCYNu21D8TBMCFUU3ecvRMI6y7ktXYmLNq2weiFwDtcrrtrM53cn09qzD7wyWQKU4YWWl6C9HaVcys7YWk25IkEVQOek80Fujsv3GhlrbuQgsAeAYL9il1TMJlIeN5sdWfQHqWNPjdAXS7Zif2tf6dOcwtI984bUo0jUfqubmsePQ7kIQDsLqewDSOjCP/dI2RZcb66zsyedeSwcNB8NNDAIKae7+Tbirvl6h+KTF/tm7A8vKeeYCgPw2QSatfL2HQ==
+        name: OpenJDK8U-jre_x64_alpine-linux_hotspot_8u512b09.tar.gz
+        downloadUrl: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u512-b09/OpenJDK8U-jre_x64_alpine-linux_hotspot_8u512b09.tar.gz
+        rsa_sha256: hcK0ZLpWK3KMr/0+eOwTxfOLrkR37lS5GmNOkXAQg2gHTZq2oX2a3OPscnJ0swIKih/DCN7/ZjHVWFAZHElfbkmHiMpA049WLDdavrrQavtDXPFGQufOMlKmBq2If9R+q19Eyy1YAJm2DVcRAdufi1RabJ4dIip/RBd1o1IK1xYwsh4M+pxvQsIM6JsYep2ajNRrKjr8yEijk50AZ1uViG2vRXqD7Km6JFqoXk/mTQc/m/oKKptNSdkUifqHVgqiYwKUG4VPSMsN3IEGRQzVdsFsPnXZivp6Oiaclxgku4mWCHUIipKME4GgLdretf1AfXjlJ0Paaz/1Rek6vAqS2A==
       linux/arm64:
-        name: OpenJDK8U-jre_aarch64_linux_hotspot_8u492b09.tar.gz
-        downloadUrl: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jre_aarch64_linux_hotspot_8u492b09.tar.gz
-        rsa_sha256: S+z4LMT53Ml6IuOkDcDXkqCzVwU0UvacGEZm2yYrqT967+iAVfWSVaVKiB3hk4VamNrnKYcYEbsQPuWRSAUWjDR8pnI0Me2PI2w+umGoqWVU1+8vFXaMlBoYS77KWDtpDUZyKYw1HQ1ZxDb8bVooAME+2NTUnVrUOwiJos/0H2Tl3lws7zXnPI/6CmU6IBe6ssopeU/zo4SedTYwH7dTGG89XqduRNoT4RR1/WjY9AmTma+IanyBlEdoNr/MrQ41scELb6oaERLuUhXcSdCGxUEjHvZkujnXfeUuVgrfNLb8eqT2GA5cSoLRdjFLC14yUY0DeustjRMVAYgCUnIWGQ==
-      darwin/x64:
-        name: OpenJDK8U-jre_x64_mac_hotspot_8u492b09.tar.gz
-        downloadUrl: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jre_x64_mac_hotspot_8u492b09.tar.gz
-        rsa_sha256: npr97MXwQq01OolezU991cTXmNvaOhAHavL8m1wjQbS+F2vxD9KbAKHcZWmt5052sacx21P+Rp4lahmfqwTZdB6NAn2+v7tp+Eu7fkZAjjIoIce6x4g8aIjm1ZEVQ30tdp/R3drmxxCm/AtvefliJKdQhAYmyK82UAl5c3RBByavtM5q71iQTf04VC772UgyO38t+WXRrESRozOQ+bZ5DcMrSrB0wF6MKcmTMecWPCD+K66GI6jcX7XW+NuugYTRZsZeUPCOmAi4mlnbcOLv1iwdX7X7UEukvKYWrSVGps2gqfX5y8viekwg/dLMMOr7ChJHDKnJugk6AAP3x4d48w==
+        name: OpenJDK8U-jre_aarch64_linux_hotspot_8u512b09.tar.gz
+        downloadUrl: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u512-b09/OpenJDK8U-jre_aarch64_linux_hotspot_8u512b09.tar.gz
+        rsa_sha256: BGWVTNakLEe94dMJlxYhqJWY9wMJaWMIAQko8IN7lEdu++Tq44/FBoBA2c4bTYVxfNrtKNn1kEREyCroebe2wE8BgRjs+7uLidjSeMwWvc8nNe2pfzyY9hg/q6hwR+ysCWROgqsv9qWD3p/265RkaJYSoXzAuKLtL+b0TFwaZHrpDN3zQxTVe2tfk/ZJCj99WsaSLhBfC7SWa2felgUduDvIDKc6F/7AXV8EUhPnJgJqca40Qw1IeP3rgzmcdzcimsiUWPNAThT2ENKTTNzSq7c9V4rjs0wzvw6FHYAgPkInKlc7h9hV0OfJnHkReY9l7zLaLQopu2jYscPby9s4Ng==
       windows/x64:
-        name: OpenJDK8U-jre_x64_windows_hotspot_8u492b09.zip
-        downloadUrl: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jre_x64_windows_hotspot_8u492b09.zip
-        rsa_sha256: kmTTkjQ6pYR+sxXW5YpjhQGKiRxVSXd4sKjZ2yD0AXgUjcetyIoUvwoE7Du+VTZNaiwP2zfP8r6kYAorivC/LacmMKH3JLsVdsc6eFkjNTQUrY0B+UtzzLRgtvRywTPt/k9qyg8t6KtA40FwkhtIxrzywodNwj9JHZU9qbSMQt6f8MRKHNUVIG6cSIwmtv/AvEAYJ/BNVCKpL6qzEHGbiRbQY8yjEX2b9X6DfKwA2TYkqQs/JyND25MVFkG9qGgHgqwX1OhR7JSwAAHtvsewsdS5wtU4f7tQerw9ko2HC3X/OSoddrwCohwajRyn5U9GzPPjV7HqORHJrvZjoEdvsA==
+        name: OpenJDK8U-jre_x64_windows_hotspot_8u512b09.zip
+        downloadUrl: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u512-b09/OpenJDK8U-jre_x64_windows_hotspot_8u512b09.zip
+        rsa_sha256: fXgq3Wd2/Meb7TKQdOFVRuXTVxlFgW6OXHRfGHJ+dhxPAWZnOu4wlLzL+6j2pvebTVdbTyiNKNeopdYSB22i4r2p6SdPkL/nk3ozMVmiiH6ElvttN1ffFh1n3zDL8/j7ZfUwnhL4vnWV/LCOWmkZyONGXHn4Ym4HkE/Ild7Af7sX1T7FA33X/JhSnZcHnq6JRn0XeXKmERbaJ7Y9xFK4L5bLbRvCyiSbwmD9VfNU6LIqJzzD7qN3xuu3QMAtgqaICEyryoJ9u/j9HNpFaD771p4PMLf+LWnI6QgF9cWC+GQOAb3GJIEp5+vGnf9wK1KD5gVLDEpCwUFqcT/Fk9EWmw==
