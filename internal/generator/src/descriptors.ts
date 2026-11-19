@@ -35,6 +35,27 @@ export class VersionDescriptors extends Array<VersionDescriptor> {
         this.forEach(v=>v.addAliases(allStableVersions));
         return this;
     }
+    addExtraAliases(extraAliases: {[alias: string]: string}) : VersionDescriptors {
+        // Resolve all targets before adding aliases, so mappings cannot depend on input order.
+        const mappings = Object.entries(extraAliases).map(([alias, target]) => {
+            const existing = this.find(v=>v.getVersionAndAliases().includes(alias));
+            const targetDescriptor = this.find(v=>v.getVersionAndAliases().includes(target));
+            if ( !targetDescriptor ) {
+                throw new Error(`Cannot add extra alias ${JSON.stringify(alias)}; no version or generated alias ${JSON.stringify(target)} found`);
+            }
+            if ( existing && existing!==targetDescriptor ) {
+                throw new Error(`Cannot add extra alias ${JSON.stringify(alias)}; it already resolves to ${JSON.stringify(existing.version)}, not ${JSON.stringify(targetDescriptor.version)}`);
+            }
+            return {alias, targetDescriptor};
+        });
+        for ( const {alias, targetDescriptor} of mappings ) {
+            if ( !targetDescriptor.getVersionAndAliases().includes(alias) ) {
+                core.info(`Adding extra alias ${JSON.stringify(alias)} to version ${JSON.stringify(targetDescriptor.version)}`);
+                targetDescriptor.aliases.push(alias);
+            }
+        }
+        return this;
+    }
     sortByVersion(descending = true) : VersionDescriptors {
         return this.sort((v1,v2)=>descending ? v2.compareTo(v1) : v1.compareTo(v2) );
     }

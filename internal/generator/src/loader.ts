@@ -21,7 +21,7 @@ export async function getVersionDescriptors() : Promise<VersionDescriptors> {
     } else {
         throw "Either tool_repo or tool_urls input must be specified";
     }
-    return result.addAliases().sortByVersion();
+    return result.addAliases().addExtraAliases(constants.extraAliases).sortByVersion();
 }
 
 async function getVersionDescriptorsFromToolUrls(toolVersionDescriptorsAndUrls: {[key: string]: string[]}) : Promise<VersionDescriptors> {

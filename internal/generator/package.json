@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "ncc build src/main.ts",
+    "test": "npm run build && node --test test/*.test.cjs",
     "lint": "eslint . --ext .ts,.tsx",
     "format": "prettier --write **/*.ts"
   },

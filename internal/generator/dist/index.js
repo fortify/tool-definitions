@@ -35754,7 +35754,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.workspaceDir = exports.extraVersionProperties = exports.tagMappings = exports.binaryPlatforms = exports.semver = exports.toolUrls = exports.toolRepo = exports.assetRegex = exports.tagRegex = exports.githubToken = exports.dir = exports.toolName = exports.signPassphrase = exports.signKey = void 0;
+exports.workspaceDir = exports.extraAliases = exports.extraVersionProperties = exports.tagMappings = exports.binaryPlatforms = exports.semver = exports.toolUrls = exports.toolRepo = exports.assetRegex = exports.tagRegex = exports.githubToken = exports.dir = exports.toolName = exports.signPassphrase = exports.signKey = void 0;
 const core = __importStar(__nccwpck_require__(2186));
 /**
  * This module defines various constants used by the other modules, mostly consisting
@@ -35788,6 +35788,18 @@ exports.binaryPlatforms = (() => {
 })();
 exports.tagMappings = JSON.parse(defaultIfEmpty(core.getInput("tagMappings", { required: false }), '{"(.*)": "$1"}'));
 exports.extraVersionProperties = JSON.parse(defaultIfEmpty(core.getInput("extraVersionProperties", { required: false }), '{}'));
+exports.extraAliases = (() => {
+    const mappings = JSON.parse(defaultIfEmpty(core.getInput("extraAliases", { required: false }), '{}'));
+    if (typeof mappings !== "object" || mappings === null || Array.isArray(mappings)) {
+        throw new Error("extraAliases must be a JSON object mapping alias names to target versions or aliases");
+    }
+    return Object.fromEntries(Object.entries(mappings).map(([alias, target]) => {
+        if (alias.trim() === "" || typeof target !== "string" || target.trim() === "") {
+            throw new Error("extraAliases must contain non-empty alias names and non-empty string targets");
+        }
+        return [alias, target];
+    }));
+})();
 exports.workspaceDir = process.env.GITHUB_WORKSPACE;
 
 
@@ -35892,6 +35904,27 @@ class VersionDescriptors extends Array {
     addAliases() {
         const allStableVersions = this.filter(v => v.stable).map(v => v.version);
         this.forEach(v => v.addAliases(allStableVersions));
+        return this;
+    }
+    addExtraAliases(extraAliases) {
+        // Resolve all targets before adding aliases, so mappings cannot depend on input order.
+        const mappings = Object.entries(extraAliases).map(([alias, target]) => {
+            const existing = this.find(v => v.getVersionAndAliases().includes(alias));
+            const targetDescriptor = this.find(v => v.getVersionAndAliases().includes(target));
+            if (!targetDescriptor) {
+                throw new Error(`Cannot add extra alias ${JSON.stringify(alias)}; no version or generated alias ${JSON.stringify(target)} found`);
+            }
+            if (existing && existing !== targetDescriptor) {
+                throw new Error(`Cannot add extra alias ${JSON.stringify(alias)}; it already resolves to ${JSON.stringify(existing.version)}, not ${JSON.stringify(targetDescriptor.version)}`);
+            }
+            return { alias, targetDescriptor };
+        });
+        for (const { alias, targetDescriptor } of mappings) {
+            if (!targetDescriptor.getVersionAndAliases().includes(alias)) {
+                core.info(`Adding extra alias ${JSON.stringify(alias)} to version ${JSON.stringify(targetDescriptor.version)}`);
+                targetDescriptor.aliases.push(alias);
+            }
+        }
         return this;
     }
     sortByVersion(descending = true) {
@@ -36241,7 +36274,7 @@ function getVersionDescriptors() {
         else {
             throw "Either tool_repo or tool_urls input must be specified";
         }
-        return result.addAliases().sortByVersion();
+        return result.addAliases().addExtraAliases(constants.extraAliases).sortByVersion();
     });
 }
 exports.getVersionDescriptors = getVersionDescriptors;

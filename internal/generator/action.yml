@@ -42,6 +42,9 @@ inputs:
   extraVersionProperties:
     description: 'JSON string specifying version regex to extra properties object {"<version regex>": {"<property>": "<value>",..}'
     required: false  
+  extraAliases:
+    description: 'JSON object specifying extra aliases {"<alias>": "<target version or generated alias>",..}, e.g. {"26.3": "26.2"} follows the latest 26.2 patch. Targets are resolved after standard aliases are generated; extra aliases cannot target other extra aliases. Invalid mappings, unresolved targets and aliases conflicting with another version fail generation. Existing aliases resolving to the same version are unchanged. Output uses the existing aliases array; no consumer changes are required.'
+    required: false
 runs:
   using: node24
   main: 'dist/index.js'

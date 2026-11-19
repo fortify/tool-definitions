@@ -21,6 +21,7 @@ jobs:
     - name: Setup
       id: setup
       env:
+        # Add sc-client extraAliases mapping "27.1": "26.4" once 26.4 is downloadable and listed in toolUrls.
         CONFIG: >-
           [
              {
@@ -125,6 +126,10 @@ jobs:
                       "22.*": {"jre": "11"},
                       "21.*": {"jre": "11"},
                       "20.*": {"jre": "8"}
+                  },
+                  "extraAliases": {
+                      "26.1": "25.4",
+                      "26.3": "26.2"
                   }
                },
                {
@@ -229,6 +234,7 @@ jobs:
         binaryPlatforms: ${{ toJSON(fromJSON(toJSON(matrix)).binaryPlatforms) }}
         tagMappings: ${{ toJSON(fromJSON(toJSON(matrix)).tagMappings) }}
         extraVersionProperties: ${{ toJSON(fromJSON(toJSON(matrix)).extraVersionProperties) }}
+        extraAliases: ${{ toJSON(fromJSON(toJSON(matrix)).extraAliases) }}
     - uses: fortify/shared-github/actions/3rdparty/stefanzweifel/git-auto-commit-action/v7@5ad1afec0f56a21b03f0887eea35505cb6a66554
       with:
         commit_message: "chore: Update cache & tool definitions"

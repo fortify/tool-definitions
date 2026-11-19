@@ -36,4 +36,16 @@ export const binaryPlatforms = (() => {
 })();
 export const tagMappings = JSON.parse(defaultIfEmpty(core.getInput("tagMappings", {required: false}), '{"(.*)": "$1"}')); 
 export const extraVersionProperties = JSON.parse(defaultIfEmpty(core.getInput("extraVersionProperties", {required: false}), '{}')) as {[key: string]: {[key:string]: string}};
+export const extraAliases = (() => {
+    const mappings: unknown = JSON.parse(defaultIfEmpty(core.getInput("extraAliases", {required: false}), '{}'));
+    if ( typeof mappings!=="object" || mappings===null || Array.isArray(mappings) ) {
+        throw new Error("extraAliases must be a JSON object mapping alias names to target versions or aliases");
+    }
+    return Object.fromEntries(Object.entries(mappings).map(([alias, target]): [string, string] => {
+        if ( alias.trim()==="" || typeof target!=="string" || target.trim()==="" ) {
+            throw new Error("extraAliases must contain non-empty alias names and non-empty string targets");
+        }
+        return [alias, target];
+    }));
+})();
 export const workspaceDir = process.env.GITHUB_WORKSPACE;
