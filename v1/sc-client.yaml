@@ -4,6 +4,7 @@ versions:
     aliases:
       - latest
       - "26.2"
+      - "26.3"
     stable: true
     binaries:
       java:
@@ -25,6 +26,7 @@ versions:
   - version: 25.4.2
     aliases:
       - "25.4"
+      - "26.1"
     stable: true
     binaries:
       java:
