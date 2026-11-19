@@ -1,0 +1,6 @@
+{
+  "name": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.21.1_2.tar.gz",
+  "downloadUrl": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21.1%2B2/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.21.1_2.tar.gz",
+  "rsa_sha256": "Vox2grGlPF3ReryRbe6qkHuy7Q5mHsz8ixlqvM3zGvK5qZ41fV4lETPnJl6AlJsSeuuwbkGJ7KRHMhRk2DmxhWctVvzrwVBI47KNCGsmJ+K9Nydwm0J51i6rQkxW+GXzHWta7UdfRPVs4+p3V75JkNWdFfQrlvpDr3K6CzdNhSohM8qKQ58lzg0I1n1mvCMl32piWSbyoILEIzRTfrD/VALgxExGJH0EgFceb7JIMgBPyO8BI4wLww8Wnfp6bw23Z8Le7AwAhk2OdKJJZFy9s0r0/sPFdpDbA3vQerLHaBcq5FQj9jVLm+N7mlSDExX7ADclvhajeN+fODkjT9dyeQ==",
+  "sha256": "99fabb8e2517861fbbf1fc26103ee62240ec693340c4c7a812f7043e82acb203"
+}
