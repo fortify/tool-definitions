@@ -215,7 +215,7 @@ jobs:
       matrix:
         include: ${{ fromJson(needs.setup.outputs.matrix)}}
     steps:
-    - uses: fortify/shared-github/actions/3rdparty/actions/checkout/v6@5ad1afec0f56a21b03f0887eea35505cb6a66554
+    - uses: fortify/shared-github/actions/3rdparty/actions/checkout/v6@15d0b01f3bedb5c1523cb806e745f041e9bce5a3
     - run: git pull
     - name: Check
       env:
@@ -243,7 +243,7 @@ jobs:
         tagMappings: ${{ toJSON(fromJSON(toJSON(matrix)).tagMappings) }}
         extraVersionProperties: ${{ toJSON(fromJSON(toJSON(matrix)).extraVersionProperties) }}
         extraAliases: ${{ toJSON(fromJSON(toJSON(matrix)).extraAliases) }}
-    - uses: fortify/shared-github/actions/3rdparty/stefanzweifel/git-auto-commit-action/v7@5ad1afec0f56a21b03f0887eea35505cb6a66554
+    - uses: fortify/shared-github/actions/3rdparty/stefanzweifel/git-auto-commit-action/v7@15d0b01f3bedb5c1523cb806e745f041e9bce5a3
       with:
         commit_message: "chore: Update cache & tool definitions"
 
@@ -251,11 +251,11 @@ jobs:
     needs: generate-tool-definitions
     runs-on: ubuntu-latest
     steps:
-    - uses: fortify/shared-github/actions/3rdparty/actions/checkout/v6@5ad1afec0f56a21b03f0887eea35505cb6a66554
+    - uses: fortify/shared-github/actions/3rdparty/actions/checkout/v6@15d0b01f3bedb5c1523cb806e745f041e9bce5a3
       with:
         fetch-depth: 0
     - name: restore timestamps
-      uses: fortify/shared-github/actions/3rdparty/chetan/git-restore-mtime-action/v2@5ad1afec0f56a21b03f0887eea35505cb6a66554
+      uses: fortify/shared-github/actions/3rdparty/chetan/git-restore-mtime-action/v2@15d0b01f3bedb5c1523cb806e745f041e9bce5a3
     - name: Generate v1 zip-file
       run: |
         git pull
@@ -282,7 +282,7 @@ jobs:
         done
         exit 1
     - name: Upload v1 artifact
-      uses: fortify/shared-github/actions/3rdparty/actions/upload-artifact/v7@5ad1afec0f56a21b03f0887eea35505cb6a66554
+      uses: fortify/shared-github/actions/3rdparty/actions/upload-artifact/v7@15d0b01f3bedb5c1523cb806e745f041e9bce5a3
       with:
         name: v1-definitions
         path: v1/
@@ -295,21 +295,21 @@ jobs:
     permissions:
       contents: write
     steps:
-    - uses: fortify/shared-github/actions/3rdparty/actions/checkout/v6@5ad1afec0f56a21b03f0887eea35505cb6a66554
+    - uses: fortify/shared-github/actions/3rdparty/actions/checkout/v6@15d0b01f3bedb5c1523cb806e745f041e9bce5a3
       with:
         fetch-depth: 0
     - name: Download v1 artifact
-      uses: fortify/shared-github/actions/3rdparty/actions/download-artifact/v8@5ad1afec0f56a21b03f0887eea35505cb6a66554
+      uses: fortify/shared-github/actions/3rdparty/actions/download-artifact/v8@15d0b01f3bedb5c1523cb806e745f041e9bce5a3
       with:
         name: v1-definitions
         path: v1/
     - name: Update v1 tag
-      uses: fortify/shared-github/actions/fortify/update-tag@5ad1afec0f56a21b03f0887eea35505cb6a66554
+      uses: fortify/shared-github/actions/fortify/update-tag@15d0b01f3bedb5c1523cb806e745f041e9bce5a3
       with:
         tag_name: v1
         github_token: ${{ secrets.GITHUB_TOKEN }}
     - name: Create Release
-      uses: fortify/shared-github/actions/3rdparty/ncipollo/release-action/v1@5ad1afec0f56a21b03f0887eea35505cb6a66554
+      uses: fortify/shared-github/actions/3rdparty/ncipollo/release-action/v1@15d0b01f3bedb5c1523cb806e745f041e9bce5a3
       with:
         allowUpdates: true
         artifacts: v1/*
