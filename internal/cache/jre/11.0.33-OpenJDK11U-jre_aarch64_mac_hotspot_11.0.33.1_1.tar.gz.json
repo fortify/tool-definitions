@@ -1,0 +1,6 @@
+{
+  "name": "OpenJDK11U-jre_aarch64_mac_hotspot_11.0.33.1_1.tar.gz",
+  "downloadUrl": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.33.1%2B1/OpenJDK11U-jre_aarch64_mac_hotspot_11.0.33.1_1.tar.gz",
+  "rsa_sha256": "pfJWssDDNnSaMpRQh34Rr4cd/lT1/+Oh5VJODJ44b38rn0wzqv78mtmVqrJfT0xUFkSSHYE92B1cuBVpUma3lzw8hdTYTjQLvv7pTqtlP40md16dm7GvLqXvGG5DpIdPEl21Nc0PWn8DKiSpcMDUSF97wfI0V5MIjE+cfkO83PNYQjpRmH4zYqVmx8IjLBgsGwfD90okqnVwCZ8/+lBvPRgEfztHjpUewOm6f/dUQQmvnFj1mL/0XNpcfArSrQJL/uc6pLi2wpWa/JVTH3HQXs5Fqy1upvAAKHRw0BWJ+9ndpBPD1e28GaA/v7XISqzfRjPY8ohINiDsmBByRSgG1A==",
+  "sha256": "207b126d486e57135b8e82cd7679cfa1c87e9f9c5378f7c5c5aa214ee4b3fea5"
+}

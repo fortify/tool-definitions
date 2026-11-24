@@ -1,0 +1,6 @@
+{
+  "name": "OpenJDK17U-jre_x64_windows_hotspot_17.0.21.1_2.zip",
+  "downloadUrl": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21.1%2B2/OpenJDK17U-jre_x64_windows_hotspot_17.0.21.1_2.zip",
+  "rsa_sha256": "FaI+Vco2NzjXrQpTQvC0CBW648SEvQbzT+x3eT+WQKgpPy1alEmCCAm2oYj1irB6BIYKCeWFNTU0jHitf/RvsneX2ky3zgGGPt1d3cc/k4428vAD36bBnH8xWCrZ/lr+nlY9qU4UBxELMmXd6zfQxsigcKwzFym0wki1iasuAwDvt2hIzZ8B+jzvyeEYPI8sFB0ZrrJ00s72OXpOQDFC2bfqwY0w5VWhVAmQijGpDkAqtEJP+D5rrM26E4hXa96RYs7RNMWkgHRQIVEJejwnywTNSo3Aryy7qC7sHiEaKrO17EGGa1NHcyeEYXH4VJHpMX8da8kI6Xro2G0C8xkJqg==",
+  "sha256": "739d8f2fd286dc2736d55cc8c9260980baefd275ad48cda242335bb0f08e0795"
+}

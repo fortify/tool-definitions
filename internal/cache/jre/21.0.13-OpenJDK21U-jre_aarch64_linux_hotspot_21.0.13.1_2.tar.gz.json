@@ -1,0 +1,6 @@
+{
+  "name": "OpenJDK21U-jre_aarch64_linux_hotspot_21.0.13.1_2.tar.gz",
+  "downloadUrl": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13.1%2B2/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.13.1_2.tar.gz",
+  "rsa_sha256": "i6OXjWRpU0aNu6qtCKlspi32ooHBVX4INVe6wzqiOl/EYlWjecPgS3eak1kOWLQgOAG1IEqzsu7lP0+cJj91FOdLmXs3f7DlFFED5N/oludDcdrxTknqfBgVIodMvYXQZXlCoxhNrZJgdJXrRe9lUxT4pULLBKFNRAk1j3eQw867Lfa544VKx3xkILKdQe0XG/4BYcsTlRSrtstZbhAM6OqjrELh2Zc9KBNqdYvJxKI5pbfe08C3NHr5Ol4x9kG5dLNwPZ96C1TQaxwIe8Wt705JV0akjWVBMGnOdtTmVywPtj1cx+naH1+g/UxLjtu8FDJEhR/+gz3eQBvuQQK2wg==",
+  "sha256": "52bc58323d9266538a6361a3cf8365fc1186dd9510d7f33f623681c4aabb7e72"
+}
