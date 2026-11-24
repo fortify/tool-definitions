@@ -21,7 +21,8 @@ jobs:
     - name: Setup
       id: setup
       env:
-        # Add sc-client extraAliases mapping "27.1": "26.4" once 26.4 is downloadable and listed in toolUrls.
+        # sc-client 26.4+ requires Java 21 (earlier 26.x/25.x/24.x require Java 17); keep the
+        # more specific sc-client "26.4.*" extraVersionProperties entry after the generic "26.*" entry.
         # JRE patch assets are published per platform; keep the three-part
         # definition versions so existing SemVer aliases remain valid.
         # Keep 8.0.512 as the mixed-platform catalogue key while 8u514 is
@@ -90,6 +91,7 @@ jobs:
               {
                   "toolName": "sc-client",
                   "toolUrls": {
+                     "26.4.0": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_26.4.0_x64.zip"],
                      "26.2.1": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_26.2.1_x64.zip"],
                      "26.2.0": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_26.2.0_x64.zip"],
                      "25.4.2": ["https://tools.fortify.com/scancentral/Fortify_ScanCentral_Client_25.4.2_x64.zip"],
@@ -124,6 +126,7 @@ jobs:
                   },
                   "extraVersionProperties": {
                       "26.*": {"jre": "17"},
+                      "26\\.4\\..*": {"jre": "21"},
                       "25.*": {"jre": "17"},
                       "24.*": {"jre": "17"},
                       "23.*": {"jre": "11"},
@@ -133,7 +136,8 @@ jobs:
                   },
                   "extraAliases": {
                       "26.1": "25.4",
-                      "26.3": "26.2"
+                      "26.3": "26.2",
+                      "27.1": "26.4"
                   }
                },
                {
